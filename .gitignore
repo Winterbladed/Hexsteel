@@ -70,3 +70,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Naht/Scenes/SceneNaht/OcclusionCullingData.asset
+Assets/Naht/Scenes/SceneNaht/OcclusionCullingData.asset
+Assets/Naht/Scenes/SceneNaht/OcclusionCullingData.asset.meta
+Assets/Rooms/Roomie/OcclusionCullingData.asset
+Assets/Rooms/Roomie/OcclusionCullingData.asset.meta
+Assets/Phase 1/Scenes/FinalRoomV2 - Copy/OcclusionCullingData.asset
+Assets/Phase 1/Scenes/FinalRoomV2 - Copy/OcclusionCullingData.asset.meta
