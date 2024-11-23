@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: -1113720796542271071}
   - component: {fileID: 4325129885474409553}
   - component: {fileID: 2946197417691184667}
-  - component: {fileID: 5349729659364037056}
   - component: {fileID: 3317525549971762677}
   m_Layer: 0
   m_Name: Trash Loot
@@ -131,29 +130,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!136 &5349729659364037056
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2895448722202950775}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.3
-  m_Height: 0.6
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.25, z: 0}
 --- !u!82 &3317525549971762677
 AudioSource:
   m_ObjectHideFlags: 0
