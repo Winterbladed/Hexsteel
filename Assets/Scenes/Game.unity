@@ -3123,7 +3123,7 @@ MonoBehaviour:
   _text: {fileID: 2004920139698455523}
   _movement: {fileID: 8348124112238466196}
   _inventory: {fileID: 1995310149397781739}
-  _health: {fileID: 0}
+  _health: {fileID: 7690601497789648850}
   _strings:
   - ._.
   - '''o'''
