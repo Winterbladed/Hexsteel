@@ -3123,6 +3123,7 @@ MonoBehaviour:
   _text: {fileID: 2004920139698455523}
   _movement: {fileID: 8348124112238466196}
   _inventory: {fileID: 1995310149397781739}
+  _health: {fileID: 0}
   _strings:
   - ._.
   - '''o'''
@@ -7387,6 +7388,7 @@ GameObject:
   - component: {fileID: 8348124112238466196}
   - component: {fileID: 1995310149397781739}
   - component: {fileID: 7690601497789648850}
+  - component: {fileID: 8348124112238466202}
   - component: {fileID: 8348124112238466199}
   - component: {fileID: 8348124112238466200}
   - component: {fileID: 8348124112238466201}
@@ -8662,6 +8664,20 @@ MonoBehaviour:
   _audioSource: {fileID: 7208993169469864080}
   _audioClip:
   - {fileID: 8300000, guid: cc3138eb2a8ae8d4ca85882858ce685f, type: 3}
+--- !u!114 &8348124112238466202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2855589611402777493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689297a8dc22ca7458a1cefbeda440f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 927673610760732778}
+  _health: {fileID: 7690601497789648850}
 --- !u!224 &8376419171433529426
 RectTransform:
   m_ObjectHideFlags: 0
