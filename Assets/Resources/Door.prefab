@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 3596616564172087066}
   - component: {fileID: 1865070584710868914}
   - component: {fileID: 9207360326596768287}
+  - component: {fileID: 7665693811747333790}
   m_Layer: 0
   m_Name: Door
   m_TagString: Hard
@@ -428,6 +429,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!208 &7665693811747333790
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7959453421372789925}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &8749465815529820332
 GameObject:
   m_ObjectHideFlags: 0
