@@ -10,7 +10,7 @@ QualitySettings:
     name: Rats in the Sewers
     pixelLightCount: 1
     shadows: 1
-    shadowResolution: 3
+    shadowResolution: 0
     shadowProjection: 1
     shadowCascades: 1
     shadowDistance: 150
