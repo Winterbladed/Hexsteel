@@ -18,14 +18,14 @@ public class Weapon : Damage
     #endregion
 
     #region Private Functions
-    private void Start()
+    protected virtual void Start()
     {
         _normalDamage = _Damage;
         _reducedDamage = _Damage / 2;
         _movement = GetComponentInParent<Movement>();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         _movement.SetAttacking(_isAttacked);
         _movement.SetComboIndex(_comboIndex);
@@ -53,7 +53,7 @@ public class Weapon : Damage
         }
     }
 
-    private void OnDrawGizmos()
+    protected virtual void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Vector3 _positionInFront = transform.position + transform.forward * _distance;

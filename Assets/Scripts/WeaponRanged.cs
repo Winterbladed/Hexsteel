@@ -9,14 +9,12 @@ public class WeaponRanged : Weapon
     #endregion
 
     #region Private Functions
-    private void Start()
+    protected override void Start()
     {
-        _normalDamage = _Damage;
-        _reducedDamage = _Damage / 2;
-        _movement = GetComponentInParent<Movement>();
+        base.Start();
     }
 
-    private void Update()
+    protected override void Update()
     {
         _movement.SetShooting(_isAttacked);
         if (_isAttacked)
