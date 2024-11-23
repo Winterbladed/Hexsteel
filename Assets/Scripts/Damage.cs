@@ -85,9 +85,23 @@ public class Damage : MonoBehaviour
             _textEvent.ShowDamage(0, Color.gray, _target.transform);
         }
         if (!_isCritical && _computedDamage * _health.GetHpDamageMultiplier() > 0)
-            _textEvent.ShowDamage(_computedDamage * _health.GetHpDamageMultiplier(), Color.white, _target.transform);
+        {
+            if (!_health.GetIsBlocking()) _textEvent.ShowDamage(_computedDamage * _health.GetHpDamageMultiplier(), Color.white, _target.transform);
+            else if (_health.GetIsBlocking())
+            {
+                _textEvent.ShowStatus("Blocked!", _target.transform);
+                _textEvent.ShowDamage((_computedDamage * _health.GetHpDamageMultiplier()) / 4, Color.white, _target.transform);
+            }
+        }
         if (_isCritical && _computedDamage * _health.GetHpDamageMultiplier() > 0)
-            _textEvent.ShowDamage(_computedDamage * _health.GetHpDamageMultiplier(), Color.yellow, _target.transform);
+        {
+            if (!_health.GetIsBlocking()) _textEvent.ShowDamage(_computedDamage * _health.GetHpDamageMultiplier(), Color.yellow, _target.transform);
+            else if (_health.GetIsBlocking())
+            {
+                _textEvent.ShowStatus("Blocked!", _target.transform);
+                _textEvent.ShowDamage((_computedDamage * _health.GetHpDamageMultiplier()) / 4, Color.yellow, _target.transform);
+            }
+        }
     }
 
     protected void DealDamage(GameObject _target)

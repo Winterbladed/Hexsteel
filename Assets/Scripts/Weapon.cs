@@ -9,12 +9,15 @@ public class Weapon : Damage
     [Header("Other Weapon Stats")]
     [SerializeField] protected float _radius = 1.0f;
     [SerializeField] protected float _distance = 2.0f;
-    [SerializeField] protected int _comboIndexes;
     protected float _attackTime;
     protected bool _isAttacked = false;
+    [SerializeField] protected int _comboIndexes;
     protected int _comboIndex = 0;
-    protected Movement _movement;
+
+    [Header("Weapon References")]
     [SerializeField] protected UnityEvent _onAttack;
+    protected Movement _movement;
+    protected Health _health;
     #endregion
 
     #region Private Functions
@@ -23,6 +26,7 @@ public class Weapon : Damage
         _normalDamage = _Damage;
         _reducedDamage = _Damage / 2;
         _movement = GetComponentInParent<Movement>();
+        _health = GetComponentInParent<Health>();
     }
 
     protected virtual void Update()

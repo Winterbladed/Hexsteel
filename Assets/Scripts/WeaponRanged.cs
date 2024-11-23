@@ -44,5 +44,10 @@ public class WeaponRanged : Weapon
             }
         }
     }
+
+    protected override void OnDrawGizmos()
+    {
+        base.OnDrawGizmos();
+    }
     #endregion
 }

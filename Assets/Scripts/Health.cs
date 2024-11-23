@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
     private float _hpRegenTime = 0.0f;
     private int _hpDamageMultiplier = 1;
     private bool _isRegen;
+    private bool _isBlocking;
     [SerializeField] private bool _isInvulnerable;
 
     [Header("Death Manager")]
@@ -83,7 +84,8 @@ public class Health : MonoBehaviour
     {
         if (!_isInvulnerable)
         {
-            _currentHp -= _damage * _hpDamageMultiplier;
+            if (!_isBlocking) _currentHp -= _damage * _hpDamageMultiplier;
+            else if (_isBlocking) _currentHp -= (_damage * _hpDamageMultiplier) / 4;
             _OnHit?.Invoke();
             CapHp();
             if (_currentHp <= 0) _isDead = true;
@@ -96,6 +98,11 @@ public class Health : MonoBehaviour
         CapHp();
     }
 
+    public void Block(bool _boolean)
+    {
+        _isBlocking = _boolean;
+    }
+
     public void ModifyHpDamageTaken(int _mult) { _hpDamageMultiplier = _mult; }
     public void DestroyGameObject() { Destroy(gameObject); }
     public int GetCurrentHp() { return _currentHp; }
@@ -105,6 +112,7 @@ public class Health : MonoBehaviour
     public void DebugHealth() { Debug.Log("Health: " + _currentHp + "/" + _hp); }
     public void Invulnerable(bool _boolean) { _isInvulnerable = _boolean; }
     public bool GetIsInvulnerable() { return _isInvulnerable; }
+    public bool GetIsBlocking() { return _isBlocking; }
     public bool GetIsDead() { return _isDead; }
     #endregion
 }
