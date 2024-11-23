@@ -133,6 +133,24 @@ public class Inventory : MonoBehaviour
         Destroy(_currentHeldItem.GetComponent<Item>()._ItemIcon);
         _movement.SetAttacking(false);
         _movement.SetShooting(false);
+        _movement.SetEating(false);
+    }
+
+    public void UseItem()
+    {
+        if (!_currentHeldItem) return;
+        foreach (GameObject _item2 in _inventory)
+        {
+            if (_item2.name == _currentHeldItem.name && _item2.GetInstanceID() == _currentHeldItem.GetInstanceID() && !_isSwitching)
+            {
+                if (_item2.GetInstanceID() == _currentHeldItem.GetInstanceID()) _itemToDrop = _item2;
+            }
+        }
+        _inventory.Remove(_itemToDrop);
+        if (_currentHeldItem) Destroy(_currentHeldItem);
+        Destroy(_currentHeldItem.GetComponent<Item>()._ItemIcon);
+        _movement.SetAttacking(false);
+        _movement.SetShooting(false);
     }
 
     public bool GetIsSwitching() { return _isSwitching; }

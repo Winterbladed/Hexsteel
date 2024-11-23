@@ -10,27 +10,35 @@ public class Movement : MonoBehaviour
     private float _slowSpeed = 1.0f;
     private float _runSpeed = 8.0f;
     [SerializeField] private float _rotationSpeed = 1000.0f;
+
     private Vector3 _direction;
+
     private bool _isWalking;
     private bool _isRunning;
     private bool _isSlowed;
     private bool _isStrafing;
     private bool _isShooting;
     private bool _isAttacking;
+    private bool _isEating;
+
     private int _comboIndex = 0;
 
     [Header("Jump")]
     [SerializeField] private float _jumpHeight = 1.0f;
     [SerializeField] private float _gravity = -20.0f;
     private float _verticalVelocity;
+
     private bool _isGrounded;
 
     [Header("Dodge Roll")]
     [SerializeField] private float _dodgeRollSpeed = 5.0f;
     [SerializeField] private float _dodgeRollDuration = 1.0f;
     [SerializeField] private float _dodgeRollCooldown = 0.5f;
+
     [SerializeField] private UnityEvent _onDodgeEvt;
+
     private bool _isDodging;
+
     private float _dodgeRollTime;
     private float _dodgeCooldownTime;
 
@@ -103,7 +111,7 @@ public class Movement : MonoBehaviour
 
         // Walking and running state
         _isWalking = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
-        _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1) && !_isAttacking && !_isShooting;
+        _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1) && !_isAttacking && !_isShooting && !_isEating;
 
         // Jumping logic
         _isGrounded = _controller.isGrounded;
@@ -115,8 +123,7 @@ public class Movement : MonoBehaviour
         else _verticalVelocity += _gravity * Time.deltaTime;
 
         // Dodge Roll logic 2
-        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing
-            || Input.GetKey(KeyCode.LeftAlt) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing)
+        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing && !_isEating)
         {
             _isDodging = true;
             _dodgeRollTime = Time.time + _dodgeRollDuration;
@@ -132,6 +139,7 @@ public class Movement : MonoBehaviour
         _animator.SetBool("_isStrafing", _isStrafing);
         _animator.SetBool("_isShooting", _isShooting);
         _animator.SetBool("_isAttacking", _isAttacking);
+        _animator.SetBool("_isEating", _isEating);
         _animator.SetInteger("_combo", _comboIndex);
     }
     #endregion
@@ -145,8 +153,10 @@ public class Movement : MonoBehaviour
     public bool GetIsStrafing() { return _isStrafing; }
     public bool GetIsAttacking() { return _isAttacking; }
     public bool GetIsShooting() { return _isShooting; }
+    public bool GetIsEating() { return _isEating; }
     public void SetAttacking(bool _boolean) {  _isAttacking = _boolean; }
     public void SetShooting(bool _boolean) { _isShooting = _boolean; }
+    public void SetEating(bool _boolean) { _isEating = _boolean; }
     public void SetSpeed(float _newSpeed) { _speed = _newSpeed; _currentSpeed = _newSpeed; _slowSpeed = _newSpeed / 2; _runSpeed = _newSpeed * 4.0f; }
     public void SetJumpHeight(float _newJumpHeight) { _jumpHeight = _newJumpHeight;}
     public void SetGravity(float _newGravity) { _gravity = _newGravity; }
