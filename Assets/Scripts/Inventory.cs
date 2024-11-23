@@ -53,7 +53,7 @@ public class Inventory : MonoBehaviour
     {
         if (_isSwitching) _switchTime += Time.deltaTime;
         else _switchTime = 0.0f;
-        if (_switchTime > 0.1f)
+        if (_switchTime > 0.5f)
         {
             _onSwitchEvt.Invoke();
             SwitchToItem(_inventory[_inventoryIndex]);
@@ -67,7 +67,7 @@ public class Inventory : MonoBehaviour
         if (_currentHeldItem) _currentHeldItemID = _currentHeldItem.GetInstanceID();
         for (int i = 0; i < _inventory.Count; i++)
         {
-            if (Input.GetKeyDown((i + 1).ToString()) && !_isSwitching)
+            if (Input.GetKeyDown((i + 1).ToString()) && !_isSwitching && !_movement.GetIsDodging())
             {
                 _inventoryIndex = i;
                 _isSwitching = true;

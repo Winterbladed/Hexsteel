@@ -47,6 +47,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private Transform _cameraTransform;
     [SerializeField] private Animator _animator;
     [SerializeField] private Health _health;
+    [SerializeField] private Inventory _inventory;
     #endregion
 
     #region Private Functions
@@ -111,7 +112,7 @@ public class Movement : MonoBehaviour
 
         // Walking and running state
         _isWalking = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
-        _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1) && !_isAttacking && !_isShooting && !_isEating;
+        _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1) && !_isAttacking && !_isShooting && !_isEating && !_inventory.GetIsSwitching();
 
         // Jumping logic
         _isGrounded = _controller.isGrounded;
@@ -123,7 +124,7 @@ public class Movement : MonoBehaviour
         else _verticalVelocity += _gravity * Time.deltaTime;
 
         // Dodge Roll logic 2
-        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing && !_isEating)
+        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing && !_isEating && !_inventory.GetIsSwitching())
         {
             _isDodging = true;
             _dodgeRollTime = Time.time + _dodgeRollDuration;
@@ -141,6 +142,7 @@ public class Movement : MonoBehaviour
         _animator.SetBool("_isAttacking", _isAttacking);
         _animator.SetBool("_isEating", _isEating);
         _animator.SetInteger("_combo", _comboIndex);
+        _animator.SetBool("_isSwitching", _inventory.GetIsSwitching());
     }
     #endregion
 

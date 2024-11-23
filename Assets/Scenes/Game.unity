@@ -3122,12 +3122,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 2004920139698455523}
   _movement: {fileID: 8348124112238466196}
+  _inventory: {fileID: 1995310149397781739}
   _strings:
   - ._.
   - '''o'''
-  - '>w<'
+  - '>_<'
   - o_o
   - -O-
+  - x.x
+  - -.-
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -8437,10 +8440,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 797124168}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 797124171}
+        m_TargetAssemblyTypeName: Head, Assembly-CSharp
+        m_MethodName: Dead
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8562,6 +8565,7 @@ MonoBehaviour:
   _cameraTransform: {fileID: 330585546}
   _animator: {fileID: 927673610760732778}
   _health: {fileID: 7690601497789648850}
+  _inventory: {fileID: 1995310149397781739}
 --- !u!136 &8348124112238466197
 CapsuleCollider:
   m_ObjectHideFlags: 0
