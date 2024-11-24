@@ -36,23 +36,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && _type == ManagerType.Game)
-        {
-            if (!_isPaused) 
-            { 
-                _gamePause.Invoke();
-                Pausing(true, 0.0f, CursorLockMode.None);
-            }
-            else if (_isPaused) 
-            { 
-                _gameResume.Invoke();
-                Pausing(false, 1.0f, CursorLockMode.Locked);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !_isPaused && _type == ManagerType.Game)
-        {
-            Pausing(false, 1.0f, CursorLockMode.Locked);
-        }
+        if (Input.GetKeyDown(KeyCode.Escape)) Pause();
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !_isPaused && _type == ManagerType.Game) Pausing(false, 1.0f, CursorLockMode.Locked);
     }
 
     private void Pausing(bool _boolean, float _timeScale, CursorLockMode _lock)
@@ -65,6 +50,23 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Public Functions
+    public void Pause()
+    {
+        if (_type == ManagerType.Game)
+        {
+            if (!_isPaused)
+            {
+                _gamePause.Invoke();
+                Pausing(true, 0.0f, CursorLockMode.None);
+            }
+            else if (_isPaused)
+            {
+                _gameResume.Invoke();
+                Pausing(false, 1.0f, CursorLockMode.Locked);
+            }
+        }
+    }
+
     public void LoadPreviousScene()
     {
         SceneManager.LoadScene(_previousSceneName);

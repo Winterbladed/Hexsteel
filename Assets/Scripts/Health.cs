@@ -107,6 +107,8 @@ public class Health : MonoBehaviour
     public void DestroyGameObject() { Destroy(gameObject); }
     public int GetCurrentHp() { return _currentHp; }
     public int GetHp() { return _hp; }
+    public void SetCurrentHp(int _savedCurrentHp) { _currentHp = _savedCurrentHp; }
+    public void SetHp(int _savedHp) { _hp = _savedHp; }
     public int GetHpDamageMultiplier() { return _hpDamageMultiplier; }
     public void SetHpRegen(bool _bool) { _isRegen = _bool; }
     public void DebugHealth() { Debug.Log("Health: " + _currentHp + "/" + _hp); }

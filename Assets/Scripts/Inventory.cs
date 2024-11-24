@@ -16,6 +16,7 @@ public class Inventory : MonoBehaviour
     #region Variables
     [Header("Inventory Stats")]
     [SerializeField] private List<GameObject> _inventory;
+    [SerializeField] private List<GameObject> _inventory1;
     [SerializeField] private Transform _hands;
     [SerializeField] private int _inventorySlots = 9;
     private float _switchTime = 0.0f;
@@ -32,14 +33,22 @@ public class Inventory : MonoBehaviour
 
     [Header("Other References")]
     [SerializeField] private Movement _movement;
+    private InventoryUI _inventoryUI;
     #endregion
 
     #region Private Functions
     private void Start()
     {
-        if (_inventory.Count > 0)
-            foreach (GameObject _item in _inventory)
-                _item.SetActive(false);
+        _inventoryUI = InventoryUI._InventoryUI;
+        if (_inventory1.Count > 0)
+            foreach (GameObject _item in _inventory1)
+            {
+                GameObject _newItem = Instantiate(_item, _hands);
+                GameObject _newItemIcon = Instantiate(_newItem.GetComponent<Item>()._ItemIcon, _inventoryUI.transform);
+                _newItem.GetComponent<Item>()._ItemIcon = _newItemIcon;
+                _inventory.Add(_newItem);
+                _newItem.SetActive(false);
+            }
     }
 
     private void Update()
@@ -154,5 +163,8 @@ public class Inventory : MonoBehaviour
     }
 
     public bool GetIsSwitching() { return _isSwitching; }
+    public List<GameObject> GetInventory() { return _inventory; }
+    public List<GameObject> GetInventory1() { return _inventory1; }
+    public void SetInventory1(List<GameObject> _savedInventory) {  _inventory1 = _savedInventory; } 
     #endregion
 }
