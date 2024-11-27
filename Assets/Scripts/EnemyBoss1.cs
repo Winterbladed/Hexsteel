@@ -16,15 +16,15 @@ public class EnemyBoss1 : Enemy
     #endregion
 
     #region Private Functions
-    private void Start()
+    protected override void Start()
     {
-        SetStats();
+        base.Start();
         GoToTarget();
     }
 
     private void Update()
     {
-        transform.LookAt(_target.transform.position);
+        transform.LookAt(_player.transform.position);
         Aniimator();
         GoToTarget();
         AttackWhenNearTarget();

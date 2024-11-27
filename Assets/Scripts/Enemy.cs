@@ -5,7 +5,6 @@ using UnityEngine.Events;
 public class Enemy : Damage
 {
     #region Variables
-    [SerializeField] protected GameObject _target;
     [SerializeField] protected NavMeshAgent _agent;
     protected float _distanceFromTarget;
     protected Vector3 _initialRotation;
@@ -22,20 +21,18 @@ public class Enemy : Damage
     protected float _slowMoveSpeed;
 
     [SerializeField] protected UnityEvent _onAttackEvt;
+    protected Player _player;
     #endregion
 
     #region Protected Functions
-    protected void OnDrawGizmos()
+    protected virtual void Awake()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, _aggroRange);
-
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, _attackRange);
+        _player = Player._Player;
     }
 
-    protected void SetStats()
+    protected virtual void Start()
     {
+        _player = Player._Player;
         _agent.speed = _moveSpeed;
         _slowMoveSpeed = _moveSpeed / 2;
         _agent.acceleration = _moveSpeed;
@@ -45,21 +42,30 @@ public class Enemy : Damage
         _originalPosition = transform.position;
     }
 
+    protected void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _aggroRange);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, _attackRange);
+    }
+
     protected void GoToTarget()
     {
-        _agent.SetDestination(_target.transform.position);
+        _agent.SetDestination(_player.transform.position);
     }
 
     protected void GoToTargetWhenNear()
     {
-        _distanceFromTarget = Vector3.Distance(transform.position, _target.transform.position);
-        if (_distanceFromTarget <= _aggroRange) _agent.SetDestination(_target.transform.position);
+        _distanceFromTarget = Vector3.Distance(transform.position, _player.transform.position);
+        if (_distanceFromTarget <= _aggroRange) _agent.SetDestination(_player.transform.position);
         else if(_distanceFromTarget > _aggroRange + _aggroBuffer) _agent.SetDestination(_originalPosition);
     }
 
     protected void AttackWhenNearTarget()
     {
-        _distanceFromTarget = Vector3.Distance(transform.position, _target.transform.position);
+        _distanceFromTarget = Vector3.Distance(transform.position, _player.transform.position);
         if (_distanceFromTarget <= _attackRange)
         {
             _initialRotation = transform.eulerAngles;
@@ -68,7 +74,7 @@ public class Enemy : Damage
         }
         if (_isAttacking)
         {
-            transform.LookAt(_target.transform.position);
+            transform.LookAt(_player.transform.position);
             _attackTime += Time.deltaTime;
             if (_attackTime > _attackSpeed)
             {
@@ -76,7 +82,7 @@ public class Enemy : Damage
                 ResetAttack();
                 if (_distanceFromTarget <= _attackRange + 2)
                 {
-                    DealDamage(_target);
+                    DealDamage(_player.gameObject);
                 }
             }
         }
@@ -84,13 +90,13 @@ public class Enemy : Damage
 
     protected void AttackRangeWhenNearTarget(GameObject _gameobject, Transform _transform)
     {
-        _distanceFromTarget = Vector3.Distance(transform.position, _target.transform.position);
+        _distanceFromTarget = Vector3.Distance(transform.position, _player.transform.position);
         if (_distanceFromTarget <= _attackRange)
         {
             _initialRotation = transform.eulerAngles;
             _isAttacking = true;
             _agent.speed = 0.0f;
-            transform.LookAt(_target.transform.position);
+            transform.LookAt(_player.transform.position);
             _attackTime += Time.deltaTime;
             if (_attackTime > _attackSpeed)
             {
@@ -130,7 +136,5 @@ public class Enemy : Damage
     {
         _agent.speed = _moveSpeed;
     }
-
-    public void SetTarget(GameObject _newTarget) { _target = _newTarget; }
     #endregion
 }

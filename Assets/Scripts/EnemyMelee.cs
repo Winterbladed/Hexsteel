@@ -8,9 +8,9 @@ public class EnemyMelee : Enemy
     #endregion
 
     #region Private Functions
-    private void Start()
+    protected override void Start()
     {
-        SetStats();
+        base.Start();
         GoToTarget();
     }
 
