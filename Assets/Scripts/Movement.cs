@@ -20,6 +20,7 @@ public class Movement : MonoBehaviour
     private bool _isShooting;
     private bool _isAttacking;
     private bool _isEating;
+    private bool _isThrowing;
 
     private int _comboIndex = 0;
 
@@ -60,13 +61,23 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        // Dodge Roll Logic
+        UpdateDodgeRoll();
+        Move();
+        Speed();
+        MoveState();
+        Jump();
+        StartDodgeRoll();
+        Animatorr();
+    }
+
+    private void UpdateDodgeRoll()
+    {
         if (_isDodging)
         {
-            if (Time.time >= _dodgeRollTime) 
-            { 
-                _isDodging = false; 
-                _health.Invulnerable(false); 
+            if (Time.time >= _dodgeRollTime)
+            {
+                _isDodging = false;
+                _health.Invulnerable(false);
             }
             else
             {
@@ -76,8 +87,10 @@ public class Movement : MonoBehaviour
             }
             return;
         }
+    }
 
-        // Movement Logic
+    private void Move()
+    {
         float _horizontal = Input.GetAxis("Horizontal");
         float _vertical = Input.GetAxis("Vertical");
         Vector3 cameraForward = _cameraTransform.forward;
@@ -90,31 +103,36 @@ public class Movement : MonoBehaviour
         Vector3 _move = _direction * _currentSpeed * Time.deltaTime;
         _move.y = _verticalVelocity * Time.deltaTime;
         _controller.Move(_move);
-
-        // Blocking Strafing logic 1
         if (Input.GetMouseButton(1) && !_isDodging)
         {
             Quaternion _targetRotation = Quaternion.LookRotation(cameraForward, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, _targetRotation, _rotationSpeed * Time.deltaTime);
             _isStrafing = true;
         }
-        else if (_direction != Vector3.zero && !_isAttacking && !_isShooting)
+        else if (_direction != Vector3.zero && !_isAttacking && !_isShooting && !_isThrowing)
         {
             _direction.Normalize();
             Quaternion _targetRotation = Quaternion.LookRotation(_direction);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, _targetRotation, _rotationSpeed * Time.deltaTime);
             _isStrafing = false;
         }
+    }
 
-        // Speed control
+    private void Speed()
+    {
         if (!_isSlowed) _currentSpeed = _isRunning ? _runSpeed : _speed;
         else _currentSpeed = _slowSpeed;
+    }
 
-        // Walking and running state
+    private void MoveState()
+    {
         _isWalking = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
-        _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1) && !_isAttacking && !_isShooting && !_isEating && !_inventory.GetIsSwitching();
+        _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1) 
+            && !_isAttacking && !_isShooting && !_isEating && !_isThrowing && !_inventory.GetIsSwitching();
+    }
 
-        // Jumping logic
+    private void Jump()
+    {
         _isGrounded = _controller.isGrounded;
         if (_isGrounded && !_isDodging)
         {
@@ -122,9 +140,11 @@ public class Movement : MonoBehaviour
             else _verticalVelocity = -0.5f;
         }
         else _verticalVelocity += _gravity * Time.deltaTime;
+    }
 
-        // Dodge Roll logic 2
-        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing && !_isEating && !_inventory.GetIsSwitching())
+    private void StartDodgeRoll()
+    {
+        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing && !_isEating && !_isThrowing && !_inventory.GetIsSwitching())
         {
             _isDodging = true;
             _dodgeRollTime = Time.time + _dodgeRollDuration;
@@ -132,8 +152,10 @@ public class Movement : MonoBehaviour
             _onDodgeEvt.Invoke();
             _health.Invulnerable(true);
         }
+    }
 
-        // Animator updates
+    private void Animatorr()
+    {
         _animator.SetBool("_isWalking", _isWalking);
         _animator.SetBool("_isRunning", _isRunning);
         _animator.SetBool("_isDodging", _isDodging);
@@ -141,24 +163,20 @@ public class Movement : MonoBehaviour
         _animator.SetBool("_isShooting", _isShooting);
         _animator.SetBool("_isAttacking", _isAttacking);
         _animator.SetBool("_isEating", _isEating);
+        _animator.SetBool("_isThrowing", _isThrowing);
         _animator.SetInteger("_combo", _comboIndex);
         _animator.SetBool("_isSwitching", _inventory.GetIsSwitching());
     }
     #endregion
 
     #region Public Functions
-    public bool GetIsGrounded() { return _isGrounded; }
-    public bool GetIsWalking() { return _isWalking; }
-    public bool GetIsRunning() { return _isRunning; }
-    public bool GetIsSlowed() { return _isSlowed; }
-    public bool GetIsDodging() { return _isDodging; }
-    public bool GetIsStrafing() { return _isStrafing; }
-    public bool GetIsAttacking() { return _isAttacking; }
-    public bool GetIsShooting() { return _isShooting; }
-    public bool GetIsEating() { return _isEating; }
-    public void SetAttacking(bool _boolean) {  _isAttacking = _boolean; }
-    public void SetShooting(bool _boolean) { _isShooting = _boolean; }
-    public void SetEating(bool _boolean) { _isEating = _boolean; }
+    public bool GetIsGrounded() { return _isGrounded; } public bool GetIsWalking() { return _isWalking; }
+    public bool GetIsRunning() { return _isRunning; } public bool GetIsSlowed() { return _isSlowed; }
+    public bool GetIsDodging() { return _isDodging; } public bool GetIsStrafing() { return _isStrafing; }
+    public bool GetIsAttacking() { return _isAttacking; } public bool GetIsShooting() { return _isShooting; }
+    public bool GetIsEating() { return _isEating; } public bool GetIsThrowing() { return _isThrowing; }
+    public void SetAttacking(bool _boolean) {  _isAttacking = _boolean; } public void SetShooting(bool _boolean) { _isShooting = _boolean; }
+    public void SetEating(bool _boolean) { _isEating = _boolean; } public void SetThrowing(bool _boolean) { _isThrowing = _boolean; }
     public void SetSpeed(float _newSpeed) { _speed = _newSpeed; _currentSpeed = _newSpeed; _slowSpeed = _newSpeed / 2; _runSpeed = _newSpeed * 4.0f; }
     public void SetJumpHeight(float _newJumpHeight) { _jumpHeight = _newJumpHeight;}
     public void SetGravity(float _newGravity) { _gravity = _newGravity; }

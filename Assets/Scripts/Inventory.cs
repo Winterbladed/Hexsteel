@@ -90,8 +90,7 @@ public class Inventory : MonoBehaviour
             _item2.SetActive(false);
         _currentHeldItem = _item;
         _item.SetActive(true);
-        _movement.SetAttacking(false);
-        _movement.SetShooting(false);
+        ResetBool();
     }
 
     private void DropItem()
@@ -120,8 +119,7 @@ public class Inventory : MonoBehaviour
             GameObject _newItem = Instantiate(_item, _hands);
             _inventory.Add(_newItem);
             SwitchToItem(_newItem);
-            _movement.SetAttacking(false);
-            _movement.SetShooting(false);
+            ResetBool();
         }
     }
 
@@ -140,9 +138,7 @@ public class Inventory : MonoBehaviour
         Instantiate(_currentHeldItem.GetComponent<Item>()._Item, _hands.position, _hands.rotation);
         if (_currentHeldItem) Destroy(_currentHeldItem);
         Destroy(_currentHeldItem.GetComponent<Item>()._ItemIcon);
-        _movement.SetAttacking(false);
-        _movement.SetShooting(false);
-        _movement.SetEating(false);
+        ResetBool();
     }
 
     public void UseItem()
@@ -158,13 +154,19 @@ public class Inventory : MonoBehaviour
         _inventory.Remove(_itemToDrop);
         if (_currentHeldItem) Destroy(_currentHeldItem);
         Destroy(_currentHeldItem.GetComponent<Item>()._ItemIcon);
-        _movement.SetAttacking(false);
-        _movement.SetShooting(false);
+        ResetBool();
     }
 
     public bool GetIsSwitching() { return _isSwitching; }
     public List<GameObject> GetInventory() { return _inventory; }
     public List<GameObject> GetInventory1() { return _inventory1; }
     public void SetInventory1(List<GameObject> _savedInventory) {  _inventory1 = _savedInventory; } 
+    public void ResetBool()
+    {
+        _movement.SetAttacking(false);
+        _movement.SetShooting(false);
+        _movement.SetEating(false);
+        _movement.SetThrowing(false);
+    }
     #endregion
 }

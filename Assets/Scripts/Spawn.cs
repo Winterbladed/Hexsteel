@@ -34,5 +34,10 @@ public class Spawn : MonoBehaviour
     {
         Instantiate(_spawn[_index], _transform.position, _transform.rotation);
     }
+
+    public void Spawning4(int _index)
+    {
+        Instantiate(_spawn[_index], _transform.position + _addToVector, GetComponentInParent<Player>().transform.rotation);
+    }
     #endregion
 }
