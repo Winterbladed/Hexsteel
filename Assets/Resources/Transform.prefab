@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7093925162610025372}
   - component: {fileID: 8282632908251855184}
   m_Layer: 0
-  m_Name: Nozzle
+  m_Name: Transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
