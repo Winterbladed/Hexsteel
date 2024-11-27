@@ -10,7 +10,7 @@ ModelImporter:
       name: shotgun1
     second: {fileID: 2100000, guid: 0f46672af2807164eb368aa05d77b0db, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

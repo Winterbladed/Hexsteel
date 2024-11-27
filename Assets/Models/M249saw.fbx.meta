@@ -15,7 +15,7 @@ ModelImporter:
       name: Scope
     second: {fileID: 2100000, guid: b0663f23ae039304caa01e82c41d2462, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

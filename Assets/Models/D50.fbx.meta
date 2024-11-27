@@ -10,7 +10,7 @@ ModelImporter:
       name: pistol2
     second: {fileID: 2100000, guid: f1845cff024a52d45af200144ae28a85, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

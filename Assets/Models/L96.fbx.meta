@@ -10,7 +10,7 @@ ModelImporter:
       name: sniper1
     second: {fileID: 2100000, guid: 2e073f2966737bc45b51339f34c6d269, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

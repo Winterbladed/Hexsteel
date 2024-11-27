@@ -10,7 +10,7 @@ ModelImporter:
       name: assault4
     second: {fileID: 2100000, guid: 6d94b500df346cc4799e83a464b00f62, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
