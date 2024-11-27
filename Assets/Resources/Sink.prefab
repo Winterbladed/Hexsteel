@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5309681031901263479}
   m_Layer: 0
   m_Name: Mid
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 6152063881027993391}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 369914354628979539}
   m_Layer: 0
   m_Name: Faucet
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 2135729449187648690}
   m_Layer: 0
   m_Name: Bowl
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 6614958711464538794}
   m_Layer: 0
   m_Name: Bowl
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 977650363459547139}
   m_Layer: 0
   m_Name: Faucet
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -533,7 +533,7 @@ GameObject:
   - component: {fileID: 2254037461860614963}
   m_Layer: 0
   m_Name: Bowl
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 5399293466013688147}
   m_Layer: 0
   m_Name: Faucet
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -699,7 +699,7 @@ GameObject:
   - component: {fileID: 8729269191051464460}
   m_Layer: 0
   m_Name: Mid
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -782,7 +782,7 @@ GameObject:
   - component: {fileID: 6137472512163920188}
   m_Layer: 0
   m_Name: Faucet
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -865,7 +865,7 @@ GameObject:
   - component: {fileID: 6277880007538428576}
   m_Layer: 0
   m_Name: Drain
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -948,7 +948,7 @@ GameObject:
   - component: {fileID: 4313978159997985023}
   m_Layer: 0
   m_Name: Faucet
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1031,7 +1031,7 @@ GameObject:
   - component: {fileID: 325475750375316541}
   m_Layer: 0
   m_Name: Bowl
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1114,7 +1114,7 @@ GameObject:
   - component: {fileID: 6607009834555426809}
   m_Layer: 0
   m_Name: Bowl
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1197,7 +1197,7 @@ GameObject:
   - component: {fileID: 6370060259957377295}
   m_Layer: 0
   m_Name: Bowl
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1280,7 +1280,7 @@ GameObject:
   - component: {fileID: 5913154571854056526}
   m_Layer: 0
   m_Name: Bowl
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1363,7 +1363,7 @@ GameObject:
   - component: {fileID: 4031133304673861378}
   m_Layer: 0
   m_Name: Water
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1446,7 +1446,7 @@ GameObject:
   - component: {fileID: 5302433280993825731}
   m_Layer: 0
   m_Name: Faucet
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1531,7 +1531,7 @@ GameObject:
   - component: {fileID: 6152810359937537468}
   m_Layer: 0
   m_Name: Sink
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1762,7 +1762,7 @@ GameObject:
   - component: {fileID: 5212872795697252920}
   m_Layer: 0
   m_Name: Faucet
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1845,7 +1845,7 @@ GameObject:
   - component: {fileID: 7596384919890097832}
   m_Layer: 0
   m_Name: Bowl
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1928,7 +1928,7 @@ GameObject:
   - component: {fileID: 6112485432687740358}
   m_Layer: 0
   m_Name: Faucet
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

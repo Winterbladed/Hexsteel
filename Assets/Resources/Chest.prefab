@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3316433876463306244}
   m_Layer: 0
   m_Name: Container
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 8523775511523076638}
   m_Layer: 0
   m_Name: Rim
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 192571735547284823}
   m_Layer: 0
   m_Name: Lid
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 1931984424775577486}
   m_Layer: 0
   m_Name: Container
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -599,7 +599,7 @@ GameObject:
   - component: {fileID: 705350919915965854}
   m_Layer: 0
   m_Name: Container
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 800065792944611750}
   m_Layer: 0
   m_Name: Container
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -806,7 +806,7 @@ GameObject:
   - component: {fileID: 2468181416798109982}
   m_Layer: 0
   m_Name: Transform
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -839,7 +839,7 @@ GameObject:
   - component: {fileID: 1328045432278899233}
   m_Layer: 0
   m_Name: Rim
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -922,7 +922,7 @@ GameObject:
   - component: {fileID: 7592957365345442200}
   m_Layer: 0
   m_Name: Rim
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1003,7 +1003,7 @@ GameObject:
   - component: {fileID: 4570083775610203730}
   m_Layer: 0
   m_Name: Pivot
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 3111378132261612547}
   m_Layer: 0
   m_Name: Rim
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1120,7 +1120,7 @@ GameObject:
   - component: {fileID: 8911203738308972450}
   m_Layer: 0
   m_Name: Lock
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
@@ -1201,7 +1201,7 @@ GameObject:
   - component: {fileID: 1948026591510401415}
   m_Layer: 0
   m_Name: Chest
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1246,7 +1246,7 @@ GameObject:
   - component: {fileID: 7367244486073503466}
   m_Layer: 0
   m_Name: Container
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

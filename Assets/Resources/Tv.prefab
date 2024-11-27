@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 202101635405988394}
   m_Layer: 0
   m_Name: Screen
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 6964547727071667789}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 4809816087810781758}
   m_Layer: 0
   m_Name: Backface
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 2057779682817217636}
   m_Layer: 0
   m_Name: Tv
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 757100032230044877}
   m_Layer: 0
   m_Name: Backface
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

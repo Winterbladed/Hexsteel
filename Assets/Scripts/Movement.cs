@@ -61,17 +61,6 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        UpdateDodgeRoll();
-        Move();
-        Speed();
-        MoveState();
-        Jump();
-        StartDodgeRoll();
-        Animatorr();
-    }
-
-    private void UpdateDodgeRoll()
-    {
         if (_isDodging)
         {
             if (Time.time >= _dodgeRollTime)
@@ -87,10 +76,6 @@ public class Movement : MonoBehaviour
             }
             return;
         }
-    }
-
-    private void Move()
-    {
         float _horizontal = Input.GetAxis("Horizontal");
         float _vertical = Input.GetAxis("Vertical");
         Vector3 cameraForward = _cameraTransform.forward;
@@ -116,23 +101,11 @@ public class Movement : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, _targetRotation, _rotationSpeed * Time.deltaTime);
             _isStrafing = false;
         }
-    }
-
-    private void Speed()
-    {
         if (!_isSlowed) _currentSpeed = _isRunning ? _runSpeed : _speed;
         else _currentSpeed = _slowSpeed;
-    }
-
-    private void MoveState()
-    {
         _isWalking = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
-        _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1) 
+        _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1)
             && !_isAttacking && !_isShooting && !_isEating && !_isThrowing && !_inventory.GetIsSwitching();
-    }
-
-    private void Jump()
-    {
         _isGrounded = _controller.isGrounded;
         if (_isGrounded && !_isDodging)
         {
@@ -140,10 +113,6 @@ public class Movement : MonoBehaviour
             else _verticalVelocity = -0.5f;
         }
         else _verticalVelocity += _gravity * Time.deltaTime;
-    }
-
-    private void StartDodgeRoll()
-    {
         if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing && !_isEating && !_isThrowing && !_inventory.GetIsSwitching())
         {
             _isDodging = true;
@@ -152,10 +121,6 @@ public class Movement : MonoBehaviour
             _onDodgeEvt.Invoke();
             _health.Invulnerable(true);
         }
-    }
-
-    private void Animatorr()
-    {
         _animator.SetBool("_isWalking", _isWalking);
         _animator.SetBool("_isRunning", _isRunning);
         _animator.SetBool("_isDodging", _isDodging);

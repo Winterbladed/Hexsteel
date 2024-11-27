@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1579892791824516421}
   m_Layer: 0
   m_Name: Stone
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 752207752773092086}
   m_Layer: 0
   m_Name: Grave
-  m_TagString: Untagged
+  m_TagString: Soft
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 7741440045583560867}
   m_Layer: 0
   m_Name: Gravestone
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 8346001132712414989}
   m_Layer: 0
   m_Name: Stone
-  m_TagString: Untagged
+  m_TagString: Hard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
