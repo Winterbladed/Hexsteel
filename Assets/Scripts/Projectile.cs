@@ -8,17 +8,10 @@ public class Projectile : Damage
     public Rigidbody _Rigidbody;
     private enum ProjectileVector
     {
-        Straight,
-        Left, Right,
-        Upper, Lower,
-        UpperLeft, UpperRight,
-        LowerRight, LowerLeft
+        Straight, Left, Right, Upper, Lower,
+        UpperLeft, UpperRight, LowerRight, LowerLeft
     }
-    private enum ProjectileType
-    {
-        Normal,
-        Physics
-    }
+    private enum ProjectileType { Normal, Physics }
     [SerializeField] private ProjectileVector _projectileVector;
     [SerializeField] private ProjectileType _projectileType;
     [Range(0.0f, 10000.0f)]
@@ -27,6 +20,7 @@ public class Projectile : Damage
     [Range(0.1f, 5.0f)]
     [SerializeField] protected float _projectileTimer = 2.0f;
     [SerializeField] private UnityEvent _onHitEvt;
+    private bool _isHit = false;
     #endregion
 
     #region Private Function
@@ -52,8 +46,7 @@ public class Projectile : Damage
                 (_projectileVector == ProjectileVector.Lower || _projectileVector == ProjectileVector.LowerLeft || _projectileVector == ProjectileVector.LowerRight) ? -_projectileSpread
                     : ((_projectileVector == ProjectileVector.Upper || _projectileVector == ProjectileVector.UpperLeft || _projectileVector == ProjectileVector.UpperRight) ? _projectileSpread : 0),
                 0
-            ) * _projectileSpeed;
-            _Rigidbody.velocity += transform.forward * _projectileSpeed;
+            ) * _projectileSpeed; _Rigidbody.velocity += transform.forward * _projectileSpeed;
         }
     }
     #endregion
@@ -61,9 +54,12 @@ public class Projectile : Damage
     #region Unity Messages
     private void OnCollisionEnter(Collision _hit)
     {
-        _onHitEvt.Invoke();
-        DealDamage(_hit.gameObject);
-        if (_projectileType == ProjectileType.Normal) Destroy(gameObject);
+        if (!_isHit)
+        {
+            _onHitEvt.Invoke(); DealDamage(_hit.gameObject);
+            if (_projectileType == ProjectileType.Normal) Destroy(gameObject);
+            _isHit = true;
+        }
     }
     #endregion
 }

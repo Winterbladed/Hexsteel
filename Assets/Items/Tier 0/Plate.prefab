@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7717812222624851913}
   - component: {fileID: 4166327184577148809}
+  - component: {fileID: 7664886733507489963}
+  - component: {fileID: 9084141112108242827}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -52,6 +54,49 @@ MonoBehaviour:
   _Item: {fileID: 2895448722202950775, guid: 6003246bf37d11443a1ac0c6e9c26462, type: 3}
   _ItemIcon: {fileID: 3240355216110004441, guid: 3432350285a62474798f17614d0e5149,
     type: 3}
+--- !u!114 &7664886733507489963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895448722202950775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e4e24aad54761479bd17b753b5270c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onThrowEvt:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9084141112108242827}
+        m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
+        m_MethodName: Spawning4
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9084141112108242827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895448722202950775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7627f8f06be8fcd4c871a1008c33eb89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _addToVector: {x: 0, y: 1, z: 0}
+  _spawn:
+  - {fileID: 6207323861454628167, guid: 042b74d9e8ed79445a4517aa91fdd449, type: 3}
+  _transform: {fileID: 7717812222624851913}
 --- !u!1001 &3555177355846670556
 PrefabInstance:
   m_ObjectHideFlags: 0
