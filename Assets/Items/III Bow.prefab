@@ -75,7 +75,7 @@ MonoBehaviour:
   _CriticalChance: 0.2
   _StatusChance: 0.4
   _StatusDamage: 1
-  _StatusTimer: 5
+  _StatusTimer: 20
   _StatusTicker: 1
   _textEvent: {fileID: 1221176511195950987}
   _trail: {fileID: 6780035909493055876}

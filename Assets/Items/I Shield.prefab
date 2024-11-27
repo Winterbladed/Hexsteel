@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DamageType: 4
-  _Damage: 1
+  _Damage: 2
   _CriticalDamage: 0
   _CriticalChance: 0
   _StatusChance: 0.1
@@ -78,7 +78,7 @@ MonoBehaviour:
   _StatusTicker: 1
   _textEvent: {fileID: 5696708274737817639}
   _trail: {fileID: 1626677003590174733}
-  _radius: 0.5
+  _radius: 1
   _distance: 2
   _comboIndexes: 2
   _onAttack:
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioSource: {fileID: -4342595914582855027}
   _audioClip:
-  - {fileID: 8300000, guid: f44e88471a6b0db499dd364847f4202e, type: 3}
+  - {fileID: 8300000, guid: b3daf729b0392e2449120b09ca3bd864, type: 3}
 --- !u!114 &5696708274737817639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,7 +140,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

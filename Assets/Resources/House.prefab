@@ -92,6 +92,8 @@ Transform:
   - {fileID: 4113860402601291698}
   - {fileID: 7166099988654755925}
   - {fileID: 4250287704003317963}
+  - {fileID: 5751450021147719946}
+  - {fileID: 7350975919272501934}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6289264750654136276
@@ -1094,6 +1096,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 919611201820669261}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &943720681165079911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7230968829178226680}
+    m_Modifications:
+    - target: {fileID: 2895448722202950775, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_Name
+      value: Pot Loot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.21625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.4436846
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 644c541d9accd924682463ffc6856c34, type: 3}
+--- !u!4 &7350975919272501934 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+    type: 3}
+  m_PrefabInstance: {fileID: 943720681165079911}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1003520349449769832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1833,6 +1909,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8111695449054048359, guid: a5f65babd5bd1a447bce8d336c432b95,
     type: 3}
   m_PrefabInstance: {fileID: 2639598849879434333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2651050083173588675
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7230968829178226680}
+    m_Modifications:
+    - target: {fileID: 2895448722202950775, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_Name
+      value: Pot Loot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.9606194
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.055999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.075171
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 644c541d9accd924682463ffc6856c34, type: 3}
+--- !u!4 &5751450021147719946 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7717812222624851913, guid: 644c541d9accd924682463ffc6856c34,
+    type: 3}
+  m_PrefabInstance: {fileID: 2651050083173588675}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2770506931288080723
 PrefabInstance:

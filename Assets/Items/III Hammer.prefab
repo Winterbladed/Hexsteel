@@ -69,11 +69,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DamageType: 3
-  _Damage: 4
+  _Damage: 8
   _CriticalDamage: 16
   _CriticalChance: 0.6
   _StatusChance: 0.4
-  _StatusDamage: 30
+  _StatusDamage: 40
   _StatusTimer: 1
   _StatusTicker: 1
   _textEvent: {fileID: 8056401231045807707}

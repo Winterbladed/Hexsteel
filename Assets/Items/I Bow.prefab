@@ -74,7 +74,7 @@ MonoBehaviour:
   _CriticalDamage: 1
   _CriticalChance: 0
   _StatusChance: 0.1
-  _StatusDamage: 1
+  _StatusDamage: 0
   _StatusTimer: 5
   _StatusTicker: 1
   _textEvent: {fileID: 1221176511195950987}
