@@ -188,7 +188,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6850003329806802043}
-  - component: {fileID: -2954940723992427985}
   - component: {fileID: 4373988479285811185}
   - component: {fileID: 7946265081214565673}
   - component: {fileID: -6454715108575895444}
@@ -203,7 +202,6 @@ GameObject:
   - component: {fileID: 2327133035627195405}
   - component: {fileID: 6148452949796029911}
   - component: {fileID: 4279612442763214194}
-  - component: {fileID: 7723190460341132610}
   m_Layer: 0
   m_Name: Rat Boss 3
   m_TagString: Untagged
@@ -229,45 +227,6 @@ Transform:
   - {fileID: 2217942008402102472}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-2954940723992427985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5378749433377581758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b12d0e34500f8a4e869f46a030e1759, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _DamageType: 0
-  _Damage: 60
-  _CriticalDamage: 1
-  _CriticalChance: 0
-  _StatusChance: 0
-  _StatusDamage: 0
-  _StatusTimer: 0
-  _StatusTicker: 0
-  _textEvent: {fileID: 4373988479285811185}
-  _target: {fileID: 0}
-  _agent: {fileID: 2327133035627195405}
-  _moveSpeed: 2
-  _attackSpeed: 2
-  _attackRange: 8
-  _aggroRange: 12
-  _aggroBuffer: 0
-  _onAttackEvt:
-    m_PersistentCalls:
-      m_Calls: []
-  _animator: {fileID: 8708008158382505227}
-  _rangedObject: {fileID: 6207323861454628167, guid: 4e414271ce99b0b4897e1b6fce1794e7,
-    type: 3}
-  _rangedObjectSpawn: {fileID: 0}
-  _attackSpeed1: 2
-  _onAttackEvt1:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &4373988479285811185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,9 +317,9 @@ MonoBehaviour:
   _DuringDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -2954940723992427985}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
+      - m_Target: {fileID: 5378749433377581758}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -406,7 +365,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7723190460341132610}
+      - m_Target: {fileID: 8566765487545582618}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -495,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 7723190460341132610}
+  _audioSource: {fileID: 8566765487545582618}
   _audioClip:
   - {fileID: 8300000, guid: b3daf729b0392e2449120b09ca3bd864, type: 3}
   - {fileID: 8300000, guid: 9b6af90343d54054093c0c858fb4e13f, type: 3}
@@ -514,7 +473,7 @@ MonoBehaviour:
   _statusName: Slow
   _statusVfx: {fileID: 3701777737616026149}
   _textEvent: {fileID: 4373988479285811185}
-  _enemy: {fileID: -2954940723992427985}
+  _enemy: {fileID: 0}
 --- !u!114 &8735027199343730721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,7 +521,7 @@ MonoBehaviour:
   _statusName: Weaken
   _statusVfx: {fileID: 1741778240297554907}
   _textEvent: {fileID: 4373988479285811185}
-  _damage: {fileID: -2954940723992427985}
+  _damage: {fileID: 0}
 --- !u!195 &2327133035627195405
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -635,102 +594,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!82 &7723190460341132610
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5378749433377581758}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5980e1ae4e26a1948a7c688e7383c093, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.7
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &6155813833115610583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,6 +1111,12 @@ PrefabInstance:
 --- !u!4 &2074507231035340921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8022503479182772171, guid: 5e59878b11d7cc54180dd6a693364907,
+    type: 3}
+  m_PrefabInstance: {fileID: 8331528731211431858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &8566765487545582618 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 395413996840844200, guid: 5e59878b11d7cc54180dd6a693364907,
     type: 3}
   m_PrefabInstance: {fileID: 8331528731211431858}
   m_PrefabAsset: {fileID: 0}

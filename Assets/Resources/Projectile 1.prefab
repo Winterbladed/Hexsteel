@@ -61,7 +61,9 @@ MonoBehaviour:
   _textEvent: {fileID: 7647341100105220415}
   _Rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 0
+  _projectileType: 0
   _projectileSpeed: 15
+  _projectileSpread: 0
   _projectileTimer: 5
   _onHitEvt:
     m_PersistentCalls:
