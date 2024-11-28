@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3124929156270156327}
   - component: {fileID: 7513214529617963163}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 7689277554026376455}
   - component: {fileID: 8488117390242215566}
   m_Layer: 0
-  m_Name: Cloth
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 5507614052088088842}
   - component: {fileID: 52137389347590205}
   m_Layer: 0
-  m_Name: Cloth
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 789402091089553274}
   - component: {fileID: 8052098556414772896}
   m_Layer: 0
-  m_Name: Cloth
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 6262943909113373193}
   - component: {fileID: 6686847551332860434}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 6338328463371090589}
   - component: {fileID: 8471715628870799247}
   m_Layer: 0
-  m_Name: Cloth
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 7237139178938815348}
   - component: {fileID: 3850100757651852140}
   m_Layer: 0
-  m_Name: Line
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -934,7 +934,7 @@ GameObject:
   - component: {fileID: 965392531245198998}
   - component: {fileID: 7886208786524574047}
   m_Layer: 0
-  m_Name: Cloth
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1062,7 +1062,7 @@ GameObject:
   - component: {fileID: 9112379194061975260}
   - component: {fileID: 181685941412590114}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1145,7 +1145,7 @@ GameObject:
   - component: {fileID: 8801236880521820862}
   - component: {fileID: 6895305076330194120}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1228,7 +1228,7 @@ GameObject:
   - component: {fileID: 8164712400298248201}
   - component: {fileID: 1376534443954724409}
   m_Layer: 0
-  m_Name: Cloth
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1356,7 +1356,7 @@ GameObject:
   - component: {fileID: 3715813280618719363}
   - component: {fileID: 3491963552748437481}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1439,7 +1439,7 @@ GameObject:
   - component: {fileID: 8313487274486845731}
   - component: {fileID: 5999910496667583459}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

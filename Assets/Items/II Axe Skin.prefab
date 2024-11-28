@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4342618030355373176}
   - component: {fileID: 4678835245263224392}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 2130678088244370145}
   - component: {fileID: 6653892248122632294}
   m_Layer: 0
-  m_Name: Cloth
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 5042024883189201880}
   - component: {fileID: 1998724084481637598}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 7119101634061080003}
   - component: {fileID: 6421693377817933345}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -575,7 +575,7 @@ GameObject:
   - component: {fileID: 3745627129585391383}
   - component: {fileID: 4145629428463162306}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 4937371559335421283}
   - component: {fileID: 3583348285486247391}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -741,7 +741,7 @@ GameObject:
   - component: {fileID: 4149855578518887655}
   - component: {fileID: 2532586491228506059}
   m_Layer: 0
-  m_Name: Cloth
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -869,7 +869,7 @@ GameObject:
   - component: {fileID: 4090268758039216876}
   - component: {fileID: 2275697262184012749}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -952,7 +952,7 @@ GameObject:
   - component: {fileID: 8801236880521820862}
   - component: {fileID: 6895305076330194120}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

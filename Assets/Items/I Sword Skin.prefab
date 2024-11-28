@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5011121878046320173}
   - component: {fileID: 3841156618880764650}
   m_Layer: 0
-  m_Name: Blade
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 8801236880521820862}
   - component: {fileID: 6895305076330194120}
   m_Layer: 0
-  m_Name: Handle
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 3718738466327456410}
   - component: {fileID: 4433888222714436399}
   m_Layer: 0
-  m_Name: Guard
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
