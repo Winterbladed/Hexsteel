@@ -26,11 +26,6 @@ public class Inventory : MonoBehaviour
     private int _currentHeldItemID;
     private int _inventoryIndex = 0;
 
-    [Header("Inventory Events")]
-    [SerializeField] private UnityEvent _onGetEvt;
-    [SerializeField] private UnityEvent _onSwitchEvt;
-    [SerializeField] private UnityEvent _onDropEvt;
-
     [Header("Other References")]
     [SerializeField] private Movement _movement;
     private InventoryUI _inventoryUI;
@@ -64,7 +59,6 @@ public class Inventory : MonoBehaviour
         else _switchTime = 0.0f;
         if (_switchTime > 0.5f)
         {
-            _onSwitchEvt.Invoke();
             SwitchToItem(_inventory[_inventoryIndex]);
             _switchTime = 0.0f;
             _isSwitching = false;
@@ -115,7 +109,6 @@ public class Inventory : MonoBehaviour
     {
         if (_inventory.Count < _inventorySlots && !_isSwitching)
         {
-            _onGetEvt.Invoke();
             GameObject _newItem = Instantiate(_item, _hands);
             _inventory.Add(_newItem);
             SwitchToItem(_newItem);
@@ -125,7 +118,6 @@ public class Inventory : MonoBehaviour
 
     public void DropCurrentHeldItemFromInventory()
     {
-        _onDropEvt.Invoke();
         if (!_currentHeldItem) return;
         foreach (GameObject _item2 in _inventory)
         {

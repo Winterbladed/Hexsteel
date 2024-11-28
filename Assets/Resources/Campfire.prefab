@@ -892,7 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb82c02b3c761a749a9a09a038452841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InteractMessage: '[E] Light Campfire'
+  _InteractMessage: '[E] Use Campfire'
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls:
