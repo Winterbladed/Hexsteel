@@ -56,7 +56,7 @@ public class Movement : MonoBehaviour
     {
         _currentSpeed = _speed;
         _slowSpeed = _speed / 2.0f;
-        _runSpeed = _speed * 2.0f;
+        _runSpeed = _speed * 2.5f;
     }
 
     private void Update()
