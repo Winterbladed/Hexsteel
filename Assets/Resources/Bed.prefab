@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2749352441836032309}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 7173960274534138033}
   m_Layer: 0
   m_Name: Frame
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 2418274767201723548}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 7609787083983239491}
   m_Layer: 0
   m_Name: Bed
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 4779366401075092451}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 4359741208211904879}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -593,7 +593,7 @@ GameObject:
   - component: {fileID: 5878105297569518925}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 4001573510741509321}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -803,7 +803,7 @@ GameObject:
   - component: {fileID: 7931100013556459233}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -908,7 +908,7 @@ GameObject:
   - component: {fileID: 4463211529575712474}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1013,7 +1013,7 @@ GameObject:
   - component: {fileID: 172943790984074177}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1118,7 +1118,7 @@ GameObject:
   - component: {fileID: 964061328928262203}
   m_Layer: 0
   m_Name: Frame
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1223,7 +1223,7 @@ GameObject:
   - component: {fileID: 5352633604325690698}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1328,7 +1328,7 @@ GameObject:
   - component: {fileID: 2559562829859817412}
   m_Layer: 0
   m_Name: Frame
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1433,7 +1433,7 @@ GameObject:
   - component: {fileID: 7677336435639253416}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1538,7 +1538,7 @@ GameObject:
   - component: {fileID: 1759874867373909010}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1643,7 +1643,7 @@ GameObject:
   - component: {fileID: 92681006315026399}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1748,7 +1748,7 @@ GameObject:
   - component: {fileID: 3083242295999958894}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1853,7 +1853,7 @@ GameObject:
   - component: {fileID: 5933118543640809962}
   m_Layer: 0
   m_Name: Mattress
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1958,7 +1958,7 @@ GameObject:
   - component: {fileID: 8641822152736135148}
   m_Layer: 0
   m_Name: Frame
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2063,7 +2063,7 @@ GameObject:
   - component: {fileID: 7057743749410067509}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2168,7 +2168,7 @@ GameObject:
   - component: {fileID: 3927755580294306124}
   m_Layer: 0
   m_Name: Frame
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2273,7 +2273,7 @@ GameObject:
   - component: {fileID: 6631795877767100738}
   m_Layer: 0
   m_Name: Pillow
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2378,7 +2378,7 @@ GameObject:
   - component: {fileID: 2592074972157685219}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

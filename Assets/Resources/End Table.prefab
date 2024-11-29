@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2658236086901803033}
   m_Layer: 0
   m_Name: Drawer
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 608543647156905896}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 3197752329921926831}
   m_Layer: 0
   m_Name: Drawer
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 4511711539750284417}
   m_Layer: 0
   m_Name: Handle
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 481154555928350052}
   m_Layer: 0
   m_Name: End Table
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 7257573673480045293}
   m_Layer: 0
   m_Name: Handle
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

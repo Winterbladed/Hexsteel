@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4470168411220198381}
   m_Layer: 0
   m_Name: Steps
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 8000961343377781902}
   m_Layer: 0
   m_Name: Steps
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 5942430279579620726}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 7167674685787976446}
   m_Layer: 0
   m_Name: Steps
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 8952880602737119946}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 770020510628552731}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 4055696204483020758}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 7638504977552759025}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 1151911989176575748}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -647,7 +647,7 @@ GameObject:
   - component: {fileID: 8121076097346315279}
   m_Layer: 0
   m_Name: Steps
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 2429043386660565762}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -803,7 +803,7 @@ GameObject:
   - component: {fileID: 7211158963799939898}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 1596050889667927854}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 4583174860636762848}
   m_Layer: 0
   m_Name: Steps
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1014,7 +1014,7 @@ GameObject:
   - component: {fileID: 8317436277670375764}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 5451946693170977285}
   m_Layer: 0
   m_Name: Steps 1
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1122,7 +1122,7 @@ GameObject:
   - component: {fileID: 8978429196707946350}
   m_Layer: 0
   m_Name: Steps
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1224,7 +1224,7 @@ GameObject:
   - component: {fileID: 1265557685459594490}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

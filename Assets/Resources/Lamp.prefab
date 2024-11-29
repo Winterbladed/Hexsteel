@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 556938559737804201}
   m_Layer: 0
   m_Name: Lamp
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 6079857323381553439}
   m_Layer: 0
   m_Name: Light
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 2380760509760335594}
   m_Layer: 0
   m_Name: Line
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 8056286607358162735}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 8383634310666818032}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

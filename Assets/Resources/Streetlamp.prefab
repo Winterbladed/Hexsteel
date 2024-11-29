@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1357233817538555478}
   m_Layer: 0
   m_Name: Spotlight
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 7499602325400752087}
   m_Layer: 0
   m_Name: Handle
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 7399055224498858026}
   m_Layer: 0
   m_Name: Post
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 6207920755425392764}
   m_Layer: 0
   m_Name: Light
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 3475980296782617414}
   m_Layer: 0
   m_Name: Post
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 240003755261829097}
   m_Layer: 0
   m_Name: Post
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 6702029532489959392}
   m_Layer: 0
   m_Name: Handle
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 6313319386953842474}
   m_Layer: 0
   m_Name: Handle
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 4813927983756136180}
   m_Layer: 0
   m_Name: Streetlamp
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -773,7 +773,7 @@ GameObject:
   - component: {fileID: 6189244349980917533}
   m_Layer: 0
   m_Name: Handle
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 7060937043256381795}
   m_Layer: 0
   m_Name: Post
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

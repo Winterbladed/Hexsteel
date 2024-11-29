@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5505135046637285133}
   m_Layer: 0
   m_Name: Knob
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 1796081692009262474}
   m_Layer: 0
   m_Name: Knob
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 7665693811747333790}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 4735186671119908066}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

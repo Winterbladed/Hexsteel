@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 445265015113071624}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 6907924242060407006}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 6219472857896411764}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 6798401659437866612}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 4146045305369046303}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 241143121145753428}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 262176487540367193}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 3362931781389158273}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 595908298202992055}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 3026567931431568927}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 2007370139672283899}
   m_Layer: 0
   m_Name: Top
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 2155338460034890312}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 2857788323887512807}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 6066797705468110579}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1175,7 +1175,7 @@ GameObject:
   - component: {fileID: 9002979824904379380}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1258,7 +1258,7 @@ GameObject:
   - component: {fileID: 1766168997926361869}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1341,7 +1341,7 @@ GameObject:
   - component: {fileID: 5504744887085964167}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1427,7 +1427,7 @@ GameObject:
   - component: {fileID: 8071992689271872600}
   m_Layer: 0
   m_Name: Table
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

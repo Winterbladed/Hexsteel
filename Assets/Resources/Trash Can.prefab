@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8406347121352876677}
   m_Layer: 0
   m_Name: Trash Lid
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 7253125045311722008}
   m_Layer: 0
   m_Name: Trash Lid
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 6810195002443739754}
   m_Layer: 0
   m_Name: Trash Pivot
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 9218961407737016380}
   m_Layer: 0
   m_Name: Trash
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 2770555437900451577}
   m_Layer: 0
   m_Name: Trash Can
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 5517755110635431134}
   m_Layer: 0
   m_Name: Trash Can
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -686,7 +686,7 @@ GameObject:
   - component: {fileID: 5159983519197311610}
   m_Layer: 0
   m_Name: Trash Can
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 8614258003039560042}
   m_Layer: 0
   m_Name: Trash Can
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 4098847550297039623}
   m_Layer: 0
   m_Name: Trash Lid
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 5388221939484135693}
   m_Layer: 0
   m_Name: Trash Can
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1081,7 +1081,7 @@ GameObject:
   - component: {fileID: 3727366630787404900}
   m_Layer: 0
   m_Name: Trash Can
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

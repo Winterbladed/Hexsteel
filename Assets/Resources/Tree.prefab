@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3428598602003608270}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4418647067167080611}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 3607718219571684979}
   m_Layer: 0
   m_Name: Trunk
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 5567848273624452471}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 5460162135848876961}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 6700036763259044273}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 7528701235987182443}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 5293275968686716524}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 1898325076594348380}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 3356445489712270596}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 3322524401252209858}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 818668291707694795}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 7054428021347524258}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 4353826827568468029}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1175,7 +1175,7 @@ GameObject:
   - component: {fileID: 1096912495261525169}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1258,7 +1258,7 @@ GameObject:
   - component: {fileID: 4519243670638166459}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1341,7 +1341,7 @@ GameObject:
   - component: {fileID: 1599195590647034901}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1424,7 +1424,7 @@ GameObject:
   - component: {fileID: 8773482679787266730}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1507,7 +1507,7 @@ GameObject:
   - component: {fileID: 8081038568227982792}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1590,7 +1590,7 @@ GameObject:
   - component: {fileID: 1538161183119923090}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 8982968168123246381}
   m_Layer: 0
   m_Name: Trunk
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1778,7 +1778,7 @@ GameObject:
   - component: {fileID: 3355923855347778214}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1861,7 +1861,7 @@ GameObject:
   - component: {fileID: 4318941930558788678}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1944,7 +1944,7 @@ GameObject:
   - component: {fileID: 1134408646285211694}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2027,7 +2027,7 @@ GameObject:
   - component: {fileID: 4145720463160720740}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2110,7 +2110,7 @@ GameObject:
   - component: {fileID: 9096985917853778513}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2193,7 +2193,7 @@ GameObject:
   - component: {fileID: 4359735284068114587}
   m_Layer: 0
   m_Name: Trunk
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2276,7 +2276,7 @@ GameObject:
   - component: {fileID: 2599600795626001934}
   m_Layer: 0
   m_Name: Trunk
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2359,7 +2359,7 @@ GameObject:
   - component: {fileID: 644380865542752074}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2442,7 +2442,7 @@ GameObject:
   - component: {fileID: 4070429884630157942}
   m_Layer: 0
   m_Name: Leaves
-  m_TagString: Soft
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2523,7 +2523,7 @@ GameObject:
   - component: {fileID: 5940452062530137236}
   m_Layer: 0
   m_Name: Tree
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

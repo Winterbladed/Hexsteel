@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7581889964053198362}
   m_Layer: 0
   m_Name: Mid
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 1655627433581786964}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 4645155128020436389}
   m_Layer: 0
   m_Name: Water
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 7681309551118188419}
   m_Layer: 0
   m_Name: Toilet
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 7192481447023206710}
   m_Layer: 0
   m_Name: Pivot
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 1433156318291394956}
   m_Layer: 0
   m_Name: Seat
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 9222082651587807826}
   m_Layer: 0
   m_Name: Seat
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 1359531399967214251}
   m_Layer: 0
   m_Name: Mid
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 664803673948461239}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -806,7 +806,7 @@ GameObject:
   - component: {fileID: 5861816399281196714}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 783901047500451865}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 3736339294834583079}
   m_Layer: 0
   m_Name: Cover
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
@@ -1278,7 +1278,7 @@ GameObject:
   - component: {fileID: 694724593103002651}
   m_Layer: 0
   m_Name: Mid
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1383,7 +1383,7 @@ GameObject:
   - component: {fileID: 6406521441405188129}
   m_Layer: 0
   m_Name: Mid Curve
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1488,7 +1488,7 @@ GameObject:
   - component: {fileID: 7033946518844410556}
   m_Layer: 0
   m_Name: Seat
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1593,7 +1593,7 @@ GameObject:
   - component: {fileID: 967923397066220025}
   m_Layer: 0
   m_Name: Mid
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1701,7 +1701,7 @@ GameObject:
   - component: {fileID: 8210293044364044306}
   m_Layer: 0
   m_Name: Flush
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
@@ -1961,7 +1961,7 @@ GameObject:
   - component: {fileID: 9190419113662513700}
   m_Layer: 0
   m_Name: Seat
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2066,7 +2066,7 @@ GameObject:
   - component: {fileID: 6207026299068862604}
   m_Layer: 0
   m_Name: Store
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

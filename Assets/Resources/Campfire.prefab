@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 1848387101463241413}
   m_Layer: 0
   m_Name: Plank
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 2135702431360754331}
   m_Layer: 0
   m_Name: Plank
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 7114245935845758106}
   m_Layer: 0
   m_Name: Plank
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1028,7 +1028,7 @@ GameObject:
   - component: {fileID: 8730081246540916815}
   m_Layer: 0
   m_Name: Plank
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8635310131179489610}
   m_Layer: 0
   m_Name: Cook
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 2050967321674391339}
   m_Layer: 0
   m_Name: Main
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 956019736641524695}
   m_Layer: 0
   m_Name: Cook
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 1837918213138254555}
   m_Layer: 0
   m_Name: Buttons
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 5313530755547003675}
   m_Layer: 0
   m_Name: Stove
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 7427019067445084810}
   m_Layer: 0
   m_Name: Cook
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 4003784344664258069}
   m_Layer: 0
   m_Name: Main
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -731,7 +731,7 @@ GameObject:
   - component: {fileID: 7478868888400721406}
   m_Layer: 0
   m_Name: Buttons
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 5463854899082435344}
   m_Layer: 0
   m_Name: Cook
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 1315341272982209638}
   m_Layer: 0
   m_Name: Buttons
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

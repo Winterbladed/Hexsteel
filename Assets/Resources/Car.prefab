@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4059361935695186377}
   m_Layer: 0
   m_Name: Tire
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4432840650646470051}
   m_Layer: 0
   m_Name: Brakelights
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7116791248121814823}
   m_Layer: 0
   m_Name: Windshield
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 5297249584988920356}
   m_Layer: 0
   m_Name: Tire
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 1130839731385933613}
   m_Layer: 0
   m_Name: Brakelights
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 6543132105299290576}
   m_Layer: 0
   m_Name: Tire
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 7174303339318009298}
   m_Layer: 0
   m_Name: Tire
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 8575144899007458908}
   m_Layer: 0
   m_Name: Headlights
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 1239097001304244731}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -731,7 +731,7 @@ GameObject:
   - component: {fileID: 6353315951589192968}
   m_Layer: 0
   m_Name: Tire
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 4844715083633832358}
   m_Layer: 0
   m_Name: Tire
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 7244824937421048276}
   m_Layer: 0
   m_Name: Headlights
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 5757907988632154271}
   m_Layer: 0
   m_Name: Spot Light
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1074,7 +1074,7 @@ GameObject:
   - component: {fileID: 3171364957589992752}
   m_Layer: 0
   m_Name: Tire
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1157,7 +1157,7 @@ GameObject:
   - component: {fileID: 8082729662779670832}
   m_Layer: 0
   m_Name: Tire
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1239,7 +1239,7 @@ GameObject:
   - component: {fileID: 8213271638049429815}
   m_Layer: 0
   m_Name: Spot Light
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1334,7 +1334,7 @@ GameObject:
   - component: {fileID: 6197025271484602068}
   m_Layer: 0
   m_Name: Chasis
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3791051303444724949}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8209348817001166043}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 6753599023873880587}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 2141802946518595805}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 4855012436582777113}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 2098574770749376451}
   m_Layer: 0
   m_Name: Back
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 5212927457900295100}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 4928819709567475746}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 3773725767604585654}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 6911727079088993215}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 7526855473842699761}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 4289577860204337961}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 1985268970945242509}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 8462474803223811487}
   m_Layer: 0
   m_Name: Chair
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1186,7 +1186,7 @@ GameObject:
   - component: {fileID: 3809870128413144272}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 4219215427033509013}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1352,7 +1352,7 @@ GameObject:
   - component: {fileID: 6492619985600109590}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1435,7 +1435,7 @@ GameObject:
   - component: {fileID: 6277829000498513728}
   m_Layer: 0
   m_Name: Back
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1518,7 +1518,7 @@ GameObject:
   - component: {fileID: 6795241666907150379}
   m_Layer: 0
   m_Name: Seat
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1601,7 +1601,7 @@ GameObject:
   - component: {fileID: 3201768411820283417}
   m_Layer: 0
   m_Name: Leg
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

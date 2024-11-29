@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5956730120918117104}
   m_Layer: 0
   m_Name: Side
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 505056360649545630}
   m_Layer: 0
   m_Name: Side
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 2728069073685143704}
   m_Layer: 0
   m_Name: Back
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 4318825367671582527}
   m_Layer: 0
   m_Name: Side
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 8369442746724829270}
   m_Layer: 0
   m_Name: Bookshelf
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 258351776287173687}
   m_Layer: 0
   m_Name: Shelf
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 8548552148073489787}
   m_Layer: 0
   m_Name: Shelf
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -620,7 +620,7 @@ GameObject:
   - component: {fileID: 8985275222525374727}
   m_Layer: 0
   m_Name: Shelf
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 4038988739323358158}
   m_Layer: 0
   m_Name: Back
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -809,7 +809,7 @@ GameObject:
   - component: {fileID: 784732821668590966}
   m_Layer: 0
   m_Name: Shelf
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -914,7 +914,7 @@ GameObject:
   - component: {fileID: 3471047344880890906}
   m_Layer: 0
   m_Name: Shelf
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1018,7 +1018,7 @@ GameObject:
   - component: {fileID: 7496314826127226065}
   m_Layer: 0
   m_Name: Side
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1101,7 +1101,7 @@ GameObject:
   - component: {fileID: 3890724913045812669}
   m_Layer: 0
   m_Name: Shelf
-  m_TagString: Hard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
