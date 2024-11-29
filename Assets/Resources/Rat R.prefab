@@ -275,8 +275,8 @@ MonoBehaviour:
   _agent: {fileID: 2327133035627195405}
   _moveSpeed: 3
   _attackSpeed: 2
-  _attackRange: 15
-  _aggroRange: 15
+  _attackRange: 20
+  _aggroRange: 20
   _aggroBuffer: 7
   _onAttackEvt:
     m_PersistentCalls:

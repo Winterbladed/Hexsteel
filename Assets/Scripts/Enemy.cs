@@ -80,7 +80,7 @@ public class Enemy : Damage
             {
                 _onAttackEvt.Invoke();
                 ResetAttack();
-                if (_distanceFromTarget <= _attackRange + 2)
+                if (_distanceFromTarget <= _attackRange + 1)
                 {
                     DealDamage(_player.gameObject);
                 }

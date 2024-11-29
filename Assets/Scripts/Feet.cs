@@ -19,7 +19,7 @@ public class Feet : MonoBehaviour
         if (_movement.GetIsWalking() && !_movement.GetIsRunning() && !_movement.GetIsAttacking() && !_movement.GetIsShooting() && !_movement.GetIsDodging())
         {
             _movementStep += Time.deltaTime;
-            if (_movementStep > 0.6f)
+            if (_movementStep > 0.5f)
             {
                 if (_isWater) _audioSourcer.PlayOneShot(_audioClip[0]);
                 else if (_isHard && !_isWater) _audioSource.PlayOneShot(_audioClip[2]);
@@ -30,7 +30,7 @@ public class Feet : MonoBehaviour
         else if (_movement.GetIsRunning() && !_movement.GetIsAttacking() && !_movement.GetIsShooting() && !_movement.GetIsDodging())
         {
             _movementStep += Time.deltaTime;
-            if (_movementStep > 0.2f)
+            if (_movementStep > 0.25f)
             {
                 if (_isWater) _audioSourcer.PlayOneShot(_audioClip[0]);
                 else if (_isHard && !_isWater) _audioSource.PlayOneShot(_audioClip[2]);

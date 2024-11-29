@@ -20,7 +20,7 @@ public class WeaponRanged : Weapon
         if (_isAttacked)
         {
             _attackTime += Time.deltaTime;
-            if (_attackTime > 0.75f)
+            if (_attackTime > 1.0f)
             {
                 GameObject _newProjectile = _projectile;
                 Projectile _Projectile = _newProjectile.GetComponent<Projectile>();
@@ -31,16 +31,28 @@ public class WeaponRanged : Weapon
                 _Projectile._StatusChance = _StatusChance;
                 Instantiate(_newProjectile, _transform.position, _transform.rotation);
                 Attack();
+                _cooldownTime = 0.0f;
                 _attackTime = 0.0f;
                 _isAttacked = false;
+                _isOnCooldown = true;
             }
         }
         else if (!_isAttacked && !_movement.GetIsDodging())
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !_isOnCooldown)
             {
+                _cooldownTime = 0.0f;
                 _attackTime = 0.0f;
                 _isAttacked = true;
+            }
+        }
+        if (_isOnCooldown)
+        {
+            _cooldownTime += Time.deltaTime;
+            if (_cooldownTime > 0.2f)
+            {
+                _cooldownTime = 0.0f;
+                _isOnCooldown = false;
             }
         }
     }

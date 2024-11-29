@@ -754,8 +754,8 @@ MonoBehaviour:
   _moveSpeed: 1
   _attackSpeed: 2
   _attackRange: 7
-  _aggroRange: 12
-  _aggroBuffer: 0
+  _aggroRange: 25
+  _aggroBuffer: 25
   _onAttackEvt:
     m_PersistentCalls:
       m_Calls:
@@ -844,7 +844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab974829b9cf4d488e1ece9a00d30c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hp: 160
+  _hp: 80
   _hpRegen: 0
   _isInvulnerable: 0
   _deathTime: 5

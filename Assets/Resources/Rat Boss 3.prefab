@@ -188,12 +188,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6850003329806802043}
+  - component: {fileID: 747582336819069056}
   - component: {fileID: 4373988479285811185}
   - component: {fileID: 7946265081214565673}
   - component: {fileID: -6454715108575895444}
   - component: {fileID: 8958207970233731109}
   - component: {fileID: 8803803206021546735}
-  - component: {fileID: 9100626973730852789}
+  - component: {fileID: 986789415123197568}
   - component: {fileID: 1558421351597463653}
   - component: {fileID: 5286724415834014221}
   - component: {fileID: 8735027199343730721}
@@ -222,11 +223,73 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2074507231035340921}
+  - {fileID: 2658078154904934777}
   - {fileID: 5933887673854311855}
   - {fileID: 2217942008402102472}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &747582336819069056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378749433377581758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b18fac4b99852214b88f67106ac2697e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _DamageType: 0
+  _Damage: 80
+  _CriticalDamage: 1
+  _CriticalChance: 0
+  _StatusChance: 0
+  _StatusDamage: 0
+  _StatusTimer: 0
+  _StatusTicker: 0
+  _textEvent: {fileID: 4373988479285811185}
+  _agent: {fileID: 2327133035627195405}
+  _moveSpeed: 3
+  _attackSpeed: 2
+  _attackRange: 9
+  _aggroRange: 50
+  _aggroBuffer: 50
+  _onAttackEvt:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1558421351597463653}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _animator: {fileID: 4679325646299929611}
+  _rangedObject: {fileID: 6207323861454628167, guid: 7b63d702d5d7fe6428b75d1152118c60,
+    type: 3}
+  _rangedObjectSpawn: {fileID: 6850003329806802043}
+  _attackSpeed1: 4
+  _onAttackEvt1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1558421351597463653}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4373988479285811185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab974829b9cf4d488e1ece9a00d30c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hp: 160
+  _hp: 640
   _hpRegen: 0
   _isInvulnerable: 0
   _deathTime: 5
@@ -290,7 +353,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 9100626973730852789}
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 986789415123197568}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
         m_MethodName: Spawning1
         m_Mode: 1
@@ -317,9 +392,9 @@ MonoBehaviour:
   _DuringDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5378749433377581758}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 747582336819069056}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -365,7 +440,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8566765487545582618}
+      - m_Target: {fileID: 5677351895475791130}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -389,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689297a8dc22ca7458a1cefbeda440f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 8708008158382505227}
+  _animator: {fileID: 4679325646299929611}
   _health: {fileID: 7946265081214565673}
 --- !u!114 &8958207970233731109
 MonoBehaviour:
@@ -406,7 +481,7 @@ MonoBehaviour:
   _addToVector: {x: 0, y: 1.5, z: 0}
   _spawn:
   - {fileID: 3035789540499507645, guid: 77f0290030a946641b476703c4c83799, type: 3}
-  _transform: {fileID: 6850003329806802043}
+  _transform: {fileID: 0}
 --- !u!114 &8803803206021546735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,8 +498,8 @@ MonoBehaviour:
   _spawn:
   - {fileID: 920972315265357352, guid: cff60d915318ef74e89a04790082570a, type: 3}
   - {fileID: 2271587553193703881, guid: 76a7d472edf99b04a9f1f4c13c67b812, type: 3}
-  _transform: {fileID: 6850003329806802043}
---- !u!114 &9100626973730852789
+  _transform: {fileID: 0}
+--- !u!114 &986789415123197568
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -438,10 +513,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _addToVector: {x: 0, y: 1, z: 0}
   _spawn:
-  - {fileID: 2045042600589172159, guid: 10b3979a09597cf4690261e85b2cfa86, type: 3}
-  - {fileID: 2045042600589172159, guid: 3420955d77896ea4ca84209427c4a284, type: 3}
-  - {fileID: 2045042600589172159, guid: 776d3865c7e114e4fbcaae08987ad88d, type: 3}
-  _transform: {fileID: 0}
+  - {fileID: 2045042600589172159, guid: 6102f2d0923f38746a8354896b4ffd8e, type: 3}
+  - {fileID: 2045042600589172159, guid: 120f72735534e5f4cb3c7a29b131b539, type: 3}
+  - {fileID: 2045042600589172159, guid: c728e92ba8fb1ed488461da0765f61c7, type: 3}
+  - {fileID: 2045042600589172159, guid: 4887f5855a9450048b09df842bc10560, type: 3}
+  _transform: {fileID: 6850003329806802043}
 --- !u!114 &1558421351597463653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,7 +530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 8566765487545582618}
+  _audioSource: {fileID: 5677351895475791130}
   _audioClip:
   - {fileID: 8300000, guid: b3daf729b0392e2449120b09ca3bd864, type: 3}
   - {fileID: 8300000, guid: 9b6af90343d54054093c0c858fb4e13f, type: 3}
@@ -473,7 +549,7 @@ MonoBehaviour:
   _statusName: Slow
   _statusVfx: {fileID: 3701777737616026149}
   _textEvent: {fileID: 4373988479285811185}
-  _enemy: {fileID: 0}
+  _enemy: {fileID: 747582336819069056}
 --- !u!114 &8735027199343730721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,7 +597,7 @@ MonoBehaviour:
   _statusName: Weaken
   _statusVfx: {fileID: 1741778240297554907}
   _textEvent: {fileID: 4373988479285811185}
-  _damage: {fileID: 0}
+  _damage: {fileID: 747582336819069056}
 --- !u!195 &2327133035627195405
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -873,7 +949,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ratstafhar the Fallen
+  m_text: Bharat the Accursed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1040,7 +1116,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2987870580453787984}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &8331528731211431858
+--- !u!1001 &5455771849991642802
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1108,21 +1184,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e59878b11d7cc54180dd6a693364907, type: 3}
---- !u!4 &2074507231035340921 stripped
+--- !u!4 &2658078154904934777 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8022503479182772171, guid: 5e59878b11d7cc54180dd6a693364907,
     type: 3}
-  m_PrefabInstance: {fileID: 8331528731211431858}
+  m_PrefabInstance: {fileID: 5455771849991642802}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &8566765487545582618 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 395413996840844200, guid: 5e59878b11d7cc54180dd6a693364907,
-    type: 3}
-  m_PrefabInstance: {fileID: 8331528731211431858}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &8708008158382505227 stripped
+--- !u!95 &4679325646299929611 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 812484621706379961, guid: 5e59878b11d7cc54180dd6a693364907,
     type: 3}
-  m_PrefabInstance: {fileID: 8331528731211431858}
+  m_PrefabInstance: {fileID: 5455771849991642802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &5677351895475791130 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 395413996840844200, guid: 5e59878b11d7cc54180dd6a693364907,
+    type: 3}
+  m_PrefabInstance: {fileID: 5455771849991642802}
   m_PrefabAsset: {fileID: 0}
