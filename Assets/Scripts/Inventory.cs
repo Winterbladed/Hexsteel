@@ -19,8 +19,12 @@ public class Inventory : MonoBehaviour
     [SerializeField] private List<GameObject> _inventory1;
     [SerializeField] private Transform _hands;
     [SerializeField] private int _inventorySlots = 9;
+
     private float _switchTime = 0.0f;
-    private bool _isSwitching;
+    private bool _isSwitching = false;
+    private float _getTime = 0.0f;
+    private bool _isGetting = false;
+
     private GameObject _itemToDrop;
     private GameObject _currentHeldItem;
     private int _currentHeldItemID;
@@ -48,9 +52,21 @@ public class Inventory : MonoBehaviour
 
     private void Update()
     {
+        Get();
         Switch();
         InventorySlotSwitching();
         DropItem();
+    }
+
+    private void Get()
+    {
+        if (_isGetting) _getTime += Time.deltaTime;
+        else _getTime = 0.0f;
+        if (_getTime > 0.5f)
+        {
+            _getTime = 0.0f;
+            _isGetting = false;
+        }
     }
 
     private void Switch()
@@ -109,6 +125,8 @@ public class Inventory : MonoBehaviour
     {
         if (_inventory.Count < _inventorySlots && !_isSwitching)
         {
+            _isGetting = true;
+            _getTime = 0.0f;
             GameObject _newItem = Instantiate(_item, _hands);
             _inventory.Add(_newItem);
             SwitchToItem(_newItem);
@@ -150,6 +168,7 @@ public class Inventory : MonoBehaviour
     }
 
     public bool GetIsSwitching() { return _isSwitching; }
+    public bool GetIsGetting() { return _isGetting; }
     public List<GameObject> GetInventory() { return _inventory; }
     public List<GameObject> GetInventory1() { return _inventory1; }
     public void SetInventory1(List<GameObject> _savedInventory) {  _inventory1 = _savedInventory; } 

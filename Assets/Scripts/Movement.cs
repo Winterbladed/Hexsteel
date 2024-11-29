@@ -19,8 +19,8 @@ public class Movement : MonoBehaviour
     private bool _isStrafing;
     private bool _isShooting;
     private bool _isAttacking;
-    private bool _isEating;
     private bool _isThrowing;
+    private bool _isEating;
 
     private int _comboIndex = 0;
 
@@ -106,11 +106,11 @@ public class Movement : MonoBehaviour
 
         if (!_isSlowed) _currentSpeed = _isRunning ? _runSpeed : _speed;
         else _currentSpeed = _slowSpeed;
-        if (_isAttacking && _isGrounded || _isShooting && _isGrounded || _isThrowing && _isGrounded || _inventory.GetIsSwitching() && _isGrounded) _currentSpeed = 0.0f;
+        if (_isAttacking && _isGrounded || _isShooting && _isGrounded || _isThrowing && _isGrounded || _inventory.GetIsSwitching() && _isGrounded || _inventory.GetIsGetting() && _isGrounded) _currentSpeed = 0.0f;
 
         _isWalking = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
         _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1)
-            && !_isAttacking && !_isShooting && !_isEating && !_isThrowing && !_inventory.GetIsSwitching();
+            && !_isAttacking && !_isShooting && !_isEating && !_isThrowing && !_inventory.GetIsSwitching() && !_inventory.GetIsGetting();
         _isGrounded = _controller.isGrounded;
 
         if (_isGrounded && !_isDodging)
@@ -120,7 +120,7 @@ public class Movement : MonoBehaviour
         }
         else _verticalVelocity += _gravity * Time.deltaTime;
         
-        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing && !_isEating && !_isThrowing && !_inventory.GetIsSwitching())
+        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing && !_isEating && !_isThrowing && !_inventory.GetIsSwitching() && !_inventory.GetIsGetting())
         {
             _isDodging = true;
             _dodgeRollTime = Time.time + _dodgeRollDuration;
@@ -140,6 +140,7 @@ public class Movement : MonoBehaviour
         _animator.SetBool("_isEating", _isEating);
         _animator.SetInteger("_comboIndex", _comboIndex);
         _animator.SetBool("_isSwitching", _inventory.GetIsSwitching());
+        _animator.SetBool("_isGetting", _inventory.GetIsGetting());
     }
     #endregion
 
