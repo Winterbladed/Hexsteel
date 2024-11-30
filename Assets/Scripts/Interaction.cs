@@ -29,7 +29,7 @@ public class Interaction : MonoBehaviour
                 Interactable _currentInteractable = _hit.collider.GetComponent<Interactable>();
                 _interactionUI.EnableText(_currentInteractable._InteractMessage);
                 if (Input.GetKeyDown(KeyCode.E)) _currentInteractable.Interact();
-                _interactionArrow.transform.position = _hit.transform.position + new Vector3 (0.0f, 1.5f, 0.0f);
+                _interactionArrow.transform.position = _hit.collider.GetComponentInChildren<Arrow>().transform.position + new Vector3 (0.0f, 0.5f, 0.0f);
             }
             else
             {
