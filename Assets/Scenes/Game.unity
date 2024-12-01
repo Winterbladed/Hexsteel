@@ -643,10 +643,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832575526}
-        m_TargetAssemblyTypeName: TwoSounds, Assembly-CSharp
-        m_MethodName: Sound
-        m_Mode: 1
+      - m_Target: {fileID: 832575529}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1848,10 +1848,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832575526}
-        m_TargetAssemblyTypeName: TwoSounds, Assembly-CSharp
-        m_MethodName: Sound
-        m_Mode: 1
+      - m_Target: {fileID: 832575529}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2401,7 +2401,7 @@ GameObject:
   - component: {fileID: 832575519}
   - component: {fileID: 832575524}
   - component: {fileID: 832575527}
-  - component: {fileID: 832575526}
+  - component: {fileID: 832575529}
   - component: {fileID: 832575523}
   - component: {fileID: 832575521}
   - component: {fileID: 832575520}
@@ -2581,10 +2581,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 832575526}
-        m_TargetAssemblyTypeName: TwoSounds, Assembly-CSharp
-        m_MethodName: Sound
-        m_Mode: 1
+      - m_Target: {fileID: 832575529}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2644,10 +2644,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 832575526}
-        m_TargetAssemblyTypeName: TwoSounds, Assembly-CSharp
-        m_MethodName: Sound
-        m_Mode: 1
+      - m_Target: {fileID: 832575529}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2755,22 +2755,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &832575526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832575517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec63706832e0b464cba1ed2553e6cfdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 832575525}
-  _audioClip:
-  - {fileID: 8300000, guid: ea978592708c2704fa8770862418ca4a, type: 3}
-  - {fileID: 8300000, guid: ea978592708c2704fa8770862418ca4a, type: 3}
 --- !u!114 &832575527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2805,6 +2789,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &832575529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832575517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 832575525}
+  _audioClip:
+  - {fileID: 8300000, guid: ea978592708c2704fa8770862418ca4a, type: 3}
 --- !u!1 &922151242
 GameObject:
   m_ObjectHideFlags: 0
@@ -4023,10 +4022,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832575526}
-        m_TargetAssemblyTypeName: TwoSounds, Assembly-CSharp
-        m_MethodName: Sound
-        m_Mode: 1
+      - m_Target: {fileID: 832575529}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4840,10 +4839,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832575526}
-        m_TargetAssemblyTypeName: TwoSounds, Assembly-CSharp
-        m_MethodName: Sound
-        m_Mode: 1
+      - m_Target: {fileID: 832575529}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4982,10 +4981,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832575526}
-        m_TargetAssemblyTypeName: TwoSounds, Assembly-CSharp
-        m_MethodName: Sound
-        m_Mode: 1
+      - m_Target: {fileID: 832575529}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
