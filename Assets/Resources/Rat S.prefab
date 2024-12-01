@@ -355,7 +355,7 @@ MonoBehaviour:
   _moveSpeed: 3
   _attackSpeed: 0
   _attackRange: 3
-  _aggroRange: 20
+  _aggroRange: 25
   _aggroBuffer: 5
   _onAttackEvt:
     m_PersistentCalls:
@@ -426,7 +426,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7946265081214565673}
         m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: DestroyGameObject
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
