@@ -1384,16 +1384,11 @@ MonoBehaviour:
   _player: {fileID: 429173832942103051}
   _movement: {fileID: 8348124112238466196}
   _vector: {x: 0.5, y: 1.8, z: 0}
-  _distance: 2
   _xSpeed: 360
   _ySpeed: 360
-  _yMinLimit: -20
-  _yMaxLimit: 80
   _normalFov: 90
   _runFov: 100
   _slowFov: 50
-  _rotationSmoothTime: 0.1
-  _positionSmoothTime: 0.1
 --- !u!114 &330585549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1412,7 +1407,6 @@ MonoBehaviour:
   _interactionReach: 7
   _interactionRay: {fileID: 330585546}
   _interactionUI: {fileID: 6481409888699272336}
-  _interactionArrow: {fileID: 0}
 --- !u!114 &330585550
 MonoBehaviour:
   m_ObjectHideFlags: 0
