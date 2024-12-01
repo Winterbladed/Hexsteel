@@ -16,34 +16,20 @@ public class Status : MonoBehaviour
     #endregion
 
     #region Private Functions
-    private void Start()
-    {
-        DisableStatus();
-    }
+    protected virtual void Start() { DisableStatus(); }
     #endregion
 
     #region Public Functions
     public bool GetIsActive() { return _isActive; }
     public string GetStatusName() { return _statusName; }
-
-    public void SetStatusDamage(int _damage)
-    {
-        _statusDamage = _damage;
-    }
-    public void SetStatusTimer(float _timer)
-    {
-        _statusTimer = _timer;
-    }
-    public void SetStatusTicker(float _ticker)
-    {
-        _statusTicker = _ticker;
-    }
+    public void SetStatusDamage(int _damage) { _statusDamage = _damage; }
+    public void SetStatusTimer(float _timer) { _statusTimer = _timer; }
+    public void SetStatusTicker(float _ticker) { _statusTicker = _ticker; }
 
     public void EnableStatus()
     {
         _isActive = true;
-        if (_statusVfx)
-            _statusVfx.SetActive(true);
+        if (_statusVfx) _statusVfx.SetActive(true);
         _textEvent.ShowStatus(_statusName, transform);
     }
 
@@ -52,8 +38,7 @@ public class Status : MonoBehaviour
         _statusTime = 0.0f;
         _statusTick = 0.0f;
         _isActive = false;
-        if (_statusVfx)
-            _statusVfx.SetActive(false);
+        if (_statusVfx) _statusVfx.SetActive(false);
     }
     #endregion
 }
