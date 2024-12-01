@@ -42,7 +42,7 @@ public class Weapon : Damage
         if (_isAttacked)
         {
             _attackTime += Time.deltaTime;
-            if (_attackTime > 0.5f)
+            if (_attackTime > 1.0f)
             {
                 Attack();
                 if (_comboIndex < _comboIndexes) _comboIndex++;
@@ -89,7 +89,7 @@ public class Weapon : Damage
         _onAttack.Invoke();
         Vector3 _positionInFront = transform.position + transform.forward * _distance;
         Collider[] _colliders = Physics.OverlapSphere(_positionInFront, _radius);
-        foreach (Collider _hit in _colliders) if (!_hit.gameObject.GetComponent<Player>()) DealDamage(_hit.gameObject);
+        foreach (Collider _hit in _colliders) DealDamage(_hit.gameObject);
     }
 
     public bool GetIsAttacked() { return _isAttacked; }

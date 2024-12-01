@@ -28,7 +28,7 @@ public class Throwable : MonoBehaviour
         if (_movement.GetIsThrowing())
         {
             _throwTime += Time.deltaTime;
-            if (_throwTime > 0.5f)
+            if (_throwTime > 1.0f)
             {
                 _onThrowEvt.Invoke();
                 _inventory.UseItem();

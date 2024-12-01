@@ -20,7 +20,7 @@ public class WeaponRanged : Weapon
         if (_isAttacked)
         {
             _attackTime += Time.deltaTime;
-            if (_attackTime > 0.5f)
+            if (_attackTime > 1.0f)
             {
                 GameObject _newProjectile = _projectile;
                 Projectile _Projectile = _newProjectile.GetComponent<Projectile>();

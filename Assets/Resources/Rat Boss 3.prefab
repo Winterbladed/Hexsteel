@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 918159487712667533}
   - component: {fileID: 8267621480722291935}
   - component: {fileID: 1337022063110392113}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 6537848048810105652}
   - component: {fileID: 1568940911965723841}
   - component: {fileID: 7035582301644806376}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 2327133035627195405}
   - component: {fileID: 6148452949796029911}
   - component: {fileID: 4279612442763214194}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Rat Boss 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +682,7 @@ GameObject:
   - component: {fileID: 6678751832432741168}
   - component: {fileID: 5833384638183515573}
   - component: {fileID: 6639317397340289600}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Boss UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -782,7 +782,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2671747360397331903}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 3223435154634879510}
   - component: {fileID: 8401126122892327019}
   - component: {fileID: 8034739131674540879}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 8064595232813187427}
   - component: {fileID: 2463189523958639201}
   - component: {fileID: 8704612697958076866}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1026,35 +1026,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6850003329806802043}
     m_Modifications:
-    - target: {fileID: 1884852424607572853, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3325332118878016647, guid: ccb6707fddafc234fabfac69c15269a4,
         type: 3}
       propertyPath: m_Name
       value: Status Vfx
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325332118878016647, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556443351613512331, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3911190394330983870, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437484397470061415, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8876149632593196287, guid: ccb6707fddafc234fabfac69c15269a4,
         type: 3}

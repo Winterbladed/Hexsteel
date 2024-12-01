@@ -17,7 +17,7 @@ GameObject:
   m_Layer: 0
   m_Name: I Hammer
   m_TagString: Untagged
-  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -79,7 +79,7 @@ MonoBehaviour:
   _textEvent: {fileID: 8056401231045807707}
   _trail: {fileID: 2865000821068291699}
   _radius: 1.5
-  _distance: 1.5
+  _distance: 2.5
   _comboIndexes: 2
   _onAttack:
     m_PersistentCalls:

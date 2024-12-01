@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3313474498870300633}
   - component: {fileID: 493381526504498339}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: I Cannon Skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 918159487712667533}
   - component: {fileID: 8267621480722291935}
   - component: {fileID: 1337022063110392113}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 4480751087325561053}
   - component: {fileID: 5095380406773427218}
   - component: {fileID: 2483697636728207153}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 1250222404548556428}
   - component: {fileID: 4062699938173087964}
   - component: {fileID: 266782463219667774}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 6537848048810105652}
   - component: {fileID: 1568940911965723841}
   - component: {fileID: 7035582301644806376}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7414360616983886296}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 5196870598140397763}
   - component: {fileID: 2344681513544720289}
   - component: {fileID: 368369695214535127}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 3077924250807669385}
   - component: {fileID: 3895973418197948563}
   - component: {fileID: 3225718707034606084}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 7658172031068318772}
   - component: {fileID: 5366403853429305604}
   - component: {fileID: 3678539557261075384}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 2327133035627195405}
   - component: {fileID: 6148452949796029911}
   - component: {fileID: 4279612442763214194}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Rat Boss 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1239,7 +1239,7 @@ GameObject:
   - component: {fileID: 6678751832432741168}
   - component: {fileID: 5833384638183515573}
   - component: {fileID: 6639317397340289600}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Boss UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1339,7 +1339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2671747360397331903}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,7 +1376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 770659579227748598}
   - component: {fileID: 3167517719186861710}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1520,7 +1520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4627825076285069063}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: I Hammer Skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1556,7 +1556,7 @@ GameObject:
   - component: {fileID: 3223435154634879510}
   - component: {fileID: 8401126122892327019}
   - component: {fileID: 8034739131674540879}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1631,7 +1631,7 @@ GameObject:
   - component: {fileID: 5306547406307720217}
   - component: {fileID: 2045162795384635940}
   - component: {fileID: 5002745473113509853}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1714,7 +1714,7 @@ GameObject:
   - component: {fileID: 3445896440097453834}
   - component: {fileID: 6326446002403046282}
   - component: {fileID: 6159714649415663689}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1797,7 +1797,7 @@ GameObject:
   - component: {fileID: 7125892678055409497}
   - component: {fileID: 2282859992594084978}
   - component: {fileID: 2130401387314713231}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1880,7 +1880,7 @@ GameObject:
   - component: {fileID: 5901558106465317079}
   - component: {fileID: 5607301692014154671}
   - component: {fileID: 6202219583443664025}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1963,7 +1963,7 @@ GameObject:
   - component: {fileID: 8064595232813187427}
   - component: {fileID: 2463189523958639201}
   - component: {fileID: 8704612697958076866}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2094,35 +2094,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6850003329806802043}
     m_Modifications:
-    - target: {fileID: 1884852424607572853, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3325332118878016647, guid: ccb6707fddafc234fabfac69c15269a4,
         type: 3}
       propertyPath: m_Name
       value: Status Vfx
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325332118878016647, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556443351613512331, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3911190394330983870, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437484397470061415, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8876149632593196287, guid: ccb6707fddafc234fabfac69c15269a4,
         type: 3}

@@ -16,7 +16,7 @@ public class Status : MonoBehaviour
     #endregion
 
     #region Private Functions
-    protected virtual void Start()
+    private void Start()
     {
         DisableStatus();
     }

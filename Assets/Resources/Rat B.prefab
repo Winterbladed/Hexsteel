@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1229436864810481317}
   - component: {fileID: 4050958067047297269}
   - component: {fileID: 280830435684422423}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1654244950921547197}
   - component: {fileID: 1373595060588133013}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 2451073845906992744}
   - component: {fileID: 7077486057608456154}
   - component: {fileID: 5003256519425851131}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 5208561067583670506}
   - component: {fileID: 2368756644987772808}
   - component: {fileID: 381344436134445566}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 2327133035627195405}
   - component: {fileID: 6148452949796029911}
   - component: {fileID: 4279612442763214194}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Rat B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7946265081214565673}
         m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: DestroyGameObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -829,7 +829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4642980956230670126}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: I Axe Skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,35 +863,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6850003329806802043}
     m_Modifications:
-    - target: {fileID: 1884852424607572853, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3325332118878016647, guid: ccb6707fddafc234fabfac69c15269a4,
         type: 3}
       propertyPath: m_Name
       value: Status Vfx
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325332118878016647, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556443351613512331, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3911190394330983870, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437484397470061415, guid: ccb6707fddafc234fabfac69c15269a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8876149632593196287, guid: ccb6707fddafc234fabfac69c15269a4,
         type: 3}
