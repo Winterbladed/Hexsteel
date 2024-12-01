@@ -9,28 +9,22 @@ public class Weapon : Damage
     [Header("Other Weapon Stats")]
     [SerializeField] protected float _radius = 1.0f;
     [SerializeField] protected float _distance = 2.0f;
-    protected float _attackTime;
-    protected float _cooldownTime;
-    protected bool _isAttacked = false;
+    protected float _attackTime; protected float _cooldownTime;
+    protected bool _isAttacked = false; protected bool _isOnCooldown;
     [SerializeField] protected int _comboIndexes;
     protected int _comboIndex = 0;
-    protected bool _isOnCooldown;
 
     [Header("Weapon References")]
     [SerializeField] protected UnityEvent _onAttack;
-    protected Movement _movement;
-    protected Health _health;
+    protected Movement _movement; protected Health _health;
     #endregion
 
     #region Private Functions
     protected virtual void Start()
     {
-        _normalDamage = _Damage;
-        _reducedDamage = _Damage / 2;
-        _attackTime = 0.0f;
-        _cooldownTime = 0.0f;
-        _isAttacked = false;
-        _isOnCooldown = false;
+        _normalDamage = _Damage; _reducedDamage = _Damage / 2;
+        _attackTime = 0.0f; _cooldownTime = 0.0f;
+        _isAttacked = false; _isOnCooldown = false;
         _movement = GetComponentInParent<Movement>();
         _health = GetComponentInParent<Health>();
     }
@@ -42,16 +36,14 @@ public class Weapon : Damage
         if (_isAttacked)
         {
             _attackTime += Time.deltaTime;
-            if (_attackTime > 1.0f)
+            if (_attackTime > 0.5f)
             {
                 Attack();
                 if (_comboIndex < _comboIndexes) _comboIndex++;
                 else _comboIndex = 0;
-                _cooldownTime = 0.0f;
-                _attackTime = 0.0f;
-                _isAttacked = false;
                 _trail.SetActive(false);
-                _isOnCooldown = true;
+                _cooldownTime = 0.0f; _attackTime = 0.0f;
+                _isAttacked = false; _isOnCooldown = true;
             }
         }
         else if (!_isAttacked && !_movement.GetIsDodging())
