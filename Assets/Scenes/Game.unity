@@ -2238,18 +2238,6 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 8684550925809804812}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &670909091 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8943470559160725426, guid: 0b7154e811161ef428d6f17e347925a3,
-    type: 3}
-  m_PrefabInstance: {fileID: 8684550925809804812}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &711871953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2335,7 +2323,6 @@ GameObject:
   m_Component:
   - component: {fileID: 797124169}
   - component: {fileID: 797124170}
-  - component: {fileID: 797124171}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -2366,30 +2353,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797124168}
   m_Enabled: 1
---- !u!114 &797124171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797124168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d737a5851d002844aed3e2534417352, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _text: {fileID: 670909091}
-  _movement: {fileID: 8348124112238466196}
-  _inventory: {fileID: 1995310149397781739}
-  _health: {fileID: 7690601497789648850}
-  _strings:
-  - ._.
-  - '''o'''
-  - '>_<'
-  - '''_'''
-  - -O-
-  - x.x
-  - -.-
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5748,7 +5711,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 797124171}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Head, Assembly-CSharp
         m_MethodName: Dead
         m_Mode: 1
