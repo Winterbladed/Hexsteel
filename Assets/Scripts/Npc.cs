@@ -73,7 +73,7 @@ public class Npc : Interactable
         return Vector3.zero;
     }
 
-    protected void OnCollisionEnter(Collision _hit)
+    protected void OnTriggerEnter(Collider _hit)
     {
         if (_hit.gameObject.GetComponent<Door>()) _hit.gameObject.GetComponent<Door>().DoorHandle();
     }

@@ -17,7 +17,7 @@ GameObject:
   m_Layer: 0
   m_Name: I Shield
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -79,7 +79,7 @@ MonoBehaviour:
   _textEvent: {fileID: 5696708274737817639}
   _trail: {fileID: 1626677003590174733}
   _radius: 1
-  _distance: 2
+  _distance: 1
   _comboIndexes: 2
   _onAttack:
     m_PersistentCalls:
@@ -245,7 +245,7 @@ PrefabInstance:
     - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
         type: 3}

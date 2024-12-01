@@ -17,7 +17,7 @@ GameObject:
   m_Layer: 0
   m_Name: I Sword
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -78,8 +78,8 @@ MonoBehaviour:
   _StatusTicker: 1
   _textEvent: {fileID: 5696708274737817639}
   _trail: {fileID: 3641748656954751731}
-  _radius: 1.25
-  _distance: 2
+  _radius: 1
+  _distance: 1.5
   _comboIndexes: 2
   _onAttack:
     m_PersistentCalls:
@@ -245,7 +245,7 @@ PrefabInstance:
     - target: {fileID: 1915414423582683672, guid: 26e55dd2496d0224e9cda70209414e42,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1915414423582683672, guid: 26e55dd2496d0224e9cda70209414e42,
         type: 3}
