@@ -79,7 +79,7 @@ MonoBehaviour:
   _textEvent: {fileID: 5696708274737817639}
   _trail: {fileID: 1626677003590174733}
   _radius: 1
-  _distance: 2
+  _distance: 1
   _comboIndexes: 2
   _onAttack:
     m_PersistentCalls:

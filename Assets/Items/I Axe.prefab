@@ -78,7 +78,7 @@ MonoBehaviour:
   _StatusTicker: 1
   _textEvent: {fileID: 5696708274737817639}
   _trail: {fileID: 1391591758232126570}
-  _radius: 1
+  _radius: 1.5
   _distance: 2
   _comboIndexes: 2
   _onAttack:

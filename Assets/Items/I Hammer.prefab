@@ -78,8 +78,8 @@ MonoBehaviour:
   _StatusTicker: 1
   _textEvent: {fileID: 8056401231045807707}
   _trail: {fileID: 2865000821068291699}
-  _radius: 1.5
-  _distance: 2.5
+  _radius: 1.75
+  _distance: 2
   _comboIndexes: 2
   _onAttack:
     m_PersistentCalls:
