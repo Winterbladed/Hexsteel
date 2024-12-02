@@ -1028,9 +1028,9 @@ MonoBehaviour:
   _onAttackEvt:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4168096689677770649}
+      - m_Target: {fileID: 2564535340505795993}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning3
+        m_MethodName: SpawnIndexOnTransform
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1048,9 +1048,9 @@ MonoBehaviour:
   _onAttackEvt1:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9100626973730852789}
+      - m_Target: {fileID: 4168096689677770649}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning3
+        m_MethodName: SpawnIndexOnTransform
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1098,7 +1098,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8803803206021546735}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning1
+        m_MethodName: SpawnAllInArray
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1113,7 +1113,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8958207970233731109}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning
+        m_MethodName: SpawnMultipleRandomly
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1137,7 +1137,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 9100626973730852789}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning1
+        m_MethodName: SpawnAllInArray
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

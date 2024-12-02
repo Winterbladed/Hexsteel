@@ -194,7 +194,6 @@ GameObject:
   - component: {fileID: -6454715108575895444}
   - component: {fileID: 8958207970233731109}
   - component: {fileID: 8803803206021546735}
-  - component: {fileID: 986789415123197568}
   - component: {fileID: 1558421351597463653}
   - component: {fileID: 5286724415834014221}
   - component: {fileID: 8735027199343730721}
@@ -328,7 +327,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8803803206021546735}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning1
+        m_MethodName: SpawnAllInArray
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -343,8 +342,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8958207970233731109}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning
-        m_Mode: 3
+        m_MethodName: SpawnAllInArray
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -357,18 +356,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: 
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 986789415123197568}
-        m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning1
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -499,25 +486,6 @@ MonoBehaviour:
   - {fileID: 920972315265357352, guid: cff60d915318ef74e89a04790082570a, type: 3}
   - {fileID: 2271587553193703881, guid: 76a7d472edf99b04a9f1f4c13c67b812, type: 3}
   _transform: {fileID: 0}
---- !u!114 &986789415123197568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5378749433377581758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7627f8f06be8fcd4c871a1008c33eb89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _addToVector: {x: 0, y: 1, z: 0}
-  _spawn:
-  - {fileID: 2045042600589172159, guid: 6102f2d0923f38746a8354896b4ffd8e, type: 3}
-  - {fileID: 2045042600589172159, guid: 120f72735534e5f4cb3c7a29b131b539, type: 3}
-  - {fileID: 2045042600589172159, guid: c728e92ba8fb1ed488461da0765f61c7, type: 3}
-  - {fileID: 2045042600589172159, guid: 4887f5855a9450048b09df842bc10560, type: 3}
-  _transform: {fileID: 6850003329806802043}
 --- !u!114 &1558421351597463653
 MonoBehaviour:
   m_ObjectHideFlags: 0

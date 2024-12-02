@@ -81,7 +81,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8815230756732743130}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning3
+        m_MethodName: SpawnIndexOnTransform
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -133,7 +133,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2762693286399330986}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning1
+        m_MethodName: SpawnAllInArray
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -148,8 +148,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8958207970233731109}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning
-        m_Mode: 3
+        m_MethodName: SpawnAllInArray
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -160,7 +160,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7946265081214565673}
         m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: DestroyGameObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

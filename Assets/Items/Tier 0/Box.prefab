@@ -71,7 +71,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1503979764757630907}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning4
+        m_MethodName: SpawnIndexOnTransformAndRotationPlayer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

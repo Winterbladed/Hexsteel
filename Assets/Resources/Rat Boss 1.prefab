@@ -771,9 +771,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2564535340505795993}
+      - m_Target: {fileID: 4168096689677770649}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning3
+        m_MethodName: SpawnIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -791,9 +791,9 @@ MonoBehaviour:
   _onAttackEvt1:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4168096689677770649}
+      - m_Target: {fileID: 986789415123197568}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning3
+        m_MethodName: SpawnIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -851,9 +851,9 @@ MonoBehaviour:
   _OnHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8803803206021546735}
+      - m_Target: {fileID: 2564535340505795993}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning1
+        m_MethodName: SpawnAllInArray
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -868,8 +868,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8958207970233731109}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning
-        m_Mode: 3
+        m_MethodName: SpawnAllInArray
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -892,7 +892,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 986789415123197568}
         m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: Spawning1
+        m_MethodName: SpawnAllInArray
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1006,7 +1006,7 @@ MonoBehaviour:
   _addToVector: {x: 0, y: 1.5, z: 0}
   _spawn:
   - {fileID: 3035789540499507645, guid: 77f0290030a946641b476703c4c83799, type: 3}
-  _transform: {fileID: 0}
+  _transform: {fileID: 6850003329806802043}
 --- !u!114 &8803803206021546735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   _spawn:
   - {fileID: 920972315265357352, guid: cff60d915318ef74e89a04790082570a, type: 3}
   - {fileID: 2271587553193703881, guid: 76a7d472edf99b04a9f1f4c13c67b812, type: 3}
-  _transform: {fileID: 0}
+  _transform: {fileID: 6850003329806802043}
 --- !u!114 &2564535340505795993
 MonoBehaviour:
   m_ObjectHideFlags: 0
