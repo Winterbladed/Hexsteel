@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 7946265081214565673}
   - component: {fileID: -6454715108575895444}
   - component: {fileID: 8803803206021546735}
+  - component: {fileID: 1583994596698961614}
   - component: {fileID: 5286724415834014221}
   - component: {fileID: 8735027199343730721}
   - component: {fileID: 5608649096329726679}
@@ -410,6 +411,18 @@ MonoBehaviour:
   _OnDeath:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1583994596698961614}
+        m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
+        m_MethodName: SpawnIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 7946265081214565673}
         m_TargetAssemblyTypeName: Health, Assembly-CSharp
         m_MethodName: DestroyGameObject
@@ -479,6 +492,22 @@ MonoBehaviour:
   _spawn:
   - {fileID: 920972315265357352, guid: cff60d915318ef74e89a04790082570a, type: 3}
   - {fileID: 2271587553193703881, guid: 76a7d472edf99b04a9f1f4c13c67b812, type: 3}
+  _transform: {fileID: 0}
+--- !u!114 &1583994596698961614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378749433377581758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7627f8f06be8fcd4c871a1008c33eb89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _addToVector: {x: 0, y: 1.5, z: 0}
+  _spawn:
+  - {fileID: 2045042600589172159, guid: dbbd4d3079974b34494869fb9ea95f4f, type: 3}
   _transform: {fileID: 0}
 --- !u!114 &5286724415834014221
 MonoBehaviour:
