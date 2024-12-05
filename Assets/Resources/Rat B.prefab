@@ -407,7 +407,6 @@ GameObject:
   - component: {fileID: 4373988479285811185}
   - component: {fileID: 7946265081214565673}
   - component: {fileID: -6454715108575895444}
-  - component: {fileID: 8958207970233731109}
   - component: {fileID: 8803803206021546735}
   - component: {fileID: 5286724415834014221}
   - component: {fileID: 8735027199343730721}
@@ -514,7 +513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 80
-  _hpRegen: 0
   _isInvulnerable: 0
   _deathTime: 5
   _OnHit:
@@ -535,18 +533,6 @@ MonoBehaviour:
   _OnDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8958207970233731109}
-        m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
-        m_MethodName: SpawnMultipleRandomly
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 7946265081214565673}
         m_TargetAssemblyTypeName: Health, Assembly-CSharp
         m_MethodName: DestroyGameObject
@@ -586,42 +572,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4279612442763214194}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4279612442763214194}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: WakeUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7905785444231341894}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &-6454715108575895444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,22 +586,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 7173303347862068823}
   _health: {fileID: 7946265081214565673}
---- !u!114 &8958207970233731109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5378749433377581758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7627f8f06be8fcd4c871a1008c33eb89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _addToVector: {x: 0, y: 1.5, z: 0}
-  _spawn:
-  - {fileID: 3035789540499507645, guid: 77f0290030a946641b476703c4c83799, type: 3}
-  _transform: {fileID: 6850003329806802043}
 --- !u!114 &8803803206021546735
 MonoBehaviour:
   m_ObjectHideFlags: 0

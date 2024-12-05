@@ -7,10 +7,7 @@ public class Health : MonoBehaviour
     [Header("Health Stats")]
     private int _currentHp;
     [SerializeField] private int _hp;
-    [SerializeField] private int _hpRegen;
-    private float _hpRegenTime = 0.0f;
     private int _hpDamageMultiplier = 1;
-    private bool _isRegen;
     private bool _isBlocking;
     [SerializeField] private bool _isInvulnerable;
 
@@ -35,7 +32,6 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        RegenHp();
         Death();
     }
 
@@ -43,20 +39,6 @@ public class Health : MonoBehaviour
     {
         if (_currentHp < 0) _currentHp = 0;
         else if (_currentHp > _hp) _currentHp = _hp;
-    }
-
-    private void RegenHp()
-    {
-        if (_hpRegen > 0 && !_isDead && _isRegen)
-        {
-            _hpRegenTime += Time.deltaTime;
-            if (_hpRegenTime > 1.0f)
-            {
-                GiveHpHeal(_hpRegen);
-                CapHp();
-                _hpRegenTime = 0.0f;
-            }
-        }
     }
     #endregion
 
@@ -76,6 +58,7 @@ public class Health : MonoBehaviour
             {
                 OnDeath();
                 _currentDeathTime = 0.0f;
+                return;
             }
         }
     }
@@ -110,7 +93,6 @@ public class Health : MonoBehaviour
     public void SetCurrentHp(int _savedCurrentHp) { _currentHp = _savedCurrentHp; }
     public void SetHp(int _savedHp) { _hp = _savedHp; }
     public int GetHpDamageMultiplier() { return _hpDamageMultiplier; }
-    public void SetHpRegen(bool _bool) { _isRegen = _bool; }
     public void DebugHealth() { Debug.Log("Health: " + _currentHp + "/" + _hp); }
     public void Invulnerable(bool _boolean) { _isInvulnerable = _boolean; }
     public bool GetIsInvulnerable() { return _isInvulnerable; }

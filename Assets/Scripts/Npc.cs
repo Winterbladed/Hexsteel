@@ -14,15 +14,18 @@ public class Npc : Interactable
     protected float _currentWanderCooldown;
 
     [Header("Npc Talk")]
-    [SerializeField] protected GameObject _text;
+    [SerializeField] protected GameObject[] _text;
     [SerializeField] protected float _talkDuration;
     protected float _talkTime;
-    protected bool _isTalking;
+    protected int _talkIndex = 0;
+    private bool _isTalking;
+    private bool _isTalked;
     #endregion
 
     #region Private Functions
     protected virtual void Start()
     {
+        _talkIndex = 0;
         Vector3 _randomPoint = RandomNavmeshPoint(transform.position, _wanderRange);
         if (_randomPoint != Vector3.zero) _navMeshAgent.SetDestination(_randomPoint);
     }
@@ -30,8 +33,8 @@ public class Npc : Interactable
     protected virtual void Update()
     {
         Animatorr();
-        Wander();
         Talking();
+        Wander();
     }
 
     protected void Animatorr()
@@ -58,9 +61,9 @@ public class Npc : Interactable
             _talkTime += Time.deltaTime;
             if (_talkTime > _talkDuration)
             {
-                _text.SetActive(false);
-                _talkTime = 0.0f;
                 _isTalking = false;
+                _talkTime = 0.0f;
+                foreach (GameObject _t in _text) _t.SetActive(false);
             }
         }
     }
@@ -73,7 +76,7 @@ public class Npc : Interactable
         return Vector3.zero;
     }
 
-    protected void OnCollisionEnter(Collision _hit)
+    protected void OnTriggerEnter(Collider _hit)
     {
         if (_hit.gameObject.GetComponent<Door>()) _hit.gameObject.GetComponent<Door>().DoorHandle();
     }
@@ -82,9 +85,16 @@ public class Npc : Interactable
     #region Public Functions
     public void Talk()
     {
-        _text.SetActive(true);
+        foreach (GameObject _t in _text) _t.SetActive(false);
+        if (_isTalked)
+        {
+            if (_talkIndex < _text.Length) _talkIndex++;
+            else if (_talkIndex >= _text.Length) _talkIndex = 0;
+        }
+        _text[_talkIndex].SetActive(true);
         _isTalking = true;
         _talkTime = 0.0f;
+        _isTalked = true;
     }
     #endregion
 }
