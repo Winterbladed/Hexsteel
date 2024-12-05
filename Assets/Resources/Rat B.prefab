@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DamageType: 0
-  _Damage: 20
+  _Damage: 15
   _CriticalDamage: 1
   _CriticalChance: 0
   _StatusChance: 0
