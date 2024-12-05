@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4272421241130668843}
   - component: {fileID: 1665654540565841663}
   m_Layer: 5
-  m_Name: I Axe Icon
+  m_Name: I Flintlock Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 063c4cd0e15322b4a89d34c33fc1e928, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b70eb6a3d33e50142bec5aa1a902d1c3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tier I Axe
+  m_text: Tier I Flintlock
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}

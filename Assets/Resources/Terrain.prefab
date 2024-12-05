@@ -3051,6 +3051,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2498641752613626995}
+  - {fileID: 7496005956679237482}
   m_Father: {fileID: 7085911724757910777}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3637701637919306626
@@ -34318,6 +34319,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5940452062530137236, guid: 985d32e297c9c0c48a033de5902d5eef,
     type: 3}
   m_PrefabInstance: {fileID: 7304964616904306053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7305067113330338039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3326448961900407106}
+    m_Modifications:
+    - target: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 59
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045042600589172159, guid: d511e8e99a728b043a051e35feaaf052,
+        type: 3}
+      propertyPath: m_Name
+      value: I Flintlock Loot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d511e8e99a728b043a051e35feaaf052, type: 3}
+--- !u!4 &7496005956679237482 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 965993972271060893, guid: d511e8e99a728b043a051e35feaaf052,
+    type: 3}
+  m_PrefabInstance: {fileID: 7305067113330338039}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7318151148920236949
 PrefabInstance:

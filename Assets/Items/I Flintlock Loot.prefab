@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 965993972271060893}
   - component: {fileID: 4832173604041944305}
-  - component: {fileID: 3750400444897488702}
-  - component: {fileID: -4650418912754646852}
-  - component: {fileID: 5696708274737817639}
-  - component: {fileID: -4342595914582855027}
+  - component: {fileID: 3795620042856048028}
+  - component: {fileID: 5410759940250294783}
+  - component: {fileID: 3647038016384504966}
+  - component: {fileID: 6475663804611408560}
   m_Layer: 0
-  m_Name: I Shield
+  m_Name: I Flintlock Loot
   m_TagString: Untagged
-  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -34,7 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5316005677167212915}
+  - {fileID: 6891220757617961783}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4832173604041944305
@@ -49,45 +49,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08494bb7a2cc1f94f8e587f193f8353e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InteractMessage: 
+  _InteractMessage: '[E] Get Tier I Flintlock'
   _EventOnInteraction:
     m_PersistentCalls:
-      m_Calls: []
-  _Item: {fileID: 2045042600589172159, guid: dbbd4d3079974b34494869fb9ea95f4f, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: 495bb5ba4a44048418e87c01219331f9,
-    type: 3}
---- !u!114 &3750400444897488702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045042600589172159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4684c5d51a072544884f42dacc34024, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _DamageType: 4
-  _Damage: 2
-  _CriticalDamage: 0
-  _CriticalChance: 0
-  _StatusChance: 0.1
-  _StatusDamage: 0
-  _StatusTimer: 10
-  _StatusTicker: 1
-  _textEvent: {fileID: 5696708274737817639}
-  _trail: {fileID: 1626677003590174733}
-  _radius: 1
-  _distance: 1
-  _comboIndexes: 2
-  _onAttack:
-    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -4650418912754646852}
-        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 3
+      - m_Target: {fileID: 4832173604041944305}
+        m_TargetAssemblyTypeName: Item, Assembly-CSharp
+        m_MethodName: GetItem
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -96,7 +65,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-4650418912754646852
+  _Item: {fileID: 2045042600589172159, guid: f8ad8a2066ca90448a97e118776183c9, type: 3}
+  _ItemIcon: {fileID: 3240355216110004441, guid: e2f85a1a0a231df4197ccc7038b0b0c3,
+    type: 3}
+--- !u!114 &3795620042856048028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,30 +77,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 2045042600589172159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a7e02566825ab94f912bc6be0d3af0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: -4342595914582855027}
-  _audioClip:
-  - {fileID: 8300000, guid: b3daf729b0392e2449120b09ca3bd864, type: 3}
---- !u!114 &5696708274737817639
-MonoBehaviour:
+  _audioSource: {fileID: 6475663804611408560}
+  _audioClip: {fileID: 8300000, guid: f37469a687bf73f4ba7b6a97172b3e5a, type: 3}
+--- !u!65 &5410759940250294783
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045042600589172159}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca22c46f674564947b67858706d21ec1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _damageText: {fileID: 3144630044804327921, guid: ea8697b0e4f1cc84da38374e961648f2,
-    type: 3}
-  _statusText: {fileID: 3144630044804327921, guid: 0fb7baff1fb2524478e7f6c7f540bd09,
-    type: 3}
-  _ui: {fileID: 965993972271060893}
---- !u!82 &-4342595914582855027
+  serializedVersion: 3
+  m_Size: {x: 0.05, y: 0.65, z: 0.12}
+  m_Center: {x: 0, y: 0.075, z: -0.035}
+--- !u!54 &3647038016384504966
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045042600589172159}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!82 &6475663804611408560
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,7 +142,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -224,7 +226,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &6004096249702959979
+--- !u!1001 &4987283045575022895
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -232,75 +234,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 965993972271060893}
     m_Modifications:
-    - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4046928279687255575, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+    - target: {fileID: 4046928279687255575, guid: 444b06a424d2a8e4388109b25aa3756e,
         type: 3}
       propertyPath: m_Name
-      value: I Shield Skin
+      value: I Flintlock Skin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bd64d418ed1ba2948be0e6922b81fe2a, type: 3}
---- !u!1 &1626677003590174733 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: bd64d418ed1ba2948be0e6922b81fe2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 6004096249702959979}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5316005677167212915 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 444b06a424d2a8e4388109b25aa3756e, type: 3}
+--- !u!4 &6891220757617961783 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: bd64d418ed1ba2948be0e6922b81fe2a,
+  m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
     type: 3}
-  m_PrefabInstance: {fileID: 6004096249702959979}
+  m_PrefabInstance: {fileID: 4987283045575022895}
   m_PrefabAsset: {fileID: 0}
