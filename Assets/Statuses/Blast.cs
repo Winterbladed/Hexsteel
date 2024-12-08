@@ -4,6 +4,8 @@ public class Blast : Status
 {
     #region Variables
     protected Health _health;
+    protected Armor _armor;
+    protected Shield _shield;
     private bool _isDone = false;
     #endregion
 
@@ -14,6 +16,8 @@ public class Blast : Status
         _statusName = "Blast";
         _statusColor = Color.red;
         _health = GetComponent<Health>();
+        _armor = GetComponent<Armor>();
+        _shield = GetComponent<Shield>();
     }
 
     protected void Update()
@@ -27,7 +31,18 @@ public class Blast : Status
                 foreach (Collider _hit in _colliders)
                 {
                     if (_hit.gameObject.GetComponent<Health>() && !_hit.gameObject.GetComponent<Player>())
-                        _hit.gameObject.GetComponent<Health>().TakeHpDamage(_statusDamage);
+                    {
+                        if (_hit.gameObject.GetComponent<Shield>().GetCurrentSp() <= 0)
+                        {
+                            _hit.gameObject.GetComponent<Health>().TakeHpDamage(_statusDamage - _hit.gameObject.GetComponent<Armor>().GetCurrentAp());
+                            _textEvent.ShowDamage(_statusDamage - _hit.gameObject.GetComponent<Armor>().GetCurrentAp(), Color.white, gameObject.transform);
+                        }
+                        else
+                        {
+                            _hit.gameObject.GetComponent<Shield>().TakeSpDamage(_statusDamage);
+                            _textEvent.ShowDamage(_statusDamage, Color.white, gameObject.transform);
+                        }
+                    }
                 }
                 _isDone = true;
             }

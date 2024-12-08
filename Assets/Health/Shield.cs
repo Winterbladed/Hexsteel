@@ -26,7 +26,7 @@ public class Shield : MonoBehaviour
         if (_sp > 0 && !_isDisabled)
         {
             _spRechargeTime += Time.deltaTime;
-            if (_spRechargeTime > 2.0f )
+            if (_spRechargeTime > 5.0f )
             {
                 CapSp();
                 if (_currentSp < _sp) _currentSp += _spRechargeAmount;

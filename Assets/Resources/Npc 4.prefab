@@ -106,8 +106,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Speed: 2
   _stopRange: 0
-  _detectRange: 0
-  _followBuffer: 0
+  _detectRange: 25
+  _followBuffer: 5
   _wanderRange: 15
   _wanderCooldown: 15
   _InitialRotation: {x: 0, y: 0, z: 0}
@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca1d9fd97743252438876f89f8a44b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ap: 0
 --- !u!114 &-3302748688405993087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +232,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e4309dcc5fa114ca0f24393c514f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sp: 0
+  _spRechargeAmount: 0
+  _OnHit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &9159578771792481612
 MonoBehaviour:
   m_ObjectHideFlags: 0

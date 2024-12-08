@@ -338,8 +338,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Speed: 2
   _stopRange: 0
-  _detectRange: 0
-  _followBuffer: 0
+  _detectRange: 25
+  _followBuffer: 5
   _wanderRange: 15
   _wanderCooldown: 15
   _InitialRotation: {x: 0, y: 0, z: 0}
@@ -1832,16 +1832,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: World Space UI
       objectReference: {fileID: 0}
-    - target: {fileID: 2412051841096674428, guid: d82b01434d88c6646b2ba51a2679add0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2492403632370960343, guid: d82b01434d88c6646b2ba51a2679add0,
-        type: 3}
-      propertyPath: _armor
-      value: 
-      objectReference: {fileID: -2067262753799472850}
     - target: {fileID: 3208329274989711244, guid: d82b01434d88c6646b2ba51a2679add0,
         type: 3}
       propertyPath: _shield
@@ -1862,6 +1852,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8470029666090500115, guid: d82b01434d88c6646b2ba51a2679add0,
+        type: 3}
+      propertyPath: _armor
+      value: 
+      objectReference: {fileID: -2067262753799472850}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

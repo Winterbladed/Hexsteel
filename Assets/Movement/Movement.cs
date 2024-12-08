@@ -10,9 +10,9 @@ public class Movement : MonoBehaviour
     protected float _runSpeed = 8.0f;
 
     [Header("For AI with Targets")]
-    [SerializeField] protected float _stopRange;
-    [SerializeField] protected float _detectRange;
-    [SerializeField] protected float _followBuffer;
+    [SerializeField] protected float _stopRange = 0;
+    [SerializeField] protected float _detectRange = 25.0f;
+    [SerializeField] protected float _followBuffer = 5.0f;
     protected float _distanceFromTarget;
     [SerializeField] protected float _wanderRange = 15.0f;
     [SerializeField] protected float _wanderCooldown = 15.0f;

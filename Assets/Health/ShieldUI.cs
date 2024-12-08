@@ -11,10 +11,10 @@ public class ShieldUI : MonoBehaviour
     #region Private Functions
     private void Update()
     {
-        if (_shield.GetSp() <= 0) _slider.enabled = false;
+        if (_shield.GetSp() <= 0) _slider.gameObject.SetActive(false);
         else
         {
-            _slider.enabled = true;
+            _slider.gameObject.SetActive(true);
             _slider.value = _shield.GetCurrentSp();
             _slider.maxValue = _shield.GetSp();
         }
