@@ -7,7 +7,7 @@ public class Consumable : MonoBehaviour
     [SerializeField] private int _healAmount;
     [SerializeField] private UnityEvent _onConsumeEvt;
     private Inventory _inventory;
-    private Movement _movement;
+    private PlayerMovement _movement;
     private Health _health;
     private float _time;
     #endregion
@@ -16,7 +16,7 @@ public class Consumable : MonoBehaviour
     private void Start()
     {
         _inventory = Inventory._Inventory;
-        _movement = GetComponentInParent<Movement>();
+        _movement = GetComponentInParent<PlayerMovement>();
         _health = GetComponentInParent<Health>();
     }
 

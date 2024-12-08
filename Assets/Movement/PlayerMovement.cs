@@ -1,14 +1,10 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : Movement
 {
     #region Variables
     [Header("Move")]
-    [SerializeField] private float _speed = 2.0f;
-    private float _currentSpeed = 2.0f;
-    private float _slowSpeed = 1.0f;
-    private float _runSpeed = 8.0f;
     [SerializeField] private float _rotationSpeed = 1000.0f;
 
     private Vector3 _direction;
@@ -52,13 +48,6 @@ public class Movement : MonoBehaviour
     #endregion
 
     #region Private Functions
-    private void Start()
-    {
-        _currentSpeed = _speed;
-        _slowSpeed = _speed / 2.0f;
-        _runSpeed = _speed * 2.5f;
-    }
-
     private void Update()
     {
         if (_isDodging)

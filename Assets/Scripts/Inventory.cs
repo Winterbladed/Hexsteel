@@ -31,7 +31,7 @@ public class Inventory : MonoBehaviour
     private int _inventoryIndex = 0;
 
     [Header("Other References")]
-    [SerializeField] private Movement _movement;
+    [SerializeField] private PlayerMovement _movement;
     private InventoryUI _inventoryUI;
     #endregion
 

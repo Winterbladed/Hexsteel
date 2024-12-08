@@ -16,7 +16,7 @@ public class Weapon : Damage
 
     [Header("Weapon References")]
     [SerializeField] protected UnityEvent _onAttack;
-    protected Movement _movement; protected Health _health;
+    protected PlayerMovement _movement; protected Health _health;
     #endregion
 
     #region Private Functions
@@ -25,7 +25,7 @@ public class Weapon : Damage
         _normalDamage = _Damage; _reducedDamage = _Damage / 2;
         _attackTime = 0.0f; _cooldownTime = 0.0f;
         _isAttacked = false; _isOnCooldown = false;
-        _movement = GetComponentInParent<Movement>();
+        _movement = GetComponentInParent<PlayerMovement>();
         _health = GetComponentInParent<Health>();
     }
 

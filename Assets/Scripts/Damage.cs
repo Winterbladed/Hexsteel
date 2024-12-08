@@ -1,15 +1,28 @@
 using UnityEngine;
+[RequireComponent (typeof(TextEvent))]
 
 public class Damage : MonoBehaviour
 {
     #region Variables
     public enum DamageType
     {
-        Default,
-        Toxin,
-        Ice,
-        Aoe,
-        Weaken
+        _None,
+        //Base Physical
+        _Blunt,
+        _Pierce,
+        _Slash,
+        //Base Elemental
+        _Toxin,
+        _Ice,
+        _Fire,
+        _Electric,
+        //Advanced Elemental
+        _Virus,
+        _Gas,
+        _Corrode,
+        _Melt,
+        _Magnetic,
+        _Blast,
     }
 
     [Header("Damage Stats")]
@@ -122,7 +135,7 @@ public class Damage : MonoBehaviour
 
     protected void DealStatusEffect(GameObject _target)
     {
-        //Physical Status Effects
+        //Base Physical Status Effects
         Blunt _blunt = _target.GetComponent<Blunt>();
         Pierce _pierce = _target.GetComponent<Pierce>();
         Slash _slash = _target.GetComponent<Slash>();
@@ -135,29 +148,119 @@ public class Damage : MonoBehaviour
 
         //Advanced Elemental Status Effects
         Virus _virus = _target.GetComponent<Virus>();
+        Gas _gas = _target.GetComponent<Gas>();
+        Corrode _corrode = _target.GetComponent<Corrode>();
+        Melt _melt = _target.GetComponent<Melt>();
+        Magnetic _magnetic = _target.GetComponent<Magnetic>();
+        Blast _blast = _target.GetComponent<Blast>();
 
-        Weaken _melt = _target.GetComponent<Weaken>();
-        Aoe _blast = _target.GetComponent<Aoe>();
+        //Blunt Status Effect
+        if (_blunt && _DamageType == DamageType._Blunt && !_blunt.GetIsActive())
+        {
+            _blunt.EnableStatus(); //Trigger Physical Status
+            SetStatusStats(_blunt, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+        }
 
-        if (_toxin && _DamageType == DamageType.Toxin && !_toxin.GetIsActive())
+        //Pierce Status Effect
+        else if(_pierce && _DamageType == DamageType._Pierce && !_pierce.GetIsActive())
         {
-            _toxin.EnableStatus();
-            SetStatusStats(_toxin, _StatusDamage, _StatusTimer, _StatusTicker);
+            _pierce.EnableStatus(); //Trigger Physical Status
+            SetStatusStats(_pierce, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
-        else if (_ice && _DamageType == DamageType.Ice && !_ice.GetIsActive())
+
+        //Slash Status Effect
+        else if(_slash && _DamageType == DamageType._Slash && !_slash.GetIsActive())
         {
-            _ice.EnableStatus();
-            SetStatusStats(_ice, _StatusDamage, _StatusTimer, _StatusTicker);
+            _slash.EnableStatus(); //Trigger Physical Status
+            SetStatusStats(_slash, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
-        else if (_blast && _DamageType == DamageType.Aoe && !_blast.GetIsActive())
+
+        //Toxin Status Effect
+        else if(_toxin && _DamageType == DamageType._Toxin && !_toxin.GetIsActive())
         {
-            _blast.EnableStatus();
-            SetStatusStats(_blast, _StatusDamage, _StatusTimer, _StatusTicker);
+            _toxin.EnableStatus(); //Trigger Elemental Status
+            SetStatusStats(_toxin, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
-        else if (_DamageType == DamageType.Weaken && !_melt.GetIsActive())
+
+        //Ice Status Effect
+        else if (_ice && _DamageType == DamageType._Ice && !_ice.GetIsActive())
         {
-            _melt.EnableStatus();
-            SetStatusStats(_melt, _StatusDamage, _StatusTimer, _StatusTicker);
+            _ice.EnableStatus(); //Trigger Elemental Status
+            SetStatusStats(_ice, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+        }
+
+        //Fire Status Effect
+        else if (_fire && _DamageType == DamageType._Fire && !_fire.GetIsActive())
+        {
+            _fire.EnableStatus(); //Trigger Elemental Status
+            SetStatusStats(_fire, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+        }
+
+        //Electric Status Effect
+        else if (_electric && _DamageType == DamageType._Electric && !_electric.GetIsActive())
+        {
+            _electric.EnableStatus(); //Trigger Elemental Status
+            SetStatusStats(_electric, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+        }
+
+        //Virus Status Effect = Toxin + Ice
+        else if (_virus && _DamageType == DamageType._Virus && !_virus.GetIsActive() ||
+            _virus && _DamageType == DamageType._Toxin && !_virus.GetIsActive() && _ice.GetIsActive() ||
+            _virus && _DamageType == DamageType._Ice && !_virus.GetIsActive() && _toxin.GetIsActive())
+        {
+            _virus.EnableStatus(); //Trigger Elemental Fusion
+            _toxin.DisableStatus(); _ice.DisableStatus(); //Disable Base Element Status on Elemental Fusion
+            SetStatusStats(_virus, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+        }
+
+        //Gas Status Effect = Toxin + Fire
+        else if (_gas && _DamageType == DamageType._Gas && !_gas.GetIsActive() ||
+            _gas && _DamageType == DamageType._Toxin && !_gas.GetIsActive() && _fire.GetIsActive() ||
+            _gas && _DamageType == DamageType._Fire && !_gas.GetIsActive() && _toxin.GetIsActive())
+        {
+            _gas.EnableStatus(); //Trigger Elemental Fusion
+            _toxin.DisableStatus(); _fire.DisableStatus(); //Disable Base Element Status on Elemental Fusion
+            SetStatusStats(_gas, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+        }
+
+        //Corrode Status Effect = Toxin + Electric
+        else if (_corrode && _DamageType == DamageType._Corrode && !_corrode.GetIsActive() ||
+            _corrode && _DamageType == DamageType._Toxin && !_corrode.GetIsActive() && _electric.GetIsActive() ||
+            _corrode && _DamageType == DamageType._Electric && !_corrode.GetIsActive() && _toxin.GetIsActive())
+        {
+            _corrode.EnableStatus(); //Trigger Elemental Fusion
+            _toxin.DisableStatus(); _electric.DisableStatus(); //Disable Base Element Status on Elemental Fusion
+            SetStatusStats(_corrode, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+        }
+
+        //Melt Status Effect = Ice + Fire
+        else if (_melt && _DamageType == DamageType._Melt && !_melt.GetIsActive() ||
+            _melt && _DamageType == DamageType._Ice && !_melt.GetIsActive() && _fire.GetIsActive() ||
+            _melt && _DamageType == DamageType._Fire && !_melt.GetIsActive() && _ice.GetIsActive())
+        {
+            _melt.EnableStatus(); //Trigger Elemental Fusion
+            _ice.DisableStatus(); _fire.DisableStatus(); //Disable Base Element Status on Elemental Fusion
+            SetStatusStats(_melt, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+        }
+
+        //Magnetic Status Effect = Ice + Electric
+        else if (_magnetic && _DamageType == DamageType._Magnetic && !_magnetic.GetIsActive() ||
+            _magnetic && _DamageType == DamageType._Ice && !_magnetic.GetIsActive() && _ice.GetIsActive() ||
+            _magnetic && _DamageType == DamageType._Electric && !_magnetic.GetIsActive() && _ice.GetIsActive())
+        {
+            _magnetic.EnableStatus(); //Trigger Elemental Fusion
+            _ice.DisableStatus(); _electric.DisableStatus(); //Disable Base Element Status on Elemental Fusion
+            SetStatusStats(_magnetic, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+        }
+
+        //Blast Status Effect = Fire + Electric
+        else if (_blast && _DamageType == DamageType._Blast && !_blast.GetIsActive() ||
+            _blast && _DamageType == DamageType._Fire && !_blast.GetIsActive() && _electric.GetIsActive() ||
+            _blast && _DamageType == DamageType._Electric && !_blast.GetIsActive() && _fire.GetIsActive())
+        {
+            _blast.EnableStatus(); //Trigger Elemental Fusion
+            _fire.DisableStatus(); _electric.DisableStatus(); //Disable Base Element Status on Elemental Fusion
+            SetStatusStats(_blast, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
     }
 

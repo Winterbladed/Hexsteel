@@ -241,6 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7857639740173885394}
   - component: {fileID: 1962118777175635174}
+  - component: {fileID: 2988691898239514514}
   - component: {fileID: 5598573477471722905}
   - component: {fileID: 3967807049795804504}
   - component: {fileID: -8932156524064445612}
@@ -299,16 +300,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _animator: {fileID: 2224090458394976536}
-  _navMeshAgent: {fileID: 1540652121875030783}
-  _wanderRange: 15
-  _wanderCooldown: 10
   _text:
   - {fileID: 5286226783791365267}
   - {fileID: 2419263473458653700}
   - {fileID: 5765220432513425903}
   - {fileID: 149687656715345536}
   _talkDuration: 2
+--- !u!114 &2988691898239514514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294943677015292739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77edc3c56fe78e947ba3859a6877eafb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 2
+  _animator: {fileID: 2224090458394976536}
+  _navMeshAgent: {fileID: 1540652121875030783}
+  _wanderRange: 15
+  _wanderCooldown: 15
 --- !u!114 &5598573477471722905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,7 +336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 0
-  _isInvulnerable: 0
   _deathTime: 5
   _OnHit:
     m_PersistentCalls:
@@ -358,6 +371,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1962118777175635174}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2988691898239514514}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6

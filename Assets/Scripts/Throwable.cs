@@ -7,7 +7,7 @@ public class Throwable : MonoBehaviour
     [Header("Throwable Extras")]
     [SerializeField] private UnityEvent _onThrowEvt;
     private Inventory _inventory;
-    private Movement _movement;
+    private PlayerMovement _movement;
     private float _throwTime;
     #endregion
 
@@ -15,7 +15,7 @@ public class Throwable : MonoBehaviour
     private void Start()
     {
         _inventory = Inventory._Inventory;
-        _movement = GetComponentInParent<Movement>();
+        _movement = GetComponentInParent<PlayerMovement>();
     }
 
     private void Update()

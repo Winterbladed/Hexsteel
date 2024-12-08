@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7857639740173885394}
   - component: {fileID: 1962118777175635174}
+  - component: {fileID: 7755408847670428115}
   - component: {fileID: 1525803089382306873}
   - component: {fileID: 8663307889135083878}
   - component: {fileID: 8692908309116200973}
@@ -68,16 +69,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _animator: {fileID: 8054660977185133884}
-  _navMeshAgent: {fileID: 1540652121875030783}
-  _wanderRange: 15
-  _wanderCooldown: 10
   _text:
   - {fileID: 5535649752161869660}
   - {fileID: 6865862347171837244}
   - {fileID: 5662093007592146774}
   - {fileID: 4735961104907076476}
   _talkDuration: 2
+--- !u!114 &7755408847670428115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294943677015292739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77edc3c56fe78e947ba3859a6877eafb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 2
+  _wanderRange: 15
+  _wanderCooldown: 15
 --- !u!114 &1525803089382306873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,7 +103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 0
-  _isInvulnerable: 0
   _deathTime: 5
   _OnHit:
     m_PersistentCalls:
@@ -127,6 +138,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1962118777175635174}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7755408847670428115}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6

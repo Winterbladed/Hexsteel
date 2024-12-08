@@ -3,7 +3,7 @@ using UnityEngine;
 public class Feet : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private Movement _movement;
+    [SerializeField] private PlayerMovement _movement;
 
     [Header("Movement Sound Library")]
     [SerializeField] private AudioSource _audioSource;

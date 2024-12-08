@@ -8,8 +8,9 @@ public class Health : MonoBehaviour
     private int _currentHp;
     [SerializeField] private int _hp;
     private int _hpDamageMultiplier = 1;
+
     private bool _isBlocking;
-    [SerializeField] private bool _isInvulnerable;
+    private bool _isInvulnerable;
 
     [Header("Death Manager")]
     [SerializeField] private float _deathTime = 5.0f;

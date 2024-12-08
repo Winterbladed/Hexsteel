@@ -5,7 +5,7 @@ public class CameraMove : MonoBehaviour
     #region Variables
     [Header("Camera Reference")]
     [SerializeField] private Transform _player;
-    [SerializeField] private Movement _movement;
+    [SerializeField] private PlayerMovement _movement;
     [SerializeField] private Vector3 _vector;
     private Vector3 _vectorNear;
     private Vector3 _vectorFar = new Vector3(0.5f, 1.8f, 2.0f);

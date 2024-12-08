@@ -7,7 +7,7 @@ public class Status : MonoBehaviour
     protected string _statusName;
     [SerializeField] protected Sprite _statusSprite;
     [SerializeField] protected GameObject _statusVfx;
-    [SerializeField] protected TextEvent _textEvent;
+    protected TextEvent _textEvent;
     protected Color _statusColor;
 
     protected int _statusDamage = 0;
@@ -18,7 +18,7 @@ public class Status : MonoBehaviour
     #endregion
 
     #region Private Functions
-    protected virtual void Start() { DisableStatus(); }
+    protected virtual void Start() { DisableStatus(); _textEvent = GetComponent<TextEvent>(); }
     #endregion
 
     #region Public Functions
