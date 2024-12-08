@@ -11,8 +11,13 @@ public class ArmorUI : MonoBehaviour
     #region Private Functions
     private void Update()
     {
-        _slider.value = _armor.GetCurrentAp();
-        _slider.maxValue = _armor.GetAp();
+        if (_armor.GetAp() <= 0) _slider.enabled = false;
+        else
+        {
+            _slider.enabled = true;
+            _slider.value = _armor.GetCurrentAp();
+            _slider.maxValue = _armor.GetAp();
+        }
     }
     #endregion
 }

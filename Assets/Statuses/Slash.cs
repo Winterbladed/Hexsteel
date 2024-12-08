@@ -14,6 +14,7 @@ public class Slash : Status
         _statusName = "Slash";
         _statusColor = Color.white;
         _health = GetComponent<Health>();
+        _shield = GetComponent<Shield>();
     }
 
     protected void Update()
@@ -24,8 +25,8 @@ public class Slash : Status
             _statusTick += Time.deltaTime;
             if (_statusTick > _statusTicker)
             {
-                if (_shield)
-                _health.TakeHpDamage(_statusDamage);
+                if (_shield.GetCurrentSp() <= 0) _health.TakeHpDamage(_statusDamage);
+                else _shield.TakeSpDamage(_statusDamage);
                 _textEvent.ShowDamage(_statusDamage, Color.white, gameObject.transform);
                 _statusTick = 0.0f;
             }

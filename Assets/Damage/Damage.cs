@@ -91,7 +91,7 @@ public class Damage : MonoBehaviour
     protected void TextDamage(GameObject _target)
     {
         Health _health = _target.GetComponent<Health>();
-        if (_computedDamage < 0)
+        if (_computedDamage * _health.GetHpDamageMultiplier() <= 0)
         {
             _computedDamage = 0;
             _textEvent.ShowDamage(0, Color.gray, _target.transform);
@@ -131,8 +131,8 @@ public class Damage : MonoBehaviour
                 Shield _shield = _target.gameObject.GetComponent<Shield>();
                 if (_health.GetCurrentHp() > 0 && !_health.GetIsInvulnerable())
                 {
-                    DamageEvent(_Damage, _target.gameObject);
-                    if (_shield.GetCurrentSp() <= 0) _health.TakeHpDamage(_computedDamage - _armor.GetCurrentAp());
+                    DamageEvent(_Damage - _armor.GetCurrentAp(), _target.gameObject);
+                    if (_shield.GetCurrentSp() <= 0) _health.TakeHpDamage(_computedDamage);
                     else _shield.TakeSpDamage(_computedDamage);
                     if (_isStatus && _target.gameObject.GetComponent<Status>()) DealStatusEffect(_target.gameObject);
                 }
@@ -157,8 +157,8 @@ public class Damage : MonoBehaviour
                 Armor _armor = _target.gameObject.GetComponent<Armor>();
                 if (_health.GetCurrentHp() > 0 && !_health.GetIsInvulnerable())
                 {
-                    DamageEvent(_Damage, _target.gameObject);
-                    _health.TakeHpDamage(_computedDamage - _armor.GetCurrentAp());
+                    DamageEvent(_Damage - _armor.GetCurrentAp(), _target.gameObject);
+                    _health.TakeHpDamage(_computedDamage);
                     if (_isStatus && _target.gameObject.GetComponent<Status>()) DealStatusEffect(_target.gameObject);
                 }
             }

@@ -3402,7 +3402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 832575525}
   _audioClip:
   - {fileID: 8300000, guid: ea978592708c2704fa8770862418ca4a, type: 3}
 --- !u!328 &832575530
@@ -3685,6 +3684,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Npc 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883906867383574312, guid: 5b6cfac8d8ca06949b930faeea6caf98,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841600857373036716, guid: 5b6cfac8d8ca06949b930faeea6caf98,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918500925548555278, guid: 5b6cfac8d8ca06949b930faeea6caf98,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7857639740173885394, guid: 5b6cfac8d8ca06949b930faeea6caf98,
         type: 3}
@@ -7006,7 +7020,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 7208993169469864080}
   _audioClip:
   - {fileID: 8300000, guid: cc3138eb2a8ae8d4ca85882858ce685f, type: 3}
 --- !u!114 &8348124112238466202
@@ -7035,6 +7048,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sp: 10
   _spRechargeAmount: 1
+  _OnHit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8348124112238466204
 MonoBehaviour:
   m_ObjectHideFlags: 0
