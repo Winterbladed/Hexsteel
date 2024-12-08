@@ -23,8 +23,8 @@ public class EnemyMelee : Enemy
 
     private void Aniimator()
     {
-        if (_agent.velocity.magnitude > 0.0f) _animator.SetBool("_isMoving", true);
-        else if (_agent.velocity.magnitude <= 0.0f) _animator.SetBool("_isMoving", false);
+        if (_enemyMovement.GetNavMeshAgent().velocity.magnitude > 0.0f) _animator.SetBool("_isMoving", true);
+        else if (_enemyMovement.GetNavMeshAgent().velocity.magnitude <= 0.0f) _animator.SetBool("_isMoving", false);
         _animator.SetBool("_isAttacking", _isAttacking);
     }
     #endregion

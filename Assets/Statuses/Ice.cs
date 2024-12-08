@@ -3,7 +3,7 @@ using UnityEngine;
 public class Ice : Status
 {
     #region Variables
-    [SerializeField] private Enemy _enemy;
+    [SerializeField] private Movement _movement;
     #endregion
 
     #region Private Functions
@@ -22,12 +22,12 @@ public class Ice : Status
             _statusTick += Time.deltaTime;
             if (_statusTick > _statusTicker)
             {
-                _enemy.Slow();
+                _movement.Slow();
                 _statusTick = 0.0f;
             }
             if (_statusTime > _statusTimer)
             {
-                _enemy.UnSlow();
+                _movement.UnSlow();
                 _statusTime = 0.0f;
                 DisableStatus();
             }

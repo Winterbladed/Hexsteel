@@ -93,7 +93,7 @@ public class PlayerMovement : Movement
             _isStrafing = false;
         }
 
-        if (!_isSlowed) _currentSpeed = _isRunning ? _runSpeed : _speed;
+        if (!_isSlowed) _currentSpeed = _isRunning ? _runSpeed : _Speed;
         else _currentSpeed = _slowSpeed;
         if (_isAttacking && _isGrounded || _isShooting && _isGrounded || _isThrowing && _isGrounded || _inventory.GetIsSwitching() && _isGrounded || _inventory.GetIsGetting() && _isGrounded) _currentSpeed = 0.0f;
 
@@ -141,7 +141,7 @@ public class PlayerMovement : Movement
     public bool GetIsEating() { return _isEating; } public bool GetIsThrowing() { return _isThrowing; }
     public void SetAttacking(bool _boolean) {  _isAttacking = _boolean; } public void SetShooting(bool _boolean) { _isShooting = _boolean; }
     public void SetEating(bool _boolean) { _isEating = _boolean; } public void SetThrowing(bool _boolean) { _isThrowing = _boolean; }
-    public void SetSpeed(float _newSpeed) { _speed = _newSpeed; _currentSpeed = _newSpeed; _slowSpeed = _newSpeed / 2; _runSpeed = _newSpeed * 4.0f; }
+    public void SetSpeed(float _newSpeed) { _Speed = _newSpeed; _currentSpeed = _newSpeed; _slowSpeed = _newSpeed / 2; _runSpeed = _newSpeed * 4.0f; }
     public void SetJumpHeight(float _newJumpHeight) { _jumpHeight = _newJumpHeight;}
     public void SetGravity(float _newGravity) { _gravity = _newGravity; }
     public void SetDodgeRollSpeed(float _newDodgeRollSpeed) { _dodgeRollSpeed = _newDodgeRollSpeed; }

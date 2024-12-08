@@ -1,76 +1,57 @@
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.Events;
 
 public class Enemy : Damage
 {
     #region Variables
-    [SerializeField] protected NavMeshAgent _agent;
-    protected float _distanceFromTarget;
-    protected Vector3 _initialRotation;
-    protected Vector3 _originalPosition;
+    protected EnemyMovement _enemyMovement;
 
     [Header("Other Enemy Stats")]
-    [SerializeField] protected float _moveSpeed;
     [SerializeField] protected float _attackSpeed;
-    [SerializeField] protected float _attackRange;
-    [SerializeField] protected float _aggroRange;
-    [SerializeField] protected float _aggroBuffer;
     protected float _attackTime = 0.0f;
     protected bool _isAttacking = false;
-    protected float _slowMoveSpeed;
 
     [SerializeField] protected UnityEvent _onAttackEvt;
     protected Player _player;
     #endregion
 
     #region Protected Functions
-    protected virtual void Awake()
-    {
-        _player = Player._Player;
-    }
-
     protected virtual void Start()
     {
-        _player = Player._Player;
-        _agent.speed = _moveSpeed;
-        _slowMoveSpeed = _moveSpeed / 2;
-        _agent.acceleration = _moveSpeed;
+        _player = _enemyMovement.GetPlayer();
         _normalDamage = _Damage;
         _reducedDamage = _Damage / 2;
-        _agent.stoppingDistance = _attackRange;
-        _originalPosition = transform.position;
     }
 
     protected void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, _aggroRange);
+        Gizmos.DrawWireSphere(transform.position, _enemyMovement.GetStopRange());
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, _attackRange);
+        Gizmos.DrawWireSphere(transform.position, _enemyMovement.GetDetectRange());
     }
 
     protected void GoToTarget()
     {
-        _agent.SetDestination(_player.transform.position);
+        _enemyMovement.GetNavMeshAgent().SetDestination(_player.transform.position);
     }
 
     protected void GoToTargetWhenNear()
     {
-        _distanceFromTarget = Vector3.Distance(transform.position, _player.transform.position);
-        if (_distanceFromTarget <= _aggroRange) _agent.SetDestination(_player.transform.position);
-        else if(_distanceFromTarget > _aggroRange + _aggroBuffer) _agent.SetDestination(_originalPosition);
+        _enemyMovement.SetDistanceFromTarget(Vector3.Distance(transform.position, _player.transform.position));
+        if (_enemyMovement.GetDistanceFromTarget() <= _enemyMovement.GetDetectRange()) _enemyMovement.GetNavMeshAgent().SetDestination(_player.transform.position);
+        else if(_enemyMovement.GetDistanceFromTarget() > _enemyMovement.GetDetectRange() + _enemyMovement.GetFollowBuffer()) _enemyMovement.GetNavMeshAgent().SetDestination(_enemyMovement._OriginalPosition);
     }
 
     protected void AttackWhenNearTarget()
     {
-        _distanceFromTarget = Vector3.Distance(transform.position, _player.transform.position);
-        if (_distanceFromTarget <= _attackRange)
+        _enemyMovement.SetDistanceFromTarget(Vector3.Distance(transform.position, _player.transform.position));
+        if (_enemyMovement.GetDistanceFromTarget() <= _enemyMovement.GetStopRange())
         {
-            _initialRotation = transform.eulerAngles;
+            _enemyMovement._InitialRotation = transform.eulerAngles;
             _isAttacking = true;
-            _agent.speed = 0.0f;
+            _enemyMovement.GetNavMeshAgent().speed = 0.0f;
         }
         if (_isAttacking)
         {
@@ -80,7 +61,7 @@ public class Enemy : Damage
             {
                 _onAttackEvt.Invoke();
                 ResetAttack();
-                if (_distanceFromTarget <= _attackRange + 1)
+                if (_enemyMovement.GetDistanceFromTarget() <= _enemyMovement.GetStopRange() + 1)
                 {
                     DealDamage(_player.gameObject);
                 }
@@ -90,12 +71,12 @@ public class Enemy : Damage
 
     protected void AttackRangeWhenNearTarget(GameObject _gameobject, Transform _transform)
     {
-        _distanceFromTarget = Vector3.Distance(transform.position, _player.transform.position);
-        if (_distanceFromTarget <= _attackRange)
+        _enemyMovement.SetDistanceFromTarget(Vector3.Distance(transform.position, _player.transform.position));
+        if (_enemyMovement.GetDistanceFromTarget() <= _enemyMovement.GetStopRange())
         {
-            _initialRotation = transform.eulerAngles;
+            _enemyMovement._InitialRotation = transform.eulerAngles;
             _isAttacking = true;
-            _agent.speed = 0.0f;
+            _enemyMovement.GetNavMeshAgent().speed = 0.0f;
             transform.LookAt(_player.transform.position);
             _attackTime += Time.deltaTime;
             if (_attackTime > _attackSpeed)
@@ -111,7 +92,7 @@ public class Enemy : Damage
                 _attackTime = 0.0f;
             }
         }
-        else if (_distanceFromTarget > _attackRange + 1)
+        else if (_enemyMovement.GetDistanceFromTarget() > _enemyMovement.GetStopRange() + 1)
         {
             ResetAttack();
         }
@@ -121,20 +102,8 @@ public class Enemy : Damage
     {
         _attackTime = 0.0f;
         _isAttacking = false;
-        _agent.speed = _moveSpeed;
-        transform.eulerAngles = _initialRotation;
-    }
-    #endregion
-
-    #region Public Functions
-    public void Slow()
-    {
-        _agent.speed = _slowMoveSpeed;
-    }
-
-    public void UnSlow()
-    {
-        _agent.speed = _moveSpeed;
+        _enemyMovement.GetNavMeshAgent().speed = _enemyMovement.GetCurrentSpeed();
+        transform.eulerAngles = _enemyMovement._InitialRotation;
     }
     #endregion
 }

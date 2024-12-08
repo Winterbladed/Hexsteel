@@ -22,8 +22,8 @@ public class EnemyShield : Enemy
 
     private void Aniimator()
     {
-        if (_agent.velocity.magnitude > 0.0f) _animator.SetBool("_isMoving", false);
-        else if (_agent.velocity.magnitude <= 0.0f) _animator.SetBool("_isMoving", false);
+        if (_enemyMovement.GetNavMeshAgent().velocity.magnitude > 0.0f) _animator.SetBool("_isMoving", false);
+        else if (_enemyMovement.GetNavMeshAgent().velocity.magnitude <= 0.0f) _animator.SetBool("_isMoving", false);
     }
     #endregion
 }
