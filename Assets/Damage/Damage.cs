@@ -118,16 +118,60 @@ public class Damage : MonoBehaviour
 
     protected void DealDamage(GameObject _target)
     {
+        //Target has Health
         if (_target.gameObject.GetComponent<Health>())
         {
             CriticalDamageChance();
             StatusChance();
-            Health _health = _target.gameObject.GetComponent<Health>();
-            if (_health.GetCurrentHp() > 0 && !_health.GetIsInvulnerable())
+            //Target has Armor and Shield and Health
+            if (_target.gameObject.GetComponent<Armor>() && _target.gameObject.GetComponent<Shield>())
             {
-                DamageEvent(_Damage, _target.gameObject);
-                _health.TakeHpDamage(_computedDamage);
-                if (_isStatus && _target.gameObject.GetComponent<Status>()) DealStatusEffect(_target.gameObject);
+                Health _health = _target.gameObject.GetComponent<Health>();
+                Armor _armor = _target.gameObject.GetComponent<Armor>();
+                Shield _shield = _target.gameObject.GetComponent<Shield>();
+                if (_health.GetCurrentHp() > 0 && !_health.GetIsInvulnerable())
+                {
+                    DamageEvent(_Damage, _target.gameObject);
+                    if (_shield.GetCurrentSp() <= 0) _health.TakeHpDamage(_computedDamage - _armor.GetCurrentAp());
+                    else _shield.TakeSpDamage(_computedDamage);
+                    if (_isStatus && _target.gameObject.GetComponent<Status>()) DealStatusEffect(_target.gameObject);
+                }
+            }
+            //Target has Shield and Health only
+            else if (!_target.gameObject.GetComponent<Armor>() && _target.gameObject.GetComponent<Shield>())
+            {
+                Health _health = _target.gameObject.GetComponent<Health>();
+                Shield _shield = _target.gameObject.GetComponent<Shield>();
+                if (_health.GetCurrentHp() > 0 && !_health.GetIsInvulnerable())
+                {
+                    DamageEvent(_Damage, _target.gameObject);
+                    if (_shield.GetCurrentSp() <= 0) _health.TakeHpDamage(_computedDamage);
+                    else _shield.TakeSpDamage(_computedDamage);
+                    if (_isStatus && _target.gameObject.GetComponent<Status>()) DealStatusEffect(_target.gameObject);
+                }
+            }
+            //Target has Armor and Health only
+            else if (_target.gameObject.GetComponent<Armor>() && !_target.gameObject.GetComponent<Shield>())
+            {
+                Health _health = _target.gameObject.GetComponent<Health>();
+                Armor _armor = _target.gameObject.GetComponent<Armor>();
+                if (_health.GetCurrentHp() > 0 && !_health.GetIsInvulnerable())
+                {
+                    DamageEvent(_Damage, _target.gameObject);
+                    _health.TakeHpDamage(_computedDamage - _armor.GetCurrentAp());
+                    if (_isStatus && _target.gameObject.GetComponent<Status>()) DealStatusEffect(_target.gameObject);
+                }
+            }
+            //Target has Health only
+            else
+            {
+                Health _health = _target.gameObject.GetComponent<Health>();
+                if (_health.GetCurrentHp() > 0 && !_health.GetIsInvulnerable())
+                {
+                    DamageEvent(_Damage, _target.gameObject);
+                    _health.TakeHpDamage(_computedDamage);
+                    if (_isStatus && _target.gameObject.GetComponent<Status>()) DealStatusEffect(_target.gameObject);
+                }
             }
         }
     }
