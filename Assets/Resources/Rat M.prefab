@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 6850003329806802043}
   - component: {fileID: 4552885448610738707}
   - component: {fileID: 4373988479285811185}
+  - component: {fileID: 419014104203932265}
   - component: {fileID: 7946265081214565673}
   - component: {fileID: -6454715108575895444}
   - component: {fileID: 8803803206021546735}
@@ -358,12 +359,7 @@ MonoBehaviour:
   _StatusTimer: 5
   _StatusTicker: 1
   _textEvent: {fileID: 4373988479285811185}
-  _agent: {fileID: 2327133035627195405}
-  _moveSpeed: 3
   _attackSpeed: 2
-  _attackRange: 3
-  _aggroRange: 25
-  _aggroBuffer: 5
   _onAttackEvt:
     m_PersistentCalls:
       m_Calls:
@@ -397,6 +393,26 @@ MonoBehaviour:
   _statusText: {fileID: 3144630044804327921, guid: 0fb7baff1fb2524478e7f6c7f540bd09,
     type: 3}
   _ui: {fileID: 6850003329806802043}
+--- !u!114 &419014104203932265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378749433377581758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468dcfa3351931f4fa54db10f5afca95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Speed: 2
+  _stopRange: 0
+  _detectRange: 0
+  _followBuffer: 0
+  _InitialRotation: {x: 0, y: 0, z: 0}
+  _OriginalPosition: {x: 0, y: 0, z: 0}
+  _wanderRange: 15
+  _wanderCooldown: 15
 --- !u!114 &7946265081214565673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +426,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 40
-  _isInvulnerable: 0
   _deathTime: 5
   _OnHit:
     m_PersistentCalls:
@@ -571,7 +586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _statusSprite: {fileID: 21300000, guid: 2e780cde9d8caf64d9a624dd9c48a1f4, type: 3}
   _statusVfx: {fileID: 3701777737616026149}
-  _enemy: {fileID: 4552885448610738707}
+  _movement: {fileID: 0}
 --- !u!114 &6984682507838767258
 MonoBehaviour:
   m_ObjectHideFlags: 0

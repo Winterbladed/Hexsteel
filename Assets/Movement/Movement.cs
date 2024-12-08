@@ -14,6 +14,9 @@ public class Movement : MonoBehaviour
     [SerializeField] protected float _detectRange;
     [SerializeField] protected float _followBuffer;
     protected float _distanceFromTarget;
+    [SerializeField] protected float _wanderRange = 15.0f;
+    [SerializeField] protected float _wanderCooldown = 15.0f;
+    protected float _currentWanderCooldown;
     protected Transform _target;
     public Vector3 _InitialRotation;
     public Vector3 _OriginalPosition;

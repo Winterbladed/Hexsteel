@@ -6,9 +6,6 @@ public class NPCMovement : Movement
 {
     #region Variables
     [Header("Npc Movement Stats")]
-    [SerializeField] protected float _wanderRange = 15.0f;
-    [SerializeField] protected float _wanderCooldown = 15.0f;
-    protected float _currentWanderCooldown;
     protected Animator _animator;
     protected NavMeshAgent _navMeshAgent;
     #endregion

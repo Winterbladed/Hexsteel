@@ -1,23 +1,24 @@
 using UnityEngine;
 using UnityEngine.Events;
+[RequireComponent(typeof(EnemyMovement))]
 
 public class Enemy : Damage
 {
     #region Variables
-    protected EnemyMovement _enemyMovement;
-
     [Header("Other Enemy Stats")]
     [SerializeField] protected float _attackSpeed;
     protected float _attackTime = 0.0f;
     protected bool _isAttacking = false;
 
     [SerializeField] protected UnityEvent _onAttackEvt;
+    protected EnemyMovement _enemyMovement;
     protected Player _player;
     #endregion
 
     #region Protected Functions
     protected virtual void Start()
     {
+        _enemyMovement = GetComponent<EnemyMovement>();
         _player = _enemyMovement.GetPlayer();
         _normalDamage = _Damage;
         _reducedDamage = _Damage / 2;
