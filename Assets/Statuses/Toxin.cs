@@ -3,7 +3,7 @@ using UnityEngine;
 public class Toxin : Status
 {
     #region Variables
-    [SerializeField] private Health _health;
+    protected Health _health;
     #endregion
 
     #region Private Functions
@@ -12,9 +12,10 @@ public class Toxin : Status
         base.Start();
         _statusName = "Toxin";
         _statusColor = Color.green;
+        _health = GetComponent<Health>();
     }
 
-    private void Update()
+    protected void Update()
     {
         if (_isActive)
         {

@@ -1,4 +1,5 @@
 using UnityEngine;
+[RequireComponent (typeof(TextEvent))]
 
 public class Status : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class Status : MonoBehaviour
     #region Public Functions
     public bool GetIsActive() { return _isActive; }
     public string GetStatusName() { return _statusName; }
+    public Color GetStatusColor() { return _statusColor; }
+    public Sprite GetStatusSprite() { return _statusSprite; }
     public void SetStatusDamage(int _damage) { _statusDamage = _damage; }
     public void SetStatusTimer(float _timer) { _statusTimer = _timer; }
     public void SetStatusTicker(float _ticker) { _statusTicker = _ticker; }

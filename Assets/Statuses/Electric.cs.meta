@@ -3,7 +3,9 @@ guid: 59622301a690ab94788132fd94dd26a7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _statusSprite: {fileID: 21300000, guid: 0abfecf4e6da36b45b39f34e6df5c562, type: 3}
+  - _statusVfx: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

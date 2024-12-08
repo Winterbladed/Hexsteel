@@ -9,6 +9,11 @@ public class TextEvent : MonoBehaviour
     #endregion
 
     #region Public Functions
+    public void Start()
+    {
+        if (!_ui) _ui = transform;
+    }
+
     public void ShowDamage(int _damage, Color _color, Transform _target)
     {
         GameObject _newDamageText = _damageText;

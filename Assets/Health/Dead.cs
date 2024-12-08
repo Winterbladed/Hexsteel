@@ -3,11 +3,17 @@ using UnityEngine;
 public class Dead : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private Animator _animator;
-    [SerializeField] private Health _health;
+    private Animator _animator;
+    private Health _health;
     #endregion
 
     #region Private Functions
+    private void Start()
+    {
+        _animator = GetComponentInChildren<Animator>();
+        _health = GetComponent<Health>();
+    }
+
     private void LateUpdate()
     {
         _animator.SetBool("_isDead", _health.GetIsDead());

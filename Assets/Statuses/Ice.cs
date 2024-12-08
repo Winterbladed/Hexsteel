@@ -3,7 +3,7 @@ using UnityEngine;
 public class Ice : Status
 {
     #region Variables
-    [SerializeField] private Movement _movement;
+    protected Movement _movement;
     #endregion
 
     #region Private Functions
@@ -12,9 +12,10 @@ public class Ice : Status
         base.Start();
         _statusName = "Ice";
         _statusColor = Color.cyan;
+        _movement = GetComponent<Movement>();
     }
 
-    private void Update()
+    protected void Update()
     {
         if (_isActive)
         {

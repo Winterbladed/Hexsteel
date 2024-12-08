@@ -1,10 +1,9 @@
-using System.IO;
 using UnityEngine;
 
 public class Blast : Status
 {
     #region Variables
-    [SerializeField] private Health _health;
+    protected Health _health;
     private bool _isDone = false;
     #endregion
 
@@ -14,9 +13,10 @@ public class Blast : Status
         base.Start();
         _statusName = "Blast";
         _statusColor = Color.red;
+        _health = GetComponent<Health>();
     }
 
-    private void Update()
+    protected void Update()
     {
         if (_isActive)
         {
