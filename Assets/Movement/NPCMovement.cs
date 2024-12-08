@@ -13,7 +13,7 @@ public class NPCMovement : Movement
     {
         base.Start();
         _animator = GetComponentInChildren<Animator>();
-        _navMeshAgent.GetComponent<NavMeshAgent>();
+        _navMeshAgent = GetComponent<NavMeshAgent>();
         _navMeshAgent.speed = _currentSpeed;
         _navMeshAgent.acceleration = _currentSpeed;
         _navMeshAgent.stoppingDistance = _stopRange;
