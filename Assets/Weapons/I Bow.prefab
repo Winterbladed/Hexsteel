@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef4b9366ca269094aac885a93e6c046a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _DamageType: 1
+  _DamageType: 0
   _Damage: 1
   _CriticalDamage: 1
   _CriticalChance: 0
@@ -75,7 +75,6 @@ MonoBehaviour:
   _StatusDamage: 0
   _StatusTimer: 5
   _StatusTicker: 1
-  _textEvent: {fileID: 1221176511195950987}
   _trail: {fileID: 1413826257314425020}
   _radius: 0
   _distance: 0
