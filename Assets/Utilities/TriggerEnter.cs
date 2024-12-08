@@ -10,6 +10,7 @@ public class TriggerEnter : MonoBehaviour
     {
         Player,
         Rigidbody,
+        Interactable,
         Item,
         Health,
     }
@@ -28,6 +29,12 @@ public class TriggerEnter : MonoBehaviour
 
         //Rigidbody
         else if (_colliderDetection == _ColliderDetection.Rigidbody && _sense.gameObject.GetComponent<Rigidbody>())
+        {
+            _onTriggerEnterEvt.Invoke();
+        }
+
+        //Interactable
+        else if (_colliderDetection == _ColliderDetection.Interactable && _sense.gameObject.GetComponent<Interactable>())
         {
             _onTriggerEnterEvt.Invoke();
         }
