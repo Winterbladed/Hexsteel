@@ -20,9 +20,9 @@ public class Weapon : Damage
     #endregion
 
     #region Private Functions
-    protected virtual void Start()
+    protected override void Start()
     {
-        _normalDamage = _Damage; _reducedDamage = _Damage / 2;
+        base.Start();
         _attackTime = 0.0f; _cooldownTime = 0.0f;
         _isAttacked = false; _isOnCooldown = false;
         _movement = GetComponentInParent<PlayerMovement>();

@@ -16,12 +16,11 @@ public class Enemy : Damage
     #endregion
 
     #region Protected Functions
-    protected virtual void Start()
+    protected override void Start()
     {
+        base.Start();
         _enemyMovement = GetComponent<EnemyMovement>();
         _player = _enemyMovement.GetPlayer();
-        _normalDamage = _Damage;
-        _reducedDamage = _Damage / 2;
     }
 
     protected void OnDrawGizmos()

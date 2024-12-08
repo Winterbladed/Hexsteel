@@ -24,10 +24,9 @@ public class Projectile : Damage
     #endregion
 
     #region Private Function
-    private void Start()
+    protected override void Start()
     {
-        _normalDamage = _Damage;
-        _reducedDamage = _Damage / 2;
+        base.Start();
         CriticalDamageChance();
         StatusChance();
         DetermineVectorVelocity();

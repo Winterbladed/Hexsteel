@@ -409,10 +409,10 @@ MonoBehaviour:
   _stopRange: 0
   _detectRange: 0
   _followBuffer: 0
-  _InitialRotation: {x: 0, y: 0, z: 0}
-  _OriginalPosition: {x: 0, y: 0, z: 0}
   _wanderRange: 15
   _wanderCooldown: 15
+  _InitialRotation: {x: 0, y: 0, z: 0}
+  _OriginalPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &7946265081214565673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +526,7 @@ MonoBehaviour:
   _spawn:
   - {fileID: 920972315265357352, guid: cff60d915318ef74e89a04790082570a, type: 3}
   - {fileID: 2271587553193703881, guid: 76a7d472edf99b04a9f1f4c13c67b812, type: 3}
-  _transform: {fileID: 0}
+  _transform: {fileID: 6850003329806802043}
 --- !u!114 &1413524429980475727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
   _addToVector: {x: 0, y: 1.5, z: 0}
   _spawn:
   - {fileID: 2045042600589172159, guid: 4b2cefb72b5f82245a37be578a51058e, type: 3}
-  _transform: {fileID: 0}
+  _transform: {fileID: 6850003329806802043}
 --- !u!114 &3372193442672075014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _statusSprite: {fileID: 21300000, guid: 2e780cde9d8caf64d9a624dd9c48a1f4, type: 3}
   _statusVfx: {fileID: 3701777737616026149}
-  _movement: {fileID: 0}
+  _movement: {fileID: 419014104203932265}
 --- !u!114 &6984682507838767258
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -48,15 +48,14 @@ public class Damage : MonoBehaviour
     public float _StatusTimer = 0.0f;
     public float _StatusTicker = 0.0f;
 
-    [Header("References")]
-    [SerializeField] protected TextEvent _textEvent;
+    protected TextEvent _textEvent;
     #endregion
 
     #region Private Functions
-    private void Start()
+    protected virtual void Start()
     {
-        _normalDamage = _Damage;
-        _reducedDamage = _Damage / 2;
+        _textEvent = GetComponent<TextEvent>();
+        _normalDamage = _Damage; _reducedDamage = _Damage / 2;
     }
     #endregion
 
