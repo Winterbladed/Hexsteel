@@ -131,9 +131,16 @@ public class Damage : MonoBehaviour
                 Shield _shield = _target.gameObject.GetComponent<Shield>();
                 if (_health.GetCurrentHp() > 0 && !_health.GetIsInvulnerable())
                 {
-                    DamageEvent(_Damage - _armor.GetCurrentAp(), _target.gameObject);
-                    if (_shield.GetCurrentSp() <= 0) _health.TakeHpDamage(_computedDamage);
-                    else _shield.TakeSpDamage(_computedDamage);
+                    if (_shield.GetCurrentSp() <= 0)
+                    {
+                        DamageEvent(_Damage - _armor.GetCurrentAp(), _target.gameObject);
+                        _health.TakeHpDamage(_computedDamage);
+                    }
+                    else
+                    {
+                        DamageEvent(_Damage, _target.gameObject);
+                        _shield.TakeSpDamage(_computedDamage);
+                    }
                     if (_isStatus && _target.gameObject.GetComponent<Status>()) DealStatusEffect(_target.gameObject);
                 }
             }
@@ -254,7 +261,7 @@ public class Damage : MonoBehaviour
         {
             _virus.EnableStatus(); //Trigger Elemental Fusion
             _toxin.DisableStatus(); _ice.DisableStatus(); //Disable Base Element Status on Elemental Fusion
-            SetStatusStats(_virus, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_virus, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
         }
 
         //Gas Status Effect = Toxin + Fire
@@ -274,7 +281,7 @@ public class Damage : MonoBehaviour
         {
             _corrode.EnableStatus(); //Trigger Elemental Fusion
             _toxin.DisableStatus(); _electric.DisableStatus(); //Disable Base Element Status on Elemental Fusion
-            SetStatusStats(_corrode, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_corrode, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
         }
 
         //Melt Status Effect = Ice + Fire
@@ -284,17 +291,17 @@ public class Damage : MonoBehaviour
         {
             _melt.EnableStatus(); //Trigger Elemental Fusion
             _ice.DisableStatus(); _fire.DisableStatus(); //Disable Base Element Status on Elemental Fusion
-            SetStatusStats(_melt, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_melt, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
         }
 
         //Magnetic Status Effect = Ice + Electric
         else if (_magnetic && _DamageType == DamageType._Magnetic && !_magnetic.GetIsActive() ||
-            _magnetic && _DamageType == DamageType._Ice && !_magnetic.GetIsActive() && _ice.GetIsActive() ||
+            _magnetic && _DamageType == DamageType._Ice && !_magnetic.GetIsActive() && _electric.GetIsActive() ||
             _magnetic && _DamageType == DamageType._Electric && !_magnetic.GetIsActive() && _ice.GetIsActive())
         {
             _magnetic.EnableStatus(); //Trigger Elemental Fusion
             _ice.DisableStatus(); _electric.DisableStatus(); //Disable Base Element Status on Elemental Fusion
-            SetStatusStats(_magnetic, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_magnetic, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
         }
 
         //Blast Status Effect = Fire + Electric

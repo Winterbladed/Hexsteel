@@ -66,11 +66,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef4b9366ca269094aac885a93e6c046a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _DamageType: 6
+  _DamageType: 5
   _Damage: 1
   _CriticalDamage: 1
   _CriticalChance: 0
-  _StatusChance: 1
+  _StatusChance: 0.1
   _StatusDamage: 1
   _StatusTimer: 5
   _StatusTicker: 1

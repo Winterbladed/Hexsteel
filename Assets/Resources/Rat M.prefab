@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Speed: 2
-  _stopRange: 4
+  _stopRange: 3
   _detectRange: 25
   _followBuffer: 5
   _wanderRange: 15

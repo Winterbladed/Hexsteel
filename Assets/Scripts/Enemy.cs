@@ -23,15 +23,6 @@ public class Enemy : Damage
         _player = _enemyMovement.GetPlayer();
     }
 
-    protected void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, _enemyMovement.GetStopRange());
-
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, _enemyMovement.GetDetectRange());
-    }
-
     protected void GoToTarget()
     {
         _enemyMovement.GetNavMeshAgent().SetDestination(_player.transform.position);
