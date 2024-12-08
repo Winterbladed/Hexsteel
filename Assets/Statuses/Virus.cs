@@ -14,5 +14,25 @@ public class Virus : Status
         _statusColor = Color.magenta;
         _health = GetComponent<Health>();
     }
+
+    protected void Update()
+    {
+        if (_isActive)
+        {
+            _statusTime += Time.deltaTime;
+            _statusTick += Time.deltaTime;
+            if (_statusTick > _statusTicker)
+            {
+                _health.ModifyHpDamageTaken(2);
+                _statusTick = 0.0f;
+            }
+            if (_statusTime > _statusTimer)
+            {
+                _health.ModifyHpDamageTaken(1);
+                _statusTime = 0.0f;
+                DisableStatus();
+            }
+        }
+    }
     #endregion
 }
