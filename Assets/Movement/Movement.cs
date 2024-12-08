@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour
     public Vector3 _InitialRotation;
     public Vector3 _OriginalPosition;
 
+    protected NavMeshAgent _navMeshAgent;
     protected Player _player;
     #endregion
 

@@ -5926,7 +5926,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd0ddf48a529db347a9ebfbd7d9d256e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 2
+  _Speed: 2
+  _stopRange: 0
+  _detectRange: 0
+  _followBuffer: 0
+  _wanderRange: 15
+  _wanderCooldown: 15
+  _InitialRotation: {x: 0, y: 0, z: 0}
+  _OriginalPosition: {x: 0, y: 0, z: 0}
   _rotationSpeed: 1000
   _jumpHeight: 1.5
   _gravity: -20

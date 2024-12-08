@@ -5,9 +5,7 @@ using UnityEngine.AI;
 public class NPCMovement : Movement
 {
     #region Variables
-    [Header("Npc Movement Stats")]
     protected Animator _animator;
-    protected NavMeshAgent _navMeshAgent;
     #endregion
 
     #region Private Functions
@@ -18,6 +16,7 @@ public class NPCMovement : Movement
         _navMeshAgent.GetComponent<NavMeshAgent>();
         _navMeshAgent.speed = _currentSpeed;
         _navMeshAgent.acceleration = _currentSpeed;
+        _navMeshAgent.stoppingDistance = _stopRange;
         Vector3 _randomPoint = RandomNavmeshPoint(transform.position, _wanderRange);
         if (_randomPoint != Vector3.zero) _navMeshAgent.SetDestination(_randomPoint);
     }

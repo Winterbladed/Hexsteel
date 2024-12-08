@@ -5,9 +5,7 @@ using UnityEngine.AI;
 public class EnemyMovement : Movement
 {
     #region Variables
-    [Header("Enemy Movement Stats")]
     protected Animator _animator;
-    protected NavMeshAgent _navMeshAgent;
     #endregion
 
     #region Private Functions
