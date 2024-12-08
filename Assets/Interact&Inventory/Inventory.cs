@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
@@ -30,14 +29,14 @@ public class Inventory : MonoBehaviour
     private int _currentHeldItemID;
     private int _inventoryIndex = 0;
 
-    [Header("Other References")]
-    [SerializeField] private PlayerMovement _movement;
+    private PlayerMovement _movement;
     private InventoryUI _inventoryUI;
     #endregion
 
     #region Private Functions
     private void Start()
     {
+        _movement = GetComponent<PlayerMovement>();
         _inventoryUI = InventoryUI._InventoryUI;
         if (_inventory1.Count > 0)
             foreach (GameObject _item in _inventory1)

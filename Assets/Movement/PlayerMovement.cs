@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
+[RequireComponent(typeof(Inventory))]
+[RequireComponent(typeof(Health))]
 
 public class PlayerMovement : Movement
 {
@@ -40,14 +42,22 @@ public class PlayerMovement : Movement
     private float _dodgeCooldownTime;
 
     [Header("References")]
-    [SerializeField] private CharacterController _controller;
     [SerializeField] private Transform _cameraTransform;
     [SerializeField] private Animator _animator;
-    [SerializeField] private Health _health;
-    [SerializeField] private Inventory _inventory;
+    private CharacterController _controller;
+    private Health _health;
+    private Inventory _inventory;
     #endregion
 
     #region Private Functions
+    protected override void Start()
+    {
+        base.Start();
+        _controller = GetComponent<CharacterController>();
+        _health = GetComponent<Health>();
+        _inventory = GetComponent<Inventory>();
+    }
+
     private void Update()
     {
         if (_isDodging)
