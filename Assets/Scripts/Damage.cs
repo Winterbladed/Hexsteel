@@ -6,8 +6,8 @@ public class Damage : MonoBehaviour
     public enum DamageType
     {
         Default,
-        Slow,
-        Poison,
+        Toxin,
+        Ice,
         Aoe,
         Weaken
     }
@@ -89,7 +89,7 @@ public class Damage : MonoBehaviour
             if (!_health.GetIsBlocking()) _textEvent.ShowDamage(_computedDamage * _health.GetHpDamageMultiplier(), Color.white, _target.transform);
             else if (_health.GetIsBlocking())
             {
-                _textEvent.ShowStatus("Blocked!", _target.transform);
+                _textEvent.ShowState("Blocked!", Color.white, _target.transform);
                 _textEvent.ShowDamage((_computedDamage * _health.GetHpDamageMultiplier()) / 4, Color.white, _target.transform);
             }
         }
@@ -98,7 +98,7 @@ public class Damage : MonoBehaviour
             if (!_health.GetIsBlocking()) _textEvent.ShowDamage(_computedDamage * _health.GetHpDamageMultiplier(), Color.yellow, _target.transform);
             else if (_health.GetIsBlocking())
             {
-                _textEvent.ShowStatus("Blocked!", _target.transform);
+                _textEvent.ShowState("Blocked!", Color.white, _target.transform);
                 _textEvent.ShowDamage((_computedDamage * _health.GetHpDamageMultiplier()) / 4, Color.yellow, _target.transform);
             }
         }
@@ -122,29 +122,42 @@ public class Damage : MonoBehaviour
 
     protected void DealStatusEffect(GameObject _target)
     {
-        Slow _slow = _target.GetComponent<Slow>();
-        Poison _poison = _target.GetComponent<Poison>();
-        Aoe _aoe = _target.GetComponent<Aoe>();
-        Weaken _weaken = _target.GetComponent<Weaken>();
-        if (_DamageType == DamageType.Slow && !_slow.GetIsActive())
+        //Physical Status Effects
+        Blunt _blunt = _target.GetComponent<Blunt>();
+        Pierce _pierce = _target.GetComponent<Pierce>();
+        Slash _slash = _target.GetComponent<Slash>();
+
+        //Base Elemental Status Effects
+        Toxin _toxin = _target.GetComponent<Toxin>();
+        Ice _ice = _target.GetComponent<Ice>();
+        Fire _fire = _target.GetComponent<Fire>();
+        Electric _electric = _target.GetComponent<Electric>();
+
+        //Advanced Elemental Status Effects
+        Virus _virus = _target.GetComponent<Virus>();
+
+        Weaken _melt = _target.GetComponent<Weaken>();
+        Aoe _blast = _target.GetComponent<Aoe>();
+
+        if (_toxin && _DamageType == DamageType.Toxin && !_toxin.GetIsActive())
         {
-            _slow.EnableStatus();
-            SetStatusStats(_slow, _StatusDamage, _StatusTimer, _StatusTicker);
+            _toxin.EnableStatus();
+            SetStatusStats(_toxin, _StatusDamage, _StatusTimer, _StatusTicker);
         }
-        else if (_DamageType == DamageType.Poison && !_poison.GetIsActive())
+        else if (_ice && _DamageType == DamageType.Ice && !_ice.GetIsActive())
         {
-            _poison.EnableStatus();
-            SetStatusStats(_poison, _StatusDamage, _StatusTimer, _StatusTicker);
+            _ice.EnableStatus();
+            SetStatusStats(_ice, _StatusDamage, _StatusTimer, _StatusTicker);
         }
-        else if (_DamageType == DamageType.Aoe && !_aoe.GetIsActive())
+        else if (_blast && _DamageType == DamageType.Aoe && !_blast.GetIsActive())
         {
-            _aoe.EnableStatus();
-            SetStatusStats(_aoe, _StatusDamage, _StatusTimer, _StatusTicker);
+            _blast.EnableStatus();
+            SetStatusStats(_blast, _StatusDamage, _StatusTimer, _StatusTicker);
         }
-        else if (_DamageType == DamageType.Weaken && !_weaken.GetIsActive())
+        else if (_DamageType == DamageType.Weaken && !_melt.GetIsActive())
         {
-            _weaken.EnableStatus();
-            SetStatusStats(_weaken, _StatusDamage, _StatusTimer, _StatusTicker);
+            _melt.EnableStatus();
+            SetStatusStats(_melt, _StatusDamage, _StatusTimer, _StatusTicker);
         }
     }
 

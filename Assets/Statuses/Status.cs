@@ -4,9 +4,11 @@ public class Status : MonoBehaviour
 {
     #region Variables
     protected bool _isActive = false;
-    [SerializeField] protected string _statusName;
+    protected string _statusName;
+    [SerializeField] protected Sprite _statusSprite;
     [SerializeField] protected GameObject _statusVfx;
     [SerializeField] protected TextEvent _textEvent;
+    protected Color _statusColor;
 
     protected int _statusDamage = 0;
     protected float _statusTimer = 0.0f;
@@ -30,7 +32,7 @@ public class Status : MonoBehaviour
     {
         _isActive = true;
         if (_statusVfx) _statusVfx.SetActive(true);
-        _textEvent.ShowStatus(_statusName, transform);
+        _textEvent.ShowStatus(_statusName, _statusColor, _statusSprite, transform);
     }
 
     public void DisableStatus()

@@ -298,8 +298,8 @@ GameObject:
   - component: {fileID: -6454715108575895444}
   - component: {fileID: 8803803206021546735}
   - component: {fileID: 1413524429980475727}
-  - component: {fileID: 5286724415834014221}
   - component: {fileID: 8735027199343730721}
+  - component: {fileID: 5286724415834014221}
   - component: {fileID: 5608649096329726679}
   - component: {fileID: 4897874416586466838}
   - component: {fileID: 3490711088534154416}
@@ -521,22 +521,6 @@ MonoBehaviour:
   _spawn:
   - {fileID: 2045042600589172159, guid: 4b2cefb72b5f82245a37be578a51058e, type: 3}
   _transform: {fileID: 0}
---- !u!114 &5286724415834014221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5378749433377581758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8de0c6861628b240bcaff2ba8e88ea8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _statusName: Slow
-  _statusVfx: {fileID: 3701777737616026149}
-  _textEvent: {fileID: 4373988479285811185}
-  _enemy: {fileID: 4552885448610738707}
 --- !u!114 &8735027199343730721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,10 +533,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd49a5c8ce14cb48a161b76e5362f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _statusName: Poison
+  _statusName: Toxin
+  _statusSprite: {fileID: 21300000, guid: d9f33a80646c3e5408423bf12307a1a9, type: 3}
   _statusVfx: {fileID: 2247395748076152046}
   _textEvent: {fileID: 4373988479285811185}
+  _statusColor: {r: 0, g: 0, b: 0, a: 0}
   _health: {fileID: 7946265081214565673}
+--- !u!114 &5286724415834014221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378749433377581758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e710200a33f9d347972d9cd8d051cf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _statusName: Ice
+  _statusSprite: {fileID: 21300000, guid: 2e780cde9d8caf64d9a624dd9c48a1f4, type: 3}
+  _statusVfx: {fileID: 3701777737616026149}
+  _textEvent: {fileID: 4373988479285811185}
+  _statusColor: {r: 0, g: 0, b: 0, a: 0}
+  _enemy: {fileID: 4552885448610738707}
 --- !u!114 &5608649096329726679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,8 +570,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _statusName: Aoe
+  _statusSprite: {fileID: 0}
   _statusVfx: {fileID: 6656596421888924215}
   _textEvent: {fileID: 4373988479285811185}
+  _statusColor: {r: 0, g: 0, b: 0, a: 0}
   _health: {fileID: 7946265081214565673}
 --- !u!114 &4897874416586466838
 MonoBehaviour:
@@ -582,8 +588,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _statusName: Weaken
+  _statusSprite: {fileID: 0}
   _statusVfx: {fileID: 1741778240297554907}
   _textEvent: {fileID: 4373988479285811185}
+  _statusColor: {r: 0, g: 0, b: 0, a: 0}
   _damage: {fileID: 4552885448610738707}
 --- !u!114 &3490711088534154416
 MonoBehaviour:

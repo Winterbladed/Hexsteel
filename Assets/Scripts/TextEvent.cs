@@ -16,10 +16,20 @@ public class TextEvent : MonoBehaviour
         Instantiate(_newDamageText, _target.position + new Vector3(0, 2.5f, 0), Quaternion.identity);
     }
 
-    public void ShowStatus(string _name, Transform _target)
+    public void ShowStatus(string _name, Color _color, Sprite _sprite, Transform _target)
     {
         GameObject _newElementText = _statusText;
-        _newElementText.GetComponentInChildren<DynamicWorldUI>().SetTextString(_name, Color.red);
+        DynamicWorldUI _newDWUI = _newElementText.GetComponentInChildren<DynamicWorldUI>();
+        _newDWUI.SetTextString(_name, _color);
+        _newDWUI.SetImageSprite(_sprite, _color);
+        Instantiate(_newElementText, _target.position + new Vector3(0, 2.5f, 0), Quaternion.identity);
+    }
+
+    public void ShowState(string _name, Color _color, Transform _target)
+    {
+        GameObject _newElementText = _statusText;
+        DynamicWorldUI _newDWUI = _newElementText.GetComponentInChildren<DynamicWorldUI>();
+        _newDWUI.SetTextString(_name, _color);
         Instantiate(_newElementText, _target.position + new Vector3(0, 2.5f, 0), Quaternion.identity);
     }
     #endregion

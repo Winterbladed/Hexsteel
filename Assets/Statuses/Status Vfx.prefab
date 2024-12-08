@@ -29,8 +29,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1325042084856310547}
   - {fileID: 154748400582418339}
+  - {fileID: 1325042084856310547}
   - {fileID: 3401129649106417309}
   - {fileID: 7669157370396401564}
   m_Father: {fileID: 0}
@@ -120,7 +120,7 @@ PrefabInstance:
     - target: {fileID: 2044974676419510205, guid: cb66d4afb0aee4847bf8ffbce533e85b,
         type: 3}
       propertyPath: m_Name
-      value: Poison
+      value: Toxin
       objectReference: {fileID: 0}
     - target: {fileID: 2883330204676492704, guid: cb66d4afb0aee4847bf8ffbce533e85b,
         type: 3}
@@ -318,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 6615276479627452748, guid: f77951f9315578644a0ce14989bd245c,
         type: 3}
       propertyPath: m_Name
-      value: Slow
+      value: Ice
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

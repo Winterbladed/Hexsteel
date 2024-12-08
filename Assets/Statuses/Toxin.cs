@@ -1,12 +1,19 @@
 using UnityEngine;
 
-public class Slow : Status
+public class Toxin : Status
 {
     #region Variables
-    [SerializeField] private Enemy _enemy;
+    [SerializeField] private Health _health;
     #endregion
 
     #region Private Functions
+    protected override void Start()
+    {
+        base.Start();
+        _statusName = "Toxin";
+        _statusColor = Color.green;
+    }
+
     private void Update()
     {
         if (_isActive)
@@ -15,12 +22,12 @@ public class Slow : Status
             _statusTick += Time.deltaTime;
             if (_statusTick > _statusTicker)
             {
-                _enemy.Slow();
+                _health.TakeHpDamage(_statusDamage);
+                _textEvent.ShowDamage(_statusDamage, Color.white, gameObject.transform);
                 _statusTick = 0.0f;
             }
             if (_statusTime > _statusTimer)
             {
-                _enemy.UnSlow();
                 _statusTime = 0.0f;
                 DisableStatus();
             }
