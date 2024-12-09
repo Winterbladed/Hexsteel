@@ -29,6 +29,9 @@ public class WeaponRanged : Weapon
                 _Projectile._CriticalChance = _CriticalChance;
                 _Projectile._CriticalDamage = _CriticalDamage;
                 _Projectile._StatusChance = _StatusChance;
+                _Projectile._StatusDamage = _StatusDamage;
+                _Projectile._StatusTimer = _StatusTimer;
+                _Projectile._StatusTicker = _StatusTicker;
                 Instantiate(_newProjectile, _transform.position, _transform.rotation);
                 Attack();
                 _cooldownTime = 0.0f; _attackTime = 0.0f;

@@ -23,9 +23,9 @@ public class Virus : Status
         {
             _statusTime += Time.deltaTime;
             _statusTick += Time.deltaTime;
+            _health.ModifyHpDamageTaken(2);
             if (_statusTick > _statusTicker)
             {
-                _health.ModifyHpDamageTaken(2);
                 _statusTick = 0.0f;
             }
             if (_statusTime > _statusTimer)

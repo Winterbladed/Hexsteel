@@ -27,21 +27,25 @@ public class Fire : Status
         {
             _statusTime += Time.deltaTime;
             _statusTick += Time.deltaTime;
-            if (_statusTick > _statusTicker)
+            if (_statusTime <= _statusTimer)
             {
-                if (_shield.GetCurrentSp() <= 0)
+                if (_statusTick > _statusTicker)
                 {
-                    _health.TakeHpDamage(_statusDamage - _armor.GetCurrentAp());
-                    _textEvent.ShowDamage(_statusDamage - _armor.GetCurrentAp(), _statusColor, gameObject.transform);
+                    if (_shield.GetCurrentSp() <= 0)
+                    {
+                        int _damage = _statusDamage - _armor.GetCurrentAp();
+                        _health.TakeHpDamage(_damage * _health.GetHpDamageMultiplier());
+                        _textEvent.ShowDamage(_damage * _health.GetHpDamageMultiplier(), _statusColor, gameObject.transform);
+                    }
+                    else
+                    {
+                        _shield.TakeSpDamage(_statusDamage);
+                        _textEvent.ShowDamage(_statusDamage, _statusColor, gameObject.transform);
+                    }
+                    _statusTick = 0.0f;
                 }
-                else
-                {
-                    _shield.TakeSpDamage(_statusDamage);
-                    _textEvent.ShowDamage(_statusDamage, _statusColor, gameObject.transform);
-                }
-                _statusTick = 0.0f;
             }
-            if (_statusTime > _statusTimer)
+            else if (_statusTime > _statusTimer)
             {
                 _statusTime = 0.0f;
                 DisableStatus();

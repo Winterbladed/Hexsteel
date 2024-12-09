@@ -25,13 +25,17 @@ public class Toxin : Status
         {
             _statusTime += Time.deltaTime;
             _statusTick += Time.deltaTime;
-            if (_statusTick > _statusTicker)
+            if (_statusTime <= _statusTimer)
             {
-                _health.TakeHpDamage(_statusDamage - _armor.GetCurrentAp());
-                _textEvent.ShowDamage(_statusDamage - _armor.GetCurrentAp(), _statusColor, gameObject.transform);
-                _statusTick = 0.0f;
+                if (_statusTick > _statusTicker)
+                {
+                    int _damage = _statusDamage - _armor.GetCurrentAp();
+                    _health.TakeHpDamage(_damage * _health.GetHpDamageMultiplier());
+                    _textEvent.ShowDamage(_damage, _statusColor, gameObject.transform);
+                    _statusTick = 0.0f;
+                }
             }
-            if (_statusTime > _statusTimer)
+            else if (_statusTime > _statusTimer)
             {
                 _statusTime = 0.0f;
                 DisableStatus();

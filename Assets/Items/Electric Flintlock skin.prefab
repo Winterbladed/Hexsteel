@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 5223798626290703800}
   - component: {fileID: 4154877207468287705}
   - component: {fileID: 4109896041132541160}
-  - component: {fileID: 6571774856231029486}
+  - component: {fileID: 6578316753585533986}
   m_Layer: 0
   m_Name: S
   m_TagString: Untagged
@@ -259,7 +259,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0dc2ce7c78990f841b8c7c993deb8393, type: 2}
+  - {fileID: 2100000, guid: 706fa88210f5283429eebbfb6c0b2307, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -281,7 +281,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!108 &6571774856231029486
+--- !u!108 &6578316753585533986
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -292,7 +292,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5882353, g: 0, b: 1, a: 1}
   m_Intensity: 15
   m_Range: 0.5
   m_SpotAngle: 30
@@ -353,9 +353,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1915414423582683672}
   m_Layer: 0
-  m_Name: Ice Flintlock skin
+  m_Name: Electric Flintlock skin
   m_TagString: Untagged
-  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 7609752179920684983}
   - component: {fileID: 7462118497916550329}
   - component: {fileID: 6281752247874314702}
-  - component: {fileID: 1385866954398975877}
+  - component: {fileID: 7671553565901570281}
   m_Layer: 0
   m_Name: S
   m_TagString: Untagged
@@ -559,7 +559,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0dc2ce7c78990f841b8c7c993deb8393, type: 2}
+  - {fileID: 2100000, guid: 706fa88210f5283429eebbfb6c0b2307, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -581,7 +581,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!108 &1385866954398975877
+--- !u!108 &7671553565901570281
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -592,7 +592,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5882353, g: 0, b: 1, a: 1}
   m_Intensity: 15
   m_Range: 0.5
   m_SpotAngle: 30
@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 1458314442277185132}
   - component: {fileID: 4716589940024580676}
   - component: {fileID: 7340189152250953333}
-  - component: {fileID: 4900353289547499214}
+  - component: {fileID: 2177105265432596532}
   m_Layer: 0
   m_Name: S
   m_TagString: Untagged
@@ -788,7 +788,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0dc2ce7c78990f841b8c7c993deb8393, type: 2}
+  - {fileID: 2100000, guid: 706fa88210f5283429eebbfb6c0b2307, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -810,7 +810,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!108 &4900353289547499214
+--- !u!108 &2177105265432596532
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -821,7 +821,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5882353, g: 0, b: 1, a: 1}
   m_Intensity: 15
   m_Range: 0.5
   m_SpotAngle: 30

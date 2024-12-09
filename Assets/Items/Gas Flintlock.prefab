@@ -68,13 +68,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DamageType: 9
-  _Damage: 2
+  _Damage: 10
   _CriticalDamage: 1
   _CriticalChance: 0
   _StatusChance: 1
-  _StatusDamage: 5
+  _StatusDamage: 10
   _StatusTimer: 5
-  _StatusTicker: 1
+  _StatusTicker: 0.5
   _trail: {fileID: 2693892851432958393}
   _radius: 0
   _distance: 0
