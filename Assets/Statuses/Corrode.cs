@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Corrode = Toxin + Electric
+//Disables Armor during the effect
 public class Corrode : Status
 {
     #region Variables

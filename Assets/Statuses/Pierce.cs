@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Pierce
+//Deals Damage
 public class Pierce : Status
 {
     #region Private Functions

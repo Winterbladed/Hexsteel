@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Blast = Fire + Electric
+//Deals instant Area Of Effect Damage on effect
 public class Blast : Status
 {
     #region Variables

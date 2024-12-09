@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Toxin
+//Deals Damage overtime that bypasses Shields during the effect
 public class Toxin : Status
 {
     #region Variables

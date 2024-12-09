@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Gas = Toxin + Fire
+//Deals Damage overtime in an Area Of Effect and disables Health Regen during the effect
 public class Gas : Status
 {
     #region Variables
@@ -27,6 +29,7 @@ public class Gas : Status
             _statusTick += Time.deltaTime;
             if (_statusTick > _statusTicker)
             {
+                _health.DisableRegen(true);
                 if (_shield.GetCurrentSp() <= 0)
                 {
                     _health.TakeHpDamage(_statusDamage - _armor.GetCurrentAp());
@@ -58,6 +61,7 @@ public class Gas : Status
             }
             if (_statusTime > _statusTimer)
             {
+                _health.DisableRegen(false);
                 _statusTime = 0.0f;
                 DisableStatus();
             }

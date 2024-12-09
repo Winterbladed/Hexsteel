@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Fire
+//Deals Damage overtime during the effect
 public class Fire : Status
 {
     #region Variables

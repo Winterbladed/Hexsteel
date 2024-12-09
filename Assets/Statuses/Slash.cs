@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Slash
+//Deals Damage overtime that bypasses Armor during the effect
 public class Slash : Status
 {
     #region Variables

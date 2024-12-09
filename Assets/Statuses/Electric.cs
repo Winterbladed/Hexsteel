@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Electric
+//Deals Damage overtime during the effect
 public class Electric : Status
 {
     #region Variables

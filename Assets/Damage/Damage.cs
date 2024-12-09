@@ -204,7 +204,7 @@ public class Damage : MonoBehaviour
         Magnetic _magnetic = _target.GetComponent<Magnetic>();
         Blast _blast = _target.GetComponent<Blast>();
 
-        //Blunt Status Effect
+        //Blunt Status Effect : 
         if (_blunt && _DamageType == DamageType._Blunt && !_blunt.GetIsActive())
         {
             _blunt.EnableStatus(); //Trigger Physical Status
@@ -212,49 +212,49 @@ public class Damage : MonoBehaviour
             _textEvent.ShowStatus(_blunt.GetStatusName(), _blunt.GetStatusColor(), _blunt.GetStatusSprite(), _target.transform);
         }
 
-        //Pierce Status Effect
+        //Pierce Status Effect : 
         else if(_pierce && _DamageType == DamageType._Pierce && !_pierce.GetIsActive())
         {
             _pierce.EnableStatus(); //Trigger Physical Status
             SetStatusStats(_pierce, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
 
-        //Slash Status Effect
-        else if(_slash && _DamageType == DamageType._Slash && !_slash.GetIsActive())
+        //Slash Status Effect : Deals Damage overtime that bypasses Armor during the effect
+        else if (_slash && _DamageType == DamageType._Slash && !_slash.GetIsActive())
         {
             _slash.EnableStatus(); //Trigger Physical Status
             SetStatusStats(_slash, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
 
-        //Toxin Status Effect
-        else if(_toxin && _DamageType == DamageType._Toxin && !_toxin.GetIsActive())
+        //Toxin Status Effect : Deals Damage overtime that bypasses Shields during the effect
+        else if (_toxin && _DamageType == DamageType._Toxin && !_toxin.GetIsActive())
         {
             _toxin.EnableStatus(); //Trigger Elemental Status
             SetStatusStats(_toxin, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
 
-        //Ice Status Effect
+        //Ice Status Effect : Slows down Movement Speed during the effect
         else if (_ice && _DamageType == DamageType._Ice && !_ice.GetIsActive())
         {
             _ice.EnableStatus(); //Trigger Elemental Status
             SetStatusStats(_ice, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
 
-        //Fire Status Effect
+        //Fire Status Effect : Deals Damage overtime during the effect
         else if (_fire && _DamageType == DamageType._Fire && !_fire.GetIsActive())
         {
             _fire.EnableStatus(); //Trigger Elemental Status
             SetStatusStats(_fire, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
 
-        //Electric Status Effect
+        //Electric Status Effect : Deals Damage overtime during the effect
         else if (_electric && _DamageType == DamageType._Electric && !_electric.GetIsActive())
         {
             _electric.EnableStatus(); //Trigger Elemental Status
             SetStatusStats(_electric, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
 
-        //Virus Status Effect = Toxin + Ice
+        //Virus Status Effect = Toxin + Ice : Modifies Health to take more damage from all sources during the effect
         else if (_virus && _DamageType == DamageType._Virus && !_virus.GetIsActive() ||
             _virus && _DamageType == DamageType._Toxin && !_virus.GetIsActive() && _ice.GetIsActive() ||
             _virus && _DamageType == DamageType._Ice && !_virus.GetIsActive() && _toxin.GetIsActive())
@@ -264,7 +264,7 @@ public class Damage : MonoBehaviour
             SetStatusStats(_virus, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
         }
 
-        //Gas Status Effect = Toxin + Fire
+        //Gas Status Effect = Toxin + Fire : Deals Damage overtime in an Area Of Effect and disables Health Regen during the effect
         else if (_gas && _DamageType == DamageType._Gas && !_gas.GetIsActive() ||
             _gas && _DamageType == DamageType._Toxin && !_gas.GetIsActive() && _fire.GetIsActive() ||
             _gas && _DamageType == DamageType._Fire && !_gas.GetIsActive() && _toxin.GetIsActive())
@@ -274,7 +274,7 @@ public class Damage : MonoBehaviour
             SetStatusStats(_gas, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
 
-        //Corrode Status Effect = Toxin + Electric
+        //Corrode Status Effect = Toxin + Electric : Disables Armor during the effect
         else if (_corrode && _DamageType == DamageType._Corrode && !_corrode.GetIsActive() ||
             _corrode && _DamageType == DamageType._Toxin && !_corrode.GetIsActive() && _electric.GetIsActive() ||
             _corrode && _DamageType == DamageType._Electric && !_corrode.GetIsActive() && _toxin.GetIsActive())
@@ -284,7 +284,7 @@ public class Damage : MonoBehaviour
             SetStatusStats(_corrode, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
         }
 
-        //Melt Status Effect = Ice + Fire
+        //Melt Status Effect = Ice + Fire : Weakens Damage sources during the effect
         else if (_melt && _DamageType == DamageType._Melt && !_melt.GetIsActive() ||
             _melt && _DamageType == DamageType._Ice && !_melt.GetIsActive() && _fire.GetIsActive() ||
             _melt && _DamageType == DamageType._Fire && !_melt.GetIsActive() && _ice.GetIsActive())
@@ -294,7 +294,7 @@ public class Damage : MonoBehaviour
             SetStatusStats(_melt, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
         }
 
-        //Magnetic Status Effect = Ice + Electric
+        //Magnetic Status Effect = Ice + Electric : Disables Shield during the effect
         else if (_magnetic && _DamageType == DamageType._Magnetic && !_magnetic.GetIsActive() ||
             _magnetic && _DamageType == DamageType._Ice && !_magnetic.GetIsActive() && _electric.GetIsActive() ||
             _magnetic && _DamageType == DamageType._Electric && !_magnetic.GetIsActive() && _ice.GetIsActive())
@@ -304,7 +304,7 @@ public class Damage : MonoBehaviour
             SetStatusStats(_magnetic, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
         }
 
-        //Blast Status Effect = Fire + Electric
+        //Blast Status Effect = Fire + Electric : Deals instant Area Of Effect Damage on effect
         else if (_blast && _DamageType == DamageType._Blast && !_blast.GetIsActive() ||
             _blast && _DamageType == DamageType._Fire && !_blast.GetIsActive() && _electric.GetIsActive() ||
             _blast && _DamageType == DamageType._Electric && !_blast.GetIsActive() && _fire.GetIsActive())
@@ -324,14 +324,7 @@ public class Damage : MonoBehaviour
     #endregion
 
     #region Public Functions
-    public void CrippleDamage()
-    {
-        _Damage = _reducedDamage;
-    }
-
-    public void UnCrippleDamage()
-    {
-        _Damage = _normalDamage;
-    }
+    public void CrippleDamage() { _Damage = _reducedDamage; }
+    public void UnCrippleDamage() { _Damage = _normalDamage; }
     #endregion
 }

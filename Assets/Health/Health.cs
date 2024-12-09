@@ -10,6 +10,10 @@ public class Health : MonoBehaviour
     private int _currentHp;
     [SerializeField] private int _hp;
     private int _hpDamageMultiplier = 1;
+    [SerializeField] private int _hpRegenAmount = 0;
+    private float _hpRechargeTime = 0.0f;
+    private bool _isDisabled;
+    
 
     private bool _isBlocking;
     private bool _isInvulnerable;
@@ -35,6 +39,16 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
+        if (_hpRegenAmount > 0 && !_isDisabled)
+        {
+            _hpRechargeTime += Time.deltaTime;
+            if (_hpRechargeTime > 1.0f)
+            {
+                CapHp();
+                if (!_isDead) _currentHp += _hpRegenAmount;
+                _hpRechargeTime = 0.0f;
+            }
+        }
         Death();
     }
 
@@ -87,6 +101,11 @@ public class Health : MonoBehaviour
     public void Block(bool _boolean)
     {
         _isBlocking = _boolean;
+    }
+
+    public void DisableRegen(bool _boolean)
+    {
+        _isDisabled = _boolean;
     }
 
     public void ModifyHpDamageTaken(int _mult) { _hpDamageMultiplier = _mult; }

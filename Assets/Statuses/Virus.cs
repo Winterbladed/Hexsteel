@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Virus = Toxin + Ice
+//Modifies Health to take more damage from all sources during the effect
 public class Virus : Status
 {
     #region Variables

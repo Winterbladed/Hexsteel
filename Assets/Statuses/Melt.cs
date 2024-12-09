@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Melt = Ice + Fire
+//Weakens Damage sources during the effect
 public class Melt : Status
 {
     #region Variables

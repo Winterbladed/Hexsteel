@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Magnetic = Ice + Electric
+//Disables Shield during the effect
 public class Magnetic : Status
 {
     #region Variables

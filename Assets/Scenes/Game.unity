@@ -9150,6 +9150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 100
+  _hpRegenAmount: 0
   _deathTime: 0
   _OnHit:
     m_PersistentCalls:

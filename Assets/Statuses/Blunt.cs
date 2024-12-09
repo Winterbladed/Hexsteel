@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Blunt
+//Deals Damage
 public class Blunt : Status
 {
     #region Private Functions

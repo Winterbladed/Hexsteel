@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Ice
+//Slows down Movement Speed during the effect
 public class Ice : Status
 {
     #region Variables
