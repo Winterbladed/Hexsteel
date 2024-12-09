@@ -48,7 +48,7 @@ public class Weapon : Damage
         }
         else if (!_isAttacked && !_movement.GetIsDodging())
         {
-            if (Input.GetMouseButtonDown(0) && !_isAttacked && !_isOnCooldown)
+            if (Input.GetMouseButtonDown(0) && !_isAttacked && !_isOnCooldown && Time.timeScale > 0.0f)
             {
                 _cooldownTime = 0.0f;
                 _attackTime = 0.0f;

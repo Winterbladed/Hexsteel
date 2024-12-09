@@ -85,7 +85,7 @@ public class Inventory : MonoBehaviour
         if (_currentHeldItem) _currentHeldItemID = _currentHeldItem.GetInstanceID();
         for (int i = 0; i < _inventory.Count; i++)
         {
-            if (Input.GetKeyDown((i + 1).ToString()) && !_isSwitching && !_movement.GetIsDodging())
+            if (Input.GetKeyDown((i + 1).ToString()) && !_isSwitching && !_movement.GetIsDodging() && Time.timeScale > 0.0f)
             {
                 _inventoryIndex = i;
                 _isSwitching = true;
@@ -104,7 +104,7 @@ public class Inventory : MonoBehaviour
 
     private void DropItem()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !_isSwitching)
+        if (Input.GetKeyDown(KeyCode.Q) && !_isSwitching && Time.timeScale > 0.0f)
             DropCurrentHeldItemFromInventory();
     }
     #endregion

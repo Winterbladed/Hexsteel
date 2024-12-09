@@ -11,7 +11,7 @@ public class WeaponShield : Weapon
     protected override void Update()
     {
         base.Update();
-        if (Input.GetMouseButton(1) && !_isAttacked)
+        if (Input.GetMouseButton(1) && !_isAttacked && Time.timeScale > 0.0f)
             _health.Block(true);
         else _health.Block(false);
     }

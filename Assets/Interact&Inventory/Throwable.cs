@@ -20,7 +20,7 @@ public class Throwable : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !_movement.GetIsThrowing())
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !_movement.GetIsThrowing() && Time.timeScale > 0.0f)
         {
             _throwTime = 0.0f;
             _movement.SetThrowing(true);

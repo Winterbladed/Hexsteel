@@ -37,7 +37,7 @@ public class WeaponRanged : Weapon
         }
         else if (!_isAttacked && !_movement.GetIsDodging())
         {
-            if (Input.GetMouseButtonDown(0) && !_isOnCooldown)
+            if (Input.GetMouseButtonDown(0) && !_isOnCooldown && Time.timeScale > 0.0f)
             {
                 _cooldownTime = 0.0f;
                 _attackTime = 0.0f;
