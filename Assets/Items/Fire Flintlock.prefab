@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 1221176511195950987}
   - component: {fileID: 3838376330856275391}
   m_Layer: 0
-  m_Name: Toxin Flintlock
+  m_Name: Fire Flintlock
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -33,7 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8601034787749310576}
+  - {fileID: 6141136118702080166}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4832173604041944305
@@ -52,8 +52,8 @@ MonoBehaviour:
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls: []
-  _Item: {fileID: 2045042600589172159, guid: 81348b350b3d91940920a5877026b076, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: 6f26f899ffbd92e4e8009e8aae989f0d,
+  _Item: {fileID: 2045042600589172159, guid: 7a2db8dbf1b286449a8116e96672769d, type: 3}
+  _ItemIcon: {fileID: 3240355216110004441, guid: 15750e5e217732c41a01c0f628d84ab7,
     type: 3}
 --- !u!114 &936535421180166051
 MonoBehaviour:
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef4b9366ca269094aac885a93e6c046a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _DamageType: 4
+  _DamageType: 6
   _Damage: 2
   _CriticalDamage: 1
   _CriticalChance: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   _StatusDamage: 5
   _StatusTimer: 5
   _StatusTicker: 1
-  _trail: {fileID: 2884594538165027086}
+  _trail: {fileID: 751135912326853080}
   _radius: 0
   _distance: 0
   _comboIndexes: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
         m_CallState: 2
   _projectile: {fileID: 6207323861454628167, guid: 8c15c2a0a2b1c844e8ab5615ab374c34,
     type: 3}
-  _transform: {fileID: 7273956411064528149}
+  _transform: {fileID: 5086527174109896131}
 --- !u!114 &1221176511195950987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,8 +129,8 @@ MonoBehaviour:
   _addToVector: {x: 0, y: 0, z: 0}
   _spawn:
   - {fileID: 5413694892429821854, guid: 087da3dad7036ea448b4ab0547bec04c, type: 3}
-  _transform: {fileID: 7273956411064528149}
---- !u!1001 &7911110220432867944
+  _transform: {fileID: 5086527174109896131}
+--- !u!1001 &5741343533432910526
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -138,81 +138,81 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 965993972271060893}
     m_Modifications:
-    - target: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.25
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4046928279687255575, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+    - target: {fileID: 4046928279687255575, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_Name
-      value: I Toxic Flintlock Skin
+      value: Fire Flintlock skin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2a0c2dcc48213354e8da15ed267bceb8, type: 3}
---- !u!1 &2884594538165027086 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01, type: 3}
+--- !u!1 &751135912326853080 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
     type: 3}
-  m_PrefabInstance: {fileID: 7911110220432867944}
+  m_PrefabInstance: {fileID: 5741343533432910526}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7273956411064528149 stripped
+--- !u!4 &5086527174109896131 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 665301316438863741, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+  m_CorrespondingSourceObject: {fileID: 665301316438863741, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
     type: 3}
-  m_PrefabInstance: {fileID: 7911110220432867944}
+  m_PrefabInstance: {fileID: 5741343533432910526}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8601034787749310576 stripped
+--- !u!4 &6141136118702080166 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 2a0c2dcc48213354e8da15ed267bceb8,
+  m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
     type: 3}
-  m_PrefabInstance: {fileID: 7911110220432867944}
+  m_PrefabInstance: {fileID: 5741343533432910526}
   m_PrefabAsset: {fileID: 0}

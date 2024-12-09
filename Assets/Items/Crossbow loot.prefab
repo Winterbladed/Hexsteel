@@ -286,11 +286,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4046928279687255575, guid: 4155317396266cd4db4124e1815b08fd,
         type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4046928279687255575, guid: 4155317396266cd4db4124e1815b08fd,
-        type: 3}
       propertyPath: m_Name
       value: I Crossbow Skin
       objectReference: {fileID: 0}

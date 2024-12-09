@@ -286,11 +286,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4046928279687255575, guid: 1a769202e775ac449922e29d5ec8ffa2,
         type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4046928279687255575, guid: 1a769202e775ac449922e29d5ec8ffa2,
-        type: 3}
       propertyPath: m_Name
       value: Axe Skin
       objectReference: {fileID: 0}

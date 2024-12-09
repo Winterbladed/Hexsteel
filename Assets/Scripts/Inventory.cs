@@ -72,7 +72,7 @@ public class Inventory : MonoBehaviour
     {
         if (_isSwitching) _switchTime += Time.deltaTime;
         else _switchTime = 0.0f;
-        if (_switchTime > 0.5f)
+        if (_switchTime > 0.25f)
         {
             SwitchToItem(_inventory[_inventoryIndex]);
             _switchTime = 0.0f;

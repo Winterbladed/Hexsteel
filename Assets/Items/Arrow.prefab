@@ -363,11 +363,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2055983480426229558, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2055983480426229558, guid: 22ad9b8d34cacd84dbdb1239119dd299,
-        type: 3}
       propertyPath: m_Name
       value: Projectile Skin
       objectReference: {fileID: 0}

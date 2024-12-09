@@ -227,28 +227,28 @@ public class Damage : MonoBehaviour
         }
 
         //Toxin Status Effect : Deals Damage overtime that bypasses Shields during the effect
-        else if (_toxin && _DamageType == DamageType._Toxin && !_toxin.GetIsActive())
+        else if (_toxin && _DamageType == DamageType._Toxin && !_toxin.GetIsActive() && !_ice.GetIsActive() && !_fire.GetIsActive() && !_electric.GetIsActive())
         {
             _toxin.EnableStatus(); //Trigger Elemental Status
             SetStatusStats(_toxin, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
 
         //Ice Status Effect : Slows down Movement Speed during the effect
-        else if (_ice && _DamageType == DamageType._Ice && !_ice.GetIsActive())
+        else if (_ice && _DamageType == DamageType._Ice && !_toxin.GetIsActive() && !_ice.GetIsActive() && !_fire.GetIsActive() && !_electric.GetIsActive())
         {
             _ice.EnableStatus(); //Trigger Elemental Status
             SetStatusStats(_ice, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
 
         //Fire Status Effect : Deals Damage overtime during the effect
-        else if (_fire && _DamageType == DamageType._Fire && !_fire.GetIsActive())
+        else if (_fire && _DamageType == DamageType._Fire && !_toxin.GetIsActive() && !_ice.GetIsActive() && !_fire.GetIsActive() && !_electric.GetIsActive())
         {
             _fire.EnableStatus(); //Trigger Elemental Status
             SetStatusStats(_fire, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
         }
 
         //Electric Status Effect : Deals Damage overtime during the effect
-        else if (_electric && _DamageType == DamageType._Electric && !_electric.GetIsActive())
+        else if (_electric && _DamageType == DamageType._Electric && !_toxin.GetIsActive() && !_ice.GetIsActive() && !_fire.GetIsActive() && !_electric.GetIsActive())
         {
             _electric.EnableStatus(); //Trigger Elemental Status
             SetStatusStats(_electric, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats

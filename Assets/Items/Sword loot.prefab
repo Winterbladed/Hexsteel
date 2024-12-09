@@ -286,11 +286,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4046928279687255575, guid: 26e55dd2496d0224e9cda70209414e42,
         type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4046928279687255575, guid: 26e55dd2496d0224e9cda70209414e42,
-        type: 3}
       propertyPath: m_Name
       value: Sword Skin
       objectReference: {fileID: 0}

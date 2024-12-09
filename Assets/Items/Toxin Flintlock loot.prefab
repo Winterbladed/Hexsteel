@@ -286,12 +286,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4046928279687255575, guid: 2a0c2dcc48213354e8da15ed267bceb8,
         type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 4046928279687255575, guid: 2a0c2dcc48213354e8da15ed267bceb8,
-        type: 3}
       propertyPath: m_Name
       value: I Toxic Flintlock Skin
       objectReference: {fileID: 0}

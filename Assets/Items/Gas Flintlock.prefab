@@ -190,12 +190,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4046928279687255575, guid: a4a1bb01adaa2d749b6c2851023e3f60,
         type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 4046928279687255575, guid: a4a1bb01adaa2d749b6c2851023e3f60,
-        type: 3}
       propertyPath: m_Name
       value: I Gas Flintlock Skin
       objectReference: {fileID: 0}

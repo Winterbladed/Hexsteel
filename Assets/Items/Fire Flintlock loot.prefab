@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 3647038016384504966}
   - component: {fileID: 6475663804611408560}
   m_Layer: 0
-  m_Name: Flintlock loot
+  m_Name: Fire Flintlock loot
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -34,7 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6891220757617961783}
+  - {fileID: 1812347329213954969}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4832173604041944305
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08494bb7a2cc1f94f8e587f193f8353e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InteractMessage: '[E] Get Flintlock'
+  _InteractMessage: '[E] Get Fire Flintlock'
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls:
@@ -65,8 +65,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _Item: {fileID: 2045042600589172159, guid: f8ad8a2066ca90448a97e118776183c9, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: e2f85a1a0a231df4197ccc7038b0b0c3,
+  _Item: {fileID: 2045042600589172159, guid: bf2cbd02ee55dc44bbd4e6d19f4746f5, type: 3}
+  _ItemIcon: {fileID: 3240355216110004441, guid: 15750e5e217732c41a01c0f628d84ab7,
     type: 3}
 --- !u!114 &3795620042856048028
 MonoBehaviour:
@@ -226,7 +226,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &4987283045575022895
+--- !u!1001 &266322667972512129
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -234,69 +234,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 965993972271060893}
     m_Modifications:
-    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4046928279687255575, guid: 444b06a424d2a8e4388109b25aa3756e,
+    - target: {fileID: 4046928279687255575, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
         type: 3}
       propertyPath: m_Name
-      value: I Flintlock Skin
+      value: Fire Flintlock skin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 444b06a424d2a8e4388109b25aa3756e, type: 3}
---- !u!4 &6891220757617961783 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01, type: 3}
+--- !u!4 &1812347329213954969 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 444b06a424d2a8e4388109b25aa3756e,
+  m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
     type: 3}
-  m_PrefabInstance: {fileID: 4987283045575022895}
+  m_PrefabInstance: {fileID: 266322667972512129}
   m_PrefabAsset: {fileID: 0}
