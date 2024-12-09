@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08494bb7a2cc1f94f8e587f193f8353e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InteractMessage: '[E] Get Tier I Hammer'
+  _InteractMessage: '[E] Get Hammer'
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls:
@@ -283,11 +283,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4046928279687255575, guid: 4fbf49aa90280494fa5a230732e7b08c,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4046928279687255575, guid: 4fbf49aa90280494fa5a230732e7b08c,
         type: 3}

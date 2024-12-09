@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08494bb7a2cc1f94f8e587f193f8353e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InteractMessage: '[E] Get Tier I Crossbow'
+  _InteractMessage: '[E] Get Crossbow'
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls:

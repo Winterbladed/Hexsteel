@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3647038016384504966}
   - component: {fileID: 6475663804611408560}
   m_Layer: 0
-  m_Name: Toxic Flintlock loot
+  m_Name: Toxin Flintlock loot
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08494bb7a2cc1f94f8e587f193f8353e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InteractMessage: '[E] Get Tier I Toxic Flintlock'
+  _InteractMessage: '[E] Get Toxin Flintlock'
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls:

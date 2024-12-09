@@ -290,7 +290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1915414423582683672}
   m_Layer: 0
-  m_Name: Toxic Flintlock skin
+  m_Name: Toxin Flintlock skin
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
