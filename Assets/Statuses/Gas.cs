@@ -30,12 +30,12 @@ public class Gas : Status
                 if (_shield.GetCurrentSp() <= 0)
                 {
                     _health.TakeHpDamage(_statusDamage - _armor.GetCurrentAp());
-                    _textEvent.ShowDamage(_statusDamage - _armor.GetCurrentAp(), Color.white, gameObject.transform);
+                    _textEvent.ShowDamage(_statusDamage - _armor.GetCurrentAp(), _statusColor, gameObject.transform);
                 }
                 else
                 {
                     _shield.TakeSpDamage(_statusDamage);
-                    _textEvent.ShowDamage(_statusDamage, Color.white, gameObject.transform);
+                    _textEvent.ShowDamage(_statusDamage, _statusColor, gameObject.transform);
                 }
                 Collider[] _colliders = Physics.OverlapSphere(transform.position, 5.0f);
                 foreach (Collider _hit in _colliders)
@@ -45,12 +45,12 @@ public class Gas : Status
                         if (_hit.gameObject.GetComponent<Shield>().GetCurrentSp() <= 0)
                         {
                             _hit.gameObject.GetComponent<Health>().TakeHpDamage(_statusDamage - _hit.gameObject.GetComponent<Armor>().GetCurrentAp());
-                            _textEvent.ShowDamage(_statusDamage - _hit.gameObject.GetComponent<Armor>().GetCurrentAp(), Color.white, gameObject.transform);
+                            _textEvent.ShowDamage(_statusDamage - _hit.gameObject.GetComponent<Armor>().GetCurrentAp(), _statusColor, gameObject.transform);
                         }
                         else
                         {
                             _hit.gameObject.GetComponent<Shield>().TakeSpDamage(_statusDamage);
-                            _textEvent.ShowDamage(_statusDamage, Color.white, gameObject.transform);
+                            _textEvent.ShowDamage(_statusDamage, _statusColor, gameObject.transform);
                         }
                     }
                 }

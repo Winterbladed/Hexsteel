@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
+[RequireComponent(typeof(Armor))]
+[RequireComponent(typeof(Shield))]
 
 public class Health : MonoBehaviour
 {

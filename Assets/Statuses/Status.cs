@@ -7,6 +7,7 @@ public class Status : MonoBehaviour
     protected bool _isActive = false;
     protected string _statusName;
     [SerializeField] protected Sprite _statusSprite;
+    [SerializeField] protected GameObject _statusImage;
     [SerializeField] protected GameObject _statusVfx;
     protected TextEvent _textEvent;
     protected Color _statusColor;
@@ -35,6 +36,7 @@ public class Status : MonoBehaviour
     {
         _isActive = true;
         if (_statusVfx) _statusVfx.SetActive(true);
+        if (_statusImage) _statusImage.SetActive(true);
         _textEvent.ShowStatus(_statusName, _statusColor, _statusSprite, transform);
     }
 
@@ -44,6 +46,7 @@ public class Status : MonoBehaviour
         _statusTick = 0.0f;
         _isActive = false;
         if (_statusVfx) _statusVfx.SetActive(false);
+        if (_statusImage) _statusImage.SetActive(false);
     }
     #endregion
 }
