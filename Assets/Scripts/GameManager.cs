@@ -5,10 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     #region Variables
-    private enum ManagerType
-    {
-        Menu, Game
-    }
+    private enum ManagerType { Menu, Game }
     [SerializeField] private ManagerType _type;
 
     [Header("Scene Manager")]

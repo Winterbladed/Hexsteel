@@ -297,6 +297,13 @@ MonoBehaviour:
   - {fileID: 2895448722202950775, guid: 818720b5b13100a439fe233bd1c3a312, type: 3}
   - {fileID: 2045042600589172159, guid: dbbd4d3079974b34494869fb9ea95f4f, type: 3}
   - {fileID: 2045042600589172159, guid: db9cf3b995cf06448ae5dc3d2404bdc7, type: 3}
+  - {fileID: 2895448722202950775, guid: 66d482c95a2a2f949b9689d2a566a311, type: 3}
+  - {fileID: 2045042600589172159, guid: fd0e9a1474f2bef459068ef566b9036d, type: 3}
+  - {fileID: 2045042600589172159, guid: 81348b350b3d91940920a5877026b076, type: 3}
+  - {fileID: 2045042600589172159, guid: 870947993e245ab4d9a63fbc1977750b, type: 3}
+  - {fileID: 2045042600589172159, guid: edbc77ad9f71896458ab73694d421004, type: 3}
+  - {fileID: 2045042600589172159, guid: 7a2db8dbf1b286449a8116e96672769d, type: 3}
+  - {fileID: 2045042600589172159, guid: 85e4c9a8f64f314449faa3862d1d0194, type: 3}
   _transform: {fileID: 2468181416798109982}
 --- !u!114 &5241408484256091212
 MonoBehaviour:
@@ -310,7 +317,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 192571735547284823}
   _audioClip:
   - {fileID: 8300000, guid: 0f8c7fa82ac1a0a49ab8235bf91b3ea4, type: 3}
 --- !u!33 &4647076836242405306
