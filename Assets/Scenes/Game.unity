@@ -1964,7 +1964,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 100
+  far clip plane: 90
   field of view: 60.000004
   orthographic: 0
   orthographic size: 5
@@ -2260,6 +2260,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401649293}
   m_CullTransparentMesh: 1
+--- !u!1001 &402701962
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 52.37139
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045042600589172159, guid: 7a2db8dbf1b286449a8116e96672769d,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire Flintlock loot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a2db8dbf1b286449a8116e96672769d, type: 3}
 --- !u!1 &416486448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3154,6 +3222,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589440430}
   m_CullTransparentMesh: 1
+--- !u!1001 &592176139
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 51.137592
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.306
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.983123
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045042600589172159, guid: 870947993e245ab4d9a63fbc1977750b,
+        type: 3}
+      propertyPath: m_Name
+      value: Ice Flintlock loot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 870947993e245ab4d9a63fbc1977750b, type: 3}
 --- !u!1001 &624384801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5287,6 +5423,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996540372}
   m_CullTransparentMesh: 1
+--- !u!1001 &1119242740
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 52.846
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.103
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.055
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045042600589172159, guid: 85e4c9a8f64f314449faa3862d1d0194,
+        type: 3}
+      propertyPath: m_Name
+      value: Electric Flintlock loot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85e4c9a8f64f314449faa3862d1d0194, type: 3}
 --- !u!1 &1124443398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6945,6 +7149,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751782109}
   m_CullTransparentMesh: 1
+--- !u!1001 &1776558030
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 50.325775
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.096
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.869741
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045042600589172159, guid: 81348b350b3d91940920a5877026b076,
+        type: 3}
+      propertyPath: m_Name
+      value: Toxin Flintlock loot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81348b350b3d91940920a5877026b076, type: 3}
 --- !u!1 &1864836214
 GameObject:
   m_ObjectHideFlags: 0
@@ -9844,3 +10116,7 @@ SceneRoots:
   - {fileID: 132712257}
   - {fileID: 355874444}
   - {fileID: 986658673}
+  - {fileID: 1776558030}
+  - {fileID: 592176139}
+  - {fileID: 402701962}
+  - {fileID: 1119242740}

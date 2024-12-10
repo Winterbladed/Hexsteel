@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e9f3f59ba43be945bea394d225d358a, type: 2}
+  - {fileID: 2100000, guid: 6fad1ed6c65b17b4297b1a78864fbad9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1759195633519432520}
   - component: {fileID: 8798383986990304161}
   m_Layer: 0
-  m_Name: Toxin Arrow skin
+  m_Name: Fire Arrow skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -231,7 +231,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e9f3f59ba43be945bea394d225d358a, type: 2}
+  - {fileID: 2100000, guid: 6fad1ed6c65b17b4297b1a78864fbad9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -314,7 +314,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e9f3f59ba43be945bea394d225d358a, type: 2}
+  - {fileID: 2100000, guid: 6fad1ed6c65b17b4297b1a78864fbad9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -397,7 +397,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bde62a7de6c3ec046924d1f31ef3ba59, type: 2}
+  - {fileID: 2100000, guid: 7c969e962c0605b48b6e958e87de0c81, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
