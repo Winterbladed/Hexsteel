@@ -1371,7 +1371,7 @@ GameObject:
   m_Layer: 0
   m_Name: Book Damage
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3831,6 +3831,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7898575739606691753, guid: 892a0a4702a639341861f98fdf3c6d5b,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 7898575739606691753, guid: 892a0a4702a639341861f98fdf3c6d5b,
         type: 3}
       propertyPath: m_Name

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2946197417691184667}
   - component: {fileID: 3317525549971762677}
   m_Layer: 0
-  m_Name: Trash Loot
+  m_Name: Trash loot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

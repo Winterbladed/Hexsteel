@@ -18,7 +18,7 @@ GameObject:
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -363,6 +363,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2055983480426229558, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 2055983480426229558, guid: 22ad9b8d34cacd84dbdb1239119dd299,
+        type: 3}
       propertyPath: m_Name
       value: Projectile Skin
       objectReference: {fileID: 0}
@@ -384,7 +390,7 @@ PrefabInstance:
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
@@ -394,7 +400,7 @@ PrefabInstance:
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
@@ -409,7 +415,7 @@ PrefabInstance:
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}

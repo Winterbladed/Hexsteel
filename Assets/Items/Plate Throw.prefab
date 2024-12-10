@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2191781863106030941}
   - component: {fileID: 3029637032472923684}
   m_Layer: 0
-  m_Name: Plate Throw
+  m_Name: Plate throw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,6 @@ MonoBehaviour:
   _StatusDamage: 0
   _StatusTimer: 0
   _StatusTicker: 0
-  _textEvent: {fileID: 7647341100105220415}
   _Rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 3
   _projectileType: 1

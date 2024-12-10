@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 1061816752198048236}
   - component: {fileID: 3369211485020829440}
   m_Layer: 0
-  m_Name: Trash Skin
+  m_Name: Trash skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 2946197417691184667}
   - component: {fileID: 5709971627680588581}
   m_Layer: 0
-  m_Name: Box Loot
+  m_Name: Box loot
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -283,11 +283,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7898575739606691753, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7898575739606691753, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
         type: 3}

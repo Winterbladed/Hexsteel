@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2946197417691184667}
   - component: {fileID: 5709971627680588581}
   m_Layer: 0
-  m_Name: Pot Loot
+  m_Name: Pot loot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

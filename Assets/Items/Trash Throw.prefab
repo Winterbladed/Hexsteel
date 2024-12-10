@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2191781863106030941}
   - component: {fileID: 3029637032472923684}
   m_Layer: 0
-  m_Name: Trash Throw
+  m_Name: Trash throw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

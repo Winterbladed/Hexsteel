@@ -15,7 +15,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bow
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -162,11 +162,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4046928279687255575, guid: 55f2e281804a84d4c858501d6193372b,
         type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4046928279687255575, guid: 55f2e281804a84d4c858501d6193372b,
-        type: 3}
       propertyPath: m_Name
       value: I Bow Skin
       objectReference: {fileID: 0}
@@ -234,7 +229,7 @@ PrefabInstance:
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
@@ -244,7 +239,7 @@ PrefabInstance:
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 270
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3524135475535249203}
   - component: {fileID: 3609810780474333784}
   - component: {fileID: 2191781863106030941}
-  - component: {fileID: 3029637032472923684}
+  - component: {fileID: 4960388982499529706}
   m_Layer: 0
-  m_Name: Box throw
+  m_Name: Toxin Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2090888735268900220}
+  - {fileID: 2852040042948662101}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6827288176846210529
@@ -51,18 +51,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DamageType: 0
-  _Damage: 10
-  _CriticalDamage: 0
+  _Damage: 5
+  _CriticalDamage: 1
   _CriticalChance: 0
   _StatusChance: 0
-  _StatusDamage: 0
-  _StatusTimer: 0
-  _StatusTicker: 0
+  _StatusDamage: 5
+  _StatusTimer: 5
+  _StatusTicker: 1
   _Rigidbody: {fileID: 3609810780474333784}
-  _projectileVector: 3
+  _projectileVector: 0
   _projectileType: 1
-  _projectileSpeed: 5
-  _projectileSpread: 1
+  _projectileSpeed: 25
+  _projectileSpread: 0
   _projectileTimer: 5
   _onHitEvt:
     m_PersistentCalls:
@@ -115,7 +115,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3609810780474333784
 Rigidbody:
@@ -217,8 +217,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0, g: 1, b: 0, a: 1}
+      key1: {r: 0, g: 1, b: 0, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -242,7 +242,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_ColorSpace: -1
+      m_ColorSpace: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
@@ -257,7 +257,7 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
---- !u!82 &3029637032472923684
+--- !u!82 &4960388982499529706
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,7 +267,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cc3138eb2a8ae8d4ca85882858ce685f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 481f711ae5c600147a325a4ae1004690, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -343,7 +343,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -353,7 +353,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &1817905250220145452
+--- !u!1001 &7340976448456403834
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -361,69 +361,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7616835313640021515}
     m_Modifications:
-    - target: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+    - target: {fileID: 2055983480426229558, guid: fca5b6c47f44ada4f8356276cb3b68bd,
+        type: 3}
+      propertyPath: m_Name
+      value: Toxin Arrow skin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7898575739606691753, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
-        type: 3}
-      propertyPath: m_Name
-      value: Box Skin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1, type: 3}
---- !u!4 &2090888735268900220 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: fca5b6c47f44ada4f8356276cb3b68bd, type: 3}
+--- !u!4 &2852040042948662101 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 305729153236334160, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+  m_CorrespondingSourceObject: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
     type: 3}
-  m_PrefabInstance: {fileID: 1817905250220145452}
+  m_PrefabInstance: {fileID: 7340976448456403834}
   m_PrefabAsset: {fileID: 0}

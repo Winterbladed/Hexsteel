@@ -17,7 +17,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spoon
   m_TagString: Untagged
-  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -77,7 +77,6 @@ MonoBehaviour:
   _StatusDamage: 0
   _StatusTimer: 0
   _StatusTicker: 0
-  _textEvent: {fileID: 5317412700312143858}
   _trail: {fileID: 4655440647466975959}
   _radius: 1
   _distance: 2
@@ -126,7 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 4277991414557694508}
   _audioClip:
   - {fileID: 8300000, guid: b3daf729b0392e2449120b09ca3bd864, type: 3}
 --- !u!82 &4277991414557694508

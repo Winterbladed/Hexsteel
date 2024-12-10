@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2758441890793340951}
   - component: {fileID: 3114418024799372932}
   m_Layer: 0
-  m_Name: Plate Skin
+  m_Name: Plate skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
