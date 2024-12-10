@@ -1876,74 +1876,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284053791}
   m_CullTransparentMesh: 1
---- !u!1001 &298968471
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 51.637814
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.948
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.624632
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045042600589172159, guid: edbc77ad9f71896458ab73694d421004,
-        type: 3}
-      propertyPath: m_Name
-      value: I Gas Flintlock Loot
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: edbc77ad9f71896458ab73694d421004, type: 3}
 --- !u!1 &299477225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,7 +2381,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7195f49196e32e642b87ef1c09983175, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3832,18 +3764,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1926120801}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 6545842585670646807}
         m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
         m_MethodName: set_enabled
@@ -3895,30 +3815,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1926120801}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1316827387}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 6545842585670646807}
         m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
         m_MethodName: set_enabled
@@ -3955,7 +3851,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  _mainPanel: {fileID: 1926120801}
+  _pausePanel: {fileID: 1926120801}
   _settingsPanel: {fileID: 1316827387}
   _backgrounds: []
 --- !u!82 &832575525
@@ -4266,74 +4162,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &843122828
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 49.626
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.983
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.609
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045042600589172159, guid: 85e4c9a8f64f314449faa3862d1d0194,
-        type: 3}
-      propertyPath: m_Name
-      value: Electric Flintlock loot
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 85e4c9a8f64f314449faa3862d1d0194, type: 3}
 --- !u!1 &974495651
 GameObject:
   m_ObjectHideFlags: 0
@@ -6286,74 +6114,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479102349}
   m_CullTransparentMesh: 1
---- !u!1001 &1522386186
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 51.022694
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.866
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.751
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045042600589172159, guid: 81348b350b3d91940920a5877026b076,
-        type: 3}
-      propertyPath: m_Name
-      value: I Toxic Flintlock Loot
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 81348b350b3d91940920a5877026b076, type: 3}
 --- !u!1 &1539283495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6765,74 +6525,6 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!1001 &1559673090
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 50.389782
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.947
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.695
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045042600589172159, guid: 7a2db8dbf1b286449a8116e96672769d,
-        type: 3}
-      propertyPath: m_Name
-      value: Fire Flintlock loot
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a2db8dbf1b286449a8116e96672769d, type: 3}
 --- !u!1 &1572335557
 GameObject:
   m_ObjectHideFlags: 0
@@ -6973,74 +6665,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1668402218
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 50.036926
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 12.019
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.620422
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965993972271060893, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045042600589172159, guid: 870947993e245ab4d9a63fbc1977750b,
-        type: 3}
-      propertyPath: m_Name
-      value: Ice Flintlock loot
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 870947993e245ab4d9a63fbc1977750b, type: 3}
 --- !u!1 &1748890729
 GameObject:
   m_ObjectHideFlags: 0
@@ -7659,7 +7283,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 2073680745}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -10220,8 +9844,3 @@ SceneRoots:
   - {fileID: 132712257}
   - {fileID: 355874444}
   - {fileID: 986658673}
-  - {fileID: 1522386186}
-  - {fileID: 298968471}
-  - {fileID: 1559673090}
-  - {fileID: 1668402218}
-  - {fileID: 843122828}

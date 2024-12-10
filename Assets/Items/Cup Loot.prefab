@@ -17,7 +17,7 @@ GameObject:
   m_Layer: 0
   m_Name: Cup Loot
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -234,6 +234,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7717812222624851913}
     m_Modifications:
+    - target: {fileID: 1667965605791649723, guid: 3a31675b435505e4f9793e9fe9e5dd68,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1667965605791649723, guid: 3a31675b435505e4f9793e9fe9e5dd68,
         type: 3}
       propertyPath: m_Name

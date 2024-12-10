@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     private bool _isPaused;
 
     [Header("Panels Manager")]
-    [SerializeField] private GameObject _mainPanel;
+    [SerializeField] private GameObject _pausePanel;
     [SerializeField] private GameObject _settingsPanel;
     [SerializeField] private GameObject[] _backgrounds;
     #endregion
@@ -58,11 +58,15 @@ public class GameManager : MonoBehaviour
             {
                 _gamePause.Invoke();
                 Pausing(true, 0.0f, CursorLockMode.None);
+                _pausePanel.SetActive(true);
+                _settingsPanel.SetActive(false);
             }
             else if (_isPaused)
             {
                 _gameResume.Invoke();
                 Pausing(false, 1.0f, CursorLockMode.Locked);
+                _pausePanel.SetActive(false);
+                _settingsPanel.SetActive(false);
             }
         }
     }
@@ -91,8 +95,8 @@ public class GameManager : MonoBehaviour
                 _backgrounds[0].SetActive(false);
                 _backgrounds[1].SetActive(true);
             }
-            _mainPanel.SetActive(false); 
-            _settingsPanel.SetActive(true); 
+            _pausePanel.SetActive(false); 
+            _settingsPanel.SetActive(true);
         }
         else if (_settingsPanel.activeSelf) 
         {
@@ -101,8 +105,8 @@ public class GameManager : MonoBehaviour
                 _backgrounds[0].SetActive(true);
                 _backgrounds[1].SetActive(false);
             }
-            _mainPanel.SetActive(true); 
-            _settingsPanel.SetActive(false); 
+            _pausePanel.SetActive(true); 
+            _settingsPanel.SetActive(false);
         }
     }
 

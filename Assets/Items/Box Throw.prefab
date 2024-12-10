@@ -18,7 +18,7 @@ GameObject:
   m_Layer: 0
   m_Name: Box Throw
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -58,7 +58,6 @@ MonoBehaviour:
   _StatusDamage: 0
   _StatusTimer: 0
   _StatusTicker: 0
-  _textEvent: {fileID: 7647341100105220415}
   _Rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 3
   _projectileType: 1
@@ -411,6 +410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898575739606691753, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7898575739606691753, guid: 82b22d834f8b02c44b0ff09dd8ba8fa1,
         type: 3}
