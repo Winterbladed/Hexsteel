@@ -584,6 +584,74 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 655938703}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &124070460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 53.226
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.357
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.456647
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965993972271060893, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045042600589172159, guid: edbc77ad9f71896458ab73694d421004,
+        type: 3}
+      propertyPath: m_Name
+      value: Gas Flintlock loot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: edbc77ad9f71896458ab73694d421004, type: 3}
 --- !u!1 &129743630
 GameObject:
   m_ObjectHideFlags: 0
@@ -10120,3 +10188,4 @@ SceneRoots:
   - {fileID: 592176139}
   - {fileID: 402701962}
   - {fileID: 1119242740}
+  - {fileID: 124070460}

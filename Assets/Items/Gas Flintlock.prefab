@@ -94,7 +94,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _projectile: {fileID: 6207323861454628167, guid: 8c15c2a0a2b1c844e8ab5615ab374c34,
+  _projectile: {fileID: 6207323861454628167, guid: 9398921e534a7504babfdc802073b9e8,
     type: 3}
   _transform: {fileID: 7609054653490578850}
 --- !u!114 &1221176511195950987
