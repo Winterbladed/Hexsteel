@@ -26,6 +26,11 @@ public class Movement : MonoBehaviour
     #endregion
 
     #region Protected Functions
+    protected virtual void Awake()
+    {
+        _player = Player._Player;
+    }
+
     protected virtual void Start()
     {
         _player = Player._Player;
@@ -42,6 +47,14 @@ public class Movement : MonoBehaviour
         NavMeshHit _hit;
         if (NavMesh.SamplePosition(_randomPoint, out _hit, _range, NavMesh.AllAreas)) return _hit.position;
         return Vector3.zero;
+    }
+
+    protected void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, _stopRange);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _detectRange);
     }
     #endregion
 

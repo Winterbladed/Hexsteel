@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 [RequireComponent(typeof(EnemyMovement))]
@@ -20,7 +21,7 @@ public class Enemy : Damage
     {
         base.Start();
         _enemyMovement = GetComponent<EnemyMovement>();
-        _player = _enemyMovement.GetPlayer();
+        _player = Player._Player;
     }
 
     protected void GoToTarget()

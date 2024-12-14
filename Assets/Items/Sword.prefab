@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DamageType: 3
-  _Damage: 3
+  _Damage: 20
   _CriticalDamage: 2
   _CriticalChance: 0.1
   _StatusChance: 0.1

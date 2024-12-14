@@ -109,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Speed: 2
   _stopRange: 0
-  _detectRange: 25
+  _detectRange: 0
   _followBuffer: 5
   _wanderRange: 15
   _wanderCooldown: 15

@@ -54,5 +54,13 @@ public class Spawn : MonoBehaviour
         if (!_isSpawned) Instantiate(_spawn[Random.Range(0, _spawn.Length)], _transform.position, _transform.rotation);
         _isSpawned = true;
     }
+
+    public void SpawnAllInArrayOnTransform()
+    {
+        foreach (GameObject _spawn in _spawn)
+        {
+            Instantiate(_spawn, _transform.position + _addToVector, Quaternion.identity);
+        }
+    }
     #endregion
 }
