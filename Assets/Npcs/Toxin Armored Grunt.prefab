@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 7146010769348624429}
   - component: {fileID: 260053918641241635}
   - component: {fileID: 695704250126504003}
+  - component: {fileID: 246465540529938265}
   m_Layer: 0
   m_Name: Toxin Armored Grunt
   m_TagString: Untagged
@@ -392,6 +393,18 @@ MonoBehaviour:
   _OnDeath:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 246465540529938265}
+        m_TargetAssemblyTypeName: Spawn, Assembly-CSharp
+        m_MethodName: SpawnFirstMultiple
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 15
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 5598573477471722905}
         m_TargetAssemblyTypeName: Health, Assembly-CSharp
         m_MethodName: DestroyGameObject
@@ -755,6 +768,7 @@ MonoBehaviour:
   - {fileID: 920972315265357352, guid: cff60d915318ef74e89a04790082570a, type: 3}
   - {fileID: 2271587553193703881, guid: 76a7d472edf99b04a9f1f4c13c67b812, type: 3}
   _transform: {fileID: 0}
+  _spawnSpread: 0
 --- !u!114 &-8037330892660265213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,6 +980,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &246465540529938265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294943677015292739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7627f8f06be8fcd4c871a1008c33eb89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _addToVector: {x: 0, y: 1.5, z: 0}
+  _spawn:
+  - {fileID: 636353295543418234, guid: c592c3d63cd991a49841fed3e80c607b, type: 3}
+  _transform: {fileID: 0}
+  _spawnSpread: 0.1
 --- !u!1 &2419263473458653700
 GameObject:
   m_ObjectHideFlags: 0

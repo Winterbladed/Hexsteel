@@ -6,6 +6,7 @@ public class Spawn : MonoBehaviour
     [SerializeField] protected Vector3 _addToVector;
     [SerializeField] protected GameObject[] _spawn;
     [SerializeField] private Transform _transform;
+    [SerializeField] private float _spawnSpread = 0;
     private bool _isSpawned;
     #endregion
 
@@ -22,7 +23,8 @@ public class Spawn : MonoBehaviour
     {
         for (int i = 0; i < _amount; i++)
         {
-            Instantiate(_spawn[0], transform.position + _addToVector, Quaternion.identity);
+            Instantiate(_spawn[0], transform.position + _addToVector + new Vector3(Random.Range(-_spawnSpread, _spawnSpread), Random.Range(-_spawnSpread, _spawnSpread), Random.Range(-_spawnSpread, _spawnSpread)), Quaternion.identity);
+
         }
     }
 
