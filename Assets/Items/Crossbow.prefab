@@ -73,8 +73,8 @@ MonoBehaviour:
   _Damage: 5
   _CriticalDamage: 1
   _CriticalChance: 0
-  _StatusChance: 0.1
-  _StatusDamage: 0
+  _StatusChance: 1
+  _StatusDamage: 5
   _StatusTimer: 5
   _StatusTicker: 1
   _trail: {fileID: 5650998316532786310}

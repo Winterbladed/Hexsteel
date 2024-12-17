@@ -1948,31 +1948,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armored Ranger skin
       objectReference: {fileID: 0}
-    - target: {fileID: 368130212973810979, guid: e41e5f23b6318ec40ba4328b4424a3ec,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9990102
-      objectReference: {fileID: 0}
-    - target: {fileID: 368130212973810979, guid: e41e5f23b6318ec40ba4328b4424a3ec,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.008718159
-      objectReference: {fileID: 0}
-    - target: {fileID: 368130212973810979, guid: e41e5f23b6318ec40ba4328b4424a3ec,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.043617744
-      objectReference: {fileID: 0}
-    - target: {fileID: 368130212973810979, guid: e41e5f23b6318ec40ba4328b4424a3ec,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00038064315
-      objectReference: {fileID: 0}
-    - target: {fileID: 368130212973810979, guid: e41e5f23b6318ec40ba4328b4424a3ec,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 6342522791790498683, guid: e41e5f23b6318ec40ba4328b4424a3ec,
         type: 3}
       propertyPath: m_LocalPosition.x

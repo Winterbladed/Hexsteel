@@ -14,7 +14,7 @@ public class Coin : MonoBehaviour
     #endregion
 
     #region Unity Messages
-    private void OnCollisionEnter(Collision _hit)
+    private void OnTriggerEnter(Collider _hit)
     {
         if (_hit.gameObject.GetComponent<Player>())
         {

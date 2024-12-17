@@ -32,9 +32,6 @@ public enum _TargetData
     _AI_Passive,
     _AI_Aggressive,
     _AI_Neutral,
-    _ArmoredFaction,
-    _ShieldedFaction,
-    _HealthyFaction,
 }
 
 public enum State

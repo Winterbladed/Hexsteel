@@ -74,9 +74,9 @@ MonoBehaviour:
   _Damage: 20
   _CriticalDamage: 2
   _CriticalChance: 0.05
-  _StatusChance: 0.1
+  _StatusChance: 1
   _StatusDamage: 10
-  _StatusTimer: 10
+  _StatusTimer: 5
   _StatusTicker: 1
   _trail: {fileID: 1391591758232126570}
   _radius: 1.25
