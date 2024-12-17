@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 368259857776604829}
   - component: {fileID: 7715225913978935433}
   m_Layer: 0
-  m_Name: S
+  m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1347494795123584476}
   - {fileID: 7035539890354837102}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 5098787107754451923}
   - component: {fileID: 3783307481918614082}
   m_Layer: 0
-  m_Name: S
+  m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 1515869557763553320}
   - component: {fileID: 3393983117135149442}
   m_Layer: 0
-  m_Name: S
+  m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 8801236880521820862}
   - component: {fileID: 6895305076330194120}
   m_Layer: 0
-  m_Name: S
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -29,6 +29,10 @@ public class Blast : Status
             _statusTime += Time.deltaTime;
             if (!_isDone)
             {
+                int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
+                if (_damage <= 0) _damage = 0;
+                _health.TakeHpDamage(_damage);
+                _textEvent.ShowDamage(_damage * _health.GetHpDamageMultiplier(), _statusColor, gameObject.transform);
                 Collider[] _colliders = Physics.OverlapSphere(transform.position, 5.0f);
                 foreach (Collider _hit in _colliders)
                 {
@@ -36,9 +40,10 @@ public class Blast : Status
                     {
                         if (_hit.gameObject.GetComponent<Shield>().GetCurrentSp() <= 0)
                         {
-                            int _damage = _statusDamage - _hit.gameObject.GetComponent<Armor>().GetCurrentAp();
-                            _hit.gameObject.GetComponent<Health>().TakeHpDamage(_damage * _hit.gameObject.GetComponent<Health>().GetHpDamageMultiplier());
-                            _textEvent.ShowDamage(_damage * _hit.gameObject.GetComponent<Health>().GetHpDamageMultiplier(), _statusColor, gameObject.transform);
+                            int _damage2 = (_statusDamage * _hit.gameObject.GetComponent<Health>().GetHpDamageMultiplier()) - _hit.gameObject.GetComponent<Armor>().GetCurrentAp();
+                            if (_damage2 <= 0) _damage2 = 0;
+                            _hit.gameObject.GetComponent<Health>().TakeHpDamage(_damage2);
+                            _textEvent.ShowDamage(_damage2, _statusColor, gameObject.transform);
                         }
                         else
                         {

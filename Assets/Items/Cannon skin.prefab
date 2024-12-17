@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8203682473230717395}
   - component: {fileID: 1520216740525345520}
   m_Layer: 0
-  m_Name: S
+  m_Name: Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 6963468666005917259}
   - component: {fileID: 7067426632629501320}
   m_Layer: 0
-  m_Name: S
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 3102655234628648933}
   - component: {fileID: 8215245518564700700}
   m_Layer: 0
-  m_Name: S
+  m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 8844537415588097646}
   - component: {fileID: 7024926148993057112}
   m_Layer: 0
-  m_Name: S
+  m_Name: Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 2936735995798849971}
   - component: {fileID: 3098349014942248782}
   m_Layer: 0
-  m_Name: S
+  m_Name: Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 9013518260184026309}
   - component: {fileID: 316365751360429689}
   m_Layer: 0
-  m_Name: S
+  m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 107664091756717394}
   - component: {fileID: 1993747559639005125}
   m_Layer: 0
-  m_Name: S
+  m_Name: Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

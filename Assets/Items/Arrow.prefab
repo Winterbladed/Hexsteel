@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23015d18a654db947bd0d9f9b2d6a4b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isPlayer: 0
   _DamageType: 0
   _Damage: 5
   _CriticalDamage: 1
@@ -61,7 +62,7 @@ MonoBehaviour:
   _Rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 0
   _projectileType: 1
-  _projectileSpeed: 25
+  _projectileSpeed: 30
   _projectileSpread: 0
   _projectileTimer: 5
   _onHitEvt:
@@ -115,7 +116,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Size: {x: 0.4, y: 0.4, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3609810780474333784
 Rigidbody:
@@ -363,14 +364,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2055983480426229558, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 2055983480426229558, guid: 22ad9b8d34cacd84dbdb1239119dd299,
-        type: 3}
       propertyPath: m_Name
-      value: Projectile Skin
+      value: Arrow Skin
       objectReference: {fileID: 0}
     - target: {fileID: 4788479110435682351, guid: 22ad9b8d34cacd84dbdb1239119dd299,
         type: 3}

@@ -51,13 +51,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23015d18a654db947bd0d9f9b2d6a4b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isPlayer: 0
   _DamageType: 8
   _Damage: 5
   _CriticalDamage: 1
   _CriticalChance: 0
   _StatusChance: 0
-  _StatusDamage: 5
-  _StatusTimer: 5
+  _StatusDamage: 0
+  _StatusTimer: 10
   _StatusTicker: 1
   _Rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 0

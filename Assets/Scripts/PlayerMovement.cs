@@ -13,7 +13,6 @@ public class PlayerMovement : Movement
 
     private bool _isWalking;
     private bool _isRunning;
-    private bool _isSlowed;
     private bool _isStrafing;
     private bool _isShooting;
     private bool _isAttacking;
@@ -60,6 +59,8 @@ public class PlayerMovement : Movement
 
     private void Update()
     {
+        _isGrounded = _controller.isGrounded;
+
         if (_isDodging)
         {
             if (Time.time >= _dodgeRollTime)

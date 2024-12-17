@@ -33,9 +33,10 @@ public class Fire : Status
                 {
                     if (_shield.GetCurrentSp() <= 0)
                     {
-                        int _damage = _statusDamage - _armor.GetCurrentAp();
-                        _health.TakeHpDamage(_damage * _health.GetHpDamageMultiplier());
-                        _textEvent.ShowDamage(_damage * _health.GetHpDamageMultiplier(), _statusColor, gameObject.transform);
+                        int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
+                        if (_damage <= 0) _damage = 0;
+                        _health.TakeHpDamage(_damage);
+                        _textEvent.ShowDamage(_damage, _statusColor, gameObject.transform);
                     }
                     else
                     {

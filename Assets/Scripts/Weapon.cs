@@ -23,6 +23,7 @@ public class Weapon : Damage
     protected override void Start()
     {
         base.Start();
+        SetIsPlayer(true);
         _attackTime = 0.0f; _cooldownTime = 0.0f;
         _isAttacked = false; _isOnCooldown = false;
         _movement = GetComponentInParent<PlayerMovement>();

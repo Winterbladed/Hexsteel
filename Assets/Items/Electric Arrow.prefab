@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23015d18a654db947bd0d9f9b2d6a4b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isPlayer: 0
   _DamageType: 0
   _Damage: 5
   _CriticalDamage: 1
@@ -61,7 +62,7 @@ MonoBehaviour:
   _Rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 0
   _projectileType: 1
-  _projectileSpeed: 25
+  _projectileSpeed: 30
   _projectileSpread: 0
   _projectileTimer: 5
   _onHitEvt:

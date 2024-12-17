@@ -363,7 +363,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2450655547225775221}
   - {fileID: 2365150891229231389}
@@ -432,7 +432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 5313530755547003675}
   _audioClip:
   - {fileID: 8300000, guid: ba64738500e78e84aa9ff6e8653d0321, type: 3}
 --- !u!65 &3463708817055837855
@@ -983,7 +982,7 @@ PrefabInstance:
     - target: {fileID: 571885584555259516, guid: 3de0d888a9c02e74aba40acd811c2c9b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 571885584555259516, guid: 3de0d888a9c02e74aba40acd811c2c9b,
         type: 3}
@@ -1028,7 +1027,7 @@ PrefabInstance:
     - target: {fileID: 5483790179905806991, guid: 3de0d888a9c02e74aba40acd811c2c9b,
         type: 3}
       propertyPath: m_Name
-      value: Fire
+      value: Flame
       objectReference: {fileID: 0}
     - target: {fileID: 5483790179905806991, guid: 3de0d888a9c02e74aba40acd811c2c9b,
         type: 3}

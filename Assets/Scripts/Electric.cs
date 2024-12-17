@@ -31,8 +31,10 @@ public class Electric : Status
             {
                 if (_shield.GetCurrentSp() <= 0)
                 {
-                    _health.TakeHpDamage(_statusDamage - _armor.GetCurrentAp());
-                    _textEvent.ShowDamage(_statusDamage - _armor.GetCurrentAp(), _statusColor, gameObject.transform);
+                    int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
+                    if (_damage <= 0) _damage = 0;
+                    _health.TakeHpDamage(_damage);
+                    _textEvent.ShowDamage(_damage, _statusColor, gameObject.transform);
                 }
                 else
                 {

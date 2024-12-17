@@ -145,7 +145,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 101db407818edff499ddc1e31f467ff4, type: 2}
+  - {fileID: 2100000, guid: 87c565131915c2b4d9f946b98cf5fd58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -249,7 +249,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 101db407818edff499ddc1e31f467ff4, type: 2}
+  - {fileID: 2100000, guid: 87c565131915c2b4d9f946b98cf5fd58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -332,7 +332,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 101db407818edff499ddc1e31f467ff4, type: 2}
+  - {fileID: 2100000, guid: 87c565131915c2b4d9f946b98cf5fd58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -416,7 +416,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 101db407818edff499ddc1e31f467ff4, type: 2}
+  - {fileID: 2100000, guid: 87c565131915c2b4d9f946b98cf5fd58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -500,6 +500,7 @@ Transform:
   - {fileID: 7621308113796410015}
   - {fileID: 6657948486866926244}
   - {fileID: 5478115381994650251}
+  - {fileID: 1965990269801994250}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2227869382254236240
@@ -564,7 +565,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a166b2dbb100eae4095756b8c4f1638e, type: 2}
+  - {fileID: 2100000, guid: 87c565131915c2b4d9f946b98cf5fd58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -722,6 +723,37 @@ Transform:
   - {fileID: 8105944469438547402}
   m_Father: {fileID: 8369442746724829270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3133184155569518609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1965990269801994250}
+  m_Layer: 0
+  m_Name: Transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1965990269801994250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3133184155569518609}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8369442746724829270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3465938539506276890
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +815,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a166b2dbb100eae4095756b8c4f1638e, type: 2}
+  - {fileID: 2100000, guid: 87c565131915c2b4d9f946b98cf5fd58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -814,7 +846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7757688863766001697}
-  - component: {fileID: 1591683211072730107}
+  - component: {fileID: 1910320777051802051}
   - component: {fileID: 1347547661016361017}
   - component: {fileID: 6880912231562058604}
   - component: {fileID: 7036713458481481278}
@@ -843,7 +875,7 @@ Transform:
   - {fileID: 7990735612840352746}
   m_Father: {fileID: 6657948486866926244}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1591683211072730107
+--- !u!114 &1910320777051802051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -852,16 +884,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 4656354901718815318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5f6f7753ddbb6489dd0e2d2581ffa7, type: 3}
+  m_Script: {fileID: 11500000, guid: f3a6bb5efa7e464409b26762925a788d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _InteractMessage: '[E] Use Closet'
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1591683211072730107}
-        m_TargetAssemblyTypeName: Door, Assembly-CSharp
-        m_MethodName: DoorHandle
+      - m_Target: {fileID: 1910320777051802051}
+        m_TargetAssemblyTypeName: Lootable, Assembly-CSharp
+        m_MethodName: Loot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -886,6 +918,28 @@ MonoBehaviour:
   _doorPivot: {fileID: 8773444613972313935}
   _doorOpen: {x: 0, y: -120, z: 0}
   _doorClose: {x: 0, y: 0, z: 0}
+  _gameObject:
+  - {fileID: 2045042600589172159, guid: fa115ba497a46634bb96f37d1ce5eafa, type: 3}
+  - {fileID: 2045042600589172159, guid: 21093e58dd7118946a9d026ea036be25, type: 3}
+  - {fileID: 2045042600589172159, guid: dbbd4d3079974b34494869fb9ea95f4f, type: 3}
+  - {fileID: 2045042600589172159, guid: 4b2cefb72b5f82245a37be578a51058e, type: 3}
+  - {fileID: 2045042600589172159, guid: b0a5cce038b45b44bbefbca1d564fec0, type: 3}
+  - {fileID: 2045042600589172159, guid: db9cf3b995cf06448ae5dc3d2404bdc7, type: 3}
+  - {fileID: 2045042600589172159, guid: 97ec498fa74010c4da61165a01a06df9, type: 3}
+  - {fileID: 2045042600589172159, guid: 7baf86227bc851f4a906b5a7188d270e, type: 3}
+  - {fileID: 2045042600589172159, guid: d511e8e99a728b043a051e35feaaf052, type: 3}
+  - {fileID: 2045042600589172159, guid: 81348b350b3d91940920a5877026b076, type: 3}
+  - {fileID: 2045042600589172159, guid: 870947993e245ab4d9a63fbc1977750b, type: 3}
+  - {fileID: 2045042600589172159, guid: 7a2db8dbf1b286449a8116e96672769d, type: 3}
+  - {fileID: 2045042600589172159, guid: 85e4c9a8f64f314449faa3862d1d0194, type: 3}
+  - {fileID: 2045042600589172159, guid: fd0e9a1474f2bef459068ef566b9036d, type: 3}
+  - {fileID: 2045042600589172159, guid: edbc77ad9f71896458ab73694d421004, type: 3}
+  - {fileID: 2045042600589172159, guid: 93816d0d1b6ac3a4a8d3065968fce0f3, type: 3}
+  - {fileID: 2045042600589172159, guid: 06de32a615ef130449b74240757e5265, type: 3}
+  - {fileID: 2045042600589172159, guid: 1449e99869381be4bbc26795e9a33c65, type: 3}
+  - {fileID: 2045042600589172159, guid: 99bc295ce77cb69478c906875dc4c09c, type: 3}
+  _transform: {fileID: 1965990269801994250}
+  _amount: 2
 --- !u!114 &1347547661016361017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,7 +952,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 8087177051534232592}
   _audioClip:
   - {fileID: 8300000, guid: 0f8c7fa82ac1a0a49ab8235bf91b3ea4, type: 3}
 --- !u!33 &6880912231562058604
@@ -1130,7 +1183,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 101db407818edff499ddc1e31f467ff4, type: 2}
+  - {fileID: 2100000, guid: 87c565131915c2b4d9f946b98cf5fd58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1235,7 +1288,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a166b2dbb100eae4095756b8c4f1638e, type: 2}
+  - {fileID: 2100000, guid: 87c565131915c2b4d9f946b98cf5fd58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1339,7 +1392,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 101db407818edff499ddc1e31f467ff4, type: 2}
+  - {fileID: 2100000, guid: 87c565131915c2b4d9f946b98cf5fd58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1422,7 +1475,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a166b2dbb100eae4095756b8c4f1638e, type: 2}
+  - {fileID: 2100000, guid: 87c565131915c2b4d9f946b98cf5fd58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1485,7 +1538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8105944469438547402}
-  - component: {fileID: 5952104737950043523}
+  - component: {fileID: 6424357748483983005}
   - component: {fileID: 3677389880597067338}
   - component: {fileID: 6628758886594294601}
   - component: {fileID: 3537716706762604133}
@@ -1514,7 +1567,7 @@ Transform:
   - {fileID: 1999789209987848045}
   m_Father: {fileID: 5478115381994650251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5952104737950043523
+--- !u!114 &6424357748483983005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1523,16 +1576,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 8873141041673509795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5f6f7753ddbb6489dd0e2d2581ffa7, type: 3}
+  m_Script: {fileID: 11500000, guid: f3a6bb5efa7e464409b26762925a788d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _InteractMessage: '[E] Use Closet'
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5952104737950043523}
-        m_TargetAssemblyTypeName: Door, Assembly-CSharp
-        m_MethodName: DoorHandle
+      - m_Target: {fileID: 6424357748483983005}
+        m_TargetAssemblyTypeName: Lootable, Assembly-CSharp
+        m_MethodName: Loot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1557,6 +1610,28 @@ MonoBehaviour:
   _doorPivot: {fileID: 2700884222331640926}
   _doorOpen: {x: 0, y: 120, z: 0}
   _doorClose: {x: 0, y: 0, z: 0}
+  _gameObject:
+  - {fileID: 2045042600589172159, guid: fa115ba497a46634bb96f37d1ce5eafa, type: 3}
+  - {fileID: 2045042600589172159, guid: 21093e58dd7118946a9d026ea036be25, type: 3}
+  - {fileID: 2045042600589172159, guid: dbbd4d3079974b34494869fb9ea95f4f, type: 3}
+  - {fileID: 2045042600589172159, guid: 4b2cefb72b5f82245a37be578a51058e, type: 3}
+  - {fileID: 2045042600589172159, guid: b0a5cce038b45b44bbefbca1d564fec0, type: 3}
+  - {fileID: 2045042600589172159, guid: db9cf3b995cf06448ae5dc3d2404bdc7, type: 3}
+  - {fileID: 2045042600589172159, guid: 97ec498fa74010c4da61165a01a06df9, type: 3}
+  - {fileID: 2045042600589172159, guid: 7baf86227bc851f4a906b5a7188d270e, type: 3}
+  - {fileID: 2045042600589172159, guid: d511e8e99a728b043a051e35feaaf052, type: 3}
+  - {fileID: 2045042600589172159, guid: 81348b350b3d91940920a5877026b076, type: 3}
+  - {fileID: 2045042600589172159, guid: 870947993e245ab4d9a63fbc1977750b, type: 3}
+  - {fileID: 2045042600589172159, guid: 7a2db8dbf1b286449a8116e96672769d, type: 3}
+  - {fileID: 2045042600589172159, guid: 85e4c9a8f64f314449faa3862d1d0194, type: 3}
+  - {fileID: 2045042600589172159, guid: fd0e9a1474f2bef459068ef566b9036d, type: 3}
+  - {fileID: 2045042600589172159, guid: edbc77ad9f71896458ab73694d421004, type: 3}
+  - {fileID: 2045042600589172159, guid: 93816d0d1b6ac3a4a8d3065968fce0f3, type: 3}
+  - {fileID: 2045042600589172159, guid: 06de32a615ef130449b74240757e5265, type: 3}
+  - {fileID: 2045042600589172159, guid: 1449e99869381be4bbc26795e9a33c65, type: 3}
+  - {fileID: 2045042600589172159, guid: 99bc295ce77cb69478c906875dc4c09c, type: 3}
+  _transform: {fileID: 1965990269801994250}
+  _amount: 2
 --- !u!114 &3677389880597067338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1569,7 +1644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98bc3ce54ef9c148acf80c9d055a7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 1389669057105631714}
   _audioClip:
   - {fileID: 8300000, guid: 0f8c7fa82ac1a0a49ab8235bf91b3ea4, type: 3}
 --- !u!33 &6628758886594294601

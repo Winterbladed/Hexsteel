@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 423b33b056b16764d818dca9c29694d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isPlayer: 0
   _DamageType: 3
   _Damage: 20
   _CriticalDamage: 2
@@ -77,8 +78,8 @@ MonoBehaviour:
   _StatusTimer: 10
   _StatusTicker: 1
   _trail: {fileID: 1391591758232126570}
-  _radius: 1.5
-  _distance: 2
+  _radius: 1.25
+  _distance: 1.5
   _comboIndexes: 2
   _onAttack:
     m_PersistentCalls:
@@ -283,7 +284,7 @@ PrefabInstance:
     - target: {fileID: 4046928279687255575, guid: 1a769202e775ac449922e29d5ec8ffa2,
         type: 3}
       propertyPath: m_Name
-      value: Axe Skin
+      value: Axe skin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

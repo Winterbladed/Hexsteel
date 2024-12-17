@@ -67,6 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef4b9366ca269094aac885a93e6c046a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isPlayer: 0
   _DamageType: 9
   _Damage: 10
   _CriticalDamage: 1
@@ -191,7 +192,7 @@ PrefabInstance:
     - target: {fileID: 4046928279687255575, guid: a4a1bb01adaa2d749b6c2851023e3f60,
         type: 3}
       propertyPath: m_Name
-      value: I Gas Flintlock Skin
+      value: Gas Flintlock skin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

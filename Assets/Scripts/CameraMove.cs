@@ -68,4 +68,12 @@ public class CameraMove : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, _targetPosition, _positionSmoothTime);
     }
     #endregion
+
+    #region Public Functions
+    public void SetSensitivity(float _newXSpeed, float _newYSpeed)
+    {
+        _xSpeed = _newXSpeed;
+        _ySpeed = _newYSpeed;
+    }
+    #endregion
 }

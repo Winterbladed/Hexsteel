@@ -84,8 +84,8 @@ public class Health : MonoBehaviour
     {
         if (!_isInvulnerable)
         {
-            if (!_isBlocking) _currentHp -= _damage * _hpDamageMultiplier;
-            else if (_isBlocking) _currentHp -= (_damage * _hpDamageMultiplier) / 4;
+            if (!_isBlocking) _currentHp -= _damage;
+            else if (_isBlocking) _currentHp -= _damage / 4;
             _OnHit?.Invoke();
             CapHp();
             if (_currentHp <= 0) _isDead = true;
