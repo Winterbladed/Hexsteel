@@ -360,5 +360,12 @@ public class Damage : MonoBehaviour
     public void UnCrippleDamage() { _Damage = _normalDamage; }
     public void SetIsPlayer(bool _boolean) { _isPlayer = _boolean; }
     public void SetOwner(GameObject _newOwner) { _owner = _newOwner; }
+    public int GetDamage() { return _Damage; }
+    public float GetCriticalChance() { return _CriticalChance; }
+    public int GetCriticalDamage() { return _CriticalDamage; }
+    public float GetStatusChance() { return _StatusChance; }
+    public int GetStatusDamage() { return _StatusDamage; }
+    public float GetStatusTimer() { return _StatusTimer; }
+    public float GetStatusTicker() { return _StatusTicker; }
     #endregion
 }
