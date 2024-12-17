@@ -18,6 +18,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private List<GameObject> _inventory1;
     [SerializeField] private Transform _hands;
     [SerializeField] private int _inventorySlots = 9;
+    [SerializeField] private int _coins;
 
     private float _switchTime = 0.0f;
     private bool _isSwitching = false;
@@ -178,5 +179,8 @@ public class Inventory : MonoBehaviour
         _movement.SetEating(false);
         _movement.SetThrowing(false);
     }
+
+    public int GetCoins() { return _coins; }
+    public void AddCoins(int _newCoins) { _coins += _newCoins; }
     #endregion
 }
