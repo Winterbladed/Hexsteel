@@ -170,6 +170,27 @@ public class NavmeshMovement : Movement
         }
     }
 
+    protected void WanderFromOrigin()
+    {
+        float _distanceFromOrigin = Vector3.Distance(transform.position, _OriginalPosition);
+        if (_distanceFromOrigin < _wanderRange)
+        {
+            if (_navMeshAgent.remainingDistance > _navMeshAgent.stoppingDistance) _animator.SetBool("_isWalking", true);
+            else _animator.SetBool("_isWalking", false);
+            if (_currentWanderCooldown < _wanderCooldown) _currentWanderCooldown += Time.deltaTime;
+            if (_currentWanderCooldown > _wanderCooldown) _currentWanderCooldown = 0.0f;
+            if (_navMeshAgent.stoppingDistance >= _navMeshAgent.remainingDistance && _currentWanderCooldown <= 0.0f)
+            {
+                Vector3 _randomPoint = RandomNavmeshPoint(transform.position, _wanderRange);
+                if (_randomPoint != Vector3.zero) _navMeshAgent.SetDestination(_randomPoint);
+            }
+        }
+        else
+        {
+            _navMeshAgent.SetDestination(_OriginalPosition);
+        }
+    }
+
     protected void RetreatToIdle()
     {
         _navMeshAgent.SetDestination(_OriginalPosition);
@@ -332,7 +353,7 @@ public class NavmeshMovement : Movement
         transform.eulerAngles = _InitialRotation;
     }
 
-    protected void OnTriggerEnter(Collider _hit)
+    protected void OnCollisionEnter(Collision _hit)
     {
         if (_hit.gameObject.GetComponent<Door>()) _hit.gameObject.GetComponent<Door>().Interact();
     } 

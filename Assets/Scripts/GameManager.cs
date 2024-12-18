@@ -4,6 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    #region Singleton
+    public static GameManager _GameManager;
+    private void Awake()
+    {
+        if (_GameManager != null) return;
+        _GameManager = this;
+    }
+    #endregion
+
     #region Variables
     private enum ManagerType { Menu, Game }
     [SerializeField] private ManagerType _type;
@@ -22,19 +31,21 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _pausePanel;
     [SerializeField] private GameObject _settingsPanel;
     [SerializeField] private GameObject[] _backgrounds;
+
+    private Inventory _inventory;
     #endregion
 
     #region Private Functions
     private void Start()
     {
         if (_type == ManagerType.Menu) Pausing(true, 1.0f, CursorLockMode.None);
-        else if (_type == ManagerType.Game) Pausing(false, 1.0f, CursorLockMode.Locked);
+        else if (_type == ManagerType.Game) { Pausing(false, 1.0f, CursorLockMode.Locked); _inventory = Inventory._Inventory; }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) Pause();
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !_isPaused && _type == ManagerType.Game) Pausing(false, 1.0f, CursorLockMode.Locked);
+        if (Input.GetKeyDown(KeyCode.Escape) && !_inventory.GetIsShopping() && !_inventory.GetIsReading()) Pause();
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !_isPaused && _type == ManagerType.Game && !_inventory.GetIsShopping() && !_inventory.GetIsReading()) Pausing(false, 1.0f, CursorLockMode.Locked);
     }
 
     private void Pausing(bool _boolean, float _timeScale, CursorLockMode _lock)
@@ -111,5 +122,7 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public bool GetIsPaused() { return _isPaused; }
     #endregion
 }

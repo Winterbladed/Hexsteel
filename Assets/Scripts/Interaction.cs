@@ -23,7 +23,7 @@ public class Interaction : MonoBehaviour
             {
                 Interactable _currentInteractable = _hit.collider.GetComponent<Interactable>();
                 _interactionUI.EnableText(_currentInteractable._InteractMessage);
-                if (Input.GetKeyDown(KeyCode.E) && Time.timeScale > 0.0f) _currentInteractable.Interact();
+                if (Input.GetKeyDown(KeyCode.E) && !_inventory.GetIsShopping() && Time.timeScale > 0.0f) _currentInteractable.Interact();
             }
             else _interactionUI.DisableText();
         }

@@ -53,13 +53,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isPlayer: 0
   _DamageType: 13
-  _Damage: 5
-  _CriticalDamage: 1
+  _Damage: 1
+  _CriticalDamage: 0
   _CriticalChance: 0
   _StatusChance: 0
-  _StatusDamage: 20
-  _StatusTimer: 0.5
-  _StatusTicker: 0.5
+  _StatusDamage: 0
+  _StatusTimer: 0
+  _StatusTicker: 0
   _Rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 0
   _projectileType: 1
@@ -105,7 +105,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4, y: 0.4, z: 0.4}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3609810780474333784
 Rigidbody:
@@ -321,7 +321,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e1f92c71ca730e740b6b0b6c5dbb0c27, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

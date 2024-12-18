@@ -22,7 +22,7 @@ public class Consumable : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !_movement.GetIsEating() && Time.timeScale > 0.0f)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !_movement.GetIsEating() && !_inventory.GetIsShopping() && Time.timeScale > 0.0f)
         {
             _time = 0.0f;
             _movement.SetEating(true);

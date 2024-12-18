@@ -353,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isPlayer: 0
   _DamageType: 4
-  _Damage: 10
+  _Damage: 5
   _CriticalDamage: 0
   _CriticalChance: 0
   _StatusChance: 1
@@ -847,7 +847,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

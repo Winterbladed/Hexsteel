@@ -7,10 +7,10 @@ public class AI_AggressiveRanged : NavmeshMovement
         switch (_state)
         {
             case State._Idle:
-                Wander();
+                WanderFromOrigin();
                 break;
             case State._Wander:
-                Wander();
+                WanderFromOrigin();
                 break;
             case State._Aggro:
                 RunToTarget();

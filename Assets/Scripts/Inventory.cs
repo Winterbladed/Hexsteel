@@ -24,6 +24,8 @@ public class Inventory : MonoBehaviour
     private bool _isSwitching = false;
     private float _getTime = 0.0f;
     private bool _isGetting = false;
+    private bool _isShopping = false;
+    private bool _isReading = false;
 
     private GameObject _itemToDrop;
     private GameObject _currentHeldItem;
@@ -86,7 +88,7 @@ public class Inventory : MonoBehaviour
         if (_currentHeldItem) _currentHeldItemID = _currentHeldItem.GetInstanceID();
         for (int i = 0; i < _inventory.Count; i++)
         {
-            if (Input.GetKeyDown((i + 1).ToString()) && !_isSwitching && !_movement.GetIsDodging() && Time.timeScale > 0.0f)
+            if (Input.GetKeyDown((i + 1).ToString()) && !_isSwitching && !_isShopping && !_movement.GetIsDodging() && Time.timeScale > 0.0f)
             {
                 _inventoryIndex = i;
                 _isSwitching = true;
@@ -105,7 +107,7 @@ public class Inventory : MonoBehaviour
 
     private void DropItem()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !_isSwitching && Time.timeScale > 0.0f)
+        if (Input.GetKeyDown(KeyCode.Q) && !_isSwitching && !_isShopping && Time.timeScale > 0.0f)
             DropCurrentHeldItemFromInventory();
     }
     #endregion
@@ -136,10 +138,10 @@ public class Inventory : MonoBehaviour
 
     public void DropCurrentHeldItemFromInventory()
     {
-        if (!_currentHeldItem) return;
+        if (!_currentHeldItem && Time.timeScale == 0.0f) return;
         foreach (GameObject _item2 in _inventory)
         {
-            if (_item2.name == _currentHeldItem.name && _item2.GetInstanceID() == _currentHeldItem.GetInstanceID() && !_isSwitching)
+            if (_item2.name == _currentHeldItem.name && _item2.GetInstanceID() == _currentHeldItem.GetInstanceID() && !_isSwitching && !_isShopping && Time.timeScale > 0.0f)
             {
                 if (_item2.GetInstanceID() == _currentHeldItem.GetInstanceID()) _itemToDrop = _item2;
             }
@@ -153,10 +155,10 @@ public class Inventory : MonoBehaviour
 
     public void UseItem()
     {
-        if (!_currentHeldItem) return;
+        if (!_currentHeldItem && Time.timeScale == 0.0f) return;
         foreach (GameObject _item2 in _inventory)
         {
-            if (_item2.name == _currentHeldItem.name && _item2.GetInstanceID() == _currentHeldItem.GetInstanceID() && !_isSwitching)
+            if (_item2.name == _currentHeldItem.name && _item2.GetInstanceID() == _currentHeldItem.GetInstanceID() && !_isSwitching && !_isShopping && Time.timeScale > 0.0f)
             {
                 if (_item2.GetInstanceID() == _currentHeldItem.GetInstanceID()) _itemToDrop = _item2;
             }
@@ -169,6 +171,9 @@ public class Inventory : MonoBehaviour
 
     public bool GetIsSwitching() { return _isSwitching; }
     public bool GetIsGetting() { return _isGetting; }
+    public bool GetIsShopping() { return _isShopping; }
+    public bool GetIsReading() { return _isReading; }
+    public void SetIsReading(bool _boolean) { _isReading = _boolean; }
     public List<GameObject> GetInventory() { return _inventory; }
     public List<GameObject> GetInventory1() { return _inventory1; }
     public void SetInventory1(List<GameObject> _savedInventory) {  _inventory1 = _savedInventory; } 
@@ -179,6 +184,7 @@ public class Inventory : MonoBehaviour
         _movement.SetShootingTwo(false);
         _movement.SetEating(false);
         _movement.SetThrowing(false);
+        _isReading = false;
     }
 
     public int GetCoins() { return _coins; }

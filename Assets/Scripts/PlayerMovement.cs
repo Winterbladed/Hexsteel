@@ -111,7 +111,7 @@ public class PlayerMovement : Movement
 
         _isWalking = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
         _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1)
-            && !_isAttacking && !_isShooting && !_isShootingTwo && !_isEating && !_isThrowing && !_inventory.GetIsSwitching() && !_inventory.GetIsGetting();
+            && !_isAttacking && !_isShooting && !_isShootingTwo && !_isEating && !_isThrowing && !_inventory.GetIsSwitching() && !_inventory.GetIsGetting() && !_inventory.GetIsShopping();
         _isGrounded = _controller.isGrounded;
 
         if (_isGrounded && !_isDodging)
@@ -121,7 +121,7 @@ public class PlayerMovement : Movement
         }
         else _verticalVelocity += _gravity * Time.deltaTime;
         
-        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isShootingTwo && !_isStrafing && !_isEating && !_isThrowing && !_inventory.GetIsSwitching() && !_inventory.GetIsGetting())
+        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isShootingTwo && !_isStrafing && !_isEating && !_isThrowing && !_inventory.GetIsSwitching() && !_inventory.GetIsGetting() && !_inventory.GetIsShopping())
         {
             _isDodging = true;
             _dodgeRollTime = Time.time + _dodgeRollDuration;
