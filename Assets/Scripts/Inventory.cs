@@ -176,6 +176,7 @@ public class Inventory : MonoBehaviour
     {
         _movement.SetAttacking(false);
         _movement.SetShooting(false);
+        _movement.SetShootingTwo(false);
         _movement.SetEating(false);
         _movement.SetThrowing(false);
     }

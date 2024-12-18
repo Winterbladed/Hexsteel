@@ -70,9 +70,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isPlayer: 0
   _DamageType: 13
-  _Damage: 10
-  _CriticalDamage: 1
-  _CriticalChance: 0
+  _Damage: 5
+  _CriticalDamage: 2
+  _CriticalChance: 0.1
   _StatusChance: 1
   _StatusDamage: 20
   _StatusTimer: 0.5
@@ -132,6 +132,7 @@ MonoBehaviour:
   _spawn:
   - {fileID: 5413694892429821854, guid: 087da3dad7036ea448b4ab0547bec04c, type: 3}
   _transform: {fileID: 4544602861770492033}
+  _spawnSpread: 0
 --- !u!1001 &3902945482397050876
 PrefabInstance:
   m_ObjectHideFlags: 0

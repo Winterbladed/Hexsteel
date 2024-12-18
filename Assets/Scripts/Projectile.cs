@@ -1,11 +1,15 @@
 using UnityEngine;
 using UnityEngine.Events;
+[RequireComponent(typeof(TrailRenderer))]
+[RequireComponent(typeof(Light))]
 
 public class Projectile : Damage
 {
     #region Variables
     [Header("Projectile Stats")]
     public Rigidbody _Rigidbody;
+    private TrailRenderer _trailRenderer;
+    private Light _light;
     private enum ProjectileVector
     {
         Straight, Left, Right, Upper, Lower,
@@ -31,6 +35,8 @@ public class Projectile : Damage
         StatusChance();
         DetermineVectorVelocity();
         Destroy(gameObject, _projectileTimer);
+        _trailRenderer = GetComponent<TrailRenderer>();
+        _light = GetComponent<Light>();
     }
 
     private void DetermineVectorVelocity()
@@ -55,6 +61,9 @@ public class Projectile : Damage
     {
         if (!_isHit)
         {
+            _Rigidbody.useGravity = true;
+            _trailRenderer.enabled = false;
+            _light.enabled = false;
             _onHitEvt.Invoke(); DealDamage(_hit.gameObject);
             if (_projectileType == ProjectileType.Normal) Destroy(gameObject);
             _isHit = true;

@@ -15,6 +15,7 @@ public class PlayerMovement : Movement
     private bool _isRunning;
     private bool _isStrafing;
     private bool _isShooting;
+    private bool _isShootingTwo;
     private bool _isAttacking;
     private bool _isThrowing;
     private bool _isEating;
@@ -96,7 +97,7 @@ public class PlayerMovement : Movement
             transform.rotation = Quaternion.RotateTowards(transform.rotation, _targetRotation, _rotationSpeed * Time.deltaTime);
             _isStrafing = true;
         }
-        else if (_direction != Vector3.zero && !_isAttacking && !_isShooting && !_isThrowing)
+        else if (_direction != Vector3.zero && !_isAttacking && !_isShooting && !_isShootingTwo && !_isThrowing)
         {
             _direction.Normalize();
             Quaternion _targetRotation = Quaternion.LookRotation(_direction);
@@ -106,21 +107,21 @@ public class PlayerMovement : Movement
 
         if (!_isSlowed) _currentSpeed = _isRunning ? _runSpeed : _Speed;
         else _currentSpeed = _slowSpeed;
-        if (_isAttacking && _isGrounded || _isShooting && _isGrounded || _isThrowing && _isGrounded || _inventory.GetIsSwitching() && _isGrounded || _inventory.GetIsGetting() && _isGrounded) _currentSpeed = 0.0f;
+        if (_isAttacking && _isGrounded || _isShooting && _isGrounded || _isShootingTwo && _isGrounded || _isThrowing && _isGrounded || _inventory.GetIsSwitching() && _isGrounded || _inventory.GetIsGetting() && _isGrounded) _currentSpeed = 0.0f;
 
         _isWalking = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
         _isRunning = Input.GetKey(KeyCode.LeftShift) && _isWalking && !Input.GetMouseButton(1)
-            && !_isAttacking && !_isShooting && !_isEating && !_isThrowing && !_inventory.GetIsSwitching() && !_inventory.GetIsGetting();
+            && !_isAttacking && !_isShooting && !_isShootingTwo && !_isEating && !_isThrowing && !_inventory.GetIsSwitching() && !_inventory.GetIsGetting();
         _isGrounded = _controller.isGrounded;
 
         if (_isGrounded && !_isDodging)
         {
-            if (Input.GetButton("Jump") && !_isAttacking) _verticalVelocity = Mathf.Sqrt(_jumpHeight * -2f * _gravity);
+            if (Input.GetButton("Jump") && !_isAttacking && !_isShooting && !_isShootingTwo) _verticalVelocity = Mathf.Sqrt(_jumpHeight * -2f * _gravity);
             else _verticalVelocity = -0.5f;
         }
         else _verticalVelocity += _gravity * Time.deltaTime;
         
-        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isStrafing && !_isEating && !_isThrowing && !_inventory.GetIsSwitching() && !_inventory.GetIsGetting())
+        if (Input.GetKey(KeyCode.C) && Time.time >= _dodgeCooldownTime && _isGrounded && !_isAttacking && _isWalking && !_isShooting && !_isShootingTwo && !_isStrafing && !_isEating && !_isThrowing && !_inventory.GetIsSwitching() && !_inventory.GetIsGetting())
         {
             _isDodging = true;
             _dodgeRollTime = Time.time + _dodgeRollDuration;
@@ -135,6 +136,7 @@ public class PlayerMovement : Movement
         _animator.SetBool("_isDodging", _isDodging);
         _animator.SetBool("_isStrafing", _isStrafing);
         _animator.SetBool("_isShooting", _isShooting);
+        _animator.SetBool("_isShootingTwo", _isShootingTwo);
         _animator.SetBool("_isAttacking", _isAttacking);
         _animator.SetBool("_isThrowing", _isThrowing);
         _animator.SetBool("_isEating", _isEating);
@@ -145,17 +147,13 @@ public class PlayerMovement : Movement
     #endregion
 
     #region Public Functions
-    public bool GetIsGrounded() { return _isGrounded; } public bool GetIsWalking() { return _isWalking; }
-    public bool GetIsRunning() { return _isRunning; } public bool GetIsSlowed() { return _isSlowed; }
-    public bool GetIsDodging() { return _isDodging; } public bool GetIsStrafing() { return _isStrafing; }
-    public bool GetIsAttacking() { return _isAttacking; } public bool GetIsShooting() { return _isShooting; }
-    public bool GetIsEating() { return _isEating; } public bool GetIsThrowing() { return _isThrowing; }
-    public void SetAttacking(bool _boolean) {  _isAttacking = _boolean; } public void SetShooting(bool _boolean) { _isShooting = _boolean; }
-    public void SetEating(bool _boolean) { _isEating = _boolean; } public void SetThrowing(bool _boolean) { _isThrowing = _boolean; }
+    public bool GetIsGrounded() { return _isGrounded; } public bool GetIsWalking() { return _isWalking; } public bool GetIsRunning() { return _isRunning; } public bool GetIsSlowed() { return _isSlowed; }
+    public bool GetIsDodging() { return _isDodging; } public bool GetIsStrafing() { return _isStrafing; } public void SetDodgeRollSpeed(float _newDodgeRollSpeed) { _dodgeRollSpeed = _newDodgeRollSpeed; }
+    public bool GetIsAttacking() { return _isAttacking; } public bool GetIsShooting() { return _isShooting; } public bool GetIsShootingTwo() { return _isShootingTwo; }
+    public bool GetIsEating() { return _isEating; } public bool GetIsThrowing() { return _isThrowing; } public void SetEating(bool _boolean) { _isEating = _boolean; } public void SetThrowing(bool _boolean) { _isThrowing = _boolean; }
+    public void SetAttacking(bool _boolean) {  _isAttacking = _boolean; } public void SetShooting(bool _boolean) { _isShooting = _boolean; } public void SetShootingTwo(bool _boolean) { _isShootingTwo = _boolean; } 
     public void SetSpeed(float _newSpeed) { _Speed = _newSpeed; _currentSpeed = _newSpeed; _slowSpeed = _newSpeed / 2; _runSpeed = _newSpeed * 4.0f; }
-    public void SetJumpHeight(float _newJumpHeight) { _jumpHeight = _newJumpHeight;}
-    public void SetGravity(float _newGravity) { _gravity = _newGravity; }
-    public void SetDodgeRollSpeed(float _newDodgeRollSpeed) { _dodgeRollSpeed = _newDodgeRollSpeed; }
+    public void SetJumpHeight(float _newJumpHeight) { _jumpHeight = _newJumpHeight;} public void SetGravity(float _newGravity) { _gravity = _newGravity; }
     public void SetComboIndex(int _index) { _comboIndex = _index; }
     #endregion
 }
