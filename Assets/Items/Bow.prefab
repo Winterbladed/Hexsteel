@@ -70,9 +70,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isPlayer: 0
   _DamageType: 2
-  _Damage: 5
-  _CriticalDamage: 1
-  _CriticalChance: 0
+  _Damage: 15
+  _CriticalDamage: 2
+  _CriticalChance: 0.1
   _StatusChance: 1
   _StatusDamage: 0
   _StatusTimer: 0.1

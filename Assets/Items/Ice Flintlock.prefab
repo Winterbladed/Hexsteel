@@ -71,8 +71,8 @@ MonoBehaviour:
   _isPlayer: 0
   _DamageType: 5
   _Damage: 10
-  _CriticalDamage: 1
-  _CriticalChance: 0
+  _CriticalDamage: 2
+  _CriticalChance: 0.1
   _StatusChance: 1
   _StatusDamage: 0
   _StatusTimer: 5
@@ -132,6 +132,7 @@ MonoBehaviour:
   _spawn:
   - {fileID: 5413694892429821854, guid: 087da3dad7036ea448b4ab0547bec04c, type: 3}
   _transform: {fileID: 5695516895203007410}
+  _spawnSpread: 0
 --- !u!1001 &1885147500312699734
 PrefabInstance:
   m_ObjectHideFlags: 0
