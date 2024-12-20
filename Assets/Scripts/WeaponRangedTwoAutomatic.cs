@@ -5,7 +5,7 @@ public class WeaponRangedTwoAutomatic : Weapon
     #region Variables
     [Header("Ranged Extras")]
     [SerializeField] private GameObject[] _projectile;
-    [SerializeField] private Transform _transform;
+    private Transform _transform;
     [SerializeField] private float _attackRate;
     #endregion
 
@@ -13,6 +13,7 @@ public class WeaponRangedTwoAutomatic : Weapon
     protected override void Start()
     {
         base.Start();
+        _transform = GetComponentInChildren<NozzleRaycast>().transform;
     }
 
     protected override void Update()

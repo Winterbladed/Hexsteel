@@ -4,16 +4,15 @@ public class NozzleRaycast : MonoBehaviour
 {
     #region Variables
     [SerializeField] private LayerMask _layerMask;
-    [SerializeField] private GameObject _camera;
+    private GameObject _camera;
     #endregion
 
     #region Private Functions
-    private void Start()
+    /*private void Start()
     {
         _camera = GetComponentInParent<CameraMove>().gameObject;
-    }
-
-    private void Update()
+    }*/
+    private void RayCastNozzleToCamera()
     {
         RaycastHit _hit;
         Ray _ray = new Ray(_camera.transform.position, _camera.transform.forward);

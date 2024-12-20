@@ -5,13 +5,14 @@ public class WeaponRanged : Weapon
     #region Variables
     [Header("Ranged Extras")]
     [SerializeField] private GameObject _projectile;
-    [SerializeField] private Transform _transform;
+    private Transform _transform;
     #endregion
 
     #region Private Functions
     protected override void Start()
     {
         base.Start();
+        _transform = GetComponentInChildren<NozzleRaycast>().transform;
     }
 
     protected override void Update()

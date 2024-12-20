@@ -98,7 +98,6 @@ MonoBehaviour:
         m_CallState: 2
   _projectile: {fileID: 6207323861454628167, guid: 4154bcbc05ef225419ada9906a0f8c58,
     type: 3}
-  _transform: {fileID: 5086527174109896131}
 --- !u!114 &1221176511195950987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +130,7 @@ MonoBehaviour:
   _addToVector: {x: 0, y: 0, z: 0}
   _spawn:
   - {fileID: 5413694892429821854, guid: 087da3dad7036ea448b4ab0547bec04c, type: 3}
-  _transform: {fileID: 5086527174109896131}
+  _transform: {fileID: 5728530631992049662}
   _spawnSpread: 0
 --- !u!1001 &2290791151613405635
 PrefabInstance:
@@ -331,9 +330,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5741343533432910526}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5086527174109896131 stripped
+--- !u!4 &5728530631992049662 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 665301316438863741, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
+  m_CorrespondingSourceObject: {fileID: 59265619926011200, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
     type: 3}
   m_PrefabInstance: {fileID: 5741343533432910526}
   m_PrefabAsset: {fileID: 0}
