@@ -312,7 +312,7 @@ MonoBehaviour:
   _raycastLayerMask:
     serializedVersion: 2
     m_Bits: 51
-  _raycastDistance: 5
+  _raycastDistance: 25
   _stopRange: 2
   _wanderRange: 15
   _wanderCooldown: 15
