@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPlayer: 0
-  _DamageType: 5
+  _DamageType: 0
   _Damage: 1
   _CriticalDamage: 0
   _CriticalChance: 0
@@ -60,7 +60,6 @@ MonoBehaviour:
   _StatusDamage: 0
   _StatusTimer: 0
   _StatusTicker: 0
-  _Rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 0
   _projectileType: 1
   _projectileSpeed: 25

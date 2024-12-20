@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPlayer: 0
-  _DamageType: 13
+  _DamageType: 0
   _Damage: 1
   _CriticalDamage: 0
   _CriticalChance: 0
