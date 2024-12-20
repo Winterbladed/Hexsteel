@@ -111,9 +111,9 @@ Cloth:
   m_SleepThreshold: 0.1
   m_Coefficients:
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 0
     collisionSphereDistance: 0
   - maxDistance: 0
@@ -322,9 +322,9 @@ Cloth:
   m_SleepThreshold: 0.1
   m_Coefficients:
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 0
     collisionSphereDistance: 0
   - maxDistance: 0
@@ -533,9 +533,9 @@ Cloth:
   m_SleepThreshold: 0.1
   m_Coefficients:
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 0
     collisionSphereDistance: 0
   - maxDistance: 0
@@ -744,9 +744,9 @@ Cloth:
   m_SleepThreshold: 0.1
   m_Coefficients:
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 0
     collisionSphereDistance: 0
   - maxDistance: 0
@@ -1271,7 +1271,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8649871774612991555}
   - {fileID: 1773044191081774454}
   - {fileID: 9008539522493393329}
   - {fileID: 55184331912987841}
@@ -1280,6 +1279,7 @@ Transform:
   - {fileID: 2510501502459814012}
   - {fileID: 5563660711342756509}
   - {fileID: 5158126168185519936}
+  - {fileID: 8649871774612991555}
   - {fileID: 6474197536926774981}
   - {fileID: 1347494795123584476}
   - {fileID: 2957536651036935094}
@@ -1540,9 +1540,9 @@ Cloth:
   m_SleepThreshold: 0.1
   m_Coefficients:
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 0
     collisionSphereDistance: 0
   - maxDistance: 0
@@ -1782,9 +1782,9 @@ Cloth:
   m_SleepThreshold: 0.1
   m_Coefficients:
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 0
     collisionSphereDistance: 0
   - maxDistance: 0
@@ -2609,9 +2609,9 @@ Cloth:
   m_SleepThreshold: 0.1
   m_Coefficients:
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 0
     collisionSphereDistance: 0
   - maxDistance: 0
@@ -2737,9 +2737,9 @@ Cloth:
   m_SleepThreshold: 0.1
   m_Coefficients:
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 1
-    collisionSphereDistance: 0
+    collisionSphereDistance: 1
   - maxDistance: 0
     collisionSphereDistance: 0
   - maxDistance: 0
