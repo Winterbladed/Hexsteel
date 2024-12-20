@@ -1665,7 +1665,7 @@ GameObject:
   - component: {fileID: 221126933683790111}
   - component: {fileID: 3922574002289265912}
   m_Layer: 0
-  m_Name: Human Skeleton
+  m_Name: '[Rig] Bipedal Human'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

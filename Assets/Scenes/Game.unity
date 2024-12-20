@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 46674004}
   - component: {fileID: 46674003}
   m_Layer: 5
-  m_Name: Blood
+  m_Name: Health Hit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4940,7 +4940,7 @@ GameObject:
   - component: {fileID: 1025872109}
   - component: {fileID: 1025872108}
   m_Layer: 5
-  m_Name: Energy
+  m_Name: Shield Hit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
