@@ -3,14 +3,14 @@ public class AI_AggressiveMelee : NavmeshMovement
     protected override void Update()
     {
         base.Update();
-        AggressiveSight();
+        GroupAggressiveSight();
         switch (_state)
         {
             case State._Idle:
-                WanderFromOrigin();
+                Wander();
                 break;
             case State._Wander:
-                WanderFromOrigin();
+                Wander();
                 break;
             case State._Aggro:
                 RunToTarget();

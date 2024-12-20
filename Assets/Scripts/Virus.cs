@@ -22,16 +22,10 @@ public class Virus : Status
         if (_isActive)
         {
             _statusTime += Time.deltaTime;
-            _statusTick += Time.deltaTime;
             _health.ModifyHpDamageTaken(2);
-            if (_statusTick > _statusTicker)
-            {
-                _statusTick = 0.0f;
-            }
             if (_statusTime > _statusTimer)
             {
                 _health.ModifyHpDamageTaken(1);
-                _statusTime = 0.0f;
                 DisableStatus();
             }
         }

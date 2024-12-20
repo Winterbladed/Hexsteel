@@ -76,8 +76,7 @@ MonoBehaviour:
   _StatusChance: 1
   _StatusDamage: 0
   _StatusTimer: 10
-  _StatusTicker: 1
-  _trail: {fileID: 259283410850751697}
+  _StatusTicker: 0
   _radius: 0
   _distance: 0
   _comboIndexes: 0
@@ -200,12 +199,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eafa5e6671890240aeffe3e58e88b3f, type: 3}
---- !u!1 &259283410850751697 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: 3eafa5e6671890240aeffe3e58e88b3f,
-    type: 3}
-  m_PrefabInstance: {fileID: 5069051265232660407}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6686728350735652271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 3eafa5e6671890240aeffe3e58e88b3f,

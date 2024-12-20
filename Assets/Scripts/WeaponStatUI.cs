@@ -63,7 +63,8 @@ public class WeaponStatUI : MonoBehaviour
             _statusChanceText.text = "Status Chance: " + _weapon._StatusChance * 100 + "%";
             _statusDamageText.text = "Status Damage: " + _weapon._StatusDamage.ToString();
             _statusTimerText.text = "Status Time: " + _weapon._StatusTimer.ToString() + " seconds";
-            _statusTickerText.text = "Status Tick: " + _weapon._StatusTicker.ToString() + " / second";
+            if (_weapon._StatusTicker == 1.0f) _statusTickerText.text = "Status Tick: 1 tick / second";
+            else if (_weapon._StatusTicker == 0.5f) _statusTickerText.text = "Status Tick: 2 ticks / second";
         }
     }
 

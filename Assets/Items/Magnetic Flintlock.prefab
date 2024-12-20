@@ -76,8 +76,7 @@ MonoBehaviour:
   _StatusChance: 1
   _StatusDamage: 0
   _StatusTimer: 10
-  _StatusTicker: 1
-  _trail: {fileID: 5069437158124822576}
+  _StatusTicker: 0
   _radius: 0
   _distance: 0
   _comboIndexes: 0
@@ -209,12 +208,6 @@ Transform:
 --- !u!4 &4988624668715701191 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5089259097127661713, guid: 16519497d0a959f4fb7b3307800041cc,
-    type: 3}
-  m_PrefabInstance: {fileID: 259952706053268310}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5069437158124822576 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: 16519497d0a959f4fb7b3307800041cc,
     type: 3}
   m_PrefabInstance: {fileID: 259952706053268310}
   m_PrefabAsset: {fileID: 0}

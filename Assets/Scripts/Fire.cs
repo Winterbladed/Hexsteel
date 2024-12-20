@@ -48,7 +48,6 @@ public class Fire : Status
             }
             else if (_statusTime > _statusTimer)
             {
-                _statusTime = 0.0f;
                 DisableStatus();
             }
         }

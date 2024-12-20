@@ -22,16 +22,10 @@ public class Melt : Status
         if (_isActive)
         {
             _statusTime += Time.deltaTime;
-            _statusTick += Time.deltaTime;
-            if (_statusTick > _statusTicker)
-            {
-                if (_damage) _damage.CrippleDamage();
-                _statusTick = 0.0f;
-            }
+            if (_damage) _damage.CrippleDamage();
             if (_statusTime > _statusTimer)
             {
                 if (_damage) _damage.UnCrippleDamage();
-                _statusTime = 0.0f;
                 DisableStatus();
             }
         }

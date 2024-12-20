@@ -22,16 +22,10 @@ public class Ice : Status
         if (_isActive)
         {
             _statusTime += Time.deltaTime;
-            _statusTick += Time.deltaTime;
-            if (_statusTick > _statusTicker)
-            {
-                _movement.Slow();
-                _statusTick = 0.0f;
-            }
+            _movement.Slow();
             if (_statusTime > _statusTimer)
             {
                 _movement.UnSlow();
-                _statusTime = 0.0f;
                 DisableStatus();
             }
         }

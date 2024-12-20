@@ -76,8 +76,7 @@ MonoBehaviour:
   _StatusChance: 1
   _StatusDamage: 0
   _StatusTimer: 0.1
-  _StatusTicker: 1
-  _trail: {fileID: 1413826257314425020}
+  _StatusTicker: 0
   _radius: 0
   _distance: 0
   _comboIndexes: 0
@@ -86,7 +85,6 @@ MonoBehaviour:
       m_Calls: []
   _projectile: {fileID: 6207323861454628167, guid: 2150680c82a08594389bdbb78fb83fa2,
     type: 3}
-  _transform: {fileID: 6873760629093450919}
 --- !u!114 &1221176511195950987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,21 +170,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55f2e281804a84d4c858501d6193372b, type: 3}
---- !u!1 &1413826257314425020 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: 55f2e281804a84d4c858501d6193372b,
-    type: 3}
-  m_PrefabInstance: {fileID: 6223729331309276122}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5533740451880786370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
-    type: 3}
-  m_PrefabInstance: {fileID: 6223729331309276122}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6873760629093450919 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 665301316438863741, guid: 55f2e281804a84d4c858501d6193372b,
     type: 3}
   m_PrefabInstance: {fileID: 6223729331309276122}
   m_PrefabAsset: {fileID: 0}

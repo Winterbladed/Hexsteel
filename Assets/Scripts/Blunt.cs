@@ -24,7 +24,6 @@ public class Blunt : Status
             }
             if (_statusTime > _statusTimer)
             {
-                _statusTime = 0.0f;
                 DisableStatus();
             }
         }

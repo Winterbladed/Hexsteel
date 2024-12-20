@@ -57,7 +57,6 @@ public class Blast : Status
             if (_statusTime > _statusTimer)
             {
                 _isDone = false;
-                _statusTime = 0.0f;
                 DisableStatus();
             }
         }

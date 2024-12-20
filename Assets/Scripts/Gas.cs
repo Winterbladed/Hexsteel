@@ -69,7 +69,6 @@ public class Gas : Status
             else if (_statusTime > _statusTimer)
             {
                 _health.DisableRegen(false);
-                _statusTime = 0.0f;
                 DisableStatus();
             }
         }

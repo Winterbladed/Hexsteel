@@ -7,10 +7,10 @@ public class AI_AggressiveMeleeGroup : NavmeshMovement
         switch (_state)
         {
             case State._Idle:
-                WanderFromOrigin();
+                Wander();
                 break;
             case State._Wander:
-                WanderFromOrigin();
+                Wander();
                 break;
             case State._Aggro:
                 RunToTarget();

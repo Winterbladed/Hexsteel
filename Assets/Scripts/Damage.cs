@@ -14,6 +14,7 @@ public class Damage : MonoBehaviour
     protected int _normalDamage;
     protected int _reducedDamage;
     protected int _computedDamage = 0;
+    protected bool _isCrippled = false;
 
     [Header("Critical Stats")]
     public int _CriticalDamage;
@@ -46,9 +47,10 @@ public class Damage : MonoBehaviour
     #region Protected Functions
     protected void CriticalDamageChance()
     {
-        _Damage = _normalDamage;
+        if (!_isCrippled) _Damage = _normalDamage;
+        else if (_isCrippled) _Damage = _reducedDamage;
         _currentCriticalChance = Random.Range(0.0f, 1.0f);
-        if (_currentCriticalChance <= _CriticalChance)
+        if (_currentCriticalChance <= _CriticalChance && !_isCrippled)
         {
             _Damage *= _CriticalDamage;
             _isCritical = true;
@@ -59,7 +61,7 @@ public class Damage : MonoBehaviour
     protected void StatusChance()
     {
         _currentStatusChance = Random.Range(0.0f, 1.0f);
-        if (_currentStatusChance <= _StatusChance)
+        if (_currentStatusChance <= _StatusChance && !_isCrippled)
         {
             _isStatus = true;
         }
@@ -180,7 +182,7 @@ public class Damage : MonoBehaviour
         //Virus Status Effect = Toxin + Ice : Modifies Health to take more damage from all sources during the effect
         else if (_virus && _DamageType == DamageType._Virus && !_virus.GetIsActive())
         {
-            SetStatusStats(_virus, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_virus, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
             _virus.EnableStatus(); //Trigger Elemental Fusion
         }
         else if (_virus && _DamageType == DamageType._Toxin && !_virus.GetIsActive() && _ice.GetIsActive() ||
@@ -201,7 +203,7 @@ public class Damage : MonoBehaviour
         else if (_gas && _DamageType == DamageType._Toxin && !_gas.GetIsActive() && _fire.GetIsActive() ||
             _gas && _DamageType == DamageType._Fire && !_gas.GetIsActive() && _toxin.GetIsActive())
         {
-            SetStatusStats(_gas, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_gas, _StatusDamage, _StatusTimer, _StatusTicker / 2.0f); //Modify Status Stats
             _gas.EnableStatus(); //Trigger Elemental Fusion
             _toxin.DisableStatus(); _fire.DisableStatus(); //Disable Base Element Status on Elemental Fusion
         }
@@ -209,7 +211,7 @@ public class Damage : MonoBehaviour
         //Corrode Status Effect = Toxin + Electric : Disables Armor during the effect
         else if (_corrode && _DamageType == DamageType._Corrode && !_corrode.GetIsActive())
         {
-            SetStatusStats(_corrode, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_corrode, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
             _corrode.EnableStatus(); //Trigger Elemental Fusion
         }
         else if (_corrode && _DamageType == DamageType._Toxin && !_corrode.GetIsActive() && _electric.GetIsActive() ||
@@ -223,7 +225,7 @@ public class Damage : MonoBehaviour
         //Melt Status Effect = Ice + Fire : Weakens Damage sources during the effect
         else if (_melt && _DamageType == DamageType._Melt && !_melt.GetIsActive())
         {
-            SetStatusStats(_melt, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_melt, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
             _melt.EnableStatus(); //Trigger Elemental Fusion
         }
         else if (_melt && _DamageType == DamageType._Ice && !_melt.GetIsActive() && _fire.GetIsActive() ||
@@ -238,7 +240,7 @@ public class Damage : MonoBehaviour
         //Magnetic Status Effect = Ice + Electric : Disables Shield during the effect
         else if (_magnetic && _DamageType == DamageType._Magnetic && !_magnetic.GetIsActive())
         {
-            SetStatusStats(_magnetic, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_magnetic, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
             _magnetic.EnableStatus(); //Trigger Elemental Fusion
         }
         else if (_magnetic && _DamageType == DamageType._Ice && !_magnetic.GetIsActive() && _electric.GetIsActive() ||
@@ -253,13 +255,13 @@ public class Damage : MonoBehaviour
         //Blast Status Effect = Fire + Electric : Deals instant Area Of Effect Damage on effect
         else if (_blast && _DamageType == DamageType._Blast && !_blast.GetIsActive())
         {
-            SetStatusStats(_blast, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_blast, _StatusDamage, 0.1f, 0.1f); //Modify Status Stats
             _blast.EnableStatus(); //Trigger Elemental Fusion
         }
         else if (_blast && _DamageType == DamageType._Fire && !_blast.GetIsActive() && _electric.GetIsActive() ||
             _blast && _DamageType == DamageType._Electric && !_blast.GetIsActive() && _fire.GetIsActive())
         {
-            SetStatusStats(_blast, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
+            SetStatusStats(_blast, _StatusDamage, 0.1f, 0.1f); //Modify Status Stats
             _blast.EnableStatus(); //Trigger Elemental Fusion
             _fire.DisableStatus(); _electric.DisableStatus(); //Disable Base Element Status on Elemental Fusion
         }
@@ -356,8 +358,8 @@ public class Damage : MonoBehaviour
         }
     }
 
-    public void CrippleDamage() { _Damage = _reducedDamage; }
-    public void UnCrippleDamage() { _Damage = _normalDamage; }
+    public void CrippleDamage() { _Damage = _reducedDamage; _isCrippled = true; }
+    public void UnCrippleDamage() { _Damage = _normalDamage; _isCrippled = false; }
     public void SetIsPlayer(bool _boolean) { _isPlayer = _boolean; }
     public void SetOwner(GameObject _newOwner) { _owner = _newOwner; }
     public int GetDamage() { return _Damage; }

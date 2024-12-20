@@ -22,16 +22,10 @@ public class Corrode : Status
         if (_isActive)
         {
             _statusTime += Time.deltaTime;
-            _statusTick += Time.deltaTime;
-            if (_statusTick > _statusTicker)
-            {
-                _armor.DisableArmor();
-                _statusTick = 0.0f;
-            }
+            _armor.DisableArmor();
             if (_statusTime > _statusTimer)
             {
                 _armor.RestoreArmor();
-                _statusTime = 0.0f;
                 DisableStatus();
             }
         }

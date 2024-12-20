@@ -34,7 +34,6 @@ public class Slash : Status
             }
             if (_statusTime > _statusTimer)
             {
-                _statusTime = 0.0f;
                 DisableStatus();
             }
         }

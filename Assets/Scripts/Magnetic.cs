@@ -22,17 +22,10 @@ public class Magnetic : Status
         if (_isActive)
         {
             _statusTime += Time.deltaTime;
-            _statusTick += Time.deltaTime;
-            if (_statusTick > _statusTicker)
-            {
-                _shield.ShieldDisable(true);
-                _textEvent.ShowDamage(_statusDamage, Color.white, gameObject.transform);
-                _statusTick = 0.0f;
-            }
+            _shield.ShieldDisable(true);
             if (_statusTime > _statusTimer)
             {
                 _shield.ShieldDisable(false);
-                _statusTime = 0.0f;
                 DisableStatus();
             }
         }
