@@ -34,7 +34,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2852040042948662101}
   m_Father: {fileID: 0}
@@ -60,7 +60,6 @@ MonoBehaviour:
   _StatusDamage: 0
   _StatusTimer: 0
   _StatusTicker: 0
-  _rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 0
   _projectileType: 1
   _projectileSpeed: 30
@@ -463,6 +462,11 @@ PrefabInstance:
     - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4788479110435682351, guid: fca5b6c47f44ada4f8356276cb3b68bd,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

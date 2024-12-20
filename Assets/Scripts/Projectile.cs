@@ -23,8 +23,6 @@ public class Projectile : Damage
     [Range(0.0f, 10000.0f)]
     [SerializeField] private float _projectileSpeed = 1000.0f;
     [SerializeField] private float _projectileSpread;
-    [Range(0.1f, 5.0f)]
-    [SerializeField] protected float _projectileTimer = 2.0f;
     private bool _isHit = false;
     #endregion
 
@@ -39,7 +37,7 @@ public class Projectile : Damage
         CriticalDamageChance();
         StatusChance();
         DetermineVectorVelocity();
-        Destroy(gameObject, _projectileTimer);
+        Destroy(gameObject, 5.0f);
     }
 
     private void DetermineVectorVelocity()

@@ -32,7 +32,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1384990167101171912}
   m_Father: {fileID: 0}
@@ -80,7 +80,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7e02566825ab94f912bc6be0d3af0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 6475663804611408560}
   _audioClip: {fileID: 8300000, guid: f37469a687bf73f4ba7b6a97172b3e5a, type: 3}
 --- !u!65 &5410759940250294783
 BoxCollider:
@@ -282,6 +281,11 @@ PrefabInstance:
     - target: {fileID: 1915414423582683672, guid: 6c26a1e3696465a449c94de7e0a49684,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915414423582683672, guid: 6c26a1e3696465a449c94de7e0a49684,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4046928279687255575, guid: 6c26a1e3696465a449c94de7e0a49684,

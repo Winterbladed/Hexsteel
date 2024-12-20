@@ -32,7 +32,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 276962927076262048}
   m_Father: {fileID: 0}
@@ -65,8 +65,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _Item: {fileID: 2045042600589172159, guid: 25e71d4b3eeaafb4f94a9e2c55fb941a, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: beb0b48656b3d94438cf1744638f1b6a,
+  _Item: {fileID: 2045042600589172159, guid: 6f4e7b77af137e5469d5cdc03d319e9e, type: 3}
+  _ItemIcon: {fileID: 3240355216110004441, guid: 373c10a96786336449040f112e1f5715,
     type: 3}
 --- !u!114 &3795620042856048028
 MonoBehaviour:
@@ -80,7 +80,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7e02566825ab94f912bc6be0d3af0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 6475663804611408560}
   _audioClip: {fileID: 8300000, guid: f37469a687bf73f4ba7b6a97172b3e5a, type: 3}
 --- !u!65 &5410759940250294783
 BoxCollider:
@@ -282,6 +281,11 @@ PrefabInstance:
     - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4046928279687255575, guid: 7133dd9923d8d2e44b69011d8a2e944c,

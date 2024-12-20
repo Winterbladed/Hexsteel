@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82a63dbdf844dd84196b59be304cf484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 5
+  _timer: 4
 --- !u!114 &742160261806140045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,7 +65,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7e02566825ab94f912bc6be0d3af0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 7614823172932354301}
   _audioClip: {fileID: 8300000, guid: 9966e25536b166d459687484c5919f19, type: 3}
 --- !u!65 &822528572998162925
 BoxCollider:
