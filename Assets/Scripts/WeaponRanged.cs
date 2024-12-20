@@ -24,15 +24,22 @@ public class WeaponRanged : Weapon
             {
                 GameObject _newProjectile = _projectile;
                 Projectile _Projectile = _newProjectile.GetComponent<Projectile>();
+
+                //Inherit Damage Stats
                 _Projectile._DamageType = _DamageType;
                 _Projectile._Damage = _Damage;
+
+                //Inherit Critical Stats
                 _Projectile._CriticalChance = _CriticalChance;
                 _Projectile._CriticalDamage = _CriticalDamage;
+
+                //Inherit Status Stats
                 _Projectile._StatusChance = _StatusChance;
                 _Projectile._StatusDamage = _StatusDamage;
                 _Projectile._StatusTimer = _StatusTimer;
                 _Projectile._StatusTicker = _StatusTicker;
                 _Projectile.SetIsPlayer(true);
+
                 Instantiate(_newProjectile, _transform.position, _transform.rotation);
                 Attack();
                 _cooldownTime = 0.0f; _attackTime = 0.0f;
@@ -57,11 +64,6 @@ public class WeaponRanged : Weapon
                 _isOnCooldown = false;
             }
         }
-    }
-
-    protected override void OnDrawGizmos()
-    {
-        base.OnDrawGizmos();
     }
     #endregion
 }

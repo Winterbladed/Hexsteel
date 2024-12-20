@@ -68,6 +68,7 @@ public class Projectile : Damage
             _trailRenderer.enabled = false;
             _light.enabled = false;
             if (_projectileType == ProjectileType.Normal) Destroy(gameObject);
+            DealDamage(_hit.gameObject);
             _isHit = true;
         }
     }
