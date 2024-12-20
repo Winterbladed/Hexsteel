@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5172825291901632013}
+  - component: {fileID: -8330896438076583484}
   - component: {fileID: 4770265662143351077}
   - component: {fileID: 8725246004123672827}
   m_Layer: 0
@@ -33,6 +34,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8330896438076583484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5622339792258389472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc9490a0970ea5446ab34671d3217eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!96 &4770265662143351077
 TrailRenderer:
   serializedVersion: 3
@@ -158,8 +171,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.5882353, b: 0, a: 1}
-  m_Intensity: 5
-  m_Range: 1
+  m_Intensity: 10
+  m_Range: 4
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

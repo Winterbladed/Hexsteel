@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class Weapon : Damage
 {
     #region Variables
-    [SerializeField] protected GameObject _trail;
+    protected GameObject _trail;
 
     [Header("Other Weapon Stats")]
     [SerializeField] protected float _radius = 1.0f;
@@ -28,6 +28,7 @@ public class Weapon : Damage
         _isAttacked = false; _isOnCooldown = false;
         _movement = GetComponentInParent<PlayerMovement>();
         _health = GetComponentInParent<Health>();
+        _trail = GetComponentInChildren<Trail>().gameObject;
     }
 
     protected virtual void Update()

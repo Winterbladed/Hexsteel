@@ -62,9 +62,8 @@ MonoBehaviour:
   _StatusTicker: 0
   _projectileVector: 0
   _projectileType: 1
-  _projectileSpeed: 25
+  _projectileSpeed: 15
   _projectileSpread: 1
-  _projectileTimer: 5
 --- !u!114 &7647341100105220415
 MonoBehaviour:
   m_ObjectHideFlags: 0
