@@ -206,8 +206,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _gameObject: []
-  _isActive: 1
+  _gameObject:
+  - {fileID: 0}
+  _isActive: 0
 --- !u!114 &7724120110388493734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioClip:
-  - {fileID: 8300000, guid: 3c8df71a01cc4c74ea0a8e1d2cf10f14, type: 3}
+  - {fileID: 8300000, guid: 0f8c7fa82ac1a0a49ab8235bf91b3ea4, type: 3}
 --- !u!33 &825171474832416949
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -305,7 +306,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -516,7 +517,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7765006464342084306}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
+  m_LocalRotation: {x: -0.5, y: 0, z: 0, w: 0.8660254}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

@@ -1179,7 +1179,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1777,7 +1777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioClip:
-  - {fileID: 8300000, guid: 3c8df71a01cc4c74ea0a8e1d2cf10f14, type: 3}
+  - {fileID: 8300000, guid: ea978592708c2704fa8770862418ca4a, type: 3}
 --- !u!33 &4338667785907934840
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1861,7 +1861,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0

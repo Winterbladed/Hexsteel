@@ -126,10 +126,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Switch
       objectReference: {fileID: 0}
-    - target: {fileID: 6324545270737829753, guid: 4494f8ac40864564a89f6fbf8697922a,
+    - target: {fileID: 1051071048391645080, guid: 4494f8ac40864564a89f6fbf8697922a,
         type: 3}
-      propertyPath: _gameObject.Array.size
-      value: 1
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 6324545270737829753, guid: 4494f8ac40864564a89f6fbf8697922a,
         type: 3}
