@@ -60,27 +60,12 @@ MonoBehaviour:
   _StatusDamage: 5
   _StatusTimer: 5
   _StatusTicker: 1
-  _Rigidbody: {fileID: 3609810780474333784}
+  _rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 0
   _projectileType: 1
   _projectileSpeed: 30
   _projectileSpread: 0
   _projectileTimer: 5
-  _onHitEvt:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2191781863106030941}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &7647341100105220415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +102,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4, y: 0.4, z: 0.4}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3609810780474333784
 Rigidbody:

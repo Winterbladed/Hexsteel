@@ -5999,7 +5999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _armor: {fileID: 8348124112238466204}
-  _color: {fileID: 0}
+  _color: {fileID: 35681714}
 --- !u!1001 &1377872142
 PrefabInstance:
   m_ObjectHideFlags: 0

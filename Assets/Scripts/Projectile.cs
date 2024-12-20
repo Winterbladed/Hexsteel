@@ -1,11 +1,13 @@
 using UnityEngine;
-using UnityEngine.Events;
+[RequireComponent(typeof(BoxCollider))]
+[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(TrailRenderer))]
 [RequireComponent(typeof(Light))]
 
 public class Projectile : Damage
 {
     #region Variables
+    private BoxCollider _boxCollider;
     private Rigidbody _rigidbody;
     private TrailRenderer _trailRenderer;
     private Light _light;
@@ -23,19 +25,19 @@ public class Projectile : Damage
     [SerializeField] private float _projectileSpread;
     [Range(0.1f, 5.0f)]
     [SerializeField] protected float _projectileTimer = 2.0f;
-    [SerializeField] private UnityEvent _onHitEvt;
     private bool _isHit = false;
     #endregion
 
     #region Private Function
     protected override void Start()
     {
-        base.Start();
-        CriticalDamageChance();
-        StatusChance();
+        _boxCollider = GetComponent<BoxCollider>();
         _rigidbody = GetComponent<Rigidbody>();
         _trailRenderer = GetComponent<TrailRenderer>();
         _light = GetComponent<Light>();
+        base.Start();
+        CriticalDamageChance();
+        StatusChance();
         DetermineVectorVelocity();
         Destroy(gameObject, _projectileTimer);
     }
@@ -65,7 +67,6 @@ public class Projectile : Damage
             _rigidbody.useGravity = true;
             _trailRenderer.enabled = false;
             _light.enabled = false;
-            _onHitEvt.Invoke(); DealDamage(_hit.gameObject);
             if (_projectileType == ProjectileType.Normal) Destroy(gameObject);
             _isHit = true;
         }

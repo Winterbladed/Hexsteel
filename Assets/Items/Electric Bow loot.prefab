@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3647038016384504966}
   - component: {fileID: 6475663804611408560}
   m_Layer: 0
-  m_Name: Bow loot
+  m_Name: Electric Bow loot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5533740451880786370}
+  - {fileID: 276962927076262048}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4832173604041944305
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08494bb7a2cc1f94f8e587f193f8353e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InteractMessage: '[E] Get Bow'
+  _InteractMessage: '[E] Get Electric Bow'
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls:
@@ -65,8 +65,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _Item: {fileID: 2045042600589172159, guid: fd749826af6354544982f54af3c6c641, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: 5ddf47b1dde84164d81f6309147ca5ed,
+  _Item: {fileID: 2045042600589172159, guid: 25e71d4b3eeaafb4f94a9e2c55fb941a, type: 3}
+  _ItemIcon: {fileID: 3240355216110004441, guid: beb0b48656b3d94438cf1744638f1b6a,
     type: 3}
 --- !u!114 &3795620042856048028
 MonoBehaviour:
@@ -226,7 +226,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &6223729331309276122
+--- !u!1001 &1820319657703994040
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -234,69 +234,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 965993972271060893}
     m_Modifications:
-    - target: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 270
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4046928279687255575, guid: 55f2e281804a84d4c858501d6193372b,
+    - target: {fileID: 4046928279687255575, guid: 7133dd9923d8d2e44b69011d8a2e944c,
         type: 3}
       propertyPath: m_Name
-      value: I Bow Skin
+      value: Electric Bow skin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 55f2e281804a84d4c858501d6193372b, type: 3}
---- !u!4 &5533740451880786370 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 7133dd9923d8d2e44b69011d8a2e944c, type: 3}
+--- !u!4 &276962927076262048 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 55f2e281804a84d4c858501d6193372b,
+  m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 7133dd9923d8d2e44b69011d8a2e944c,
     type: 3}
-  m_PrefabInstance: {fileID: 6223729331309276122}
+  m_PrefabInstance: {fileID: 1820319657703994040}
   m_PrefabAsset: {fileID: 0}

@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 6475663804611408560}
-  _audioClip: {fileID: 8300000, guid: 481f711ae5c600147a325a4ae1004690, type: 3}
+  _audioClip: {fileID: 8300000, guid: f37469a687bf73f4ba7b6a97172b3e5a, type: 3}
 --- !u!65 &5410759940250294783
 BoxCollider:
   m_ObjectHideFlags: 0

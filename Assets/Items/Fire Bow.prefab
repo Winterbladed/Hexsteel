@@ -70,11 +70,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isPlayer: 0
   _DamageType: 6
-  _Damage: 5
+  _Damage: 15
   _CriticalDamage: 2
   _CriticalChance: 0.1
   _StatusChance: 1
-  _StatusDamage: 5
+  _StatusDamage: 10
   _StatusTimer: 5
   _StatusTicker: 1
   _trail: {fileID: 15667454181828337}

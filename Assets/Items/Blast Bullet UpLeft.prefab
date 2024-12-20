@@ -60,15 +60,12 @@ MonoBehaviour:
   _StatusDamage: 0
   _StatusTimer: 0
   _StatusTicker: 0
-  _Rigidbody: {fileID: 3609810780474333784}
+  _rigidbody: {fileID: 3609810780474333784}
   _projectileVector: 5
   _projectileType: 1
   _projectileSpeed: 25
   _projectileSpread: 0.1
   _projectileTimer: 1
-  _onHitEvt:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &7647341100105220415
 MonoBehaviour:
   m_ObjectHideFlags: 0
