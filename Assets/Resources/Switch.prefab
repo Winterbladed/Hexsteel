@@ -208,6 +208,7 @@ MonoBehaviour:
         m_CallState: 2
   _gameObject:
   - {fileID: 0}
+  - {fileID: 0}
   _isActive: 0
 --- !u!114 &7724120110388493734
 MonoBehaviour:
@@ -524,4 +525,4 @@ Transform:
   m_Children:
   - {fileID: 3226459779571452420}
   m_Father: {fileID: 7018141116674722135}
-  m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -60, y: 0, z: 0}
