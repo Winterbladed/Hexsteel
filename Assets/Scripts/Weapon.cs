@@ -5,6 +5,8 @@ public class Weapon : Damage
 {
     #region Variables
     protected GameObject _trail;
+    protected TrailRenderer _trailRenderer;
+    protected Light _light;
 
     [Header("Other Weapon Stats")]
     [SerializeField] protected float _radius = 1.0f;
@@ -29,6 +31,10 @@ public class Weapon : Damage
         _movement = GetComponentInParent<PlayerMovement>();
         _health = GetComponentInParent<Health>();
         _trail = GetComponentInChildren<Trail>().gameObject;
+        _trailRenderer = _trail.GetComponent<TrailRenderer>();
+        _light = _trail.GetComponent<Light>();
+        _trailRenderer.enabled = false;
+        _light.enabled = false;
     }
 
     protected virtual void Update()
@@ -43,7 +49,8 @@ public class Weapon : Damage
                 Attack();
                 if (_comboIndex < _comboIndexes) _comboIndex++;
                 else _comboIndex = 0;
-                _trail.SetActive(false);
+                _trailRenderer.enabled = false;
+                _light.enabled = false;
                 _cooldownTime = 0.0f; _attackTime = 0.0f;
                 _isAttacked = false; _isOnCooldown = true;
             }
@@ -55,7 +62,8 @@ public class Weapon : Damage
                 _cooldownTime = 0.0f;
                 _attackTime = 0.0f;
                 _isAttacked = true;
-                _trail.SetActive(true);
+                _trailRenderer.enabled = true;
+                _light.enabled = true;
             }
         }
         if (_isOnCooldown)

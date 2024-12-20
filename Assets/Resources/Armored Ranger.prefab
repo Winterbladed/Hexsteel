@@ -324,7 +324,7 @@ MonoBehaviour:
       m_Calls: []
   _projectile: {fileID: 6207323861454628167, guid: 2150680c82a08594389bdbb78fb83fa2,
     type: 3}
-  _transform: {fileID: 4773758419007342164}
+  _transform: {fileID: 0}
   _state: 0
   _targetData: 0
 --- !u!114 &7969045054544091742
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca1d9fd97743252438876f89f8a44b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ap: 1
+  _ap: 2
 --- !u!114 &2127655623839010183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2018,12 +2018,6 @@ PrefabInstance:
 --- !u!4 &2243141602928214028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6342522791790498683, guid: e41e5f23b6318ec40ba4328b4424a3ec,
-    type: 3}
-  m_PrefabInstance: {fileID: 5126248145366422391}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4773758419007342164 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 368130212973810979, guid: e41e5f23b6318ec40ba4328b4424a3ec,
     type: 3}
   m_PrefabInstance: {fileID: 5126248145366422391}
   m_PrefabAsset: {fileID: 0}

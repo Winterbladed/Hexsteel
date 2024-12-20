@@ -54,8 +54,8 @@ MonoBehaviour:
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls: []
-  _Item: {fileID: 2045042600589172159, guid: cd29b45deca6b274d9eb6af6d460dada, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: 90b4cdf25dc473b42816bb0a274aeda7,
+  _Item: {fileID: 2045042600589172159, guid: 3dcaec8135889be458468a1501df95f9, type: 3}
+  _ItemIcon: {fileID: 3240355216110004441, guid: f6fd68bcf0a469f4c83e716ab3bf162e,
     type: 3}
 --- !u!114 &3222022587696349119
 MonoBehaviour:
@@ -70,15 +70,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPlayer: 0
-  _DamageType: 4
+  _DamageType: 5
   _Damage: 5
   _CriticalDamage: 2
   _CriticalChance: 0.1
   _StatusChance: 1
-  _StatusDamage: 10
+  _StatusDamage: 0
   _StatusTimer: 5
   _StatusTicker: 1
-  _trail: {fileID: 2648385791604142040}
   _radius: 0
   _distance: 0
   _comboIndexes: 0
@@ -110,17 +109,17 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _projectile:
-  - {fileID: 6207323861454628167, guid: ef5bb78fc2cefc843a729d6f1c10ddf3, type: 3}
-  - {fileID: 6207323861454628167, guid: ef5bb78fc2cefc843a729d6f1c10ddf3, type: 3}
-  - {fileID: 6207323861454628167, guid: ef5bb78fc2cefc843a729d6f1c10ddf3, type: 3}
-  - {fileID: 6207323861454628167, guid: 902c448ea5a201c4984db15052ab23c4, type: 3}
-  - {fileID: 6207323861454628167, guid: 76222bb068a9bef4faa9bfdf897f726c, type: 3}
-  - {fileID: 6207323861454628167, guid: 306dc35a76d3eda4d94ebb9a17bc3b9a, type: 3}
-  - {fileID: 6207323861454628167, guid: 2b207c3b8acfb3a4b8f3592879ebfb2a, type: 3}
-  - {fileID: 6207323861454628167, guid: f04da652950386d44886bccbd041b323, type: 3}
-  - {fileID: 6207323861454628167, guid: 9548ac18a7dc24044ae7eb44a6bd6027, type: 3}
-  - {fileID: 6207323861454628167, guid: b1b4ae12b3ba73a4599b94d6cb904391, type: 3}
-  - {fileID: 6207323861454628167, guid: a00a56d7b19674c49860c41959827fce, type: 3}
+  - {fileID: 6207323861454628167, guid: 5a8142746f05be146996cbcfbf9f47d1, type: 3}
+  - {fileID: 6207323861454628167, guid: 5a8142746f05be146996cbcfbf9f47d1, type: 3}
+  - {fileID: 6207323861454628167, guid: 5a8142746f05be146996cbcfbf9f47d1, type: 3}
+  - {fileID: 6207323861454628167, guid: ae64b80d31919514bb8cd4ed1dc4c8e0, type: 3}
+  - {fileID: 6207323861454628167, guid: 0c955243c6b1fdf4cb8c3075d72055dd, type: 3}
+  - {fileID: 6207323861454628167, guid: b033228974666ee40abbcf269abeae2b, type: 3}
+  - {fileID: 6207323861454628167, guid: fe12be73b61a47d4dbcc23904391127d, type: 3}
+  - {fileID: 6207323861454628167, guid: 97395d2b6edf9bc4bb2142eacd29ed47, type: 3}
+  - {fileID: 6207323861454628167, guid: 0ec660c14e5299f4bbe74f51a84e879d, type: 3}
+  - {fileID: 6207323861454628167, guid: 40700908e8ebea04d81ccc003685f4a4, type: 3}
+  - {fileID: 6207323861454628167, guid: aef12a73373f2b64292e7a792830aff3, type: 3}
   _attackRate: 0.1
 --- !u!114 &1221176511195950987
 MonoBehaviour:
@@ -368,12 +367,6 @@ PrefabInstance:
 --- !u!4 &822966925969425596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7668217774930061314, guid: 73d589fb6000ff2499004a1f4bed75e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 6989937911941000382}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2648385791604142040 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: 73d589fb6000ff2499004a1f4bed75e6,
     type: 3}
   m_PrefabInstance: {fileID: 6989937911941000382}
   m_PrefabAsset: {fileID: 0}
