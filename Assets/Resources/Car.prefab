@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4293358472185933513}
   - component: {fileID: 6065159555502150862}
   - component: {fileID: 4059361935695186377}
+  - component: {fileID: 7715266410917630638}
   m_Layer: 0
   m_Name: Tire
   m_TagString: Untagged
@@ -83,6 +84,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7715266410917630638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115472902380982633}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 3.613946e-15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &673605923688658014
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +199,7 @@ GameObject:
   - component: {fileID: 4067305206842004973}
   - component: {fileID: 7791977919496184958}
   - component: {fileID: 7116791248121814823}
+  - component: {fileID: 9127616588586597407}
   m_Layer: 0
   m_Name: Windshield
   m_TagString: Untagged
@@ -249,6 +272,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9127616588586597407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795767349148123601}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1991279439556448627
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +304,7 @@ GameObject:
   - component: {fileID: 2371547942247785233}
   - component: {fileID: 5892520984806896991}
   - component: {fileID: 5297249584988920356}
+  - component: {fileID: 598199151795594368}
   m_Layer: 0
   m_Name: Tire
   m_TagString: Untagged
@@ -332,6 +377,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &598199151795594368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991279439556448627}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 3.613946e-15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3250142448826216682
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +492,7 @@ GameObject:
   - component: {fileID: 4404552746749433119}
   - component: {fileID: 5687903686647029114}
   - component: {fileID: 6543132105299290576}
+  - component: {fileID: 1160039024371338583}
   m_Layer: 0
   m_Name: Tire
   m_TagString: Untagged
@@ -498,6 +565,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1160039024371338583
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3480934996359915492}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 3.613946e-15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4246114858206967441
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +597,7 @@ GameObject:
   - component: {fileID: 7028754829457804524}
   - component: {fileID: 6110668353315638219}
   - component: {fileID: 7174303339318009298}
+  - component: {fileID: 4835707343083470442}
   m_Layer: 0
   m_Name: Tire
   m_TagString: Untagged
@@ -581,6 +670,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4835707343083470442
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4246114858206967441}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 3.613946e-15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5015238393419260261
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +783,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2141778439622935563}
-  - component: {fileID: 1239097001304244731}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -697,27 +806,6 @@ Transform:
   - {fileID: 7319732216172707006}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1239097001304244731
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5398911500397789025}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 3, y: 2.2, z: 6}
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &6071290299829959029
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +817,7 @@ GameObject:
   - component: {fileID: 752597018723552546}
   - component: {fileID: 1216632782596747881}
   - component: {fileID: 6353315951589192968}
+  - component: {fileID: 5753849204844103402}
   m_Layer: 0
   m_Name: Tire
   m_TagString: Untagged
@@ -801,6 +890,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5753849204844103402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6071290299829959029}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 3.613946e-15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6549084610542383502
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +922,7 @@ GameObject:
   - component: {fileID: 3705642550590785172}
   - component: {fileID: 8540655344546678998}
   - component: {fileID: 4844715083633832358}
+  - component: {fileID: 246650176104113672}
   m_Layer: 0
   m_Name: Tire
   m_TagString: Untagged
@@ -884,6 +995,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &246650176104113672
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6549084610542383502}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 3.613946e-15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6700605280857163900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1204,7 @@ GameObject:
   - component: {fileID: 3679579696427453998}
   - component: {fileID: 5300903090941302657}
   - component: {fileID: 3171364957589992752}
+  - component: {fileID: 4674083011543946339}
   m_Layer: 0
   m_Name: Tire
   m_TagString: Untagged
@@ -1144,6 +1277,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4674083011543946339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553715814072143850}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 3.613946e-15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9017094231972588753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,6 +1309,7 @@ GameObject:
   - component: {fileID: 609789500360374464}
   - component: {fileID: 4053930661715919368}
   - component: {fileID: 8082729662779670832}
+  - component: {fileID: 6271776871575975514}
   m_Layer: 0
   m_Name: Tire
   m_TagString: Untagged
@@ -1227,6 +1382,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6271776871575975514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017094231972588753}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 3.613946e-15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9125895487103454508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,6 +1508,7 @@ GameObject:
   - component: {fileID: 7319732216172707006}
   - component: {fileID: 5358073765552667455}
   - component: {fileID: 6197025271484602068}
+  - component: {fileID: 2379295664631758699}
   m_Layer: 0
   m_Name: Chasis
   m_TagString: Untagged
@@ -1419,3 +1596,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2379295664631758699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9128498556358152008}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
