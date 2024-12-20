@@ -7,7 +7,7 @@ QualitySettings:
   m_CurrentQuality: 0
   m_QualitySettings:
   - serializedVersion: 3
-    name: Rats in the Sewers
+    name: Analog
     pixelLightCount: 1
     shadows: 1
     shadowResolution: 0
