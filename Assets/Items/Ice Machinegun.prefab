@@ -108,19 +108,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _projectile:
-  - {fileID: 6207323861454628167, guid: 5a8142746f05be146996cbcfbf9f47d1, type: 3}
-  - {fileID: 6207323861454628167, guid: 5a8142746f05be146996cbcfbf9f47d1, type: 3}
-  - {fileID: 6207323861454628167, guid: 5a8142746f05be146996cbcfbf9f47d1, type: 3}
-  - {fileID: 6207323861454628167, guid: ae64b80d31919514bb8cd4ed1dc4c8e0, type: 3}
-  - {fileID: 6207323861454628167, guid: 0c955243c6b1fdf4cb8c3075d72055dd, type: 3}
-  - {fileID: 6207323861454628167, guid: b033228974666ee40abbcf269abeae2b, type: 3}
-  - {fileID: 6207323861454628167, guid: fe12be73b61a47d4dbcc23904391127d, type: 3}
-  - {fileID: 6207323861454628167, guid: 97395d2b6edf9bc4bb2142eacd29ed47, type: 3}
-  - {fileID: 6207323861454628167, guid: 0ec660c14e5299f4bbe74f51a84e879d, type: 3}
-  - {fileID: 6207323861454628167, guid: 40700908e8ebea04d81ccc003685f4a4, type: 3}
-  - {fileID: 6207323861454628167, guid: aef12a73373f2b64292e7a792830aff3, type: 3}
+  _projectile: {fileID: 6207323861454628167, guid: 5a8142746f05be146996cbcfbf9f47d1,
+    type: 3}
   _attackRate: 0.1
+  _projectileSpread: 0.1
 --- !u!114 &1221176511195950987
 MonoBehaviour:
   m_ObjectHideFlags: 0

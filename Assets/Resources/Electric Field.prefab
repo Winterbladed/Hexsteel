@@ -9,16 +9,19 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6018224598728436010}
+  - component: {fileID: 4787474026741491028}
+  - component: {fileID: 4834642952436791380}
+  - component: {fileID: 15380187786823240}
   - component: {fileID: 7566780237842658153}
   - component: {fileID: 8101331800266798100}
   - component: {fileID: 5914118121035719100}
   m_Layer: 0
-  m_Name: Electric
+  m_Name: Electric Field
   m_TagString: Untagged
-  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6018224598728436010
 Transform:
   m_ObjectHideFlags: 0
@@ -34,6 +37,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4787474026741491028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615276479627452748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c20405cacc464b4ca220377739cbdb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isPlayer: 0
+  _DamageType: 7
+  _Damage: 5
+  _CriticalDamage: 0
+  _CriticalChance: 0
+  _StatusChance: 1
+  _StatusDamage: 2
+  _StatusTimer: 5
+  _StatusTicker: 0.5
+--- !u!114 &4834642952436791380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615276479627452748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca22c46f674564947b67858706d21ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damageText: {fileID: 3144630044804327921, guid: ea8697b0e4f1cc84da38374e961648f2,
+    type: 3}
+  _statusText: {fileID: 3144630044804327921, guid: 0fb7baff1fb2524478e7f6c7f540bd09,
+    type: 3}
+  _ui: {fileID: 6018224598728436010}
+--- !u!65 &15380187786823240
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615276479627452748}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5, y: 3, z: 2.5}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!198 &7566780237842658153
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -170,7 +232,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 4
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4779,7 +4841,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 98c60eb370953294687959dbf25fd91f, type: 2}
-  - {fileID: 2100000, guid: 706fa88210f5283429eebbfb6c0b2307, type: 2}
+  - {fileID: 2100000, guid: 98c60eb370953294687959dbf25fd91f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4844,13 +4906,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5882353, g: 0, b: 1, a: 1}
-  m_Intensity: 15
+  m_Intensity: 30
   m_Range: 3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1

@@ -64,7 +64,6 @@ MonoBehaviour:
   _projectileType: 1
   _projectileSpeed: 25
   _projectileSpread: 0
-  _projectileTimer: 1
 --- !u!114 &7647341100105220415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,8 +202,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -462,11 +461,6 @@ PrefabInstance:
     - target: {fileID: 4788479110435682351, guid: 74a26c1c9a3cfbe4ea657616301da045,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4788479110435682351, guid: 74a26c1c9a3cfbe4ea657616301da045,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

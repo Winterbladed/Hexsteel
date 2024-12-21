@@ -17,7 +17,17 @@ public enum DamageType
     _Melt,
     _Magnetic,
     _Blast,
+    //Secret
+    _Hex,
 }
+
+public enum ProjectileVector
+{
+    Straight, Left, Right, Upper, Lower,
+    UpperLeft, UpperRight, LowerRight, LowerLeft
+}
+
+public enum ProjectileType { Normal, Physics }
 
 public enum _TargetData
 {

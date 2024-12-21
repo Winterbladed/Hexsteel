@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.ComponentModel;
-using UnityEditor;
 
 public class WeaponStatUI : MonoBehaviour
 {
@@ -22,7 +20,6 @@ public class WeaponStatUI : MonoBehaviour
     [SerializeField] private TMP_Text _statusDamageText;
     [SerializeField] private TMP_Text _statusTimerText;
     [SerializeField] private TMP_Text _statusTickerText;
-
     private Weapon _weapon;
     #endregion
 
@@ -56,6 +53,30 @@ public class WeaponStatUI : MonoBehaviour
             else if (_weapon._DamageType == DamageType._Magnetic) { _image.sprite = _sprites[11]; _damageTypeText.text = "Damage Type: Magnetic"; _damageTypeText.color = Color.blue; }
             else if (_weapon._DamageType == DamageType._Blast) { _image.sprite = _sprites[12]; _damageTypeText.text = "Damage Type: Blast"; _damageTypeText.color = Color.red; }
 
+            //Secret Status Effects / Damage Types
+            else if (_weapon._DamageType == DamageType._Hex) { _image.sprite = _sprites[13]; _damageTypeText.text = "Damage Type: Hex"; _damageTypeText.color = Color.white; }
+            if (_weapon._DamageType == DamageType._Hex)
+            {
+                _damageText.color = Color.green;
+                _criticalChanceText.color = Color.cyan;
+                _criticalDamageText.color = new Color(1.0f, 0.5f, 0.0f);
+                _statusChanceText.color = new Color(0.5f, 0.0f, 1.0f);
+                _statusDamageText.color = Color.yellow;
+                _statusTimerText.color = Color.blue;
+                _statusTickerText.color = Color.red;
+            }
+            //Normal Status Effects / Damage Types
+            else
+            {
+                _damageText.color = Color.white;
+                _criticalChanceText.color = Color.white;
+                _criticalDamageText.color = Color.white;
+                _statusChanceText.color = Color.white;
+                _statusDamageText.color = Color.white;
+                _statusTimerText.color = Color.white;
+                _statusTickerText.color = Color.white;
+            }
+
             //Weapon Stats
             _damageText.text = "Damage: " + _weapon._Damage.ToString();
             _criticalChanceText.text = "Critical Chance: " + _weapon._CriticalChance * 100 + "%";
@@ -70,10 +91,7 @@ public class WeaponStatUI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Tab))
-        {
-            _gameObject.SetActive(true);
-        }
+        if (Input.GetKey(KeyCode.Tab)) _gameObject.SetActive(true);
         else _gameObject.SetActive(false);
     }
     #endregion

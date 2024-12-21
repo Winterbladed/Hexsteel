@@ -11,15 +11,10 @@ public class Projectile : Damage
     private Rigidbody _rigidbody;
     private TrailRenderer _trailRenderer;
     private Light _light;
-    private enum ProjectileVector
-    {
-        Straight, Left, Right, Upper, Lower,
-        UpperLeft, UpperRight, LowerRight, LowerLeft
-    }
-    private enum ProjectileType { Normal, Physics }
+
     [Header("Projectile Stats")]
-    [SerializeField] private ProjectileVector _projectileVector;
-    [SerializeField] private ProjectileType _projectileType;
+    public ProjectileVector _projectileVector;
+    public ProjectileType _projectileType;
     [Range(0.0f, 10000.0f)]
     [SerializeField] private float _projectileSpeed = 1000.0f;
     [SerializeField] private float _projectileSpread;
@@ -70,5 +65,10 @@ public class Projectile : Damage
             _isHit = true;
         }
     }
+    #endregion
+
+    #region Public Functions
+    public void SetProjectileVector(ProjectileVector _newProjectileVector) { _projectileVector = _newProjectileVector; }
+    public void SetProjectileSpread(float _newSpread) { _projectileSpread = _newSpread; }
     #endregion
 }

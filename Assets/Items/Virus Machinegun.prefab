@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3838376330856275391}
   - component: {fileID: 2855921608316390826}
   m_Layer: 0
-  m_Name: Electric Machinegun
+  m_Name: Virus Machinegun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 4723698413592322788}
+  - {fileID: 3636711985305548639}
   - {fileID: 567487685241978335}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54,8 +54,8 @@ MonoBehaviour:
   _EventOnInteraction:
     m_PersistentCalls:
       m_Calls: []
-  _Item: {fileID: 2045042600589172159, guid: 5bf65ad0b7d6e8b419723af602c00ab5, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: 23f660769cafe2d49aa49bb283183edc,
+  _Item: {fileID: 2045042600589172159, guid: 1c234ea6311a9cf4fb01b777e9287686, type: 3}
+  _ItemIcon: {fileID: 3240355216110004441, guid: 433a1ea39289d794e939994391c4f281,
     type: 3}
 --- !u!114 &3222022587696349119
 MonoBehaviour:
@@ -70,14 +70,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPlayer: 0
-  _DamageType: 7
+  _DamageType: 8
   _Damage: 5
   _CriticalDamage: 2
   _CriticalChance: 0.1
   _StatusChance: 1
-  _StatusDamage: 5
-  _StatusTimer: 5
-  _StatusTicker: 0.5
+  _StatusDamage: 0
+  _StatusTimer: 10
+  _StatusTicker: 0
   _radius: 0
   _distance: 0
   _comboIndexes: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _projectile: {fileID: 6207323861454628167, guid: 2cf420453c7662b4193f0a01b1d06509,
+  _projectile: {fileID: 6207323861454628167, guid: 91438245afd20d448878d63e6f28d94d,
     type: 3}
   _attackRate: 0.1
   _projectileSpread: 0.1
@@ -144,7 +144,7 @@ MonoBehaviour:
   _addToVector: {x: 0, y: 0, z: 0}
   _spawn:
   - {fileID: 5413694892429821854, guid: 087da3dad7036ea448b4ab0547bec04c, type: 3}
-  _transform: {fileID: 5918497295149645697}
+  _transform: {fileID: 5665512294925478980}
   _spawnSpread: 0
 --- !u!114 &2855921608316390826
 MonoBehaviour:
@@ -161,7 +161,7 @@ MonoBehaviour:
   _addToVector: {x: 0, y: 0, z: 0}
   _spawn:
   - {fileID: 636353295543418234, guid: 411eea13c73c38f4d80790fe504ed9dd, type: 3}
-  _transform: {fileID: 3563440886542760190}
+  _transform: {fileID: 4793556775776169285}
   _spawnSpread: 0
 --- !u!1001 &1885147500312699734
 PrefabInstance:
@@ -287,7 +287,7 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1885147500312699734}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6564306429169176828
+--- !u!1001 &2948970507116266823
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -295,81 +295,81 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 965993972271060893}
     m_Modifications:
-    - target: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4046928279687255575, guid: 0051e200fe6579b44935be4272c4805f,
+    - target: {fileID: 4046928279687255575, guid: d794074fea7608140912484ead26befc,
         type: 3}
       propertyPath: m_Name
-      value: Electric Machinegun skin
+      value: Virus Machinegun skin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0051e200fe6579b44935be4272c4805f, type: 3}
---- !u!4 &3563440886542760190 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: d794074fea7608140912484ead26befc, type: 3}
+--- !u!4 &3636711985305548639 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7668217774930061314, guid: 0051e200fe6579b44935be4272c4805f,
+  m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: d794074fea7608140912484ead26befc,
     type: 3}
-  m_PrefabInstance: {fileID: 6564306429169176828}
+  m_PrefabInstance: {fileID: 2948970507116266823}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &4723698413592322788 stripped
+--- !u!4 &4793556775776169285 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 0051e200fe6579b44935be4272c4805f,
+  m_CorrespondingSourceObject: {fileID: 7668217774930061314, guid: d794074fea7608140912484ead26befc,
     type: 3}
-  m_PrefabInstance: {fileID: 6564306429169176828}
+  m_PrefabInstance: {fileID: 2948970507116266823}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5918497295149645697 stripped
+--- !u!4 &5665512294925478980 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 665301316438863741, guid: 0051e200fe6579b44935be4272c4805f,
+  m_CorrespondingSourceObject: {fileID: 7382288637177686275, guid: d794074fea7608140912484ead26befc,
     type: 3}
-  m_PrefabInstance: {fileID: 6564306429169176828}
+  m_PrefabInstance: {fileID: 2948970507116266823}
   m_PrefabAsset: {fileID: 0}

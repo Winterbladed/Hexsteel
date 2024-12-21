@@ -261,7 +261,7 @@ public class Damage : MonoBehaviour
         else if (_blast && _DamageType == DamageType._Fire && !_blast.GetIsActive() && _electric.GetIsActive() ||
             _blast && _DamageType == DamageType._Electric && !_blast.GetIsActive() && _fire.GetIsActive())
         {
-            SetStatusStats(_blast, _StatusDamage, 0.1f, 0.1f); //Modify Status Stats
+            SetStatusStats(_blast, _StatusDamage * 2, 0.1f, 0.1f); //Modify Status Stats
             _blast.EnableStatus(); //Trigger Elemental Fusion
             _fire.DisableStatus(); _electric.DisableStatus(); //Disable Base Element Status on Elemental Fusion
         }

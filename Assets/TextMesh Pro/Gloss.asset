@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gloss
   m_EditorClassIdentifier: 
   data:
-    pixelationAmount: 5
+    pixelationAmount: 3
     maxColorChannels:
       red: 25
       green: 0
@@ -42,4 +42,4 @@ MonoBehaviour:
       sizeMultiplier: 1
     innerMonitorShineRadius: -0.087
     innerMonitorShineCurve: 10
-  validationId: b1d7247a-4b2b-4c31-a11f-42d0ece54841
+  validationId: 86ec6937-31d3-4689-a535-5afaaef730f7

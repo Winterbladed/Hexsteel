@@ -78,7 +78,6 @@ MonoBehaviour:
   _StatusDamage: 10
   _StatusTimer: 5
   _StatusTicker: 1
-  _trail: {fileID: 2551285102062279409}
   _radius: 0
   _distance: 0
   _comboIndexes: 0
@@ -109,19 +108,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _projectile:
-  - {fileID: 6207323861454628167, guid: ef5bb78fc2cefc843a729d6f1c10ddf3, type: 3}
-  - {fileID: 6207323861454628167, guid: ef5bb78fc2cefc843a729d6f1c10ddf3, type: 3}
-  - {fileID: 6207323861454628167, guid: ef5bb78fc2cefc843a729d6f1c10ddf3, type: 3}
-  - {fileID: 6207323861454628167, guid: 902c448ea5a201c4984db15052ab23c4, type: 3}
-  - {fileID: 6207323861454628167, guid: 76222bb068a9bef4faa9bfdf897f726c, type: 3}
-  - {fileID: 6207323861454628167, guid: 306dc35a76d3eda4d94ebb9a17bc3b9a, type: 3}
-  - {fileID: 6207323861454628167, guid: 2b207c3b8acfb3a4b8f3592879ebfb2a, type: 3}
-  - {fileID: 6207323861454628167, guid: f04da652950386d44886bccbd041b323, type: 3}
-  - {fileID: 6207323861454628167, guid: 9548ac18a7dc24044ae7eb44a6bd6027, type: 3}
-  - {fileID: 6207323861454628167, guid: b1b4ae12b3ba73a4599b94d6cb904391, type: 3}
-  - {fileID: 6207323861454628167, guid: a00a56d7b19674c49860c41959827fce, type: 3}
+  _projectile: {fileID: 6207323861454628167, guid: ef5bb78fc2cefc843a729d6f1c10ddf3,
+    type: 3}
   _attackRate: 0.1
+  _projectileSpread: 0.1
 --- !u!114 &1221176511195950987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,12 +364,6 @@ Transform:
 --- !u!4 &922337010761806229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7668217774930061314, guid: 6012769512cbb9c4b839d389776b3a88,
-    type: 3}
-  m_PrefabInstance: {fileID: 7396660941241047447}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2551285102062279409 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: 6012769512cbb9c4b839d389776b3a88,
     type: 3}
   m_PrefabInstance: {fileID: 7396660941241047447}
   m_PrefabAsset: {fileID: 0}
