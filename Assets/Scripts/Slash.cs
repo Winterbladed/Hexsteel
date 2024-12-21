@@ -27,9 +27,18 @@ public class Slash : Status
             _statusTick += Time.deltaTime;
             if (_statusTick > _statusTicker)
             {
-                if (_shield.GetCurrentSp() <= 0) _health.TakeHpDamage(_statusDamage);
-                else _shield.TakeSpDamage(_statusDamage);
-                _textEvent.ShowDamage(_statusDamage, Color.white, gameObject.transform);
+                if (_shield.GetCurrentSp() <= 0)
+                {
+                    int _damage = _statusDamage * _health.GetHpDamageMultiplier();
+                    _health.TakeHpDamage(_damage);
+                    _textEvent.ShowDamage(_damage, Color.white, gameObject.transform);
+                }
+                else
+                {
+                    _shield.TakeSpDamage(_statusDamage);
+                    _textEvent.ShowDamage(_statusDamage, Color.white, gameObject.transform);
+                }
+                
                 _statusTick = 0.0f;
             }
             if (_statusTime > _statusTimer)
