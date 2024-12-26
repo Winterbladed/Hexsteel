@@ -12088,6 +12088,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: 7430b724bf243f745918c82dd6cf095c, type: 3}
   _statusImage: {fileID: 8892466022095867810}
   _statusVfx: {fileID: 655938705}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12103,6 +12105,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: 45ea76dc4fb8eee4f93d0ca621199a37, type: 3}
   _statusImage: {fileID: 9082405161384786802}
   _statusVfx: {fileID: 655938706}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12118,6 +12122,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: 27f5a758d92d7e448a741a167b799366, type: 3}
   _statusImage: {fileID: 6281862883868410200}
   _statusVfx: {fileID: 655938707}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12133,6 +12139,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: d9f33a80646c3e5408423bf12307a1a9, type: 3}
   _statusImage: {fileID: 5422583602473222199}
   _statusVfx: {fileID: 655938708}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12148,6 +12156,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: 0abfecf4e6da36b45b39f34e6df5c562, type: 3}
   _statusImage: {fileID: 8477395992077080981}
   _statusVfx: {fileID: 52398375}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12163,6 +12173,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: 07c2852e4cc199d4684d9cd356f82135, type: 3}
   _statusImage: {fileID: 5729996269629434471}
   _statusVfx: {fileID: 52398376}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12178,6 +12190,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: 2e780cde9d8caf64d9a624dd9c48a1f4, type: 3}
   _statusImage: {fileID: 4533971896941414160}
   _statusVfx: {fileID: 52398377}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12193,6 +12207,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: f7b73df0b5911f642a9a3426520ba048, type: 3}
   _statusImage: {fileID: 4312472034564505454}
   _statusVfx: {fileID: 689952429}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12208,6 +12224,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: 78e3fd666e8141942af493ccf6f54817, type: 3}
   _statusImage: {fileID: 2862262201201506916}
   _statusVfx: {fileID: 689952430}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12223,6 +12241,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: 3a298dee40a77974ea0609f9f543147b, type: 3}
   _statusImage: {fileID: 7308110035647614524}
   _statusVfx: {fileID: 681345749}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12238,6 +12258,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: abf0fa793c6f8c242b1cc4c7b1dfeb15, type: 3}
   _statusImage: {fileID: 3689429123691293653}
   _statusVfx: {fileID: 99567109}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12253,6 +12275,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: 0d0207f432372f7479b8ca87aff68b43, type: 3}
   _statusImage: {fileID: 2060553278801901369}
   _statusVfx: {fileID: 770264683}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12268,6 +12292,8 @@ MonoBehaviour:
   _statusSprite: {fileID: 21300000, guid: 8fcecaa4fec84974fbfd388b5d746fc4, type: 3}
   _statusImage: {fileID: 1782336735315575161}
   _statusVfx: {fileID: 770264684}
+  _isStatusInfused: 0
+  _isStatusImmune: 0
 --- !u!114 &8348124112238466218
 MonoBehaviour:
   m_ObjectHideFlags: 0
