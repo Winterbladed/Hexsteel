@@ -137,6 +137,6 @@ Material:
     - Color_93e06cd551a5449091bcde90b46765a0: {r: 0.385947, g: 0.46406454, b: 0.5566038,
         a: 0.19607843}
     - Vector2_4351ac2be1d74054986ec5378db9d578: {r: 25, g: 100, b: 0, a: 0}
-    - _Color: {r: 0, g: 1, b: 1, a: 0.19607843}
+    - _Color: {r: 0, g: 0.5882353, b: 1, a: 0.19607843}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
