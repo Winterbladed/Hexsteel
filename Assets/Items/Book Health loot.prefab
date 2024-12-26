@@ -82,6 +82,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: abf0fa793c6f8c242b1cc4c7b1dfeb15, type: 3}
   - {fileID: 21300000, guid: 8fcecaa4fec84974fbfd388b5d746fc4, type: 3}
   - {fileID: 21300000, guid: 0d0207f432372f7479b8ca87aff68b43, type: 3}
+  - {fileID: 21300000, guid: add829b33a390f047aa3012024c3e028, type: 3}
 --- !u!114 &-8999589266720297267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,11 +296,6 @@ PrefabInstance:
     - target: {fileID: 305729153236334160, guid: 67e7aa668b593054ba765e3d73964720,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 305729153236334160, guid: 67e7aa668b593054ba765e3d73964720,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7898575739606691753, guid: 67e7aa668b593054ba765e3d73964720,

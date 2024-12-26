@@ -9,6 +9,8 @@ public class Status : MonoBehaviour
     [SerializeField] protected Sprite _statusSprite;
     [SerializeField] protected GameObject _statusImage;
     [SerializeField] protected GameObject _statusVfx;
+    [SerializeField] protected bool _isStatusInfused = false;
+    [SerializeField] protected bool _isStatusImmune = false;
     protected TextEvent _textEvent;
     protected Color _statusColor;
 
@@ -20,7 +22,7 @@ public class Status : MonoBehaviour
     #endregion
 
     #region Private Functions
-    protected virtual void Start() { DisableStatus(); _textEvent = GetComponent<TextEvent>(); }
+    protected virtual void Start() { if (!_isStatusInfused) DisableStatus(); else if (_isStatusInfused) EnableStatus(); _textEvent = GetComponent<TextEvent>(); }
     #endregion
 
     #region Public Functions
@@ -34,19 +36,27 @@ public class Status : MonoBehaviour
 
     public void EnableStatus()
     {
-        _isActive = true;
-        if (_statusVfx) _statusVfx.SetActive(true);
-        if (_statusImage) _statusImage.SetActive(true);
-        _textEvent.ShowStatus(_statusName, _statusColor, _statusSprite, transform);
+        if (!_isStatusImmune)
+        {
+            _isActive = true;
+            if (_statusVfx) _statusVfx.SetActive(true);
+            if (_statusImage) _statusImage.SetActive(true);
+            _textEvent.ShowStatus(_statusName, _statusColor, _statusSprite, transform);
+        }
     }
 
     public void DisableStatus()
     {
         _statusTime = 0.0f;
         _statusTick = 0.0f;
-        _isActive = false;
-        if (_statusVfx) _statusVfx.SetActive(false);
-        if (_statusImage) _statusImage.SetActive(false);
+        if (!_isStatusInfused)
+        {
+            _statusTime = 0.0f;
+            _statusTick = 0.0f;
+            _isActive = false;
+            if (_statusVfx) _statusVfx.SetActive(false);
+            if (_statusImage) _statusImage.SetActive(false);
+        }
     }
     #endregion
 }
