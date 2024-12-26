@@ -32,7 +32,7 @@ public class Projectile : Damage
         CriticalDamageChance();
         StatusChance();
         DetermineVectorVelocity();
-        Destroy(gameObject, 3.0f);
+        Destroy(gameObject, 2.0f);
     }
 
     private void DetermineVectorVelocity()
