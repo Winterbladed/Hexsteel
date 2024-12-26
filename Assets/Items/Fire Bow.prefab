@@ -54,8 +54,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _Item: {fileID: 2045042600589172159, guid: 870605192a8e0674585553017a76a48b, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: beb0b48656b3d94438cf1744638f1b6a,
+  _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
+  _ItemSprites: []
 --- !u!114 &936535421180166051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +78,6 @@ MonoBehaviour:
   _StatusDamage: 10
   _StatusTimer: 5
   _StatusTicker: 1
-  _trail: {fileID: 15667454181828337}
   _radius: 0
   _distance: 0
   _comboIndexes: 0
@@ -86,7 +86,6 @@ MonoBehaviour:
       m_Calls: []
   _projectile: {fileID: 6207323861454628167, guid: 1d0680fbc1b3db840a8d33927ce9218f,
     type: 3}
-  _transform: {fileID: 5534293738944989930}
 --- !u!114 &1221176511195950987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,18 +250,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bea7a66181b754682047dc77910335, type: 3}
---- !u!1 &15667454181828337 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: 20bea7a66181b754682047dc77910335,
-    type: 3}
-  m_PrefabInstance: {fileID: 5041325481912968599}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5534293738944989930 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 665301316438863741, guid: 20bea7a66181b754682047dc77910335,
-    type: 3}
-  m_PrefabInstance: {fileID: 5041325481912968599}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6873207257748871055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 20bea7a66181b754682047dc77910335,

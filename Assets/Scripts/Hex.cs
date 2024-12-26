@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class Hex : MonoBehaviour
 {
     #region Variables
     private Inventory _inventory;
@@ -18,7 +18,7 @@ public class Coin : MonoBehaviour
     {
         if (_hit.gameObject.GetComponent<Player>())
         {
-            _inventory.AddCoins(1);
+            _inventory.AddHex(1);
             Destroy(gameObject);
         }
     }

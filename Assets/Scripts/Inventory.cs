@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private List<GameObject> _inventory1;
     [SerializeField] private Transform _hands;
     [SerializeField] private int _inventorySlots = 9;
-    [SerializeField] private int _coins;
+    [SerializeField] private int _hex;
 
     private float _switchTime = 0.0f;
     private bool _isSwitching = false;
@@ -187,7 +187,7 @@ public class Inventory : MonoBehaviour
         _isReading = false;
     }
 
-    public int GetCoins() { return _coins; }
-    public void AddCoins(int _newCoins) { _coins += _newCoins; }
+    public int GetHex() { return _hex; }
+    public void AddHex(int _newHex) { _hex += _newHex; }
     #endregion
 }

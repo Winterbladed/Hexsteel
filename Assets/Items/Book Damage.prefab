@@ -1402,7 +1402,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _Item: {fileID: 2895448722202950775, guid: 5d4893295bbfa55499444a544fa90c22, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: d73a435ac59dc9d42b59f140e0796480,
+  _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
   _ItemSprites: []
 --- !u!114 &8969615725298945843

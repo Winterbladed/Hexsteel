@@ -55,7 +55,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _Item: {fileID: 2045042600589172159, guid: 6b7b0c1e275398d44abff323c4870402, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: e4e9b3bdac82cf14ba42f1ae07237a75,
+  _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
   _ItemSprites: []
 --- !u!114 &3222022587696349119

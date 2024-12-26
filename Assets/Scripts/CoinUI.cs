@@ -16,7 +16,7 @@ public class CoinUI : MonoBehaviour
 
     private void Update()
     {
-        _coinText.text = _inventory.GetCoins().ToString();
+        _coinText.text = _inventory.GetHex().ToString();
     }
     #endregion
 }

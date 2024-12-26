@@ -54,8 +54,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _Item: {fileID: 2045042600589172159, guid: 7a2db8dbf1b286449a8116e96672769d, type: 3}
-  _ItemIcon: {fileID: 3240355216110004441, guid: 15750e5e217732c41a01c0f628d84ab7,
+  _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
+  _ItemSprites: []
 --- !u!114 &936535421180166051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +78,6 @@ MonoBehaviour:
   _StatusDamage: 10
   _StatusTimer: 5
   _StatusTicker: 1
-  _trail: {fileID: 751135912326853080}
   _radius: 0
   _distance: 0
   _comboIndexes: 0
@@ -324,12 +324,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01, type: 3}
---- !u!1 &751135912326853080 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 5741343533432910526}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5728530631992049662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 59265619926011200, guid: 4ca7da3ea4fad5d41b8ed3e234b16f01,

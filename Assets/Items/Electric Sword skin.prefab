@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bde62a7de6c3ec046924d1f31ef3ba59, type: 2}
+  - {fileID: 2100000, guid: 706fa88210f5283429eebbfb6c0b2307, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -302,7 +302,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b05e93b8c0c6a794aa56670286ad68d2, type: 2}
+  - {fileID: 2100000, guid: e972deda70a58f9428e411b910204eba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -387,7 +387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1915414423582683672}
   m_Layer: 0
-  m_Name: Toxin Sword skin
+  m_Name: Electric Sword skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -415,7 +415,7 @@ Transform:
   - {fileID: 6921453920590359244}
   - {fileID: 4328365261380697527}
   - {fileID: 3754869065333265134}
-  - {fileID: 5480540813663398027}
+  - {fileID: 1904303208188487783}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4926107539662091996
@@ -471,7 +471,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b05e93b8c0c6a794aa56670286ad68d2, type: 2}
+  - {fileID: 2100000, guid: e972deda70a58f9428e411b910204eba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -607,7 +607,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bde62a7de6c3ec046924d1f31ef3ba59, type: 2}
+  - {fileID: 2100000, guid: 706fa88210f5283429eebbfb6c0b2307, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -856,7 +856,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bde62a7de6c3ec046924d1f31ef3ba59, type: 2}
+  - {fileID: 2100000, guid: e972deda70a58f9428e411b910204eba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -878,7 +878,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1001 &848748102740088454
+--- !u!1001 &6747765117699872362
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -886,69 +886,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1915414423582683672}
     m_Modifications:
-    - target: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5622339792258389472, guid: e678e3eff8b475445acbc15e01546161,
+    - target: {fileID: 5622339792258389472, guid: 8b291525e1b3be44795c2a7184055b69,
         type: 3}
       propertyPath: m_Name
-      value: ' Toxin Trail'
+      value: Electric Trail
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e678e3eff8b475445acbc15e01546161, type: 3}
---- !u!4 &5480540813663398027 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 8b291525e1b3be44795c2a7184055b69, type: 3}
+--- !u!4 &1904303208188487783 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5172825291901632013, guid: e678e3eff8b475445acbc15e01546161,
+  m_CorrespondingSourceObject: {fileID: 5172825291901632013, guid: 8b291525e1b3be44795c2a7184055b69,
     type: 3}
-  m_PrefabInstance: {fileID: 848748102740088454}
+  m_PrefabInstance: {fileID: 6747765117699872362}
   m_PrefabAsset: {fileID: 0}
