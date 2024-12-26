@@ -57,6 +57,7 @@ MonoBehaviour:
   _Item: {fileID: 2045042600589172159, guid: 6b7b0c1e275398d44abff323c4870402, type: 3}
   _ItemIcon: {fileID: 3240355216110004441, guid: e4e9b3bdac82cf14ba42f1ae07237a75,
     type: 3}
+  _ItemSprites: []
 --- !u!114 &3222022587696349119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,7 +77,7 @@ MonoBehaviour:
   _CriticalChance: 0.1
   _StatusChance: 1
   _StatusDamage: 20
-  _StatusTimer: 0.5
+  _StatusTimer: 1
   _StatusTicker: 0.5
   _radius: 0
   _distance: 0
