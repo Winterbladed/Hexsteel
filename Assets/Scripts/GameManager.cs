@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour
     [Header("Panels Manager")]
     [SerializeField] private GameObject _pausePanel;
     [SerializeField] private GameObject _settingsPanel;
-    [SerializeField] private GameObject[] _backgrounds;
 
     private Inventory _inventory;
     #endregion
@@ -98,21 +97,11 @@ public class GameManager : MonoBehaviour
     {
         if (!_settingsPanel.activeSelf) 
         {
-            if (_type == ManagerType.Menu)
-            {
-                _backgrounds[0].SetActive(false);
-                _backgrounds[1].SetActive(true);
-            }
             _pausePanel.SetActive(false); 
             _settingsPanel.SetActive(true);
         }
         else if (_settingsPanel.activeSelf) 
         {
-            if (_type == ManagerType.Menu)
-            {
-                _backgrounds[0].SetActive(true);
-                _backgrounds[1].SetActive(false);
-            }
             _pausePanel.SetActive(true); 
             _settingsPanel.SetActive(false);
         }
