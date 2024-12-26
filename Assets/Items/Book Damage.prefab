@@ -1404,7 +1404,6 @@ MonoBehaviour:
   _Item: {fileID: 2895448722202950775, guid: 5d4893295bbfa55499444a544fa90c22, type: 3}
   _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
-  _ItemSprites: []
 --- !u!114 &8969615725298945843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1689,11 +1688,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Virus - Multiplies damage taken by\n        health.\nVirus = Toxin + Ice\n\n\nGas
-    - Quick and strong damage\n      overtime that disables health\n      regeneration.\nGas
-    = Toxin + Fire\n\n\nCorrode - Disables Armor.\nCorrode = Toxin + Electric\n\n\nMelt
-    - Weakens Damage.\nMelt = Ice + Fire\n\n\nMagnetic - Disables Shields.\nMagnetic
-    = Ice + Electric\n\n\nBlast - Instant Area of Effect\n        damage.\nBlast
-    = FIre + Electric"
+    - Damage overtime that disables\n      health regeneration.\nGas = Toxin + Fire\n\n\nCorrode
+    - Disables Armor.\nCorrode = Toxin + Electric\n\n\nMelt - Weakens Damage.\nMelt
+    = Ice + Fire\n\n\nMagnetic - Disables Shields.\nMagnetic = Ice + Electric\n\n\nBlast
+    - Instant Area of Effect\n        damage.\nBlast = FIre + Electric"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}

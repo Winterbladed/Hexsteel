@@ -1421,13 +1421,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 1244741709}
   _string:
-  - Before man, before magic, before pain,
-  - there was The god.
-  - The god made man, and from it,
-  - arose pain.
-  - Man used pain,
-  - and made The god bleed.
-  - Magic was born from it.
+  - The god made man.
+  - The god made pain.
+  - Man used pain-
+  - to make The god bleed.
+  - From The god's blood came magic.
+  - Man made more powerful magic-
+  - and The god was not pleased.
   _sound:
   - {fileID: 849709248}
   - {fileID: 1645358824}
