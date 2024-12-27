@@ -20,6 +20,8 @@ public class PlayerMovement : Movement
     private bool _isThrowing;
     private bool _isEating;
 
+    private bool _isTwoHandedRanged;
+
     private int _comboIndex = 0;
 
     [Header("Jump")]
@@ -143,6 +145,7 @@ public class PlayerMovement : Movement
         _animator.SetInteger("_comboIndex", _comboIndex);
         _animator.SetBool("_isSwitching", _inventory.GetIsSwitching());
         _animator.SetBool("_isGetting", _inventory.GetIsGetting());
+        _animator.SetBool("_isTwoHandedRanged", _isTwoHandedRanged);
     }
     #endregion
 
@@ -155,5 +158,6 @@ public class PlayerMovement : Movement
     public void SetSpeed(float _newSpeed) { _Speed = _newSpeed; _currentSpeed = _newSpeed; _slowSpeed = _newSpeed / 2; _runSpeed = _newSpeed * 4.0f; }
     public void SetJumpHeight(float _newJumpHeight) { _jumpHeight = _newJumpHeight;} public void SetGravity(float _newGravity) { _gravity = _newGravity; }
     public void SetComboIndex(int _index) { _comboIndex = _index; }
+    public void SetIsTwoHandedRanged(bool _boolean) { _isTwoHandedRanged = _boolean; }
     #endregion
 }

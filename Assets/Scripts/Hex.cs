@@ -18,9 +18,16 @@ public class Hex : MonoBehaviour
     {
         if (_hit.gameObject.GetComponent<Player>())
         {
-            _inventory.AddHex(1);
-            Destroy(gameObject);
+            GetHex();
         }
+    }
+    #endregion
+
+    #region Public Functions
+    public void GetHex()
+    {
+        _inventory.AddHex(1);
+        Destroy(gameObject);
     }
     #endregion
 }

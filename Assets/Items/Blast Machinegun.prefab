@@ -57,7 +57,6 @@ MonoBehaviour:
   _Item: {fileID: 2045042600589172159, guid: 6b7b0c1e275398d44abff323c4870402, type: 3}
   _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
-  _ItemSprites: []
 --- !u!114 &3222022587696349119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,7 +303,7 @@ PrefabInstance:
     - target: {fileID: 1915414423582683672, guid: 2373e43c1eae2bf4d8ca4ba58a4b60b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 1915414423582683672, guid: 2373e43c1eae2bf4d8ca4ba58a4b60b9,
         type: 3}

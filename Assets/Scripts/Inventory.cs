@@ -26,7 +26,6 @@ public class Inventory : MonoBehaviour
     private bool _isGetting = false;
     private bool _isShopping = false;
     private bool _isReading = false;
-
     private GameObject _itemToDrop;
     private GameObject _currentHeldItem;
     private int _currentHeldItemID;
@@ -184,6 +183,7 @@ public class Inventory : MonoBehaviour
         _movement.SetShootingTwo(false);
         _movement.SetEating(false);
         _movement.SetThrowing(false);
+        _movement.SetIsTwoHandedRanged(false);
         _isReading = false;
     }
 

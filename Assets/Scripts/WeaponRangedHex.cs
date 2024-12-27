@@ -19,6 +19,7 @@ public class WeaponRangedHex : Weapon
 
     protected override void Update()
     {
+        _movement.SetIsTwoHandedRanged(true);
         _movement.SetShootingTwo(_isAttacked);
         if (Input.GetMouseButton(0) && !_movement.GetIsDodging() && Time.timeScale > 0.0f)
         {
