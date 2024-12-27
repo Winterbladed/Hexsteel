@@ -27,7 +27,7 @@ public class Toxin : Status
             _statusTick += Time.deltaTime;
             if (_statusTime <= _statusTimer)
             {
-                if (_statusTick > _statusTicker)
+                if (_statusTick > _statusTicker && !_isStatusInfused)
                 {
                     int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
                     if (_damage <= 0) _damage = 0;

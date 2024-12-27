@@ -22,7 +22,7 @@ public class Ice : Status
         if (_isActive)
         {
             _statusTime += Time.deltaTime;
-            _movement.Slow();
+            if (!_isStatusInfused) _movement.Slow();
             if (_statusTime > _statusTimer)
             {
                 _movement.UnSlow();

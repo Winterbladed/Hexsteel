@@ -64,7 +64,6 @@ MonoBehaviour:
   _projectileType: 1
   _projectileSpeed: 30
   _projectileSpread: 0
-  _projectileTimer: 5
 --- !u!114 &7647341100105220415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,7 +314,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 481f711ae5c600147a325a4ae1004690, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 21dde7db8432ff541823f3a2034b991f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1

@@ -75,7 +75,7 @@ MonoBehaviour:
   _CriticalDamage: 2
   _CriticalChance: 0.1
   _StatusChance: 1
-  _StatusDamage: 20
+  _StatusDamage: 50
   _StatusTimer: 1
   _StatusTicker: 0.5
   _radius: 0

@@ -63,21 +63,6 @@ public class NavmeshMovement : Movement
         RaycastHit _hit; Ray _ray = new Ray(transform.position + new Vector3(0.0f, 1.8f, 0.0f), transform.forward);
         if (Physics.Raycast(_ray, out _hit, _raycastDistance, _raycastLayerMask))
         {
-            if (_targetData == _TargetData._Player &&  _hit.transform.GetComponent<Player>()) SetTarget(_hit.collider.gameObject);
-            else if (_targetData == _TargetData._NavmeshMovement && _hit.transform.GetComponent<NavmeshMovement>()) SetTarget(_hit.collider.gameObject);
-            else if (_targetData == _TargetData._AI_Passive && _hit.transform.GetComponent<AI_Passive>()) SetTarget(_hit.collider.gameObject);
-            else if (_targetData == _TargetData._AI_Neutral && _hit.transform.GetComponent<AI_Neutral>()) SetTarget(_hit.collider.gameObject);
-            else if (_targetData == _TargetData._AI_Aggressive && _hit.transform.GetComponent<AI_AggressiveMelee>() || 
-                _targetData == _TargetData._AI_Aggressive && _hit.transform.GetComponent<AI_AggressiveMeleeGroup>()) SetTarget(_hit.collider.gameObject);
-            _state = State._Aggro;
-        }
-    }
-
-    protected void GroupAggressiveSight()
-    {
-        RaycastHit _hit; Ray _ray = new Ray(transform.position + new Vector3(0.0f, 1.8f, 0.0f), transform.forward);
-        if (Physics.Raycast(_ray, out _hit, _raycastDistance, _raycastLayerMask))
-        {
             if (_targetData == _TargetData._Player && _hit.transform.GetComponent<Player>())
             {
                 SetTarget(_hit.collider.gameObject);
@@ -130,8 +115,7 @@ public class NavmeshMovement : Movement
                     }
                 }
             }
-            else if (_targetData == _TargetData._AI_Aggressive && _hit.transform.GetComponent<AI_AggressiveMelee>() ||
-                _targetData == _TargetData._AI_Aggressive && _hit.transform.GetComponent<AI_AggressiveMeleeGroup>())
+            else if (_targetData == _TargetData._AI_Aggressive && _hit.transform.GetComponent<AI_AggressiveMeleeGroup>())
             {
                 SetTarget(_hit.collider.gameObject);
                 Collider[] _colliders = Physics.OverlapSphere(transform.position, 10.0f);

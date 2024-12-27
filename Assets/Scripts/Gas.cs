@@ -54,12 +54,12 @@ public class Gas : Status
                                 int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
                                 if (_damage <= 0) _damage = 0;
                                 _hit.gameObject.GetComponent<Health>().TakeHpDamage(_damage);
-                                _textEvent.ShowDamage(_damage, _statusColor, gameObject.transform);
+                                _textEvent.ShowDamage(_damage, _statusColor, _hit.gameObject.transform);
                             }
                             else
                             {
                                 _hit.gameObject.GetComponent<Shield>().TakeSpDamage(_statusDamage);
-                                _textEvent.ShowDamage(_statusDamage, _statusColor, gameObject.transform);
+                                _textEvent.ShowDamage(_statusDamage, _statusColor, _hit.gameObject.transform);
                             }
                         }
                     }

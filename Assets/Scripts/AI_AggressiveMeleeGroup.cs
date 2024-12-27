@@ -3,7 +3,7 @@ public class AI_AggressiveMeleeGroup : NavmeshMovement
     protected override void Update()
     {
         base.Update();
-        GroupAggressiveSight();
+        AggressiveSight();
         switch (_state)
         {
             case State._Idle:

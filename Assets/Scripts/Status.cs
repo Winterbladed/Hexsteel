@@ -27,6 +27,7 @@ public class Status : MonoBehaviour
 
     #region Public Functions
     public bool GetIsActive() { return _isActive; }
+    public bool GetIsStatusInfused() { return _isStatusInfused; }
     public string GetStatusName() { return _statusName; }
     public Color GetStatusColor() { return _statusColor; }
     public Sprite GetStatusSprite() { return _statusSprite; }

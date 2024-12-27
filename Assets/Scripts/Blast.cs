@@ -43,12 +43,12 @@ public class Blast : Status
                             int _damage2 = (_statusDamage * _hit.gameObject.GetComponent<Health>().GetHpDamageMultiplier()) - _hit.gameObject.GetComponent<Armor>().GetCurrentAp();
                             if (_damage2 <= 0) _damage2 = 0;
                             _hit.gameObject.GetComponent<Health>().TakeHpDamage(_damage2);
-                            _textEvent.ShowDamage(_damage2, _statusColor, gameObject.transform);
+                            _textEvent.ShowDamage(_damage2, _statusColor, _hit.gameObject.transform);
                         }
                         else
                         {
                             _hit.gameObject.GetComponent<Shield>().TakeSpDamage(_statusDamage);
-                            _textEvent.ShowDamage(_statusDamage, _statusColor, gameObject.transform);
+                            _textEvent.ShowDamage(_statusDamage, _statusColor, _hit.gameObject.transform);
                         }
                     }
                 }

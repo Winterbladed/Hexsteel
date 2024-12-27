@@ -88,7 +88,7 @@ public class TriggerEnter : MonoBehaviour
         }
 
         //AI_Aggressive
-        else if (_colliderDetection == _TargetData._AI_Aggressive && _sense.gameObject.GetComponent<AI_AggressiveMelee>() ||
+        else if (_colliderDetection == _TargetData._AI_Aggressive && _sense.gameObject.GetComponent<AI_AggressiveMeleeGroup>() ||
             _colliderDetection == _TargetData._AI_Aggressive && _sense.gameObject.GetComponent<AI_AggressiveRanged>())
         {
             _onTriggerEnterEvt.Invoke();
@@ -96,7 +96,7 @@ public class TriggerEnter : MonoBehaviour
         }
 
         //AI_Neutral
-        else if (_colliderDetection == _TargetData._AI_Neutral && _sense.gameObject.GetComponent<AI_AggressiveMelee>())
+        else if (_colliderDetection == _TargetData._AI_Neutral)
         {
             _onTriggerEnterEvt.Invoke();
             if (_isDestructible) Destroy(gameObject, _destroyTime);

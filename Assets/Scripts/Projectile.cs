@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(TrailRenderer))]
 [RequireComponent(typeof(Light))]
+[RequireComponent(typeof(AudioSource))]
 
 public class Projectile : Damage
 {
@@ -11,6 +12,7 @@ public class Projectile : Damage
     private Rigidbody _rigidbody;
     private TrailRenderer _trailRenderer;
     private Light _light;
+    private AudioSource _audioSource;
 
     [Header("Projectile Stats")]
     public ProjectileVector _projectileVector;
@@ -28,6 +30,7 @@ public class Projectile : Damage
         _rigidbody = GetComponent<Rigidbody>();
         _trailRenderer = GetComponent<TrailRenderer>();
         _light = GetComponent<Light>();
+        _audioSource = GetComponent<AudioSource>();
         base.Start();
         CriticalDamageChance();
         StatusChance();
@@ -60,6 +63,7 @@ public class Projectile : Damage
             _rigidbody.useGravity = true;
             _trailRenderer.enabled = false;
             _light.enabled = false;
+            _audioSource.volume = 0.1f;
             if (_projectileType == ProjectileType.Normal) Destroy(gameObject);
             DealDamage(_hit.gameObject);
             _isHit = true;
