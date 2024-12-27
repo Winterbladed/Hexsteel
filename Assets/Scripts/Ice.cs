@@ -19,10 +19,10 @@ public class Ice : Status
 
     protected void Update()
     {
-        if (_isActive)
+        if (_isActive && !_isStatusInfused)
         {
             _statusTime += Time.deltaTime;
-            if (!_isStatusInfused) _movement.Slow();
+            _movement.Slow();
             if (_statusTime > _statusTimer)
             {
                 _movement.UnSlow();

@@ -41,5 +41,10 @@ public class VolumeManager : MonoBehaviour
     {
         PlayerPrefs.SetFloat("soundVolume", _volumeSlider.value);
     }
+
+    public void Mute()
+    {
+        AudioListener.volume = 0.0f;
+    }
     #endregion
 }

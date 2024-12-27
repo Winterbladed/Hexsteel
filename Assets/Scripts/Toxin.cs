@@ -21,13 +21,13 @@ public class Toxin : Status
 
     protected void Update()
     {
-        if (_isActive)
+        if (_isActive && !_isStatusInfused)
         {
             _statusTime += Time.deltaTime;
             _statusTick += Time.deltaTime;
             if (_statusTime <= _statusTimer)
             {
-                if (_statusTick > _statusTicker && !_isStatusInfused)
+                if (_statusTick > _statusTicker)
                 {
                     int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
                     if (_damage <= 0) _damage = 0;

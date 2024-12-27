@@ -23,7 +23,7 @@ public class Gas : Status
 
     protected void Update()
     {
-        if (_isActive)
+        if (_isActive && !_isStatusInfused)
         {
             _statusTime += Time.deltaTime;
             _statusTick += Time.deltaTime;
@@ -47,7 +47,7 @@ public class Gas : Status
                     Collider[] _colliders = Physics.OverlapSphere(transform.position, 5.0f);
                     foreach (Collider _hit in _colliders)
                     {
-                        if (_hit.gameObject.GetComponent<Health>() && !_hit.gameObject.GetComponent<Player>())
+                        if (_hit.gameObject.GetComponent<Health>())
                         {
                             if (_hit.gameObject.GetComponent<Shield>().GetCurrentSp() <= 0)
                             {

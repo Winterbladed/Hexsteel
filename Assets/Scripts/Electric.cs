@@ -23,7 +23,7 @@ public class Electric : Status
 
     protected void Update()
     {
-        if (_isActive)
+        if (_isActive && !_isStatusInfused)
         {
             _statusTime += Time.deltaTime;
             _statusTick += Time.deltaTime;

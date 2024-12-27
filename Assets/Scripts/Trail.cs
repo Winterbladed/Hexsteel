@@ -8,6 +8,7 @@ public class Trail : MonoBehaviour
     #region Private Functions
     private void Start()
     {
+        GetComponent<TrailRenderer>().emitting = false;
         GetComponent<ParticleSystem>().Stop();
     }
     #endregion

@@ -74,14 +74,14 @@ public class Weapon : Damage
     protected void StartAttack()
     {
         _cooldownTime = 0.0f; _attackTime = 0.0f;
-        _isAttacked = true; _trailRenderer.enabled = true;
+        _isAttacked = true; _trailRenderer.emitting = true;
         _light.enabled = true; _particleSystem.Play();
     }
 
     protected void StopAttack()
     {
         _cooldownTime = 0.0f; _attackTime = 0.0f;
-        _isAttacked = false; _trailRenderer.enabled = false;
+        _isAttacked = false; _trailRenderer.emitting = false;
         _light.enabled = false; _particleSystem.Stop();
     }
 

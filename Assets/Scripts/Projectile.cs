@@ -61,7 +61,7 @@ public class Projectile : Damage
         if (!_isHit)
         {
             _rigidbody.useGravity = true;
-            _trailRenderer.enabled = false;
+            _trailRenderer.emitting = false;
             _light.enabled = false;
             _audioSource.volume = 0.1f;
             if (_projectileType == ProjectileType.Normal) Destroy(gameObject);

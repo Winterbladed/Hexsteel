@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 439b3e5239092a34b909bc0e685d54a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Speed: 1
+  _Speed: 0.5
   _raycastLayerMask:
     serializedVersion: 2
     m_Bits: 51
@@ -87,7 +87,7 @@ MonoBehaviour:
   _wanderCooldown: 15
   _InitialRotation: {x: 0, y: 0, z: 0}
   _OriginalPosition: {x: 0, y: 0, z: 0}
-  _attackSpeed: 1
+  _attackSpeed: 2
   _onAttackEvt:
     m_PersistentCalls:
       m_Calls:
@@ -126,7 +126,7 @@ MonoBehaviour:
   _CriticalDamage: 0
   _CriticalChance: 0
   _StatusChance: 1
-  _StatusDamage: 5
+  _StatusDamage: 10
   _StatusTimer: 5
   _StatusTicker: 1
 --- !u!114 &5598573477471722905
@@ -169,7 +169,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -569,8 +569,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _addToVector: {x: 0, y: 1, z: 0}
   _spawn:
-  - {fileID: 920972315265357352, guid: cff60d915318ef74e89a04790082570a, type: 3}
-  - {fileID: 2271587553193703881, guid: 76a7d472edf99b04a9f1f4c13c67b812, type: 3}
+  - {fileID: 920972315265357352, guid: b8071c2a505ddfe43be9c9219ebc90e6, type: 3}
+  - {fileID: 2271587553193703881, guid: fabf8fc433498784781ed30de0809a98, type: 3}
   _transform: {fileID: 0}
   _spawnSpread: 0
 --- !u!114 &-8037330892660265213
@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7627f8f06be8fcd4c871a1008c33eb89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _addToVector: {x: 0, y: 0.5, z: 0}
+  _addToVector: {x: 0, y: 1, z: 0}
   _spawn:
   - {fileID: 636353295543418234, guid: c592c3d63cd991a49841fed3e80c607b, type: 3}
   _transform: {fileID: 0}
