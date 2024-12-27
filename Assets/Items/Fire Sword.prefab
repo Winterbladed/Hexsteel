@@ -57,7 +57,6 @@ MonoBehaviour:
   _Item: {fileID: 2045042600589172159, guid: 6f1703d875eb6224eb479b4bc1964bb7, type: 3}
   _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
-  _ItemSprites: []
 --- !u!114 &-2530356028446651964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioClip:
-  - {fileID: 8300000, guid: b3daf729b0392e2449120b09ca3bd864, type: 3}
+  - {fileID: 8300000, guid: 21dde7db8432ff541823f3a2034b991f, type: 3}
 --- !u!82 &-4795413240653547505
 AudioSource:
   m_ObjectHideFlags: 0

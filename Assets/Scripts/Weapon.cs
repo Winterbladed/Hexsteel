@@ -7,6 +7,7 @@ public class Weapon : Damage
     protected GameObject _trail;
     protected TrailRenderer _trailRenderer;
     protected Light _light;
+    protected ParticleSystem _particleSystem;
 
     [Header("Other Weapon Stats")]
     [SerializeField] protected float _radius = 1.0f;
@@ -26,21 +27,19 @@ public class Weapon : Damage
     {
         base.Start();
         SetIsPlayer(true);
-        _attackTime = 0.0f; _cooldownTime = 0.0f;
-        _isAttacked = false; _isOnCooldown = false;
+        _isOnCooldown = false;
         _movement = GetComponentInParent<PlayerMovement>();
         _health = GetComponentInParent<Health>();
         _trail = GetComponentInChildren<Trail>().gameObject;
         _trailRenderer = _trail.GetComponent<TrailRenderer>();
         _light = _trail.GetComponent<Light>();
-        _trailRenderer.enabled = false;
-        _light.enabled = false;
+        _particleSystem = _trail.GetComponent<ParticleSystem>();
+        StopAttack();
     }
 
     protected virtual void Update()
     {
-        _movement.SetAttacking(_isAttacked);
-        _movement.SetComboIndex(_comboIndex);
+        _movement.SetAttacking(_isAttacked); _movement.SetComboIndex(_comboIndex);
         if (_isAttacked)
         {
             _attackTime += Time.deltaTime;
@@ -48,24 +47,12 @@ public class Weapon : Damage
             {
                 Attack();
                 if (_comboIndex < _comboIndexes) _comboIndex++;
-                else _comboIndex = 0;
-                _trailRenderer.enabled = false;
-                _light.enabled = false;
-                _cooldownTime = 0.0f; _attackTime = 0.0f;
-                _isAttacked = false; _isOnCooldown = true;
+                else _comboIndex = 0; _isOnCooldown = true;
+                StopAttack();
             }
         }
-        else if (!_isAttacked && !_movement.GetIsDodging())
-        {
-            if (Input.GetMouseButtonDown(0) && !_isAttacked && !_isOnCooldown && Time.timeScale > 0.0f)
-            {
-                _cooldownTime = 0.0f;
-                _attackTime = 0.0f;
-                _isAttacked = true;
-                _trailRenderer.enabled = true;
-                _light.enabled = true;
-            }
-        }
+        else if (!_isAttacked && !_movement.GetIsDodging()) if (Input.GetMouseButtonDown(0) && !_isAttacked && !_isOnCooldown && Time.timeScale > 0.0f) StartAttack();
+        else _particleSystem.Stop();
         if (_isOnCooldown)
         {
             _cooldownTime += Time.deltaTime;
@@ -82,6 +69,25 @@ public class Weapon : Damage
         Gizmos.color = Color.red;
         Vector3 _positionInFront = transform.position + transform.forward * _distance;
         Gizmos.DrawWireSphere(_positionInFront, _radius);
+    }
+
+    protected void StartAttack()
+    {
+        _cooldownTime = 0.0f; _attackTime = 0.0f;
+        _isAttacked = true; _trailRenderer.enabled = true;
+        _light.enabled = true; _particleSystem.Play();
+    }
+
+    protected void StopAttack()
+    {
+        _cooldownTime = 0.0f; _attackTime = 0.0f;
+        _isAttacked = false; _trailRenderer.enabled = false;
+        _light.enabled = false; _particleSystem.Stop();
+    }
+
+    protected virtual void OnDisable()
+    {
+        StopAttack();
     }
     #endregion
 

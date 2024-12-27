@@ -21,7 +21,7 @@ public class WeaponShield : Weapon
         base.OnDrawGizmos();
     }
 
-    private void OnDisable()
+    protected override void OnDisable()
     {
         if (_health) _health.Block(false);
     }

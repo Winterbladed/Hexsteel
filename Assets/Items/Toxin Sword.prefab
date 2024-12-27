@@ -57,7 +57,6 @@ MonoBehaviour:
   _Item: {fileID: 2045042600589172159, guid: b0a5cce038b45b44bbefbca1d564fec0, type: 3}
   _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
-  _ItemSprites: []
 --- !u!114 &-2530356028446651964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioClip:
-  - {fileID: 8300000, guid: b3daf729b0392e2449120b09ca3bd864, type: 3}
+  - {fileID: 8300000, guid: 59998b90c0972d749880d3413d2094dc, type: 3}
 --- !u!82 &-4795413240653547505
 AudioSource:
   m_ObjectHideFlags: 0
@@ -140,7 +139,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
