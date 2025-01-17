@@ -276,38 +276,38 @@ public class Damage : MonoBehaviour
 
         //For Elementally Infused:
         //Toxin infused or Ice infused mixed with Toxin Damage or Ice Damage to Trigger Virus
-        if (_toxin.GetIsStatusInfused() && _DamageType == DamageType._Ice || _ice.GetIsStatusInfused() && _DamageType == DamageType._Toxin)
+        if (_toxin.GetIsStatusInfused() && _DamageType == DamageType._Ice && !_virus.GetIsActive() || _ice.GetIsStatusInfused() && _DamageType == DamageType._Toxin && !_virus.GetIsActive())
         {
             SetStatusStats(_virus, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
             _virus.EnableStatus(); //Trigger Elemental Fusion
         }
         //Toxin infused or Fire infused mixed with Toxin Damage or Fire Damage to Trigger Gas
-        else if (_toxin.GetIsStatusInfused() && _DamageType == DamageType._Fire || _fire.GetIsStatusInfused() && _DamageType == DamageType._Toxin)
+        else if (_toxin.GetIsStatusInfused() && _DamageType == DamageType._Fire && !_gas.GetIsActive() || _fire.GetIsStatusInfused() && _DamageType == DamageType._Toxin && !_gas.GetIsActive())
         {
             SetStatusStats(_gas, _StatusDamage, _StatusTimer, _StatusTicker / 2.0f); //Modify Status Stats
             _gas.EnableStatus(); //Trigger Elemental Fusion
         }
         //Toxin infused or Electric infused mixed with Toxin Damage or Electric Damage to Trigger Corrode
-        else if (_toxin.GetIsStatusInfused() && _DamageType == DamageType._Electric || _electric.GetIsStatusInfused() && _DamageType == DamageType._Toxin)
+        else if (_toxin.GetIsStatusInfused() && _DamageType == DamageType._Electric && !_corrode.GetIsActive() || _electric.GetIsStatusInfused() && _DamageType == DamageType._Toxin && !_corrode.GetIsActive())
         {
             SetStatusStats(_corrode, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
             _corrode.EnableStatus(); //Trigger Elemental Fusion
         }
         //Ice infused or Fire infused mixed with Ice Damage or Fire Damage to Trigger Melt
-        else if (_ice.GetIsStatusInfused() && _DamageType == DamageType._Fire || _fire.GetIsStatusInfused() && _DamageType == DamageType._Ice)
+        else if (_ice.GetIsStatusInfused() && _DamageType == DamageType._Fire && !_melt.GetIsActive() || _fire.GetIsStatusInfused() && _DamageType == DamageType._Ice && !_melt.GetIsActive())
         {
             SetStatusStats(_melt, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
             _melt.EnableStatus(); //Trigger Elemental Fusion
             _target.GetComponent<Movement>().UnSlow();
         }
         //Ice infused or Electric infused mixed with Ice Damage or Electric Damage to Trigger Magnetic
-        else if (_ice.GetIsStatusInfused() && _DamageType == DamageType._Electric || _electric.GetIsStatusInfused() && _DamageType == DamageType._Ice)
+        else if (_ice.GetIsStatusInfused() && _DamageType == DamageType._Electric && !_magnetic.GetIsActive() || _electric.GetIsStatusInfused() && _DamageType == DamageType._Ice && !_magnetic.GetIsActive())
         {
             SetStatusStats(_magnetic, _StatusDamage, _StatusTimer * 2.0f, _StatusTicker); //Modify Status Stats
             _magnetic.EnableStatus(); //Trigger Elemental Fusion
         }
         //Fire infused or Electric infused mixed with Fire Damage or Electric Damage to Trigger Blast
-        else if (_fire.GetIsStatusInfused() && _DamageType == DamageType._Electric || _electric.GetIsStatusInfused() && _DamageType == DamageType._Fire)
+        else if (_fire.GetIsStatusInfused() && _DamageType == DamageType._Electric && !_blast.GetIsActive() || _electric.GetIsStatusInfused() && _DamageType == DamageType._Fire && !_blast.GetIsActive())
         {
             SetStatusStats(_blast, _StatusDamage * 10, 0.5f, 0.1f); //Modify Status Stats
             _blast.EnableStatus(); //Trigger Elemental Fusion
