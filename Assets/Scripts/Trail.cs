@@ -1,6 +1,5 @@
 using UnityEngine;
 [RequireComponent (typeof(TrailRenderer))]
-[RequireComponent(typeof(Light))]
 [RequireComponent(typeof(ParticleSystem))]
 
 public class Trail : MonoBehaviour  

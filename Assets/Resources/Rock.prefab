@@ -175,7 +175,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4137516890305317706}
-  - component: {fileID: 734325466475691191}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -203,29 +202,6 @@ Transform:
   - {fileID: 6078327132593446490}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &734325466475691191
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3681908926189555419}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0625, y: 0.001, z: 0.100000024}
-  m_Size: 2.375
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.100856036
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2803102580817207904}
-    - renderer: {fileID: 7728242625489526291}
-    - renderer: {fileID: 122199790652781265}
-    - renderer: {fileID: 1731780203676383823}
-    - renderer: {fileID: 2356008598490388500}
-  m_Enabled: 1
 --- !u!1 &8073084935335456402
 GameObject:
   m_ObjectHideFlags: 0

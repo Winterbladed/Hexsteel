@@ -6,7 +6,6 @@ public class Weapon : Damage
     #region Variables
     protected GameObject _trail;
     protected TrailRenderer _trailRenderer;
-    protected Light _light;
     protected ParticleSystem _particleSystem;
 
     [Header("Other Weapon Stats")]
@@ -32,7 +31,6 @@ public class Weapon : Damage
         _health = GetComponentInParent<Health>();
         _trail = GetComponentInChildren<Trail>().gameObject;
         _trailRenderer = _trail.GetComponent<TrailRenderer>();
-        _light = _trail.GetComponent<Light>();
         _particleSystem = _trail.GetComponent<ParticleSystem>();
         StopAttack();
     }
@@ -75,14 +73,14 @@ public class Weapon : Damage
     {
         _cooldownTime = 0.0f; _attackTime = 0.0f;
         _isAttacked = true; _trailRenderer.emitting = true;
-        _light.enabled = true; _particleSystem.Play();
+        _particleSystem.Play();
     }
 
     protected void StopAttack()
     {
         _cooldownTime = 0.0f; _attackTime = 0.0f;
         _isAttacked = false; _trailRenderer.emitting = false;
-        _light.enabled = false; _particleSystem.Stop();
+        _particleSystem.Stop();
     }
 
     protected virtual void OnDisable()
