@@ -57,6 +57,7 @@ MonoBehaviour:
   _Item: {fileID: 2045042600589172159, guid: fa115ba497a46634bb96f37d1ce5eafa, type: 3}
   _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
+  _ItemSprite: {fileID: 21300000, guid: 5c58316651c6c7a43a5723997af0aedc, type: 3}
 --- !u!114 &-2530356028446651964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +232,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 965993972271060893}
     m_Modifications:
+    - target: {fileID: 1378942122223944149, guid: aeeb018b86ce309459f335c94ec771c9,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1378942122223944149, guid: aeeb018b86ce309459f335c94ec771c9,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2146383736472280713, guid: aeeb018b86ce309459f335c94ec771c9,
         type: 3}
       propertyPath: m_Pivot.x
@@ -331,11 +343,44 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2279788577944945288, guid: aeeb018b86ce309459f335c94ec771c9,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 2279788577944945288, guid: aeeb018b86ce309459f335c94ec771c9,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 2679429273382534468, guid: aeeb018b86ce309459f335c94ec771c9,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 2679429273382534468, guid: aeeb018b86ce309459f335c94ec771c9,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4841228572610543152, guid: aeeb018b86ce309459f335c94ec771c9,
         type: 3}
       propertyPath: m_Name
       value: Weapon Stat UI
       objectReference: {fileID: 0}
+    - target: {fileID: 6635076107064830805, guid: aeeb018b86ce309459f335c94ec771c9,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 6635076107064830805, guid: aeeb018b86ce309459f335c94ec771c9,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -413,41 +458,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5026522579985679206, guid: 1a769202e775ac449922e29d5ec8ffa2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1948096666979311730}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a769202e775ac449922e29d5ec8ffa2, type: 3}
---- !u!1 &1391591758232126570 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5026522579985679206, guid: 1a769202e775ac449922e29d5ec8ffa2,
-    type: 3}
-  m_PrefabInstance: {fileID: 6236965360790095628}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1948096666979311730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391591758232126570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
 --- !u!4 &5483921679941989652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1915414423582683672, guid: 1a769202e775ac449922e29d5ec8ffa2,

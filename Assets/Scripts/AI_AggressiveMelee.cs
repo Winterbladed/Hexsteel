@@ -1,4 +1,4 @@
-public class AI_AggressiveMeleeGroup : NavmeshMovement
+public class AI_AggressiveMelee : NavmeshMovement
 {
     protected override void Update()
     {

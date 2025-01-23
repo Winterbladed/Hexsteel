@@ -14,6 +14,7 @@ public class Virus : Status
         base.Start();
         _statusName = "Virus";
         _statusColor = Color.magenta;
+        _statusMaterial = _statusVars._StatusMaterial[7];
         _health = GetComponent<Health>();
     }
 

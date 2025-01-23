@@ -10,6 +10,7 @@ public class Blunt : Status
         base.Start();
         _statusName = "Blunt";
         _statusColor = Color.white;
+        _statusMaterial = _statusVars._StatusMaterial[0];
     }
 
     protected void Update()

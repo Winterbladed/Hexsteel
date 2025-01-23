@@ -17,6 +17,7 @@ public class Blast : Status
         base.Start();
         _statusName = "Blast";
         _statusColor = Color.red;
+        _statusMaterial = _statusVars._StatusMaterial[12];
         _health = GetComponent<Health>();
         _armor = GetComponent<Armor>();
         _shield = GetComponent<Shield>();

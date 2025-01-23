@@ -134,7 +134,6 @@ public class Damage : MonoBehaviour
         {
             SetStatusStats(_blunt, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
             _blunt.EnableStatus(); //Trigger Physical Status
-            _textEvent.ShowStatus(_blunt.GetStatusName(), _blunt.GetStatusColor(), _blunt.GetStatusSprite(), _target.transform);
         }
 
         //Pierce Status Effect : 

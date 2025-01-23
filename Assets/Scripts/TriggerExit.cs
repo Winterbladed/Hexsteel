@@ -81,7 +81,7 @@ public class TriggerExit : MonoBehaviour
         }
 
         //AI_Aggressive
-        else if (_colliderDetection == global::_TargetData._AI_Aggressive && _sense.gameObject.GetComponent<AI_AggressiveMeleeGroup>() ||
+        else if (_colliderDetection == global::_TargetData._AI_Aggressive && _sense.gameObject.GetComponent<AI_AggressiveMelee>() ||
             _colliderDetection == global::_TargetData._AI_Aggressive && _sense.gameObject.GetComponent<AI_AggressiveRanged>())
         {
             _onTriggerExitEvt.Invoke();
@@ -89,7 +89,7 @@ public class TriggerExit : MonoBehaviour
         }
 
         //AI_Neutral
-        else if (_colliderDetection == global::_TargetData._AI_Neutral && _sense.gameObject.GetComponent<AI_AggressiveMeleeGroup>())
+        else if (_colliderDetection == global::_TargetData._AI_Neutral && _sense.gameObject.GetComponent<AI_AggressiveMelee>())
         {
             _onTriggerExitEvt.Invoke();
             if (_isDestructible) Destroy(gameObject, _destroyTime);

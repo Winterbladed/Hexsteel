@@ -68,21 +68,7 @@ MonoBehaviour:
   _Item: {fileID: 2045042600589172159, guid: 3b9cd5c724d4bdc4f85ccdf3a0690b37, type: 3}
   _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
-  _ItemSprites:
-  - {fileID: 21300000, guid: 7430b724bf243f745918c82dd6cf095c, type: 3}
-  - {fileID: 21300000, guid: 45ea76dc4fb8eee4f93d0ca621199a37, type: 3}
-  - {fileID: 21300000, guid: 27f5a758d92d7e448a741a167b799366, type: 3}
-  - {fileID: 21300000, guid: d9f33a80646c3e5408423bf12307a1a9, type: 3}
-  - {fileID: 21300000, guid: 2e780cde9d8caf64d9a624dd9c48a1f4, type: 3}
-  - {fileID: 21300000, guid: 07c2852e4cc199d4684d9cd356f82135, type: 3}
-  - {fileID: 21300000, guid: 0abfecf4e6da36b45b39f34e6df5c562, type: 3}
-  - {fileID: 21300000, guid: 78e3fd666e8141942af493ccf6f54817, type: 3}
-  - {fileID: 21300000, guid: f7b73df0b5911f642a9a3426520ba048, type: 3}
-  - {fileID: 21300000, guid: 3a298dee40a77974ea0609f9f543147b, type: 3}
-  - {fileID: 21300000, guid: abf0fa793c6f8c242b1cc4c7b1dfeb15, type: 3}
-  - {fileID: 21300000, guid: 8fcecaa4fec84974fbfd388b5d746fc4, type: 3}
-  - {fileID: 21300000, guid: 0d0207f432372f7479b8ca87aff68b43, type: 3}
-  - {fileID: 21300000, guid: add829b33a390f047aa3012024c3e028, type: 3}
+  _ItemSprite: {fileID: 21300000, guid: c9b980f8a65bd8c4683bc3bcae055b77, type: 3}
 --- !u!114 &3795620042856048028
 MonoBehaviour:
   m_ObjectHideFlags: 0

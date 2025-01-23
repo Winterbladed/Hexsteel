@@ -21,12 +21,12 @@ public class TextEvent : MonoBehaviour
         Instantiate(_newDamageText, _target.position + new Vector3(Random.Range(-1.0f, 1.0f), 2.5f + Random.Range(-0.5f, 0.5f), 0), Quaternion.identity);
     }
 
-    public void ShowStatus(string _name, Color _color, Sprite _sprite, Transform _target)
+    public void ShowStatus(string _name, Color _color, Material _material, Sprite _sprite, Transform _target)
     {
         GameObject _newElementText = _statusText;
         DynamicWorldUI _newDWUI = _newElementText.GetComponentInChildren<DynamicWorldUI>();
         _newDWUI.SetTextString(_name, _color);
-        _newDWUI.SetImageSprite(_sprite, _color);
+        _newDWUI.SetImageSprite(_sprite, _color, _material);
         Instantiate(_newElementText, _target.position + new Vector3(Random.Range(-1.0f, 1.0f), 2.5f + Random.Range(-0.5f, 0.5f), 0), Quaternion.identity);
     }
 

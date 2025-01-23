@@ -13,16 +13,19 @@ public class Status : MonoBehaviour
     [SerializeField] protected bool _isStatusImmune = false;
     protected TextEvent _textEvent;
     protected Color _statusColor;
+    protected Material _statusMaterial;
 
     protected int _statusDamage = 0;
     protected float _statusTimer = 0.0f;
     protected float _statusTime = 0.0f;
     protected float _statusTicker = 0.0f;
     protected float _statusTick = 0.0f;
+
+    protected StatusVars _statusVars;
     #endregion
 
     #region Private Functions
-    protected virtual void Start() { if (!_isStatusInfused) DisableStatus(); else if (_isStatusInfused) EnableStatus(); _textEvent = GetComponent<TextEvent>(); }
+    protected virtual void Start() { if (!_isStatusInfused) DisableStatus(); else if (_isStatusInfused) EnableStatus(); _textEvent = GetComponent<TextEvent>(); _statusVars = StatusVars._StatusVars; }
     #endregion
 
     #region Public Functions
@@ -30,6 +33,7 @@ public class Status : MonoBehaviour
     public bool GetIsStatusInfused() { return _isStatusInfused; }
     public string GetStatusName() { return _statusName; }
     public Color GetStatusColor() { return _statusColor; }
+    public Material GetStatusMaterial() { return _statusMaterial; }
     public Sprite GetStatusSprite() { return _statusSprite; }
     public void SetStatusDamage(int _damage) { _statusDamage = _damage; }
     public void SetStatusTimer(float _timer) { _statusTimer = _timer; }
@@ -42,7 +46,7 @@ public class Status : MonoBehaviour
             _isActive = true;
             if (_statusVfx) _statusVfx.SetActive(true);
             if (_statusImage) _statusImage.SetActive(true);
-            _textEvent.ShowStatus(_statusName, _statusColor, _statusSprite, transform);
+            _textEvent.ShowStatus(_statusName, _statusColor, _statusMaterial, _statusSprite, transform);
         }
     }
 

@@ -88,7 +88,7 @@ public class TriggerEnter : MonoBehaviour
         }
 
         //AI_Aggressive
-        else if (_colliderDetection == _TargetData._AI_Aggressive && _sense.gameObject.GetComponent<AI_AggressiveMeleeGroup>() ||
+        else if (_colliderDetection == _TargetData._AI_Aggressive && _sense.gameObject.GetComponent<AI_AggressiveMelee>() ||
             _colliderDetection == _TargetData._AI_Aggressive && _sense.gameObject.GetComponent<AI_AggressiveRanged>())
         {
             _onTriggerEnterEvt.Invoke();

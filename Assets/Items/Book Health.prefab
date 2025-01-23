@@ -1384,6 +1384,7 @@ MonoBehaviour:
   _Item: {fileID: 2895448722202950775, guid: 66d482c95a2a2f949b9689d2a566a311, type: 3}
   _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
+  _ItemSprite: {fileID: 21300000, guid: fd74defccc8c943449ca860a986c3c08, type: 3}
 --- !u!114 &8969615725298945843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3798,17 +3799,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6572197780728060513, guid: 67e7aa668b593054ba765e3d73964720,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
-    - target: {fileID: 6572197780728060513, guid: 67e7aa668b593054ba765e3d73964720,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7898575739606691753, guid: 67e7aa668b593054ba765e3d73964720,
         type: 3}
       propertyPath: m_Name
@@ -3933,33 +3923,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3538076107388307841, guid: 87acd2819b528aa44bc610bfa2a4d874,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
-    - target: {fileID: 3538076107388307841, guid: 87acd2819b528aa44bc610bfa2a4d874,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 5798367449572417518, guid: 87acd2819b528aa44bc610bfa2a4d874,
         type: 3}
       propertyPath: m_Name
       value: Item UI
       objectReference: {fileID: 0}
-    - target: {fileID: 8813039014920198202, guid: 87acd2819b528aa44bc610bfa2a4d874,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
-    - target: {fileID: 8813039014920198202, guid: 87acd2819b528aa44bc610bfa2a4d874,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

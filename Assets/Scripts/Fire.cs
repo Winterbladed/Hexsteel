@@ -16,6 +16,7 @@ public class Fire : Status
         base.Start();
         _statusName = "Fire";
         _statusColor = new Color(1.0f, 0.5f, 0.0f);
+        _statusMaterial = _statusVars._StatusMaterial[5];
         _health = GetComponent<Health>();
         _armor = GetComponent<Armor>();
         _shield = GetComponent<Shield>();

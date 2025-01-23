@@ -14,6 +14,7 @@ public class Ice : Status
         base.Start();
         _statusName = "Ice";
         _statusColor = Color.cyan;
+        _statusMaterial = _statusVars._StatusMaterial[4];
         _movement = GetComponent<Movement>();
     }
 

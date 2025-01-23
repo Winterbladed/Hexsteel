@@ -115,7 +115,7 @@ public class NavmeshMovement : Movement
                     }
                 }
             }
-            else if (_targetData == _TargetData._AI_Aggressive && _hit.transform.GetComponent<AI_AggressiveMeleeGroup>())
+            else if (_targetData == _TargetData._AI_Aggressive && _hit.transform.GetComponent<AI_AggressiveMelee>())
             {
                 SetTarget(_hit.collider.gameObject);
                 Collider[] _colliders = Physics.OverlapSphere(transform.position, 10.0f);

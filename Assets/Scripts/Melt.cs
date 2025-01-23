@@ -14,6 +14,7 @@ public class Melt : Status
         base.Start();
         _statusName = "Melt";
         _statusColor = new Color(0.0f, 0.5f, 1.0f);
+        _statusMaterial = _statusVars._StatusMaterial[10];
         _damage = GetComponent<Damage>();
     }
 

@@ -15,6 +15,7 @@ public class Slash : Status
         base.Start();
         _statusName = "Slash";
         _statusColor = Color.white;
+        _statusMaterial = _statusVars._StatusMaterial[2];
         _health = GetComponent<Health>();
         _shield = GetComponent<Shield>();
     }

@@ -57,6 +57,7 @@ MonoBehaviour:
   _Item: {fileID: 2045042600589172159, guid: b0a5cce038b45b44bbefbca1d564fec0, type: 3}
   _ItemIcon: {fileID: 3240355216110004441, guid: 46df1e5139261384cbde4b2ad7185256,
     type: 3}
+  _ItemSprite: {fileID: 21300000, guid: b3702be77da8d5044b72e3b4242024bf, type: 3}
 --- !u!114 &-2530356028446651964
 MonoBehaviour:
   m_ObjectHideFlags: 0

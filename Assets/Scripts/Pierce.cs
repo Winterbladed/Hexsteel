@@ -10,6 +10,7 @@ public class Pierce : Status
         base.Start();
         _statusName = "Pierce";
         _statusColor = Color.white;
+        _statusMaterial = _statusVars._StatusMaterial[1];
     }
 
     protected void Update()

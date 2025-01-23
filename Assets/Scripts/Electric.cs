@@ -16,6 +16,7 @@ public class Electric : Status
         base.Start();
         _statusName = "Electric";
         _statusColor = new Color(0.5f, 0.0f, 1.0f);
+        _statusMaterial = _statusVars._StatusMaterial[6];
         _health = GetComponent<Health>();
         _armor = GetComponent<Armor>();
         _shield = GetComponent<Shield>();

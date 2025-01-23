@@ -14,6 +14,7 @@ public class Corrode : Status
         base.Start();
         _statusName = "Corrode";
         _statusColor = Color.gray;
+        _statusMaterial = _statusVars._StatusMaterial[9];
         _armor = GetComponent<Armor>();
     }
 

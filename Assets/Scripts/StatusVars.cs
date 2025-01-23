@@ -14,5 +14,6 @@ public class StatusVars : MonoBehaviour
     #region Variables
     public Sprite[] _StatusSprites;
     public Color[] _StatusColors;
+    public Material[] _StatusMaterial;
     #endregion
 }

@@ -14,6 +14,7 @@ public class Magnetic : Status
         base.Start();
         _statusName = "Magnetic";
         _statusColor = Color.blue;
+        _statusMaterial = _statusVars._StatusMaterial[11];
         _shield = GetComponent<Shield>();
     }
 

@@ -16,6 +16,7 @@ public class Gas : Status
         base.Start();
         _statusName = "Gas";
         _statusColor = Color.yellow;
+        _statusMaterial = _statusVars._StatusMaterial[8];
         _health = GetComponent<Health>();
         _armor = GetComponent<Armor>();
         _shield = GetComponent<Shield>();

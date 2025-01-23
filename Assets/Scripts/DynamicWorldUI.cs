@@ -13,7 +13,6 @@ public class DynamicWorldUI : MonoBehaviour
     [SerializeField] private DynamicWorldUIType _type;
     [SerializeField] private TMP_Text _text;
     [SerializeField] private Image _image;
-    private float _timer = 0.0f;
     private bool _hasPopped = false;
     #endregion
 
@@ -26,14 +25,13 @@ public class DynamicWorldUI : MonoBehaviour
 
     private void Update()
     {
-        _timer += Time.deltaTime;
-        if (_text.fontSize < 0.6f && !_hasPopped && _type == DynamicWorldUIType.DamageNumber)
-            _text.fontSize += Time.deltaTime * 2.0f;
-        else if (_text.fontSize > 0.6f && !_hasPopped && _type == DynamicWorldUIType.DamageNumber)
+        if (_text.fontSize < 1.0f && !_hasPopped && _type == DynamicWorldUIType.DamageNumber)
+            _text.fontSize += Time.deltaTime * 4.0f;
+        else if (_text.fontSize > 1.0f && !_hasPopped && _type == DynamicWorldUIType.DamageNumber)
             _hasPopped = true;
         else if (_hasPopped && _type == DynamicWorldUIType.DamageNumber)
         {
-            _text.fontSize -= Time.deltaTime * 6.0f;
+            _text.fontSize -= Time.deltaTime * 12.0f;
             if (_text.fontSize <= 0.0f)
                 Destroy(gameObject);
         }
@@ -47,10 +45,11 @@ public class DynamicWorldUI : MonoBehaviour
         _text.color = _color;
     }
 
-    public void SetImageSprite(Sprite _picture, Color _color)
+    public void SetImageSprite(Sprite _picture, Color _color, Material _material)
     {
         _image.sprite = _picture;
         _text.color = _color;
+        _image.material = _material;
     }
     #endregion
 }

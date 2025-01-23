@@ -74,14 +74,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2294943677015292739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 439b3e5239092a34b909bc0e685d54a1, type: 3}
+  m_Script: {fileID: 11500000, guid: ca27773f18f85fa43a7d44c60d3b4584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Speed: 0.5
+  _Speed: 1
   _raycastLayerMask:
     serializedVersion: 2
     m_Bits: 51
-  _raycastDistance: 25
+  _raycastDistance: 5
   _stopRange: 2
   _wanderRange: 15
   _wanderCooldown: 15
@@ -103,9 +103,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _projectile: {fileID: 6207323861454628167, guid: 2150680c82a08594389bdbb78fb83fa2,
-    type: 3}
-  _transform: {fileID: 7857639740173885394}
+  _projectile: {fileID: 0}
+  _transform: {fileID: 0}
   _state: 0
   _targetData: 0
 --- !u!114 &7969045054544091742

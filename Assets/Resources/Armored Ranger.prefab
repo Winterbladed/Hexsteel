@@ -312,7 +312,7 @@ MonoBehaviour:
   _raycastLayerMask:
     serializedVersion: 2
     m_Bits: 51
-  _raycastDistance: 25
+  _raycastDistance: 5
   _stopRange: 15
   _wanderRange: 15
   _wanderCooldown: 15
@@ -1986,6 +1986,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armored Ranger skin
       objectReference: {fileID: 0}
+    - target: {fileID: 1789062258846440956, guid: e41e5f23b6318ec40ba4328b4424a3ec,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1789062258846440956, guid: e41e5f23b6318ec40ba4328b4424a3ec,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6342522791790498683, guid: e41e5f23b6318ec40ba4328b4424a3ec,
         type: 3}
       propertyPath: m_LocalPosition.x

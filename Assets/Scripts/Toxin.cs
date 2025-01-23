@@ -15,6 +15,7 @@ public class Toxin : Status
         base.Start();
         _statusName = "Toxin";
         _statusColor = Color.green;
+        _statusMaterial = _statusVars._StatusMaterial[3];
         _health = GetComponent<Health>();
         _armor = GetComponent<Armor>();
     }
