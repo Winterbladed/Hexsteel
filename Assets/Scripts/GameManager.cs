@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
 
     public void FullScreen()
     {
-        if (!_isFullscreen) { Screen.SetResolution(1920, 1080, true); Screen.fullScreenMode = FullScreenMode.FullScreenWindow; _isFullscreen = true; }
+        if (!_isFullscreen) { Screen.SetResolution(1920, 1080, true); Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen; _isFullscreen = true; }
         else if (_isFullscreen) { Screen.SetResolution(1280, 720, false); Screen.fullScreenMode = FullScreenMode.Windowed; _isFullscreen = false; }
     }
 

@@ -145,12 +145,12 @@ public class NavmeshMovement : Movement
     {
         if (_navMeshAgent.remainingDistance > _navMeshAgent.stoppingDistance) _animator.SetBool("_isWalking", true);
         else _animator.SetBool("_isWalking", false);
-        if (_currentWanderCooldown < _wanderCooldown) _currentWanderCooldown += Time.deltaTime;
-        if (_currentWanderCooldown > _wanderCooldown) _currentWanderCooldown = 0.0f;
-        if (_navMeshAgent.stoppingDistance >= _navMeshAgent.remainingDistance && _currentWanderCooldown <= 0.0f)
+        if (_currentWanderCooldown <= _wanderCooldown) _currentWanderCooldown += Time.deltaTime;
+        else if (_currentWanderCooldown > _wanderCooldown)
         {
             Vector3 _randomPoint = RandomNavmeshPoint(transform.position, _wanderRange);
             if (_randomPoint != Vector3.zero) _navMeshAgent.SetDestination(_randomPoint);
+            _currentWanderCooldown = 0.0f;
         }
     }
 
@@ -161,12 +161,12 @@ public class NavmeshMovement : Movement
         {
             if (_navMeshAgent.remainingDistance > _navMeshAgent.stoppingDistance) _animator.SetBool("_isWalking", true);
             else _animator.SetBool("_isWalking", false);
-            if (_currentWanderCooldown < _wanderCooldown) _currentWanderCooldown += Time.deltaTime;
-            if (_currentWanderCooldown > _wanderCooldown) _currentWanderCooldown = 0.0f;
-            if (_navMeshAgent.stoppingDistance >= _navMeshAgent.remainingDistance && _currentWanderCooldown <= 0.0f)
+            if (_currentWanderCooldown <= _wanderCooldown) _currentWanderCooldown += Time.deltaTime;
+            else if (_currentWanderCooldown > _wanderCooldown)
             {
                 Vector3 _randomPoint = RandomNavmeshPoint(transform.position, _wanderRange);
                 if (_randomPoint != Vector3.zero) _navMeshAgent.SetDestination(_randomPoint);
+                _currentWanderCooldown = 0.0f;
             }
         }
         else

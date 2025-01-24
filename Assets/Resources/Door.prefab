@@ -582,8 +582,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _doorPivot: {fileID: 8749465815529820332}
-  _doorOpen: {x: 0, y: -60, z: 0}
-  _doorClose: {x: 0, y: 0, z: 0}
+  _doorOpen: {x: 0, y: 30, z: 0}
+  _doorClose: {x: 0, y: 90, z: 0}
 --- !u!114 &1702047057593669883
 MonoBehaviour:
   m_ObjectHideFlags: 0

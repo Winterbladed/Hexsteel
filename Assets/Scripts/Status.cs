@@ -100,7 +100,7 @@ public class Status : MonoBehaviour
             _isActive = true;
             if (_statusVfx) _statusVfx.SetActive(true);
             if (_statusImage) _statusImage.SetActive(true);
-            _textEvent.ShowStatus(_statusName, _statusColor, _statusMaterial, _statusSprite, transform);
+            if (!_isStatusInfused) _textEvent.ShowStatus(_statusName, _statusColor, _statusMaterial, _statusSprite, transform);
         }
     }
 
