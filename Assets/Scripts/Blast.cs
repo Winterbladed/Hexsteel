@@ -5,9 +5,6 @@ using UnityEngine;
 public class Blast : Status
 {
     #region Variables
-    protected Health _health;
-    protected Armor _armor;
-    protected Shield _shield;
     private bool _isDone = false;
     #endregion
 
@@ -18,9 +15,6 @@ public class Blast : Status
         _statusName = "Blast";
         _statusColor = Color.red;
         _statusMaterial = _statusVars._StatusMaterial[12];
-        _health = GetComponent<Health>();
-        _armor = GetComponent<Armor>();
-        _shield = GetComponent<Shield>();
     }
 
     protected void Update()
@@ -30,10 +24,7 @@ public class Blast : Status
             _statusTime += Time.deltaTime;
             if (!_isDone)
             {
-                int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
-                if (_damage <= 0) _damage = 0;
-                _health.TakeHpDamage(_damage);
-                _textEvent.ShowDamage(_damage * _health.GetHpDamageMultiplier(), _statusColor, gameObject.transform);
+                DamageEventHealthArmorShield();
                 Collider[] _colliders = Physics.OverlapSphere(transform.position, 5.0f);
                 foreach (Collider _hit in _colliders)
                 {

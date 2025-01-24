@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -26,6 +28,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private UnityEvent _gamePause;
     [SerializeField] private UnityEvent _gameResume;
     private bool _isPaused;
+    private bool _isFullscreen = true;
+    private bool _isShadow = true;
 
     [Header("Panels Manager")]
     [SerializeField] private GameObject _pausePanel;
@@ -76,6 +80,18 @@ public class GameManager : MonoBehaviour
                 _settingsPanel.SetActive(false);
             }
         }
+    }
+
+    public void FullScreen()
+    {
+        if (!_isFullscreen) { Screen.SetResolution(1920, 1080, true); Screen.fullScreenMode = FullScreenMode.FullScreenWindow; _isFullscreen = true; }
+        else if (_isFullscreen) { Screen.SetResolution(1280, 720, false); Screen.fullScreenMode = FullScreenMode.Windowed; _isFullscreen = false; }
+    }
+
+    public void Shadows()
+    {
+        if (_isShadow) { gameObject.GetComponent<Light>().shadows = LightShadows.None; _isShadow = false; }
+        else if (!_isShadow) { gameObject.GetComponent<Light>().shadows = LightShadows.Hard; _isShadow = true; }
     }
 
     public void LoadPreviousScene()

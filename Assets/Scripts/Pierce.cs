@@ -1,7 +1,7 @@
 using UnityEngine;
 
 //Pierce
-//Deals Damage
+//Reduces Armor by 10% of Max Armor and increase Critical Damage taken by Health during the effect
 public class Pierce : Status
 {
     #region Private Functions
@@ -18,13 +18,12 @@ public class Pierce : Status
         if (_isActive)
         {
             _statusTime += Time.deltaTime;
-            _statusTick += Time.deltaTime;
-            if (_statusTick > _statusTicker)
-            {
-                _statusTick = 0.0f;
-            }
+            _health.ModifyHpCritDamageTaken(2);
+            _armor.DebilitateArmor();
             if (_statusTime > _statusTimer)
             {
+                _health.ModifyHpCritDamageTaken(1);
+                _armor.RestoreArmor2();
                 DisableStatus();
             }
         }

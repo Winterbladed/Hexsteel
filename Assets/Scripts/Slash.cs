@@ -4,11 +4,6 @@ using UnityEngine;
 //Deals Damage overtime that bypasses Armor during the effect
 public class Slash : Status
 {
-    #region Variables
-    protected Health _health;
-    protected Shield _shield;
-    #endregion
-
     #region Private Functions
     protected override void Start()
     {
@@ -16,8 +11,6 @@ public class Slash : Status
         _statusName = "Slash";
         _statusColor = Color.white;
         _statusMaterial = _statusVars._StatusMaterial[2];
-        _health = GetComponent<Health>();
-        _shield = GetComponent<Shield>();
     }
 
     protected void Update()
@@ -26,24 +19,17 @@ public class Slash : Status
         {
             _statusTime += Time.deltaTime;
             _statusTick += Time.deltaTime;
-            if (_statusTick > _statusTicker)
+            if (_statusTime <= _statusTimer)
             {
-                if (_shield.GetCurrentSp() <= 0)
+                if (_statusTick > _statusTicker)
                 {
-                    int _damage = _statusDamage * _health.GetHpDamageMultiplier();
-                    _health.TakeHpDamage(_damage);
-                    _textEvent.ShowDamage(_damage, Color.white, gameObject.transform);
+                    DamageEventHealthShield();
+                    _statusTick = 0.0f;
                 }
-                else
-                {
-                    _shield.TakeSpDamage(_statusDamage);
-                    _textEvent.ShowDamage(_statusDamage, Color.white, gameObject.transform);
-                }
-                
-                _statusTick = 0.0f;
             }
-            if (_statusTime > _statusTimer)
+            else if (_statusTime > _statusTimer)
             {
+                DamageEventHealthShield();
                 DisableStatus();
             }
         }

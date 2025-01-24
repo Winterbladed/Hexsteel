@@ -122,12 +122,12 @@ MonoBehaviour:
   _isPlayer: 0
   _DamageType: 5
   _Damage: 5
-  _CriticalDamage: 0
-  _CriticalChance: 0
+  _CriticalDamage: 2
+  _CriticalChance: 0.05
   _StatusChance: 1
-  _StatusDamage: 0
+  _StatusDamage: 1
   _StatusTimer: 5
-  _StatusTicker: 0
+  _StatusTicker: 1
 --- !u!114 &5598573477471722905
 MonoBehaviour:
   m_ObjectHideFlags: 0

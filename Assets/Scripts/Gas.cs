@@ -4,12 +4,6 @@ using UnityEngine;
 //Deals Damage overtime in an Area Of Effect and disables Health Regen during the effect
 public class Gas : Status
 {
-    #region Variables
-    protected Health _health;
-    protected Armor _armor;
-    protected Shield _shield;
-    #endregion
-
     #region Private Functions
     protected override void Start()
     {
@@ -17,9 +11,6 @@ public class Gas : Status
         _statusName = "Gas";
         _statusColor = Color.yellow;
         _statusMaterial = _statusVars._StatusMaterial[8];
-        _health = GetComponent<Health>();
-        _armor = GetComponent<Armor>();
-        _shield = GetComponent<Shield>();
     }
 
     protected void Update()
@@ -33,18 +24,7 @@ public class Gas : Status
                 if (_statusTick > _statusTicker)
                 {
                     _health.DisableRegen(true);
-                    if (_shield.GetCurrentSp() <= 0)
-                    {
-                        int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
-                        if (_damage <= 0) _damage = 0;
-                        _health.TakeHpDamage(_damage);
-                        _textEvent.ShowDamage(_damage, _statusColor, gameObject.transform);
-                    }
-                    else
-                    {
-                        _shield.TakeSpDamage(_statusDamage);
-                        _textEvent.ShowDamage(_statusDamage, _statusColor, gameObject.transform);
-                    }
+                    DamageEventHealthArmorShield();
                     Collider[] _colliders = Physics.OverlapSphere(transform.position, 5.0f);
                     foreach (Collider _hit in _colliders)
                     {
@@ -69,6 +49,7 @@ public class Gas : Status
             }
             else if (_statusTime > _statusTimer)
             {
+                DamageEventHealthArmorShield();
                 _health.DisableRegen(false);
                 DisableStatus();
             }

@@ -76,9 +76,9 @@ MonoBehaviour:
   _CriticalDamage: 2
   _CriticalChance: 0.1
   _StatusChance: 1
-  _StatusDamage: 0
+  _StatusDamage: 1
   _StatusTimer: 5
-  _StatusTicker: 0
+  _StatusTicker: 1
   _radius: 1.5
   _distance: 1.5
   _comboIndexes: 2

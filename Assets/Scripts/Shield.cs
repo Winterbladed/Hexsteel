@@ -50,6 +50,12 @@ public class Shield : MonoBehaviour
         CapSp();
     }
 
+    public void Take10PercentSpDamage()
+    {
+        _currentSp -= _sp - (_sp / 10);
+        CapSp();
+    }
+
     public void ShieldDisable(bool _boolean)
     {
         _currentSp = 0;

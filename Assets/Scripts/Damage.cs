@@ -20,6 +20,7 @@ public class Damage : MonoBehaviour
     public int _CriticalDamage;
     public float _CriticalChance;
     protected float _currentCriticalChance = 0.0f;
+    protected int _currentCriticalDamage;
     protected bool _isCritical = false;
 
     [Header("Status Stats")]
@@ -41,6 +42,7 @@ public class Damage : MonoBehaviour
         _pplayer = Player._Player;
         _textEvent = GetComponent<TextEvent>();
         _normalDamage = _Damage; _reducedDamage = _Damage / 2;
+        _currentCriticalDamage = _CriticalDamage;
     }
     #endregion
 
@@ -52,7 +54,7 @@ public class Damage : MonoBehaviour
         _currentCriticalChance = Random.Range(0.0f, 1.0f);
         if (_currentCriticalChance <= _CriticalChance && !_isCrippled)
         {
-            _Damage *= _CriticalDamage;
+            _Damage *= _currentCriticalDamage;
             _isCritical = true;
         }
         else _isCritical = false;
@@ -70,7 +72,12 @@ public class Damage : MonoBehaviour
 
     protected void DamageEvent(int _number, GameObject _target)
     {
-        _computedDamage = (_number * _target.GetComponent<Health>().GetHpDamageMultiplier()) - _target.GetComponent<Armor>().GetCurrentAp();
+        if (_isCritical)
+            _computedDamage = (_number * _target.GetComponent<Health>().GetHpDamageMultiplier() * _target.GetComponent<Health>().GetHpCritDamageMultiplier()) 
+                - _target.GetComponent<Armor>().GetCurrentAp();
+        else if (!_isCritical)
+            _computedDamage = (_number * _target.GetComponent<Health>().GetHpDamageMultiplier())
+                - _target.GetComponent<Armor>().GetCurrentAp();
         TextDamage(_target);
     }
 
@@ -94,7 +101,7 @@ public class Damage : MonoBehaviour
             else if (_health.GetIsBlocking())
             {
                 _textEvent.ShowState("Blocked!", Color.white, _target.transform);
-                _textEvent.ShowDamage((_computedDamage * _health.GetHpDamageMultiplier()) / 4, Color.white, _target.transform);
+                _textEvent.ShowDamage(_computedDamage * _health.GetHpDamageMultiplier() / 4, Color.white, _target.transform);
             }
         }
         if (_isCritical && _computedDamage > 0)
@@ -103,7 +110,7 @@ public class Damage : MonoBehaviour
             else if (_health.GetIsBlocking())
             {
                 _textEvent.ShowState("Blocked!", Color.white, _target.transform);
-                _textEvent.ShowDamage((_computedDamage * _health.GetHpDamageMultiplier()) / 4, Color.yellow, _target.transform);
+                _textEvent.ShowDamage(_computedDamage * _health.GetHpDamageMultiplier() * _health.GetHpCritDamageMultiplier() / 4, Color.yellow, _target.transform);
             }
         }
     }
@@ -129,15 +136,15 @@ public class Damage : MonoBehaviour
         Magnetic _magnetic = _target.GetComponent<Magnetic>();
         Blast _blast = _target.GetComponent<Blast>();
 
-        //Blunt Status Effect : No Effect
+        //Blunt Status Effect : Deals 10% Max Shield Damage to Shields per instance
         if (_blunt && _DamageType == DamageType._Blunt && !_blunt.GetIsActive())
         {
             SetStatusStats(_blunt, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
             _blunt.EnableStatus(); //Trigger Physical Status
         }
 
-        //Pierce Status Effect : 
-        else if(_pierce && _DamageType == DamageType._Pierce && !_pierce.GetIsActive())
+        //Pierce Status Effect : Reduces Armor by 10% of Max Armor and increase Critical Damage taken by Health during the effect
+        else if (_pierce && _DamageType == DamageType._Pierce && !_pierce.GetIsActive())
         {
             SetStatusStats(_pierce, _StatusDamage, _StatusTimer, _StatusTicker); //Modify Status Stats
             _pierce.EnableStatus(); //Trigger Physical Status
@@ -159,7 +166,7 @@ public class Damage : MonoBehaviour
             _toxin.EnableStatus(); //Trigger Elemental Status
         }
 
-        //Ice Status Effect : Slows down Movement Speed during the effect
+        //Ice Status Effect : Slows down Movement Speed and Deals Weak Damage overtime during the effect
         else if (_ice && _DamageType == DamageType._Ice && !_toxin.GetIsActive() && !_ice.GetIsActive() && !_fire.GetIsActive() && !_electric.GetIsActive() ||
             _ice && _DamageType == DamageType._Ice && _toxin.GetIsStatusInfused() && !_ice.GetIsActive() || _ice && _DamageType == DamageType._Ice && _fire.GetIsStatusInfused() && !_ice.GetIsActive() ||
             _ice && _DamageType == DamageType._Ice && _electric.GetIsStatusInfused() && !_ice.GetIsActive())
@@ -168,7 +175,7 @@ public class Damage : MonoBehaviour
             _ice.EnableStatus(); //Trigger Elemental Status
         }
 
-        //Fire Status Effect : Deals Damage overtime during the effect
+        //Fire Status Effect : Deals Damage overtime and reduces Armor to 50% of Max Armor during the effect
         else if (_fire && _DamageType == DamageType._Fire && !_toxin.GetIsActive() && !_ice.GetIsActive() && !_fire.GetIsActive() && !_electric.GetIsActive() ||
             _fire && _DamageType == DamageType._Fire && _toxin.GetIsStatusInfused() && !_fire.GetIsActive() || _fire && _DamageType == DamageType._Fire && _ice.GetIsStatusInfused() && !_fire.GetIsActive() ||
             _fire && _DamageType == DamageType._Fire && _electric.GetIsStatusInfused() && !_fire.GetIsActive())
@@ -177,7 +184,7 @@ public class Damage : MonoBehaviour
             _fire.EnableStatus(); //Trigger Elemental Status
         }
 
-        //Electric Status Effect : Deals Damage overtime during the effect
+        //Electric Status Effect : Deals Quick Weak Damage overtime during the effect
         else if (_electric && _DamageType == DamageType._Electric && !_toxin.GetIsActive() && !_ice.GetIsActive() && !_fire.GetIsActive() && !_electric.GetIsActive() ||
             _electric && _DamageType == DamageType._Electric && _toxin.GetIsStatusInfused() && !_electric.GetIsActive() || _electric && _DamageType == DamageType._Electric && _ice.GetIsStatusInfused() && !_electric.GetIsActive() ||
             _electric && _DamageType == DamageType._Electric && _fire.GetIsStatusInfused() && !_electric.GetIsActive())

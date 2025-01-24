@@ -1,15 +1,9 @@
 using UnityEngine;
 
 //Electric
-//Deals Damage overtime during the effect
+//Deals Quick Weak Damage overtime during the effect
 public class Electric : Status
 {
-    #region Variables
-    protected Health _health;
-    protected Armor _armor;
-    protected Shield _shield;
-    #endregion
-
     #region Private Functions
     protected override void Start()
     {
@@ -17,9 +11,6 @@ public class Electric : Status
         _statusName = "Electric";
         _statusColor = new Color(0.5f, 0.0f, 1.0f);
         _statusMaterial = _statusVars._StatusMaterial[6];
-        _health = GetComponent<Health>();
-        _armor = GetComponent<Armor>();
-        _shield = GetComponent<Shield>();
     }
 
     protected void Update()
@@ -28,24 +19,17 @@ public class Electric : Status
         {
             _statusTime += Time.deltaTime;
             _statusTick += Time.deltaTime;
-            if (_statusTick > _statusTicker)
+            if (_statusTime <= _statusTimer)
             {
-                if (_shield.GetCurrentSp() <= 0)
+                if (_statusTick > _statusTicker)
                 {
-                    int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
-                    if (_damage <= 0) _damage = 0;
-                    _health.TakeHpDamage(_damage);
-                    _textEvent.ShowDamage(_damage, _statusColor, gameObject.transform);
+                    DamageEventHealthArmorShield();
+                    _statusTick = 0.0f;
                 }
-                else
-                {
-                    _shield.TakeSpDamage(_statusDamage);
-                    _textEvent.ShowDamage(_statusDamage, _statusColor, gameObject.transform);
-                }
-                _statusTick = 0.0f;
             }
-            if (_statusTime > _statusTimer)
+            else if (_statusTime > _statusTimer)
             {
+                DamageEventHealthArmorShield();
                 DisableStatus();
             }
         }

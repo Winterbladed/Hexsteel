@@ -1,7 +1,7 @@
 using UnityEngine;
 
 //Blunt
-//Deals Damage
+//Deals Damage to 10% of Max Shields per instance
 public class Blunt : Status
 {
     #region Private Functions
@@ -21,6 +21,7 @@ public class Blunt : Status
             _statusTick += Time.deltaTime;
             if (_statusTick > _statusTicker)
             {
+                _shield.Take10PercentSpDamage();
                 _statusTick = 0.0f;
             }
             if (_statusTime > _statusTimer)

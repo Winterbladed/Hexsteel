@@ -4,10 +4,6 @@ using UnityEngine;
 //Disables Armor during the effect
 public class Corrode : Status
 {
-    #region Variables
-    protected Armor _armor;
-    #endregion
-
     #region Private Functions
     protected override void Start()
     {
@@ -15,7 +11,6 @@ public class Corrode : Status
         _statusName = "Corrode";
         _statusColor = Color.gray;
         _statusMaterial = _statusVars._StatusMaterial[9];
-        _armor = GetComponent<Armor>();
     }
 
     protected void Update()

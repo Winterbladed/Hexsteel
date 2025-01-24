@@ -307,7 +307,7 @@ public class NavmeshMovement : Movement
                     _attackTime = 0.0f;
                 }
             }
-            else if (GetDistanceFromTarget() > GetStopRange() + 1) ResetAttack();
+            else if (GetDistanceFromTarget() > GetStopRange()) ResetAttack1();
         }
         else
         {
@@ -335,6 +335,18 @@ public class NavmeshMovement : Movement
         _isAttacking = false;
         _navMeshAgent.speed = _currentSpeed;
         transform.eulerAngles = _InitialRotation;
+    }
+
+    protected void ResetAttack1()
+    {
+        if (_comboIndex < _comboIndexes) _comboIndex++;
+        else _comboIndex = 0;
+        _animator.SetInteger("_comboIndex", _comboIndex);
+        _animator.SetBool("_isAttacking", false);
+        _animator.SetBool("_isShooting", false);
+        _attackTime = 0.0f;
+        _isAttacking = false;
+        _navMeshAgent.speed = _currentSpeed;
     }
 
     protected void OnCollisionEnter(Collision _hit)

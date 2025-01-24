@@ -4,10 +4,6 @@ using UnityEngine;
 //Modifies Health to take more damage from all sources during the effect
 public class Virus : Status
 {
-    #region Variables
-    protected Health _health;
-    #endregion
-
     #region Private Functions
     protected override void Start()
     {
@@ -15,7 +11,6 @@ public class Virus : Status
         _statusName = "Virus";
         _statusColor = Color.magenta;
         _statusMaterial = _statusVars._StatusMaterial[7];
-        _health = GetComponent<Health>();
     }
 
     protected void Update()

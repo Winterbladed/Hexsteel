@@ -10,11 +10,10 @@ public class Health : MonoBehaviour
     private int _currentHp;
     [SerializeField] private int _hp;
     private int _hpDamageMultiplier = 1;
+    private int _hpCritDamageMultiplier = 1;
     [SerializeField] private int _hpRegenAmount = 0;
     private float _hpRechargeTime = 0.0f;
     private bool _isDisabled;
-    
-
     private bool _isBlocking;
     private bool _isInvulnerable;
 
@@ -109,12 +108,14 @@ public class Health : MonoBehaviour
     }
 
     public void ModifyHpDamageTaken(int _mult) { _hpDamageMultiplier = _mult; }
+    public void ModifyHpCritDamageTaken(int _mult) { _hpCritDamageMultiplier = _mult; }
     public void DestroyGameObject() { Destroy(gameObject); }
     public int GetCurrentHp() { return _currentHp; }
     public int GetHp() { return _hp; }
     public void SetCurrentHp(int _savedCurrentHp) { _currentHp = _savedCurrentHp; }
     public void SetHp(int _savedHp) { _hp = _savedHp; }
     public int GetHpDamageMultiplier() { return _hpDamageMultiplier; }
+    public int GetHpCritDamageMultiplier() { return _hpCritDamageMultiplier; }
     public void DebugHealth() { Debug.Log("Health: " + _currentHp + "/" + _hp); }
     public void Invulnerable(bool _boolean) { _isInvulnerable = _boolean; }
     public bool GetIsInvulnerable() { return _isInvulnerable; }

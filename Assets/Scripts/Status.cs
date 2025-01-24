@@ -22,13 +22,67 @@ public class Status : MonoBehaviour
     protected float _statusTick = 0.0f;
 
     protected StatusVars _statusVars;
+    protected Health _health;
+    protected Armor _armor;
+    protected Shield _shield;
+    protected Movement _movement;
     #endregion
 
     #region Private Functions
-    protected virtual void Start() { if (!_isStatusInfused) DisableStatus(); else if (_isStatusInfused) EnableStatus(); _textEvent = GetComponent<TextEvent>(); _statusVars = StatusVars._StatusVars; }
+    protected virtual void Start() 
+    { 
+        if (!_isStatusInfused) DisableStatus(); else if (_isStatusInfused) EnableStatus(); 
+        _textEvent = GetComponent<TextEvent>(); _statusVars = StatusVars._StatusVars;
+        _health = GetComponent<Health>();
+        _armor = GetComponent<Armor>();
+        _shield = GetComponent<Shield>();
+        _movement = GetComponent<Movement>();
+    }
     #endregion
 
     #region Public Functions
+    //Health, Armor, Shield
+    public void DamageEventHealthArmorShield()
+    {
+        if (_shield.GetCurrentSp() <= 0)
+        {
+            int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
+            if (_damage <= 0) _damage = 0;
+            _health.TakeHpDamage(_damage);
+            _textEvent.ShowDamage(_damage, _statusColor, gameObject.transform);
+        }
+        else
+        {
+            _shield.TakeSpDamage(_statusDamage);
+            _textEvent.ShowDamage(_statusDamage, _statusColor, gameObject.transform);
+        }
+    }
+
+    //Health, Armor
+    public void DamageEventHealthArmor()
+    {
+        int _damage = (_statusDamage * _health.GetHpDamageMultiplier()) - _armor.GetCurrentAp();
+        if (_damage <= 0) _damage = 0;
+        _health.TakeHpDamage(_damage);
+        _textEvent.ShowDamage(_damage, _statusColor, gameObject.transform);
+    }
+
+    //Health, Shield
+    public void DamageEventHealthShield()
+    {
+        if (_shield.GetCurrentSp() <= 0)
+        {
+            int _damage = _statusDamage * _health.GetHpDamageMultiplier();
+            _health.TakeHpDamage(_damage);
+            _textEvent.ShowDamage(_damage, Color.white, gameObject.transform);
+        }
+        else
+        {
+            _shield.TakeSpDamage(_statusDamage);
+            _textEvent.ShowDamage(_statusDamage, Color.white, gameObject.transform);
+        }
+    }
+
     public bool GetIsActive() { return _isActive; }
     public bool GetIsStatusInfused() { return _isStatusInfused; }
     public string GetStatusName() { return _statusName; }

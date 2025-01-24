@@ -78,7 +78,7 @@ MonoBehaviour:
   _StatusChance: 1
   _StatusDamage: 0
   _StatusTimer: 0.1
-  _StatusTicker: 0
+  _StatusTicker: 0.1
   _radius: 1.25
   _distance: 1.5
   _comboIndexes: 2

@@ -342,8 +342,8 @@ MonoBehaviour:
   _isPlayer: 0
   _DamageType: 0
   _Damage: 5
-  _CriticalDamage: 0
-  _CriticalChance: 0
+  _CriticalDamage: 2
+  _CriticalChance: 0.05
   _StatusChance: 1
   _StatusDamage: 5
   _StatusTimer: 5
