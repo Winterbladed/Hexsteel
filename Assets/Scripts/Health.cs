@@ -43,8 +43,8 @@ public class Health : MonoBehaviour
             _hpRechargeTime += Time.deltaTime;
             if (_hpRechargeTime > 1.0f)
             {
+                if (!_isDead && _currentHp < _hp) _currentHp += _hpRegenAmount;
                 CapHp();
-                if (!_isDead) _currentHp += _hpRegenAmount;
                 _hpRechargeTime = 0.0f;
             }
         }
